@@ -1,0 +1,61 @@
+{
+  "scope": "JSON-to-Word prototype verification; control C routine is not implemented or executed",
+  "checks": [
+    {
+      "name": "valid_source",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_required_field",
+      "status": "PASS",
+      "rejected_reason": "$.document.id: required"
+    },
+    {
+      "name": "unknown_field",
+      "status": "PASS",
+      "rejected_reason": "$.unknown_field: unknown field"
+    },
+    {
+      "name": "wrong_type",
+      "status": "PASS",
+      "rejected_reason": "$.behavior.threshold: expected integer"
+    },
+    {
+      "name": "self_approval_blocked",
+      "status": "PASS",
+      "rejected_reason": "$.document.status: expected constant 'draft_trial'"
+    },
+    {
+      "name": "duplicate_ids",
+      "status": "PASS",
+      "rejected_reason": "Duplicate IDs in verification_examples"
+    },
+    {
+      "name": "identical_inputs_identical_docx_bytes",
+      "status": "PASS",
+      "sha256": "99f478ddc1f1f54bae1b1f003e401bf92d3bd20471349e654cfc466b8220667f"
+    },
+    {
+      "name": "source_content_and_repeat_rows_preserved",
+      "status": "PASS",
+      "values_checked": 52
+    },
+    {
+      "name": "source_revision_change_reaches_document",
+      "status": "PASS"
+    },
+    {
+      "name": "template_tokens_and_no_title_border",
+      "status": "PASS"
+    },
+    {
+      "name": "page_fields_preserved_after_substitution",
+      "status": "PASS"
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "source_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+  "template_sha256": "ef65e7ff94adfe9b7c4d584119d9d4d4f1b15ca55abbfe9011605160b235bd57",
+  "output_sha256": "99f478ddc1f1f54bae1b1f003e401bf92d3bd20471349e654cfc466b8220667f"
+}
