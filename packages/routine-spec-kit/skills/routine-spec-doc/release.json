@@ -1,0 +1,33 @@
+{
+  "name": "routine-spec-kit",
+  "version": "0.1.0",
+  "profile_id": "alarm-qualification-v01",
+  "routine_id": "RTN-ALM-001",
+  "template_id": "routine-spec-v01",
+  "schema": "assets/schema/routine-spec.schema.json",
+  "template": "assets/templates/routine-spec-v01.docx",
+  "example": "assets/examples/alarm_qualification.json",
+  "runtime": {
+    "python_minor": "3.12",
+    "dependencies": {
+      "python-docx": "1.2.0",
+      "lxml": "6.1.1"
+    }
+  },
+  "limits": [
+    "10-cycle continuous-ON sample only",
+    "draft_trial only",
+    "Limited JSON Schema keyword validator",
+    "No visual rendering or RTOS validation"
+  ],
+  "files": {
+    "SKILL.md": "a046b04d1d9b5ab537b3e11e77e21e4c084743ab2c7a8ac5d89f0d35efefbd71",
+    "scripts/specflow.py": "f1c8ffd0a1372bfb63b653cc81d90a7f21e7c1199161731283bce42bbfb3f18a",
+    "scripts/_engine.py": "b5ad9bf7a1c916268e9e23e8ca5842bca39851adeba97154effdad13fa15e0bd",
+    "assets/examples/alarm_qualification.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "assets/schema/routine-spec.schema.json": "afc0d2fcf0a205b47f3983d6f5d3c84dc524ee181065253c83f093b1574f02b4",
+    "assets/templates/routine-spec-v01.docx": "ef65e7ff94adfe9b7c4d584119d9d4d4f1b15ca55abbfe9011605160b235bd57",
+    "references/authoring.md": "506aed6c30c46f374ca25dcaf2fbad4e1c4d5287f8b86de1d1cfecd97fb3d26c",
+    "requirements.txt": "5968b4e0563926c5d777d2e059e360b355df071626e3c68e6510fffb2278279d"
+  }
+}

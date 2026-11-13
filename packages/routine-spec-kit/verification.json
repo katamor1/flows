@@ -1,0 +1,73 @@
+{
+  "verified_date": "2026-11-13",
+  "package": "routine-spec-kit",
+  "version": "0.1.0",
+  "release_sha256": "2e4d8621b8143f04b9853849c69860f33abcb009f0e133c8c0b1e4c9ceb5dd1b",
+  "archive": {
+    "path": "dist/routine-spec-kit-0.1.0.zip",
+    "sha256": "b2f9e79661eeaf881a0077a2a9441d0588e408b455778bfa4427036cff604687",
+    "bytes": 56385,
+    "files": 10,
+    "members_match_current_sources": true,
+    "maintainer_tools_excluded": true
+  },
+  "automated_checks": {
+    "command": "python -B -X utf8 packages/routine-spec-kit/tests/test_package.py",
+    "cases": 12,
+    "passed": 11,
+    "failed": 0,
+    "skipped": 1,
+    "elapsed_seconds": 127.201,
+    "skipped_reason": "The execution sandbox denied creating a Windows junction. The real-junction integration case was not exercised.",
+    "covered": [
+      "doctor and profile discovery",
+      "new job, validate and render",
+      "identical input produces identical DOCX bytes and matches the original prototype",
+      "normal execution leaves package files unchanged",
+      "existing job and run IDs cannot overwrite files",
+      "missing or changed template stops processing",
+      "package paths and directory traversal rejected",
+      "release lock mismatch stops processing",
+      "threshold 12 rejected without publishing an output",
+      "initializer commands and arbitrary template override unavailable",
+      "generation failure cleans staging and locks, allowing retry",
+      "dependency version mismatch stops processing",
+      "maintainer bundling rejects changed assets even with Python optimization"
+    ]
+  },
+  "skill_syntax": {
+    "official_quick_validate": "Attempted; unavailable because PyYAML is not installed. Not reported as passing.",
+    "alternative_check": "Passed: this skill's simple two-scalar YAML header, name and description constraints, absence of scaffold TODOs, and local reference links. This is not a general YAML parser."
+  },
+  "independent_review": {
+    "mode": "Read-only review and follow-up of changed sections",
+    "findings_resolved": [
+      "Lock file cleanup on normal exception paths",
+      "Optimization-safe maintainer integrity checks"
+    ],
+    "remaining_important_findings": 0
+  },
+  "reference_docx_sha256": "99f478ddc1f1f54bae1b1f003e401bf92d3bd20471349e654cfc466b8220667f",
+  "limits": [
+    "Only the existing 10-cycle alarm qualification draft profile is supported",
+    "No global skill installation, plugin publication, MCP registration or ACL changes",
+    "No new visual rendering check; the unchanged reference DOCX matches the previously reviewed prototype",
+    "No C90 implementation, unit test execution, RTOS integration or timing measurement",
+    "Package integrity checks detect mistakes; filesystem permissions are required to prevent rewriting by the agent"
+  ],
+  "independent_forward_test": {
+    "status": "passed",
+    "evidence": "qa/forward-evaluation.json",
+    "main_flow": "ZIP extraction, SKILL.md instructions, new job, revision 0.2, validate and render",
+    "additional_cases": [
+      "missing template refused",
+      "threshold 12 refused",
+      "Gaussian requirement identified as unsupported (judgment only)",
+      "existing render ID refused"
+    ],
+    "package_unchanged": true,
+    "word_xml_revision_verified": true,
+    "docx_sha256": "251a2ad772f3b764da153c90b6a6b3e7faa5a77f6e0f29c118a7086b2ff98efc",
+    "root_rechecked_input_output_hashes_and_word_revision": true
+  }
+}
