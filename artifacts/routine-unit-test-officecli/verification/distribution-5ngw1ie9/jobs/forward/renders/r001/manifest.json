@@ -1,0 +1,58 @@
+{
+  "generator_backend": "officecli",
+  "generator_version": "0.1.0",
+  "source": "unit-test-spec.json",
+  "source_sha256": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+  "schema_sha256": "53a84d677a27e32bef7738f33b6ab9445a5cb4ab0b6f5fb0b152d8ac41af980c",
+  "template_sha256": "fc1faab6615db0d90b77bf25d614a740c50cd0ee529026d8c219211764683138",
+  "output": "UTS-RTN-ALM-001.docx",
+  "output_sha256": "f536afd5cff5660bc7cd93091f74ec90cc31fd6ff5af54deedbb45f32ddc2d3d",
+  "status": "draft_trial",
+  "semantic_sha256": "651da07452ef30bad943c68a08039128ff781db0efc317311202666dbc8ab8ef",
+  "content_check": {
+    "status": "passed",
+    "template_content_and_formatting": "matched",
+    "unchanged_package_parts": 15,
+    "field_codes": {
+      "word/document.xml": [],
+      "word/footer1.xml": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "word/header1.xml": []
+    },
+    "commands": 820,
+    "repeated_rows_cloned": 85,
+    "semantic_sha256": "651da07452ef30bad943c68a08039128ff781db0efc317311202666dbc8ab8ef"
+  },
+  "visual_review": "not_performed_by_this_command",
+  "package": {
+    "name": "routine-unit-test-officecli",
+    "version": "0.1.0",
+    "profile_id": "alarm-qualification-unit-test-v01",
+    "release_sha256": "566435e34c510737de9b86a8d676781e3cb21997ae572e8c8105bb9d86b42105",
+    "renderer": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    }
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "python": "3.12.14",
+  "canonical_source": "source/unit-test-spec.json",
+  "input_files": {
+    "inputs/program-spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "inputs/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "inputs/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "inputs/generation-record.json": "5fd7f84f7c4e05991e7724fa460408e10beac3953bc38a924f44156c0e679be6"
+  },
+  "input_lock_sha256": "07adeccfce6090597141242138a871ce3c6f5105ddafc92ff92933c8a4d75091",
+  "execution_record_sha256": "df3863eeb29d3b4df6576f5ab5c43f164b167b3a0a98016c12ee819d6231513b",
+  "traceability_sha256": "dd7804e7ff0817c8425439c2ee583aa6b7ad2aa6a7ced9b61a975348063aee7c",
+  "schema": "assets/schema/unit-test-spec.schema.json",
+  "template": "assets/templates/unit-test-spec-v01.docx",
+  "template_id": "unit-test-spec-v01",
+  "template_revision": "0.1.0"
+}

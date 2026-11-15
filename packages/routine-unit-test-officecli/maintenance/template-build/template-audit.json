@@ -1,0 +1,190 @@
+{
+  "template_sha256": "fc1faab6615db0d90b77bf25d614a740c50cd0ee529026d8c219211764683138",
+  "tables": [
+    {
+      "caption": "repeat:view.environment",
+      "cells_per_row": [
+        1,
+        1
+      ],
+      "prototype_tokens": [
+        "text"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.assumptions",
+      "cells_per_row": [
+        2,
+        2
+      ],
+      "prototype_tokens": [
+        "id",
+        "text"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.case_index",
+      "cells_per_row": [
+        5,
+        5
+      ],
+      "prototype_tokens": [
+        "id",
+        "title",
+        "purpose",
+        "refs",
+        "status"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.case_steps",
+      "cells_per_row": [
+        4,
+        4
+      ],
+      "prototype_tokens": [
+        "case_step",
+        "inputs",
+        "expected",
+        "refs"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.families",
+      "cells_per_row": [
+        4,
+        4
+      ],
+      "prototype_tokens": [
+        "id",
+        "definition",
+        "oracle",
+        "refs"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.static_checks",
+      "cells_per_row": [
+        4,
+        4
+      ],
+      "prototype_tokens": [
+        "id",
+        "method",
+        "criterion",
+        "refs"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.coverage",
+      "cells_per_row": [
+        4,
+        4
+      ],
+      "prototype_tokens": [
+        "ref",
+        "method",
+        "items",
+        "reason"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    },
+    {
+      "caption": "repeat:view.open_issues",
+      "cells_per_row": [
+        3,
+        3
+      ],
+      "prototype_tokens": [
+        "id",
+        "owner",
+        "decision"
+      ],
+      "repeat_header": true,
+      "variable_height": true
+    }
+  ],
+  "tokens": {
+    "word/document.xml": [
+      "document.title",
+      "document.status_label",
+      "document.id",
+      "document.revision",
+      "document.date",
+      "document.author",
+      "document.status",
+      "document.routine_id",
+      "document.routine_name",
+      "document.template_id",
+      "view.not_executed",
+      "summary",
+      "view.target_summary",
+      "text",
+      "id",
+      "text",
+      "id",
+      "title",
+      "purpose",
+      "refs",
+      "status",
+      "case_step",
+      "inputs",
+      "expected",
+      "refs",
+      "id",
+      "definition",
+      "oracle",
+      "refs",
+      "id",
+      "method",
+      "criterion",
+      "refs",
+      "ref",
+      "method",
+      "items",
+      "reason",
+      "id",
+      "owner",
+      "decision"
+    ],
+    "word/header1.xml": [
+      "document.id",
+      "document.routine_name"
+    ],
+    "word/footer1.xml": [
+      "document.revision",
+      "document.status_label"
+    ]
+  },
+  "footer_fields": [
+    "PAGE",
+    "NUMPAGES"
+  ],
+  "page": "A4 portrait",
+  "body_font_pt": 10.5,
+  "body_font": "Yu Gothic",
+  "visual_qa": "pending integration render by root",
+  "source": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-spec-officecli\\skills\\routine-spec-doc\\assets\\templates\\routine-spec-v01.docx",
+  "source_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
+  "source_unchanged": true,
+  "officecli_validation": {
+    "success": true,
+    "data": {
+      "count": 0,
+      "errors": []
+    }
+  }
+}

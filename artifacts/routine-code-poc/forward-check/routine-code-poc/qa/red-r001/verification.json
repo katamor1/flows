@@ -1,0 +1,62 @@
+{
+  "format_version": "0.1.0",
+  "time_utc": "2026-11-14T13:26:58.032116+00:00",
+  "kind": "expected_red_baseline",
+  "status": "expected_failure_observed",
+  "generation": {
+    "agent": "Codex in this chat",
+    "bob_executed": false,
+    "reason": "Bob Shell 2.0.4 installed; BOB_API_KEY absent. This run does not claim Bob model execution.",
+    "status": "draft_trial"
+  },
+  "target": "host Windows x64; not target RTOS or WCET verification",
+  "files": {
+    "input/spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "job.json": "baaf308727c8cae3c27edc267d3c5bf5f3c736ac026439243a2db18823984abf",
+    "include/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "qa/unimplemented.c": "e246da17135e5962844dc81984846b41d902bd38ebd53dddb64a389e7bbdd82d",
+    "tests/test_alarm_qualification.c": "31ce5cf9ca179287ac0bd9da3d780bd56d50c942290e89c22b3d6720eb6c2c4f",
+    "tools/codeflow.py": "ed851b7cf9628cc8b3c25b8b08ed4d60ef14dd1345a798c1b83c6dcec6515af6"
+  },
+  "tools": {
+    "clang_sha256": "688e766a64d4291c057bf96acea3b1feb86df767a95cd2e087882d71b8759680",
+    "clang_version": "clang version 22.1.3 (https://github.com/llvm/llvm-project e9846648fd6183ee6d8cbdb4502213fcf902a211)\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Program Files\\LLVM\\bin"
+  },
+  "commands": [
+    {
+      "step": "compiler-version",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "--version"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "compile-tests",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\unimplemented.c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\tests\\test_alarm_qualification.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\red-r001\\host-tests.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "tests",
+      "argv": [
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\red-r001\\host-tests.exe"
+      ],
+      "returncode": 1
+    }
+  ],
+  "test_output": "FAIL CHK-01: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)\nCHK-01..05 / REARM: 1 checks\nFAIL TABLE-ON: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)\nALL-VALID-STATE-TRANSITIONS: 1 checks\nFAIL ERR-NULL-STATE: rc=-99 expected=-1; all initialized bytes must remain unchanged\nCHK-06 / ERROR-PRIORITY / NO-WRITES: 1 checks\nFAIL INSTANCE-A: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)\nINDEPENDENT-INSTANCES: 1 checks\nFAIL ALL-11-SAMPLE-SEQUENCES: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)\nSequence index=0, sample index=0 (zero-based)\n177147 ELEVEN-SAMPLE-SEQUENCES: 1 checks\nTOTAL: 5 checks, 5 failures\n"
+}

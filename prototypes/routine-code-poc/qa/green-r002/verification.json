@@ -1,0 +1,158 @@
+{
+  "format_version": "0.1.0",
+  "time_utc": "2026-11-14T13:29:31.307391+00:00",
+  "kind": "host_verification",
+  "status": "passed",
+  "generation": {
+    "agent": "Codex in this chat",
+    "bob_executed": false,
+    "reason": "Bob Shell 2.0.4 installed; BOB_API_KEY absent. This run does not claim Bob model execution.",
+    "status": "draft_trial"
+  },
+  "target": "host Windows x64; not target RTOS or WCET verification",
+  "files": {
+    "input/spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "job.json": "baaf308727c8cae3c27edc267d3c5bf5f3c736ac026439243a2db18823984abf",
+    "include/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "src/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "tests/test_alarm_qualification.c": "31ce5cf9ca179287ac0bd9da3d780bd56d50c942290e89c22b3d6720eb6c2c4f",
+    "tools/codeflow.py": "2b1c70fa3894e4aa7fd868bafaaf4e5f1defbe27d08cbe33ac4c9fbb9f795f50"
+  },
+  "tools": {
+    "clang_sha256": "688e766a64d4291c057bf96acea3b1feb86df767a95cd2e087882d71b8759680",
+    "clang_version": "clang version 22.1.3 (https://github.com/llvm/llvm-project e9846648fd6183ee6d8cbdb4502213fcf902a211)\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Program Files\\LLVM\\bin"
+  },
+  "commands": [
+    {
+      "step": "compiler-version",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "--version"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "compile-tests",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\src\\AlarmQualification.c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\tests\\test_alarm_qualification.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\host-tests.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "tests",
+      "argv": [
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\host-tests.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "compile-object",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\src\\AlarmQualification.c",
+        "-c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\AlarmQualification.obj"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "compile-assembly",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\src\\AlarmQualification.c",
+        "-S",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\AlarmQualification.s"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "undefined-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--undefined-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\AlarmQualification.obj"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "defined-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--defined-only",
+        "--extern-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\AlarmQualification.obj"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "link-tests-o2",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\AlarmQualification.obj",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\tests\\test_alarm_qualification.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\host-tests-o2.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "tests-o2",
+      "argv": [
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc\\qa\\green-r002\\host-tests-o2.exe"
+      ],
+      "returncode": 0
+    }
+  ],
+  "test_output": "CHK-01..05 / REARM: 163 checks\nALL-VALID-STATE-TRANSITIONS: 88 checks\nCHK-06 / ERROR-PRIORITY / NO-WRITES: 33 checks\nINDEPENDENT-INSTANCES: 40 checks\n177147 ELEVEN-SAMPLE-SEQUENCES: 1948617 checks\nTOTAL: 1948941 checks, 0 failures\n",
+  "object_inspection": {
+    "undefined_symbols": [],
+    "public_symbols": [
+      "AlarmQualification_Update"
+    ],
+    "note": "Object symbol visibility is not a DLL export declaration."
+  },
+  "optimized_test_output": "CHK-01..05 / REARM: 163 checks\nALL-VALID-STATE-TRANSITIONS: 88 checks\nCHK-06 / ERROR-PRIORITY / NO-WRITES: 33 checks\nINDEPENDENT-INSTANCES: 40 checks\n177147 ELEVEN-SAMPLE-SEQUENCES: 1948617 checks\nTOTAL: 1948941 checks, 0 failures\n",
+  "build_sha256": {
+    "object": "4d640a51c6a93f2a77d8694453732c83b98f89d9a3b9857dda0cc1d8cc17abec",
+    "host_tests_o0": "9a6833283fdd0f2e8f7fa0e66a1b10c2c75f7e82ba5dd34ce86bedcf3f81d6ac",
+    "host_tests_o2": "c4bc2f67e6431e342d584c564e5f45082aabb39d6202dbe89eac1e4aa8c552a5"
+  }
+}

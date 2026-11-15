@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "raw-set replace applied"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "raw-set replace applied"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "raw-set replace applied"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "raw-set replace applied"
+      }
+    ],
+    "summary": {
+      "total": 4,
+      "executed": 4,
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

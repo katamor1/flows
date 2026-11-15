@@ -1,0 +1,45 @@
+{
+  "generator_backend": "officecli",
+  "generator_version": "0.2.0",
+  "source": "spec.json",
+  "source_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+  "schema_sha256": "afc0d2fcf0a205b47f3983d6f5d3c84dc524ee181065253c83f093b1574f02b4",
+  "template_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
+  "output": "PS-RTN-ALM-001.docx",
+  "output_sha256": "2357e0439a87fd1432aeb299922800415fc3b48ca474d7bab6adf1df72c2e7a6",
+  "status": "draft_trial",
+  "semantic_sha256": "e2e510b95572e81a944fe52b0b45ca33f015995c85b07d7c410bdf9ae2f57dd4",
+  "content_check": {
+    "status": "passed",
+    "template_content_and_formatting": "matched",
+    "unchanged_package_parts": 15,
+    "field_codes": {
+      "word/document.xml": [],
+      "word/footer1.xml": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "word/header1.xml": []
+    },
+    "commands": 307,
+    "repeated_rows_cloned": 30,
+    "semantic_sha256": "e2e510b95572e81a944fe52b0b45ca33f015995c85b07d7c410bdf9ae2f57dd4"
+  },
+  "visual_review": "not_performed_by_this_command",
+  "package": {
+    "name": "routine-spec-officecli",
+    "version": "0.2.0",
+    "profile_id": "alarm-qualification-v01",
+    "release_sha256": "9c8c39f522c19cd8cfffb033068c435228a0d29614480b6631cf097cff513778",
+    "renderer": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    }
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "python": "3.12.14",
+  "canonical_source": "source/spec.json"
+}

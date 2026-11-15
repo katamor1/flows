@@ -1,0 +1,1238 @@
+{
+  "format_version": "0.1.0",
+  "kind": "frozen_design_legacy_correspondence",
+  "review_date": "2026-11-15",
+  "reviewer": "Codex subagent /root/ut_content_review",
+  "status": "mapping_complete_no_new_execution_claim",
+  "design": {
+    "path": "packages/routine-unit-test-officecli/skills/routine-unit-test-spec/assets/examples/alarm_unit_test.json",
+    "sha256": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+    "freeze_sha256": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+    "cases": 16,
+    "steps": 34,
+    "families": 4,
+    "static_checks": 6
+  },
+  "legacy": {
+    "test_path": "prototypes/routine-code-poc/tests/test_alarm_qualification.c",
+    "test_sha256": "31ce5cf9ca179287ac0bd9da3d780bd56d50c942290e89c22b3d6720eb6c2c4f",
+    "verification_path": "prototypes/routine-code-poc/qa/green-r003/verification.json",
+    "verification_sha256": "4a0f22131777f4a67029bbc634274f7ef44abdb11cddfc92c70fa36f205dda06",
+    "recorded_time_utc": "2026-11-14T22:31:28.071626+09:00",
+    "recorded_status": "passed",
+    "recorded_target": "host Windows x64; not target RTOS or WCET verification",
+    "matching_spec_source_header_test_hashes": true,
+    "execution_evidence_level": "group_aggregate",
+    "recorded_o0_and_o2_output_match": true,
+    "recorded_groups": [
+      {
+        "label": "CHK-01..05 / REARM",
+        "checks": 163
+      },
+      {
+        "label": "ALL-VALID-STATE-TRANSITIONS",
+        "checks": 88
+      },
+      {
+        "label": "CHK-06 / ERROR-PRIORITY / NO-WRITES",
+        "checks": 33
+      },
+      {
+        "label": "INDEPENDENT-INSTANCES",
+        "checks": 40
+      },
+      {
+        "label": "177147 ELEVEN-SAMPLE-SEQUENCES",
+        "checks": 1948617
+      }
+    ],
+    "recorded_total_checks": 1948941,
+    "recorded_failures": 0,
+    "rerun_in_this_review": false,
+    "authenticity_note": "Legacy record declares generation provenance and host verification; it is not a digital signature."
+  },
+  "policy": [
+    "Old tests were inspected only after new design freeze; they were not used to derive new expected values.",
+    "Legacy record supports its own named aggregate groups. No new UT/FAM/SR item is marked passed from that record.",
+    "Semantic overlap includes only listed concrete inputs and expected observations; setup, order, persistence and new assertions can differ.",
+    "Matching totals are not item evidence: new representative calls total 173, and all new dynamic design calls total 1948908; the legacy total is 1948941.",
+    "All source/spec/asset/test/log files were read only. Only this correspondence and content-review.json were written."
+  ],
+  "shared_differences": {
+    "normal_helper": "tests lines 16..25 create a local output every call and fill 0xA5; new design uses persistent output per independent case/series, fill 0x5A then fields (1,1,7). Legacy normal states assign the count without whole-object fill.",
+    "error_helper": "tests lines 46..60 fill state 0xA5 and result 0x5A, then result fields (1,1,10); new output count is 7. Legacy compares both local objects even when either was not passed; new all_valid_bytes means only passed valid storage.",
+    "instance_checks": "Legacy has only two state objects and helper-local outputs; it does not retain A/B result objects or assert non-target all-byte preservation on each call.",
+    "reporting": "Legacy report_group/main emits five group counts and total failures, with no UT-ALM/FAM-ALM/SR-ALM IDs or per-case acceptance records."
+  },
+  "cases": [
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same input and expected fields; new initial old result and filled state are not the legacy setup.",
+          "labels": [
+            "TABLE-OFF"
+          ],
+          "condition": "old_count=0",
+          "id": "UT-ALM-001/S01",
+          "step": "S01",
+          "lines": [
+            161,
+            162
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_transition_table",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-001",
+      "group": "ALL-VALID-STATE-TRANSITIONS"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same nine normal outputs from count 0; legacy helper rebuilds result each call.",
+          "labels": [
+            "CHK-01"
+          ],
+          "condition": "i=1..9",
+          "id": "UT-ALM-002/S01",
+          "step": "S01",
+          "lines": [
+            74,
+            75,
+            76
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-002",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same 9->10 event; new case independently injects initial count 9 and old result.",
+          "labels": [
+            "CHK-02"
+          ],
+          "condition": "count 9 reached by CHK-01",
+          "id": "UT-ALM-003/S01",
+          "step": "S01",
+          "lines": [
+            80
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-003",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same 100 saturation/no-event outputs; new case independently starts count 10 and persists result.",
+          "labels": [
+            "CHK-03"
+          ],
+          "condition": "100 calls after CHK-02",
+          "id": "UT-ALM-004/S01",
+          "step": "S01",
+          "lines": [
+            83,
+            84
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-004",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same nine ON outputs, but initial zero is reached by prior call rather than standalone construction.",
+          "labels": [
+            "CHK-04-PREFIX"
+          ],
+          "condition": "i=1..9 after CHK-04-RESET",
+          "id": "UT-ALM-005/S01",
+          "step": "S01",
+          "lines": [
+            100,
+            101
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same reset result.",
+          "labels": [
+            "CHK-04-OFF"
+          ],
+          "condition": "count=9",
+          "id": "UT-ALM-005/S02",
+          "step": "S02",
+          "lines": [
+            105
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same next-ON count 1.",
+          "labels": [
+            "CHK-04"
+          ],
+          "condition": "count=0",
+          "id": "UT-ALM-005/S03",
+          "step": "S03",
+          "lines": [
+            106
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-005",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same ON-prefix field values assembled across legacy scenarios; not an isolated new S01.",
+          "labels": [
+            "CHK-04",
+            "CHK-05-PREFIX"
+          ],
+          "condition": "count 1 comes from CHK-04; i=2..9 completes prefix",
+          "id": "UT-ALM-006/S01",
+          "step": "S01",
+          "lines": [
+            106,
+            109,
+            110
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same invalid reset fields.",
+          "labels": [
+            "CHK-05-INVALID"
+          ],
+          "condition": "signal_on=INT_MIN,sample_valid=0,count=9",
+          "id": "UT-ALM-006/S02",
+          "step": "S02",
+          "lines": [
+            114
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same next ON fields.",
+          "labels": [
+            "CHK-05"
+          ],
+          "condition": "count=0",
+          "id": "UT-ALM-006/S03",
+          "step": "S03",
+          "lines": [
+            115
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-006",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same qualified-to-OFF reset.",
+          "labels": [
+            "REARM-OFF"
+          ],
+          "condition": "count=10 reached by previous scenario",
+          "id": "UT-ALM-007/S01",
+          "step": "S01",
+          "lines": [
+            88
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same nine rearm prefix outputs.",
+          "labels": [
+            "REARM-OFF-PREFIX"
+          ],
+          "condition": "i=1..9",
+          "id": "UT-ALM-007/S02",
+          "step": "S02",
+          "lines": [
+            91,
+            92
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same requalification event.",
+          "labels": [
+            "REARM-AFTER-OFF"
+          ],
+          "condition": "tenth ON after reset",
+          "id": "UT-ALM-007/S03",
+          "step": "S03",
+          "lines": [
+            96
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-007",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same qualified-to-invalid reset.",
+          "labels": [
+            "REARM-QUALIFIED-INVALID"
+          ],
+          "condition": "signal_on=INT_MAX,sample_valid=0,count=10",
+          "id": "UT-ALM-008/S01",
+          "step": "S01",
+          "lines": [
+            124,
+            125
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same nine prefix outputs.",
+          "labels": [
+            "REARM-FINAL-PREFIX"
+          ],
+          "condition": "i=1..9",
+          "id": "UT-ALM-008/S02",
+          "step": "S02",
+          "lines": [
+            128,
+            129
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same requalification event.",
+          "labels": [
+            "REARM-FINAL"
+          ],
+          "condition": "tenth ON after invalid reset",
+          "id": "UT-ALM-008/S03",
+          "step": "S03",
+          "lines": [
+            133
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_spec_examples_and_rearm",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-008",
+      "group": "CHK-01..05 / REARM"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -1 and valid-output byte preservation contract; legacy old output count is 10 rather than 7.",
+          "labels": [
+            "ERR-NULL-STATE"
+          ],
+          "condition": "null_state=1,null_result=0,count=9",
+          "id": "UT-ALM-009/S01",
+          "step": "S01",
+          "lines": [
+            182
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-009",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -1 and valid-state byte preservation; legacy additionally compares the unpassed local result.",
+          "labels": [
+            "ERR-NULL-RESULT"
+          ],
+          "condition": "null_state=0,null_result=1,count=9",
+          "id": "UT-ALM-010/S01",
+          "step": "S01",
+          "lines": [
+            183
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-010",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -1. New valid-object comparison set is empty; legacy compares two local objects that were not passed.",
+          "labels": [
+            "ERR-NULL-BOTH"
+          ],
+          "condition": "both null",
+          "id": "UT-ALM-011/S01",
+          "step": "S01",
+          "lines": [
+            184
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-011",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -1 priority; count 11 object is not passed and cannot establish state precedence here.",
+          "labels": [
+            "PRIORITY-NULL-STATE"
+          ],
+          "condition": "count=11,signal_on=2,sample_valid=2,null_state=1",
+          "id": "UT-ALM-012/S01",
+          "step": "S01",
+          "lines": [
+            185
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -1 priority with valid invalid-state object. New case snapshots before this second chronological call; legacy helper constructs a new pair.",
+          "labels": [
+            "PRIORITY-NULL-RESULT"
+          ],
+          "condition": "count=11,signal_on=2,sample_valid=2,null_result=1",
+          "id": "UT-ALM-012/S02",
+          "step": "S02",
+          "lines": [
+            186
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-012",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -2 priority and byte preservation obligation; old result tuple differs.",
+          "labels": [
+            "PRIORITY-INPUT-BEFORE-STATE"
+          ],
+          "condition": "bad_bools[2]=2,initial_count=11",
+          "id": "UT-ALM-013/S01",
+          "step": "S01",
+          "lines": [
+            194,
+            195
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-013",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same -2 priority and byte preservation obligation; old result tuple differs.",
+          "labels": [
+            "PRIORITY-SIGNAL-BEFORE-STATE"
+          ],
+          "condition": "bad_bools[2]=2,initial_count=UINT_MAX",
+          "id": "UT-ALM-014/S01",
+          "step": "S01",
+          "lines": [
+            196,
+            197
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_errors",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-014",
+      "group": "CHK-06 / ERROR-PRIORITY / NO-WRITES"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Same invalid-sample signal-2 reset; old result is freshly byte-filled rather than fields (1,1,7).",
+          "labels": [
+            "TABLE-INVALID-IGNORES-SIGNAL"
+          ],
+          "condition": "old_count=9,ignored_signals[4]=2",
+          "id": "UT-ALM-015/S01",
+          "step": "S01",
+          "lines": [
+            165,
+            166,
+            167,
+            168
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "semantic_overlap_only",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_transition_table",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-015",
+      "group": "ALL-VALID-STATE-TRANSITIONS"
+    },
+    {
+      "step_maps": [
+        {
+          "new_step_status": "not_run",
+          "overlap": "Target output matches, but legacy B count is 0 here; new B starts at 9.",
+          "labels": [
+            "INSTANCE-A-EVENT"
+          ],
+          "condition": "A=9->10",
+          "id": "UT-ALM-016/S01",
+          "step": "S01",
+          "lines": [
+            232
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Target transition and state pair overlap, but legacy call history and stored result semantics differ.",
+          "labels": [
+            "INSTANCE-B-EVENT"
+          ],
+          "condition": "B=9->10,A=10",
+          "id": "UT-ALM-016/S02",
+          "step": "S02",
+          "lines": [
+            242
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "State pair overlaps; legacy does not snapshot non-target bytes or persist B output.",
+          "labels": [
+            "INSTANCE-A-RESET"
+          ],
+          "condition": "A=10->0,B=10",
+          "id": "UT-ALM-016/S03",
+          "step": "S03",
+          "lines": [
+            243
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Target transition/state pair overlaps; non-target output/state byte preservation is untested.",
+          "labels": [
+            "INSTANCE-B-STILL-QUALIFIED"
+          ],
+          "condition": "B=10->10,A=0",
+          "id": "UT-ALM-016/S04",
+          "step": "S04",
+          "lines": [
+            246,
+            247
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "No corresponding call in legacy independent-instance sequence after A reset.",
+          "labels": [],
+          "condition": "A=0->1 while B=10",
+          "id": "UT-ALM-016/S05",
+          "step": "S05",
+          "lines": []
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Legacy independent-instance function has no invalid reset; standalone rearm covers only target behavior.",
+          "labels": [],
+          "condition": "B invalid(INT_MAX,0) at count10 while A=1",
+          "id": "UT-ALM-016/S06",
+          "step": "S06",
+          "lines": []
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "No matching two-instance chronology; legacy A prefix runs while B=0 but starts from 0 with different results/history.",
+          "labels": [],
+          "condition": "A=1->2 while B=0",
+          "id": "UT-ALM-016/S07",
+          "step": "S07",
+          "lines": []
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Target transition overlaps, but legacy A=10 rather than 2.",
+          "labels": [
+            "INSTANCE-B"
+          ],
+          "condition": "i=1 gives B=0->1",
+          "id": "UT-ALM-016/S08",
+          "step": "S08",
+          "lines": [
+            236
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Reset operation exists, but legacy A prior=10/B=10 versus new A prior=2/B=1.",
+          "labels": [
+            "INSTANCE-A-RESET"
+          ],
+          "condition": "A reset",
+          "id": "UT-ALM-016/S09",
+          "step": "S09",
+          "lines": [
+            243
+          ]
+        },
+        {
+          "new_step_status": "not_run",
+          "overlap": "Target transition overlaps, but legacy A=10 rather than 0.",
+          "labels": [
+            "INSTANCE-B"
+          ],
+          "condition": "i=2 gives B=1->2",
+          "id": "UT-ALM-016/S10",
+          "step": "S10",
+          "lines": [
+            236
+          ]
+        }
+      ],
+      "new_case_status": "not_run",
+      "status": "partial_semantic_overlap_new_chronology_and_checks",
+      "legacy_execution_evidence_level": "group_aggregate_only",
+      "function": "test_independent_instances",
+      "new_case_pass_claimed": false,
+      "id": "UT-ALM-016",
+      "group": "INDEPENDENT-INSTANCES"
+    }
+  ],
+  "families": [
+    {
+      "id": "FAM-ALM-001",
+      "function": "test_transition_table",
+      "legacy_group": "ALL-VALID-STATE-TRANSITIONS",
+      "legacy_lines": [
+        136,
+        173
+      ],
+      "mapping_status": "all_88_input_tuples_and_expected_fields_overlap_setup_differs",
+      "new_combination_count": 88,
+      "legacy_matching_input_tuple_count": 88,
+      "expanded_mapping_rule": "For each c=0..10 and i=0..7, new ID=FAM-ALM-001-(1+8*c+i). i=0 maps TABLE-ON(old_count=c); i=1 TABLE-OFF(old_count=c); i=2..7 TABLE-INVALID-IGNORES-SIGNAL(old_count=c,ignored_signals[i-2]).",
+      "differences": [
+        "Legacy does not fill all state bytes before each typed assignment.",
+        "Legacy normal helper reinitializes local result to 0xA5 every call, instead of new output setup 0x5A followed by (1,1,7)."
+      ],
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "FAM-ALM-002",
+      "function": "test_errors",
+      "legacy_group": "CHK-06 / ERROR-PRIORITY / NO-WRITES",
+      "legacy_lines": [
+        189,
+        200
+      ],
+      "mapping_status": "12_of_24_input_tuples_overlap_setup_differs",
+      "new_combination_count": 24,
+      "legacy_matching_input_tuple_count": 12,
+      "legacy_missing_input_tuple_count": 12,
+      "expanded_mapping": [
+        {
+          "id": "FAM-ALM-002-001",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MIN",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-002",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MIN",
+          "old_count": "9",
+          "legacy_label": "ERR-SAMPLE-VALID",
+          "legacy_lines": [
+            190,
+            191
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-003",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MIN",
+          "old_count": "UINT_MAX",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-004",
+          "invalid_target": "sample_valid",
+          "invalid_value": "-1",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-005",
+          "invalid_target": "sample_valid",
+          "invalid_value": "-1",
+          "old_count": "9",
+          "legacy_label": "ERR-SAMPLE-VALID",
+          "legacy_lines": [
+            190,
+            191
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-006",
+          "invalid_target": "sample_valid",
+          "invalid_value": "-1",
+          "old_count": "UINT_MAX",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-007",
+          "invalid_target": "sample_valid",
+          "invalid_value": "2",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-008",
+          "invalid_target": "sample_valid",
+          "invalid_value": "2",
+          "old_count": "9",
+          "legacy_label": "ERR-SAMPLE-VALID",
+          "legacy_lines": [
+            190,
+            191
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-009",
+          "invalid_target": "sample_valid",
+          "invalid_value": "2",
+          "old_count": "UINT_MAX",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-010",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MAX",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-011",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MAX",
+          "old_count": "9",
+          "legacy_label": "ERR-SAMPLE-VALID",
+          "legacy_lines": [
+            190,
+            191
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-012",
+          "invalid_target": "sample_valid",
+          "invalid_value": "INT_MAX",
+          "old_count": "UINT_MAX",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-013",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MIN",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-014",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MIN",
+          "old_count": "9",
+          "legacy_label": "ERR-SIGNAL-ON",
+          "legacy_lines": [
+            192,
+            193
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-015",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MIN",
+          "old_count": "UINT_MAX",
+          "legacy_label": "PRIORITY-SIGNAL-BEFORE-STATE",
+          "legacy_lines": [
+            196,
+            197
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-016",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "-1",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-017",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "-1",
+          "old_count": "9",
+          "legacy_label": "ERR-SIGNAL-ON",
+          "legacy_lines": [
+            192,
+            193
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-018",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "-1",
+          "old_count": "UINT_MAX",
+          "legacy_label": "PRIORITY-SIGNAL-BEFORE-STATE",
+          "legacy_lines": [
+            196,
+            197
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-019",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "2",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-020",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "2",
+          "old_count": "9",
+          "legacy_label": "ERR-SIGNAL-ON",
+          "legacy_lines": [
+            192,
+            193
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-021",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "2",
+          "old_count": "UINT_MAX",
+          "legacy_label": "PRIORITY-SIGNAL-BEFORE-STATE",
+          "legacy_lines": [
+            196,
+            197
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-022",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MAX",
+          "old_count": "0",
+          "legacy_label": null,
+          "legacy_lines": [],
+          "mapping_status": "no_matching_legacy_input_tuple",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-023",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MAX",
+          "old_count": "9",
+          "legacy_label": "ERR-SIGNAL-ON",
+          "legacy_lines": [
+            192,
+            193
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-002-024",
+          "invalid_target": "signal_on_under_valid_sample",
+          "invalid_value": "INT_MAX",
+          "old_count": "UINT_MAX",
+          "legacy_label": "PRIORITY-SIGNAL-BEFORE-STATE",
+          "legacy_lines": [
+            196,
+            197
+          ],
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        }
+      ],
+      "differences": [
+        "All eight old_count=0 tuples are absent from legacy error tests.",
+        "Four sample_valid-invalid/old_count=UINT_MAX tuples are absent; legacy PRIORITY-INPUT-BEFORE-STATE uses 11 instead.",
+        "Legacy error old output is (1,1,10); new is (1,1,7)."
+      ],
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "FAM-ALM-003",
+      "function": "test_errors",
+      "legacy_group": "CHK-06 / ERROR-PRIORITY / NO-WRITES",
+      "legacy_lines": [
+        201,
+        215
+      ],
+      "mapping_status": "all_6_input_tuples_overlap_setup_differs",
+      "new_combination_count": 6,
+      "legacy_matching_input_tuple_count": 6,
+      "expanded_mapping": [
+        {
+          "id": "FAM-ALM-003-001",
+          "old_count": "11",
+          "input": "(1,1)",
+          "legacy_label": "ERR-STATE-ON",
+          "legacy_lines": [
+            202,
+            203
+          ],
+          "condition": "bad_counts[c]",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-003-002",
+          "old_count": "11",
+          "input": "(0,1)",
+          "legacy_label": "ERR-STATE-OFF",
+          "legacy_lines": [
+            204,
+            205
+          ],
+          "condition": "bad_counts[c]",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-003-003",
+          "old_count": "11",
+          "input": "(2,0)",
+          "legacy_label": "ERR-STATE-INVALID-IGNORES-SIGNAL",
+          "legacy_lines": [
+            209,
+            210,
+            211
+          ],
+          "condition": "bad_counts[c],bad_bools[2]=2",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-003-004",
+          "old_count": "UINT_MAX",
+          "input": "(1,1)",
+          "legacy_label": "ERR-STATE-ON",
+          "legacy_lines": [
+            202,
+            203
+          ],
+          "condition": "bad_counts[c]",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-003-005",
+          "old_count": "UINT_MAX",
+          "input": "(0,1)",
+          "legacy_label": "ERR-STATE-OFF",
+          "legacy_lines": [
+            204,
+            205
+          ],
+          "condition": "bad_counts[c]",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        },
+        {
+          "id": "FAM-ALM-003-006",
+          "old_count": "UINT_MAX",
+          "input": "(2,0)",
+          "legacy_label": "ERR-STATE-INVALID-IGNORES-SIGNAL",
+          "legacy_lines": [
+            209,
+            210,
+            211
+          ],
+          "condition": "bad_counts[c],bad_bools[2]=2",
+          "mapping_status": "same_input_and_expected_error_with_setup_difference",
+          "new_item_status": "not_run"
+        }
+      ],
+      "differences": [
+        "Legacy also tests three other invalid-sample signal values for each bad state; those extras are not a substitute for new case execution.",
+        "Legacy old output count is 10 rather than 7."
+      ],
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "FAM-ALM-004",
+      "function": "test_all_eleven_sample_sequences",
+      "legacy_group": "177147 ELEVEN-SAMPLE-SEQUENCES",
+      "legacy_lines": [
+        251,
+        297
+      ],
+      "mapping_status": "same_abstract_ternary_words_with_different_concrete_C_input_order_and_setup",
+      "new_sequence_count": 177147,
+      "new_call_count": 1948617,
+      "legacy_abstract_sequence_count": 177147,
+      "expanded_mapping_rule": "For new series N, write N-1 as 11 base-3 digits d1..d11 (A=0,B=1,C=2) with d1 the first call. Legacy zero-based sequence index is sum(dj*3^(j-1),j=1..11), i.e. digit reversal. Prefix j maps legacy sample index j-1. This is an abstract-symbol mapping, not identical concrete-input evidence.",
+      "differences": [
+        "New lexicographic enumeration changes rightmost digit fastest; legacy assigns least-significant digit to the first call, so leftmost is fastest.",
+        "New C=(signal_on=2,sample_valid=0); legacy C=(0,0), so sequences containing C have different concrete inputs.",
+        "New state/result fill and initial output tuple differ; legacy helper reconstructs result every call, while new series retains its result object between calls."
+      ],
+      "example_mapping": [
+        {
+          "new_id": "FAM-ALM-004-000001",
+          "new_word": "AAAAAAAAAAA",
+          "legacy_sequence_index": 0,
+          "concrete_input_mapping": "all inputs match; setup differs"
+        },
+        {
+          "new_id": "FAM-ALM-004-000003",
+          "new_word": "AAAAAAAAAAC",
+          "legacy_sequence_index": 118098,
+          "concrete_input_mapping": "C signal differs: new2/legacy0"
+        },
+        {
+          "new_id": "FAM-ALM-004-000004",
+          "new_word": "AAAAAAAAABA",
+          "legacy_sequence_index": 19683,
+          "concrete_input_mapping": "all inputs match; setup differs"
+        },
+        {
+          "new_id": "FAM-ALM-004-177147",
+          "new_word": "CCCCCCCCCCC",
+          "legacy_sequence_index": 177146,
+          "concrete_input_mapping": "all C signal values differ"
+        }
+      ],
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    }
+  ],
+  "static_checks": [
+    {
+      "id": "SR-ALM-001",
+      "mapping_status": "no_legacy_static_item_execution",
+      "legacy_related_labels": [
+        "ERR-NULL-STATE",
+        "ERR-NULL-RESULT",
+        "ERR-NULL-BOTH",
+        "PRIORITY-NULL-STATE",
+        "PRIORITY-NULL-RESULT",
+        "PRIORITY-INPUT-BEFORE-STATE",
+        "PRIORITY-SIGNAL-BEFORE-STATE"
+      ],
+      "legacy_evidence": "Dynamic error group checks status and bytes; does not establish absence of dereferences. Source reading remains needed.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "SR-ALM-002",
+      "mapping_status": "no_legacy_static_item_execution",
+      "legacy_related_labels": [
+        "TABLE-INVALID-IGNORES-SIGNAL",
+        "ERR-STATE-INVALID-IGNORES-SIGNAL"
+      ],
+      "legacy_evidence": "Dynamic ignored-value tuples overlap observable behavior; C90 short-circuit reading is a distinct obligation.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "SR-ALM-003",
+      "mapping_status": "supplemental_legacy_object_symbol_evidence_only",
+      "legacy_related_labels": [],
+      "legacy_evidence": "verification.object_inspection.undefined_symbols=[] and public_symbols=[AlarmQualification_Update] are recorded for one host object; source/API/macro review is not reported as a legacy item.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "SR-ALM-004",
+      "mapping_status": "no_legacy_static_item_execution",
+      "legacy_related_labels": [],
+      "legacy_evidence": "O0/O2 compile and execution records are not evidence of no loops/recursion/allocation or target WCET; read fixed source separately.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "SR-ALM-005",
+      "mapping_status": "dynamic_independence_overlap_only",
+      "legacy_related_labels": [
+        "INSTANCE-A",
+        "INSTANCE-B",
+        "INSTANCE-A-EVENT",
+        "INSTANCE-B-EVENT"
+      ],
+      "legacy_evidence": "40-call sequential independence group is different from new UT-ALM-016 and does not prove no hidden static state or caller concurrency preconditions.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    },
+    {
+      "id": "SR-ALM-006",
+      "mapping_status": "count_behavior_overlap_only",
+      "legacy_related_labels": [
+        "CHK-01",
+        "CHK-02",
+        "CHK-03",
+        "ALL-11-SAMPLE-SEQUENCES"
+      ],
+      "legacy_evidence": "Legacy outputs cover count-based event behavior; no elapsed-time measurement. 9T interpretation follows fixed specification, not legacy run timing.",
+      "new_item_status": "not_run",
+      "new_item_pass_claimed": false
+    }
+  ],
+  "summary": {
+    "mapped_top_level_items": 26,
+    "mapped_case_steps": 34,
+    "full_new_item_execution_proven": 0,
+    "new_items_passed": 0,
+    "fam2_matching_input_tuples": 12,
+    "fam2_missing_input_tuples": 12,
+    "mandatory_new_execution": "Run the frozen new design with its setup, concrete symbols, enumeration/IDs, all iterations and non-target byte checks; record new item results separately."
+  }
+}

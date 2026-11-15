@@ -1,4 +1,6 @@
 ---
+
+2026-11-14追記: チームの利用AIはIBM Bob、標準Office操作は同梱OfficeCLIを前提とする。配布・導入の具体案は[IBM Bob向けチーム配布計画](2026-11-14-ibm-bob-team-distribution-plan.md)を参照。
 title: "AIエージェントによる仕様・実装・単体テスト仕様作成：実現可能性と導入計画"
 research_date: "2026-11-13"
 timezone: "Asia/Tokyo"

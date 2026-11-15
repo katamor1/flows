@@ -1,0 +1,842 @@
+[
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Title\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[2]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[3]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[3]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[4]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[4]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[3]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[4]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[5]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[6]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[7]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[2]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:trial_assumptions\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[2]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[2]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[2]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[8]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[9]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[10]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:view.parameters\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[3]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[11]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[12]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:pageBreakBefore /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[13]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:view.state_fields\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[4]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[14]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[5]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:behavior.result_fields\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[5]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[5]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[5]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[5]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[15]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[16]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[6]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:behavior.steps\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[6]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[6]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[6]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[6]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[17]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:behavior.decision_rows\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[1]/w:tc[4]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[1]/w:tc[5]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[2]/w:tc[4]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[7]/w:tr[2]/w:tc[5]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[18]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[19]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[20]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:pageBreakBefore /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[8]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:interface.return_codes\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[8]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[8]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[8]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[21]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[22]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[23]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:constraints\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[24]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[25]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[26]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:verification_examples\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[27]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[28]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:pageBreakBefore /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[29]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[30]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:traceability\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[31]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[32]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pStyle w:val=\"Heading1\" /><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"80\" w:line=\"252\" w:lineRule=\"auto\" w:before=\"160\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tblPr[1]",
+    "action": "replace",
+    "xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:tblW w:type=\"auto\" w:w=\"0\" /><w:jc w:val=\"center\" /><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:left w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:bottom w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:right w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideH w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /><w:insideV w:val=\"single\" w:sz=\"4\" w:color=\"D9D9D9\" /></w:tblBorders><w:tblLayout w:type=\"fixed\" /><w:tblCellMar><w:top w:w=\"70\" w:type=\"dxa\" /><w:left w:w=\"90\" w:type=\"dxa\" /><w:bottom w:w=\"70\" w:type=\"dxa\" /><w:right w:w=\"90\" w:type=\"dxa\" /></w:tblCellMar><w:tblLook w:firstColumn=\"1\" w:firstRow=\"1\" w:lastColumn=\"0\" w:lastRow=\"0\" w:noHBand=\"0\" w:noVBand=\"1\" w:val=\"04A0\" /><w:tblCaption w:val=\"repeat:open_issues\" /></w:tblPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[1]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[2]/w:tc[1]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /><w:jc w:val=\"center\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[2]/w:tc[2]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:tbl[12]/w:tr[2]/w:tc[3]/w:p[1]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"20\" w:line=\"240\" w:lineRule=\"auto\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "/w:document[1]/w:body[1]/w:p[33]/w:pPr[1]",
+    "action": "replace",
+    "xml": "<w:pPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:snapToGrid w:val=\"0\" /><w:spacing w:after=\"0\" w:line=\"60\" w:lineRule=\"exact\" w:before=\"0\" /></w:pPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/document",
+    "xpath": "//w:shd[not(@w:val)]",
+    "action": "setattr",
+    "xml": "w:val=clear"
+  },
+  {
+    "command": "raw-set",
+    "part": "/styles",
+    "xpath": "/w:styles[1]/w:style[1]/w:rPr[1]",
+    "action": "replace",
+    "xml": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:ascii=\"Yu Gothic\" w:hAnsi=\"Yu Gothic\" w:eastAsia=\"Yu Gothic\" /><w:color w:val=\"000000\" /><w:sz w:val=\"19\" /></w:rPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/styles",
+    "xpath": "/w:styles[1]/w:style[6]/w:rPr[1]",
+    "action": "replace",
+    "xml": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:asciiTheme=\"majorHAnsi\" w:eastAsiaTheme=\"majorEastAsia\" w:hAnsiTheme=\"majorHAnsi\" w:cstheme=\"majorBidi\" w:ascii=\"Yu Gothic\" w:hAnsi=\"Yu Gothic\" w:eastAsia=\"Yu Gothic\" /><w:b /><w:bCs /><w:color w:val=\"000000\" /><w:sz w:val=\"19\" /><w:szCs w:val=\"28\" /></w:rPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/styles",
+    "xpath": "/w:styles[1]/w:style[7]/w:rPr[1]",
+    "action": "replace",
+    "xml": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:asciiTheme=\"majorHAnsi\" w:eastAsiaTheme=\"majorEastAsia\" w:hAnsiTheme=\"majorHAnsi\" w:cstheme=\"majorBidi\" w:ascii=\"Yu Gothic\" w:hAnsi=\"Yu Gothic\" w:eastAsia=\"Yu Gothic\" /><w:b /><w:bCs /><w:color w:val=\"000000\" /><w:sz w:val=\"19\" /><w:szCs w:val=\"26\" /></w:rPr>"
+  },
+  {
+    "command": "raw-set",
+    "part": "/styles",
+    "xpath": "/w:styles[1]/w:style[22]/w:rPr[1]",
+    "action": "replace",
+    "xml": "<w:rPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:rFonts w:asciiTheme=\"majorHAnsi\" w:eastAsiaTheme=\"majorEastAsia\" w:hAnsiTheme=\"majorHAnsi\" w:cstheme=\"majorBidi\" w:ascii=\"Yu Gothic\" w:hAnsi=\"Yu Gothic\" w:eastAsia=\"Yu Gothic\" /><w:color w:val=\"000000\" /><w:spacing w:val=\"5\" /><w:kern w:val=\"28\" /><w:sz w:val=\"34\" /><w:szCs w:val=\"52\" /></w:rPr>"
+  }
+]

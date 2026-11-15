@@ -1,0 +1,8 @@
+{
+  "archive": "RTN-ALM-001-code-poc-0.1.0.zip",
+  "sha256": "b0ddb1e6eb9e179e5575cea70d57c0e3d29bda3f96e1eaaad56e033841e74789",
+  "size_bytes": 58416,
+  "entry_count": 83,
+  "archive_readback": "passed",
+  "binaries_included": false
+}

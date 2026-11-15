@@ -1,0 +1,47 @@
+{
+  "verified_date": "2026-11-14",
+  "distribution": "ibm-bob-routine-spec-pilot",
+  "version": "0.1.0",
+  "status": "packaging_verified_bob_acceptance_pending",
+  "archive": {
+    "file": "dist/ibm-bob-routine-spec-pilot-0.1.0.zip",
+    "sha256": "b8c6017ad49383f933ec1784eba0022a760c06f39393efd4fe64196922aff53e",
+    "bytes": 58235,
+    "file_count": 12
+  },
+  "source_runtime": {
+    "name": "routine-spec-kit",
+    "version": "0.1.0",
+    "release_sha256": "2e4d8621b8143f04b9853849c69860f33abcb009f0e133c8c0b1e4c9ceb5dd1b",
+    "all_files_copied_without_regeneration": true
+  },
+  "automated_test": {
+    "command": "python -B -X utf8 packages/ibm-bob-routine-spec-pilot/tests/test_distribution.py",
+    "tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "elapsed_seconds": 15.202,
+    "checks": [
+      "Archive uses .bob/skills/routine-spec-doc and .bob/rules paths",
+      "Archive excludes Bob settings, OfficeCLI binaries and foreign plugin manifests",
+      "Runtime files equal the previously verified source release",
+      "Extracted runtime executes doctor, new-job, validate and render",
+      "Job workspace stays outside .bob",
+      "Rendered DOCX matches original prototype bytes",
+      "Runtime asset hashes remain unchanged"
+    ],
+    "reference_docx_sha256": "99f478ddc1f1f54bae1b1f003e401bf92d3bd20471349e654cfc466b8220667f"
+  },
+  "independent_document_review": {
+    "mode": "read-only official-source review of the plan and distribution README",
+    "important_findings": 0
+  },
+  "not_performed": [
+    "Installation into a live Bob project or user profile",
+    "Bob IDE skill discovery and activation",
+    "Bob built-in office_read content and validate operations",
+    "Identification and direct invocation of the bundled OfficeCLI binary",
+    "Word display review in the team's delivery environment",
+    "RTOS integration, C90 implementation or performance tests"
+  ]
+}

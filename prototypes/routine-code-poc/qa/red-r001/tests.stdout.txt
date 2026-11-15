@@ -1,0 +1,12 @@
+FAIL CHK-01: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)
+CHK-01..05 / REARM: 1 checks
+FAIL TABLE-ON: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)
+ALL-VALID-STATE-TRANSITIONS: 1 checks
+FAIL ERR-NULL-STATE: rc=-99 expected=-1; all initialized bytes must remain unchanged
+CHK-06 / ERROR-PRIORITY / NO-WRITES: 1 checks
+FAIL INSTANCE-A: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)
+INDEPENDENT-INSTANCES: 1 checks
+FAIL ALL-11-SAMPLE-SEQUENCES: rc=-99 state=0 out=(2779096485,-1515870811,-1515870811), expected=(1,0,0)
+Sequence index=0, sample index=0 (zero-based)
+177147 ELEVEN-SAMPLE-SEQUENCES: 1 checks
+TOTAL: 5 checks, 5 failures

@@ -1,0 +1,1144 @@
+{
+  "format_version": "0.1.0",
+  "kind": "independent_content_review",
+  "review_date": "2026-11-15",
+  "reviewer": "Codex subagent /root/ut_content_review",
+  "scope": "Read-only review of frozen unit-test design against program specification and C/H; no target code, specification, asset or legacy artifact was changed.",
+  "status": "reviewed_consistent",
+  "design_sha256": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+  "freeze_sha256": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+  "freeze_matches": true,
+  "files": {
+    "packages/routine-unit-test-officecli/skills/routine-unit-test-spec/assets/examples/alarm_unit_test.json": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+    "prototypes/routine-code-poc/include/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "prototypes/routine-code-poc/src/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "prototypes/routine-code-poc/input/spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265"
+  },
+  "counts": {
+    "representative_cases": 16,
+    "case_steps": 34,
+    "case_calls": 173,
+    "families": 4,
+    "static_items": 6,
+    "family_combinations": [
+      88,
+      24,
+      6,
+      177147
+    ],
+    "family_calls": [
+      88,
+      24,
+      6,
+      1948617
+    ],
+    "total_design_dynamic_calls": 1948908
+  },
+  "basis": "Expectations were checked against the fixed program specification. C/H were read as an additional consistency and static-review basis. Legacy tests were read only after design freeze and did not define new expectations.",
+  "critical_points": [
+    {
+      "topic": "symbolic_limits",
+      "assessment": "INT_MIN/INT_MAX/UINT_MAX remain target limits.h symbols; no 32-bit replacement. Literal 11 is representable for all conforming unsigned int ranges."
+    },
+    {
+      "topic": "NULL",
+      "assessment": "Only passed non-NULL valid storage participates in preservation; both-NULL case has an empty comparison set. NULL is never dereferenced; untouched local objects are not required evidence."
+    },
+    {
+      "topic": "priority",
+      "assessment": "-1 before input inspection or object access, -2 before state range access, -3 before reset/write. Compound cases and static review distinguish these obligations."
+    },
+    {
+      "topic": "chronology",
+      "assessment": "Each case starts from its own initial objects. Step order and local repeat iteration are explicit, with every repeated call checked. UT-ALM-016 requires non-target byte snapshots on each call."
+    },
+    {
+      "topic": "exclusivity",
+      "assessment": "Valid non-overlapping storage and exclusive access are caller preconditions; no invalid address, overlapping object or data race injection is required or claimed."
+    },
+    {
+      "topic": "ten_calls_and_time",
+      "assessment": "The tenth ON sample qualifies; regular spacing T gives 9T since first. This is not a 10T timing test and makes no inter-sample physical continuity claim."
+    },
+    {
+      "topic": "result_and_padding",
+      "assessment": "Fill all bytes before typed assignments; initial old result fields are (1,1,7). Error comparisons snapshot sizeof objects after initialization; success requires fields only, not padding."
+    }
+  ],
+  "cases": [
+    {
+      "id": "UT-ALM-001",
+      "spec_refs": [
+        "ASM-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-001/S01",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-002",
+      "spec_refs": [
+        "ASM-01",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/timing_semantics"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-002/S01",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 9,
+          "checked_iterations": 9,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0",
+            "0/2/2/0/0",
+            "0/3/3/0/0",
+            "0/4/4/0/0",
+            "0/5/5/0/0",
+            "0/6/6/0/0",
+            "0/7/7/0/0",
+            "0/8/8/0/0",
+            "0/9/9/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-003",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/timing_semantics"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-003/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/1"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-004",
+      "spec_refs": [
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-004/S01",
+          "prior_state_count": "10",
+          "instance": "A",
+          "repeat": 100,
+          "checked_iterations": 100,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0",
+            "0/10/10/1/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-005",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-005/S01",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 9,
+          "checked_iterations": 9,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0",
+            "0/2/2/0/0",
+            "0/3/3/0/0",
+            "0/4/4/0/0",
+            "0/5/5/0/0",
+            "0/6/6/0/0",
+            "0/7/7/0/0",
+            "0/8/8/0/0",
+            "0/9/9/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-005/S02",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-005/S03",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-006",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-006/S01",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 9,
+          "checked_iterations": 9,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0",
+            "0/2/2/0/0",
+            "0/3/3/0/0",
+            "0/4/4/0/0",
+            "0/5/5/0/0",
+            "0/6/6/0/0",
+            "0/7/7/0/0",
+            "0/8/8/0/0",
+            "0/9/9/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-006/S02",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-006/S03",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-007",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-007/S01",
+          "prior_state_count": "10",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-007/S02",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 9,
+          "checked_iterations": 9,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0",
+            "0/2/2/0/0",
+            "0/3/3/0/0",
+            "0/4/4/0/0",
+            "0/5/5/0/0",
+            "0/6/6/0/0",
+            "0/7/7/0/0",
+            "0/8/8/0/0",
+            "0/9/9/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-007/S03",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/1"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-008",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-008/S01",
+          "prior_state_count": "10",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-008/S02",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 9,
+          "checked_iterations": 9,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0",
+            "0/2/2/0/0",
+            "0/3/3/0/0",
+            "0/4/4/0/0",
+            "0/5/5/0/0",
+            "0/6/6/0/0",
+            "0/7/7/0/0",
+            "0/8/8/0/0",
+            "0/9/9/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-008/S03",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/1"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-009",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-009/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-1/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-010",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-010/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-1/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-011",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-011/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-1/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-012",
+      "spec_refs": [
+        "P-01",
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-012/S01",
+          "prior_state_count": "11",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-1/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-012/S02",
+          "prior_state_count": "11",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-1/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-013",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-013/S01",
+          "prior_state_count": "11",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-2/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-014",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-014/S01",
+          "prior_state_count": "UINT_MAX",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "-2/preserve/preserve/preserve/preserve"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-015",
+      "spec_refs": [
+        "ASM-02",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/interface/return_codes"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-015/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    },
+    {
+      "id": "UT-ALM-016",
+      "spec_refs": [
+        "ASM-02",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "CON-03",
+        "/interface/preconditions"
+      ],
+      "assessment": "Expected values agree with fixed program specification; fixed C/H have no observed disagreement.",
+      "setup_review": "Independent initial construction, fill bytes followed by typed field assignments, valid non-overlapping exclusively owned storage are specified.",
+      "status": "reviewed_consistent",
+      "steps": [
+        {
+          "id": "UT-ALM-016/S01",
+          "prior_state_count": "9",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/1"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S02",
+          "prior_state_count": "9",
+          "instance": "B",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/1"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S03",
+          "prior_state_count": "10",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S04",
+          "prior_state_count": "10",
+          "instance": "B",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/10/10/1/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S05",
+          "prior_state_count": "0",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S06",
+          "prior_state_count": "10",
+          "instance": "B",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S07",
+          "prior_state_count": "1",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/2/2/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S08",
+          "prior_state_count": "0",
+          "instance": "B",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/1/1/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S09",
+          "prior_state_count": "2",
+          "instance": "A",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/0/0/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        },
+        {
+          "id": "UT-ALM-016/S10",
+          "prior_state_count": "1",
+          "instance": "B",
+          "repeat": 1,
+          "checked_iterations": 1,
+          "status": "expected_values_consistent",
+          "expected_tuple_order": "return_code/state_count/out_count/qualified/became_qualified",
+          "derived_expected_sequence": [
+            "0/2/2/0/0"
+          ],
+          "reproducibility": "Initial objects and step order are explicit; iteration is local to this step. Error preservation applies only to passed non-NULL valid objects.",
+          "execution_status": "not_run"
+        }
+      ],
+      "execution_status": "not_run"
+    }
+  ],
+  "families": [
+    {
+      "id": "FAM-ALM-001",
+      "status": "reviewed_consistent",
+      "dimension_sizes": [
+        11,
+        8
+      ],
+      "computed_combination_count": 88,
+      "computed_call_count": 88,
+      "enumeration_review": "1+8*c+i yields unique 001..088 in stated dimension order; boundary examples 073 and 081 are correct.",
+      "expectation_review": "P-04/P-05 give increment for old 0..8, event at old 9, saturation without event at old 10; all OFF and six invalid-sample signal values reset to zero.",
+      "reproducibility": "All 88 input tuples, independent setup, expected outputs, symbolic limits and ID formula are explicit.",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "FAM-ALM-002",
+      "status": "reviewed_consistent",
+      "dimension_sizes": [
+        2,
+        4,
+        3
+      ],
+      "computed_combination_count": 24,
+      "computed_call_count": 24,
+      "enumeration_review": "1+12*t+3*v+c yields unique 001..024; all four example IDs are correct.",
+      "expectation_review": "Every tuple has invalid sample_valid or invalid signal_on under valid sample; P-02 yields -2 before P-03 including UINT_MAX. Both valid objects retain all saved bytes.",
+      "reproducibility": "Other logical input is explicitly fixed at 1; all 24 tuples and per-call snapshots are specified.",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "FAM-ALM-003",
+      "status": "reviewed_consistent",
+      "dimension_sizes": [
+        2,
+        3
+      ],
+      "computed_combination_count": 6,
+      "computed_call_count": 6,
+      "enumeration_review": "1+3*c+i yields unique 001..006 in listed order.",
+      "expectation_review": "P-02 accepts (1,1), (0,1), and ignores signal 2 for sample 0; P-03 then rejects 11 and UINT_MAX before reset or write; all return -3 and preserve both objects.",
+      "reproducibility": "All 6 tuples, saved byte regions and symbolic UINT_MAX are explicit.",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "FAM-ALM-004",
+      "status": "reviewed_consistent",
+      "dimension_sizes": [
+        3
+      ],
+      "sequence_length": 11,
+      "computed_combination_count": 177147,
+      "computed_call_count": 1948617,
+      "enumeration_review": "Rightmost-fastest base-3 lexicographic A<B<C order is unambiguous; 000001,000003,000004,177147 examples match their words.",
+      "expectation_review": "History-only capped terminal-A suffix H(j) is independent of SUT state and implementation. H=10 qualifies; prior H<10 gives one event; B or C resets. Each of 11 prefixes is checked.",
+      "reproducibility": "Symbol C uses (2,0); setup is reset per series; all call IDs and ID width are defined. No arbitrary eval is needed.",
+      "execution_status": "not_run"
+    }
+  ],
+  "static_checks": [
+    {
+      "id": "SR-ALM-001",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        18,
+        19,
+        23,
+        24,
+        26,
+        27,
+        31,
+        32,
+        48,
+        49,
+        50,
+        51
+      ],
+      "assessment": "NULL branch returns before either dereference; logical input branches precede first state read; all error returns precede stores. Byte preservation alone does not establish non-reference; separate static reading is correctly specified.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    },
+    {
+      "id": "SR-ALM-002",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        23,
+        26,
+        38,
+        39
+      ],
+      "assessment": "C90 short circuit bypasses signal range condition when sample_valid=0; update condition short circuits to new count 0. Criterion does not claim absence of caller-side argument evaluation.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    },
+    {
+      "id": "SR-ALM-003",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        1,
+        4,
+        6,
+        52
+      ],
+      "assessment": "Entire fixed function contains no function calls or hardware/global references. Include supplies only types and function declaration; local macro is numeric 10U. External object symbols are supplemental evidence only.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    },
+    {
+      "id": "SR-ALM-004",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        12,
+        13,
+        14,
+        15,
+        18,
+        23,
+        26,
+        31,
+        38,
+        40,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "assessment": "Finite acyclic comparisons, arithmetic and stores; no loop, wait, allocation, recursion or formatting. No WCET or target compiler claim follows.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    },
+    {
+      "id": "SR-ALM-005",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        4,
+        12,
+        13,
+        14,
+        15,
+        48,
+        49,
+        50,
+        51
+      ],
+      "header_lines": [
+        5,
+        6,
+        7,
+        11
+      ],
+      "assessment": "No mutable file-scope or function-static object. Writes target only passed state and out_result; temporaries are automatic. Sequential instance tests do not prove concurrent caller exclusivity, which remains a precondition.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    },
+    {
+      "id": "SR-ALM-006",
+      "status": "criterion_consistent_with_fixed_source",
+      "source_lines": [
+        4,
+        38,
+        40,
+        41,
+        45,
+        46,
+        47
+      ],
+      "assessment": "Threshold 10 and old<10/new=10 implement first-ON-as-1 count semantics; tenth call is 9T after first at regular interval T. Specification correctly excludes elapsed-time measurement and physical inter-sample continuity.",
+      "execution_status": "not_recorded_as_formal_item_run"
+    }
+  ],
+  "coverage_review": {
+    "status": "reviewed_consistent",
+    "mandatory_spec_ids": [
+      "ASM-01",
+      "ASM-02",
+      "ASM-03",
+      "P-01",
+      "P-02",
+      "P-03",
+      "P-04",
+      "P-05",
+      "CON-01",
+      "CON-02",
+      "CON-03",
+      "CON-04"
+    ],
+    "assessment": "Coverage records assign tests/reviews to routine obligations and explicitly assign CON-04 and memory/snapshot preconditions to caller, with PLC/G.YYYY/screen/log integration out of scope.",
+    "unapproved_assumptions": [
+      "ASM-01",
+      "ASM-02",
+      "ASM-03"
+    ],
+    "open_issues_preserved": [
+      "Q-01",
+      "Q-02",
+      "Q-03",
+      "Q-04"
+    ]
+  },
+  "findings": [],
+  "asset_changes_required": false,
+  "limitations": [
+    "This review is not a dynamic C test run and grants no new case pass status.",
+    "Generated specification retains all case/family/static items as unexecuted. Static source consistency observations here are review evidence, not formal recorded item executions.",
+    "Requirement approval, target RTOS/compiler/ABI/WCET, caller integration and rendering/visual QA are outside this subtask.",
+    "Legacy aggregate execution evidence is mapped separately in legacy-map.json and is not new-case evidence."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "0.1.0",
+  "spec": "input/spec.json",
+  "spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+  "upstream_spec": "artifacts/routine-spec-officecli/alarm-officecli/source/spec.json",
+  "upstream_docx": "artifacts/routine-spec-officecli/alarm-officecli/renders/r001/PS-RTN-ALM-001.docx",
+  "upstream_docx_sha256": "2357e0439a87fd1432aeb299922800415fc3b48ca474d7bab6adf1df72c2e7a6",
+  "header": "include/AlarmQualification.h",
+  "source": "src/AlarmQualification.c",
+  "test": "tests/test_alarm_qualification.c",
+  "exported_object_symbol": "AlarmQualification_Update",
+  "generation_record": "generation-record.json"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "routine-unit-test-officecli",
+  "version": "0.1.0",
+  "profile_id": "alarm-qualification-unit-test-v01",
+  "routine_id": "RTN-ALM-001",
+  "template_id": "unit-test-spec-v01",
+  "template_revision": "0.1.0",
+  "schema": "assets/schema/unit-test-spec.schema.json",
+  "example": "assets/examples/alarm_unit_test.json",
+  "template": "assets/templates/unit-test-spec-v01.docx",
+  "input_files": {
+    "inputs/program-spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "inputs/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "inputs/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00"
+  },
+  "target": {
+    "program_spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "source_sha256": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "header_sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00"
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "limits": [
+    "Frozen AlarmQualification_Update program/C90 draft profile only",
+    "Python 3.12 standard library",
+    "Approved Windows OfficeCLI binary required",
+    "All test and review items remain not_executed",
+    "No dynamic test runner, automatic visual approval, RTOS validation or requirement approval"
+  ],
+  "files": {
+    "SKILL.md": "2572a8f7845ce0228fd83f430c474dedfb7ff27ec2c5e3479d2beba3393ae038",
+    "scripts/utflow.py": "84a261042775bd257ee666eef3648025a4b3939aa6f2e07b09ff178366ea21cc",
+    "scripts/_renderer.py": "bab9fe895ad206cbe53287ad65dd5ecab77afd87893811b85bd6135be6dab214",
+    "scripts/_contract.py": "a52fd28cc6d08f953af30cb89bc60b84355cf3adcfa373622f8211c42b040e52",
+    "assets/schema/unit-test-spec.schema.json": "53a84d677a27e32bef7738f33b6ab9445a5cb4ab0b6f5fb0b152d8ac41af980c",
+    "assets/examples/alarm_unit_test.json": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+    "assets/templates/unit-test-spec-v01.docx": "fc1faab6615db0d90b77bf25d614a740c50cd0ee529026d8c219211764683138",
+    "references/authoring.md": "7c9e844e3b8a8eb404455be878dd5d19d68f8c24f75a4a387eca5ff8e727a7c3",
+    "requirements.txt": "c11c510ab4f17ae1fb3b5c772cf1a1699933c4cd5ba68561a402ebcaee36d592"
+  }
+}

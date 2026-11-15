@@ -1,0 +1,28 @@
+{
+  "archive_manifest_files": 82,
+  "forward_verification_status": "passed",
+  "guards": [
+    {
+      "mutated": "input/spec.json",
+      "detected": true,
+      "returncode": 1
+    },
+    {
+      "mutated": "src/AlarmQualification.c",
+      "detected": true,
+      "returncode": 1
+    },
+    {
+      "mutated": "tests/test_alarm_qualification.c",
+      "detected": true,
+      "returncode": 1
+    },
+    {
+      "mutated": "include/AlarmQualification.h",
+      "detected": true,
+      "returncode": 1
+    }
+  ],
+  "existing_run_overwrite_rejected": true,
+  "status": "passed"
+}

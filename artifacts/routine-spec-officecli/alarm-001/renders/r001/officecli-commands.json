@@ -1,0 +1,2369 @@
+[
+  {
+    "command": "add",
+    "parent": "/body/tbl[2]",
+    "from": "/body/tbl[2]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[2]",
+    "from": "/body/tbl[2]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[5]",
+    "from": "/body/tbl[5]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[5]",
+    "from": "/body/tbl[5]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[8]",
+    "from": "/body/tbl[8]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[8]",
+    "from": "/body/tbl[8]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[8]",
+    "from": "/body/tbl[8]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[9]",
+    "from": "/body/tbl[9]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[9]",
+    "from": "/body/tbl[9]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[9]",
+    "from": "/body/tbl[9]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[11]",
+    "from": "/body/tbl[11]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[12]",
+    "from": "/body/tbl[12]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[12]",
+    "from": "/body/tbl[12]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[12]",
+    "from": "/body/tbl[12]/tr[2]"
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_0__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_1__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_2__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_3__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_4__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[4]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_5__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_6__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_7__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_8__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_9__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_10__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_11__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_12__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_13__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_14__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_15__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_16__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_17__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{initial}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_18__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_19__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{range_meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_20__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_21__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_22__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[3]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_23__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[3]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_24__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[4]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_25__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[4]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_26__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_27__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_28__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_29__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_30__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_31__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_32__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[5]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_33__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[5]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_34__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[6]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_35__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[6]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_36__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_37__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{event}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_38__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{new_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_39__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{old_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_40__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{qualified}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_41__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_42__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{event}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_43__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{new_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_44__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{old_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_45__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{qualified}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_46__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_47__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{event}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_48__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{new_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_49__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{old_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_50__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{qualified}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_51__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_52__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{event}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_53__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{new_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_54__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{old_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_55__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{qualified}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_56__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_57__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{event}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_58__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{new_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_59__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{old_count}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_60__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{qualified}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_61__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_62__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{value}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_63__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[3]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_64__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[3]",
+    "props": {
+      "find": "{{value}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_65__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[4]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_66__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[4]",
+    "props": {
+      "find": "{{value}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_67__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[5]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_68__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[5]",
+    "props": {
+      "find": "{{value}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_69__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_70__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_71__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_72__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_73__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_74__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_75__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_76__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_77__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_78__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_79__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_80__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_81__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_82__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_83__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_84__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_85__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_86__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_87__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_88__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_89__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_90__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_91__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_92__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_93__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_94__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_95__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_96__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_97__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_98__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_99__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{requirement}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_100__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{specification}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_101__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{verification}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_102__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "{{requirement}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_103__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "{{specification}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_104__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "{{verification}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_105__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_106__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_107__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_108__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_109__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_110__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_111__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_112__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_113__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_114__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_115__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_116__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_117__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{behavior.postconditions}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_118__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{behavior.timing_semantics}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_119__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{build.source_short_hash}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_120__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.date}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_121__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_122__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.revision}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_123__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_124__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_name}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_125__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status_label}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_126__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.title}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_127__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.language}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_128__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.preconditions}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_129__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.prototype}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_130__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.type_definitions}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_131__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.visibility}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_132__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.purpose}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_133__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.requirement_id}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_134__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.scope}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_135__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.source_locator}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_136__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.source_requirement}}",
+      "replace": "__RSF_13fcd65742818fd71586149d_137__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_0__",
+      "replace": "ASM-01"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_1__",
+      "replace": "1周期1回の有効サンプル確認を採用する。最初のONを1回目とし、10回目で条件成立とする。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_2__",
+      "replace": "ASM-02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_3__",
+      "replace": "OFFまたは入力無効で連続カウントを0へ戻す。周期欠落を検出した呼出し側は、次の判定前に入力無効を通知する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_4__",
+      "replace": "ASM-03"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_5__",
+      "replace": "ON継続中の新規成立は1回だけ返す。OFFまたは入力無効後は再度10回のONで新規成立する。これは判定の再成立規則であり、アラーム表示の解除規則ではない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_6__",
+      "replace": "入出力"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_7__",
+      "replace": "state"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_8__",
+      "replace": "AlarmQualificationState *\u000b呼出し側が所有する状態。初回はon_count=0。正常範囲は0から10。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_9__",
+      "replace": "入力"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_10__",
+      "replace": "signal_on"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_11__",
+      "replace": "int\u000bsample_valid=1のとき0または1。1はON。sample_valid=0では値を参照しない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_12__",
+      "replace": "入力"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_13__",
+      "replace": "sample_valid"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_14__",
+      "replace": "int\u000b0または1。1は当該周期の有効入力、0は無効または周期欠落後の通知。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_15__",
+      "replace": "出力"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_16__",
+      "replace": "out_result"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_17__",
+      "replace": "AlarmQualificationResult *\u000b正常時だけ更新する。stateと重ならない有効な書込み領域を呼出し側が用意する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_18__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_19__",
+      "replace": "state.on_count"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_20__",
+      "replace": "0から10 連続する有効ONサンプル数。10で飽和する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_21__",
+      "replace": "更新後のon_countが10なら1、それ以外は0。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_22__",
+      "replace": "qualified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_23__",
+      "replace": "更新前が10未満で更新後が10になった呼出しだけ1。それ以外は0。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_24__",
+      "replace": "became_qualified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_25__",
+      "replace": "更新後の連続ONカウント。状態と同じ値を返す。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_26__",
+      "replace": "on_count"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_27__",
+      "replace": "P-01"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_28__",
+      "replace": "NULLを先に検査する。該当時は-1を返し、他のポインタを参照しない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_29__",
+      "replace": "P-02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_30__",
+      "replace": "論理入力の範囲を検査する。sample_valid=0の場合はsignal_onの値を検査しない。不正時は-2を返す。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_31__",
+      "replace": "P-03"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_32__",
+      "replace": "state.on_countの上限を検査する。10超過なら-3を返す。ここまで状態・出力へ書き込まない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_33__",
+      "replace": "P-04"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_34__",
+      "replace": "旧カウントを保存する。入力無効またはOFFなら新カウントを0とし、有効ONかつ旧値10未満なら1加算する。旧値10なら10を保つ。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_35__",
+      "replace": "P-05"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_36__",
+      "replace": "新カウントからqualifiedを求め、旧値と新値からbecame_qualifiedを求める。正常時だけstateとout_resultへ結果を反映し、0を返す。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_37__",
+      "replace": "入力無効"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_38__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_39__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_40__",
+      "replace": "0から10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_41__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_42__",
+      "replace": "有効OFF"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_43__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_44__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_45__",
+      "replace": "0から10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_46__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_47__",
+      "replace": "有効ON"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_48__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_49__",
+      "replace": "旧値+1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_50__",
+      "replace": "0から8"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_51__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_52__",
+      "replace": "有効ON"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_53__",
+      "replace": "1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_54__",
+      "replace": "10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_55__",
+      "replace": "9"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_56__",
+      "replace": "1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_57__",
+      "replace": "有効ON"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_58__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_59__",
+      "replace": "10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_60__",
+      "replace": "10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_61__",
+      "replace": "1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_62__",
+      "replace": "正常 判定結果と状態を更新する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_63__",
+      "replace": "0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_64__",
+      "replace": "stateまたはout_resultがNULL。書込みを行わない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_65__",
+      "replace": "-1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_66__",
+      "replace": "sample_validが0/1以外、または有効入力時のsignal_onが0/1以外。状態・出力を変更しない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_67__",
+      "replace": "-2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_68__",
+      "replace": "state.on_countが10を超えている。状態・出力を変更しない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_69__",
+      "replace": "-3"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_70__",
+      "replace": "外部依存"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_71__",
+      "replace": "CON-01"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_72__",
+      "replace": "RTOS・Win32・ファイル・時刻・レジスタ・CPUロックAPIを本ルーチンから呼ばない。提供APIとの接続は呼出し側が担当する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_73__",
+      "replace": "実行時間"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_74__",
+      "replace": "CON-02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_75__",
+      "replace": "ループ、待機、動的メモリ確保、再帰、文字列整形を使用しない。処理量は入力・状態に対して固定上限とする。実行時間予算は未確定。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_76__",
+      "replace": "状態所有"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_77__",
+      "replace": "CON-03"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_78__",
+      "replace": "静的共有状態を持たない。並行呼出しでは各stateとout_resultを相互に重複させず、他タスクからの同時参照・変更も呼出し側が防ぐ。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_79__",
+      "replace": "呼出し側"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_80__",
+      "replace": "CON-04"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_81__",
+      "replace": "戻り値0の場合だけ結果を消費する。エラー時の旧結果を新規イベントとして再利用しない。表示灯・画面公開・ログの失敗処理と排他は別仕様とする。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_82__",
+      "replace": "count=9 qualified=0 event=0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_83__",
+      "replace": "CHK-01"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_84__",
+      "replace": "初期0から有効ONを9回"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_85__",
+      "replace": "count=10 qualified=1 event=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_86__",
+      "replace": "CHK-02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_87__",
+      "replace": "続けて有効ONを1回"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_88__",
+      "replace": "毎回count=10 qualified=1 event=0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_89__",
+      "replace": "CHK-03"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_90__",
+      "replace": "続けて有効ONを100回"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_91__",
+      "replace": "最後はcount=1 qualified=0 event=0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_92__",
+      "replace": "CHK-04"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_93__",
+      "replace": "ON9回 OFF1回 ON1回"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_94__",
+      "replace": "最後はcount=1 qualified=0 event=0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_95__",
+      "replace": "CHK-05"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[6]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_96__",
+      "replace": "ON9回 入力無効1回 ON1回"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_97__",
+      "replace": "各-1/-2/-3。有効な状態・出力は不変。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_98__",
+      "replace": "CHK-06"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[7]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_99__",
+      "replace": "NULL 不正論理値 状態11を個別投入"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_100__",
+      "replace": "REQ-ALARM-001 連続ON判定"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_101__",
+      "replace": "ASM-01から03 P-01から05"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_102__",
+      "replace": "CHK-01から06"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_103__",
+      "replace": "G.YYYY 画面公開 ZZZZ追記予約"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_104__",
+      "replace": "本ルーチンの戻り値・結果を受ける呼出し側へ割当"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_105__",
+      "replace": "後続の結合仕様・テストで確認"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_106__",
+      "replace": "ASM-01から03のサンプル解釈・無効入力・再成立規則を承認する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_107__",
+      "replace": "Q-01"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_108__",
+      "replace": "要求所有者"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_109__",
+      "replace": "周期T、当該ルーチンの時間予算、周期欠落・PLC入力無効の検出方法を確定する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_110__",
+      "replace": "Q-02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[3]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_111__",
+      "replace": "RTOS基盤担当"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_112__",
+      "replace": "型名・関数名・戻り値を既存規約へ合わせ、正式コンパイラ設定で確認する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_113__",
+      "replace": "Q-03"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[4]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_114__",
+      "replace": "C設計担当"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_115__",
+      "replace": "呼出し側の表示灯・画面・ログ処理とアラーム解除条件を別途仕様化する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_116__",
+      "replace": "Q-04"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[5]",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_117__",
+      "replace": "制御設計担当"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_118__",
+      "replace": "正常時はstate.on_countとout_result.on_countが一致し、0から10に収まる。エラー時は、渡された有効な状態・出力領域を変更しない。複数エラー条件が成立する場合は-1、-2、-3の順で判定する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_119__",
+      "replace": "呼出し間隔Tで最初のONを1回目とすると10回目は9T後となる。本ルーチンは経過時間を計測しない。入力が周期間も物理的に連続ONだったことは証明しない。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_120__",
+      "replace": "097b1185e284"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_121__",
+      "replace": "2026-11-13"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_122__",
+      "replace": "PS-RTN-ALM-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_123__",
+      "replace": "0.1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_124__",
+      "replace": "RTN-ALM-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_125__",
+      "replace": "AlarmQualification_Update"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_126__",
+      "replace": "試作仕様 要件確認前"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_127__",
+      "replace": "連続ON判定ルーチン プログラム仕様書"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_128__",
+      "replace": "C90"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_129__",
+      "replace": "呼出し側が有効なメモリと排他的な所有を保証する。stateとout_resultは他の実行中呼出しの書込み領域とも重複させず、他タスクや画面側から同時参照・変更しない。sample_validとsignal_onは同一周期の入力スナップショットから渡す。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_130__",
+      "replace": "int AlarmQualification_Update(\u000b    AlarmQualificationState *state,\u000b    int signal_on,\u000b    int sample_valid,\u000b    AlarmQualificationResult *out_result);"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_131__",
+      "replace": "typedef struct {\u000b    unsigned int on_count;\u000b} AlarmQualificationState;\u000b\u000btypedef struct {\u000b    int qualified;\u000b    int became_qualified;\u000b    unsigned int on_count;\u000b} AlarmQualificationResult;"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_132__",
+      "replace": "DLL内部関数 エクスポート対象外"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_133__",
+      "replace": "PLC入力の有効なONサンプルが10回連続したことを判定し、条件成立状態と新規成立イベントを呼出し側へ返す。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_134__",
+      "replace": "REQ-ALARM-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_135__",
+      "replace": "DLL内部の判定ルーチン1本を対象とする。U.XXXXの取得、G.YYYYへの出力、画面向け公開API、ログ予約は呼出し側または既存RTOS基盤が担当する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_136__",
+      "replace": "本チャットの利用者提示 アラーム要求例"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_13fcd65742818fd71586149d_137__",
+      "replace": "PLCから来る信号U.XXXXが10RTOS周期連続でON状態となったら、アラーム表示灯へ点灯信号G.YYYYをONする。また、画面へアラームメッセージ文字列を公開するAPIを用意する。このとき点灯時刻と信号名とアラームメッセージ文字列を指定ログファイルZZZZへ追記する追記バッファへ積み込む。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/document",
+    "props": {
+      "title": "連続ON判定ルーチン プログラム仕様書",
+      "subject": "RTN-ALM-001",
+      "creator": "AI作成 人による承認待ち"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "label": "validate-before",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "validate",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-spec-kit\\skills\\routine-spec-doc\\assets\\templates\\routine-spec-v01.docx",
+      "--json"
+    ],
+    "exit_code": 1
+  },
+  {
+    "label": "repair-batch",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "batch",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-spec-officecli\\qa\\template-repair\\routine-spec-v01-officecli.docx",
+      "--input",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-spec-officecli\\qa\\template-repair\\repair-commands.json",
+      "--stop-on-error",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "validate-after",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "validate",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-spec-officecli\\qa\\template-repair\\routine-spec-v01-officecli.docx",
+      "--json"
+    ],
+    "exit_code": 0
+  }
+]

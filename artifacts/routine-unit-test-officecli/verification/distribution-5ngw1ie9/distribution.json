@@ -1,0 +1,27 @@
+{
+  "name": "routine-unit-test-officecli",
+  "version": "0.1.0",
+  "generator_backend": "OfficeCLI",
+  "python_dependencies": "standard library only",
+  "release_sha256": "566435e34c510737de9b86a8d676781e3cb21997ae572e8c8105bb9d86b42105",
+  "pinned_officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "bob_chat_skill_activation": "not_tested",
+  "test_execution": "not_executed",
+  "files": {
+    ".bob/rules/30-routine-unit-test-spec.md": "662ce05370917890642a87f576e64423e0d4f095298322bbbb6d2dba3e3a8296",
+    ".bob/skills/routine-unit-test-spec/SKILL.md": "2572a8f7845ce0228fd83f430c474dedfb7ff27ec2c5e3479d2beba3393ae038",
+    ".bob/skills/routine-unit-test-spec/assets/examples/alarm_unit_test.json": "c712afff1ac4eaa97b3aaa9e90a88743c0f51719378a5316e090076aa6a63ace",
+    ".bob/skills/routine-unit-test-spec/assets/schema/unit-test-spec.schema.json": "53a84d677a27e32bef7738f33b6ab9445a5cb4ab0b6f5fb0b152d8ac41af980c",
+    ".bob/skills/routine-unit-test-spec/assets/templates/unit-test-spec-v01.docx": "fc1faab6615db0d90b77bf25d614a740c50cd0ee529026d8c219211764683138",
+    ".bob/skills/routine-unit-test-spec/references/authoring.md": "7c9e844e3b8a8eb404455be878dd5d19d68f8c24f75a4a387eca5ff8e727a7c3",
+    ".bob/skills/routine-unit-test-spec/release.json": "566435e34c510737de9b86a8d676781e3cb21997ae572e8c8105bb9d86b42105",
+    ".bob/skills/routine-unit-test-spec/requirements.txt": "c11c510ab4f17ae1fb3b5c772cf1a1699933c4cd5ba68561a402ebcaee36d592",
+    ".bob/skills/routine-unit-test-spec/scripts/_contract.py": "a52fd28cc6d08f953af30cb89bc60b84355cf3adcfa373622f8211c42b040e52",
+    ".bob/skills/routine-unit-test-spec/scripts/_renderer.py": "bab9fe895ad206cbe53287ad65dd5ecab77afd87893811b85bd6135be6dab214",
+    ".bob/skills/routine-unit-test-spec/scripts/utflow.py": "84a261042775bd257ee666eef3648025a4b3939aa6f2e07b09ff178366ea21cc",
+    "BOB-TEAM-README.md": "248e4ccaed9d4aab2e534c5f8654ad695100ddd20dfb1cd4c83d9fdf01fb6bcf"
+  }
+}
