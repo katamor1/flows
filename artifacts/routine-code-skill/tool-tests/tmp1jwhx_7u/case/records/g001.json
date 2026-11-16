@@ -1,0 +1,16 @@
+{
+  "format_version": "0.1.0",
+  "time_utc": "2026-11-16T12:43:12.397359+00:00",
+  "agent": "Codex",
+  "agent_version": "test",
+  "bob_executed": false,
+  "status": "draft_trial",
+  "input_spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+  "header_sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+  "test_sha256": "31ce5cf9ca179287ac0bd9da3d780bd56d50c942290e89c22b3d6720eb6c2c4f",
+  "source_sha256": "2a2d17e21df9fcebe5a2c521e1b64b7643d594ba42eb78fe0cf6a048172c7727",
+  "traceability_sha256": "6af05d5abf8589bf2f88043d48c3b6cbef82a968446364e75da63be1e0f04352",
+  "release_sha256": "5e2692719c51270b1148b51a41245a587bc4ac06be29fc82d3ea39318e9b9af4",
+  "note": "record-only test",
+  "test_authorship": "Reused independent specification-based PoC acceptance tests; not generated with this source."
+}

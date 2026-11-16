@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-16",
+  "status": "passed_with_declared_scope",
+  "skill": "routine-code-c90",
+  "version": "0.1.0",
+  "release_sha256": "82a472863d3852d3de8f29d9e64da902921462e00ebb548dd66e1696ff9ab3fe",
+  "frontmatter": {
+    "validator": "official quick_validate.py",
+    "result": "passed",
+    "maintainer_yaml_source": "existing Anaconda PyYAML; no install",
+    "runtime_extra_dependencies": []
+  },
+  "workflow_tests": {
+    "result": "passed",
+    "count": 7,
+    "observed_exit_code": 0,
+    "test_file": "tests/test_workflow.py"
+  },
+  "baseline": {
+    "code_generation": "passed",
+    "host_checks": 470,
+    "workflow_gaps": [
+      "No fixed asset reuse",
+      "No hash lock or immutable per-generation record"
+    ],
+    "controlled_model_quality_comparison": false
+  },
+  "forward": {
+    "agent": "Codex",
+    "bob_executed": false,
+    "method": "isolated agent using ZIP-extracted skill; prior implementation not read",
+    "job": "artifacts/routine-code-skill/forward/alarm-01",
+    "report": "artifacts/routine-code-skill/forward/alarm-01/qa/r001/verification.json",
+    "report_sha256": "c6a9a4a21f61a6ff39644777f1c76db302d1188675365844690308a9a30817c6",
+    "source_sha256": "14ae64654c995bb8a3321f626964be4ad6e3c63c205aa4ac0abdd4b19b696000",
+    "o0_checks": 1948941,
+    "o2_checks": 1948941,
+    "failures": 0,
+    "object_inspection": {
+      "undefined_symbols": [],
+      "public_symbols": [
+        "AlarmQualification_Update"
+      ],
+      "note": "Object symbol visibility is not a DLL export declaration."
+    }
+  },
+  "review": {
+    "result": "approved",
+    "required_fixes": 0,
+    "assumption": "same-job edit/record/verify operations are serialized"
+  },
+  "reused_assets": [
+    {
+      "original": "prototypes/routine-code-poc/input/spec.json",
+      "asset": "packages/routine-code-c90/skills/routine-code-c90/assets/alarm-profile/input/spec.json",
+      "sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+      "identical": true
+    },
+    {
+      "original": "prototypes/routine-code-poc/include/AlarmQualification.h",
+      "asset": "packages/routine-code-c90/skills/routine-code-c90/assets/alarm-profile/include/AlarmQualification.h",
+      "sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+      "identical": true
+    },
+    {
+      "original": "prototypes/routine-code-poc/tests/test_alarm_qualification.c",
+      "asset": "packages/routine-code-c90/skills/routine-code-c90/assets/alarm-profile/tests/test_alarm_qualification.c",
+      "sha256": "31ce5cf9ca179287ac0bd9da3d780bd56d50c942290e89c22b3d6720eb6c2c4f",
+      "identical": true
+    },
+    {
+      "original": "prototypes/routine-code-poc/tools/codeflow.py",
+      "asset": "packages/routine-code-c90/skills/routine-code-c90/assets/alarm-profile/tools/codeflow.py",
+      "sha256": "deb3a344d98d1fa353f9763f2e4d91ac99587645bfe20a8d2fcec1648cec8e00",
+      "identical": true
+    },
+    {
+      "original": "prototypes/routine-code-poc/qa/unimplemented.c",
+      "asset": "packages/routine-code-c90/skills/routine-code-c90/assets/alarm-profile/qa/unimplemented.c",
+      "sha256": "e246da17135e5962844dc81984846b41d902bd38ebd53dddb64a389e7bbdd82d",
+      "identical": true
+    }
+  ],
+  "distribution": {
+    "archive": "packages/routine-code-c90/dist/ibm-bob-routine-code-c90-0.1.0.zip",
+    "sha256": "56daa2ec959a79f1f8738baa7b2a8dc3889b8db99b692afa5ee5a0632a70645c",
+    "size_bytes": 23438,
+    "entry_count": 12,
+    "readback": "passed",
+    "runtime_identical_to_forward_test": true
+  },
+  "project_install": {
+    "path": ".bob/skills/routine-code-c90",
+    "resources_match_release": true,
+    "doctor": "passed"
+  },
+  "remaining": [
+    "Bob IDE discovery/invocation not executed",
+    "Generic routines need approved project build/tests; automatic profile covers frozen alarm spec only",
+    "Target compiler, DLL ABI, RTOS integration, WCET and requirements approval unverified"
+  ]
+}

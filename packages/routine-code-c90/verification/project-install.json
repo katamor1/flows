@@ -1,0 +1,11 @@
+{
+  "status": "installed",
+  "scope": "project-local IBM Bob skill",
+  "path": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\.bob\\skills\\routine-code-c90",
+  "doctor": {
+    "status": "ok",
+    "profile": "alarm-qualification-v01",
+    "release_sha256": "82a472863d3852d3de8f29d9e64da902921462e00ebb548dd66e1696ff9ab3fe"
+  },
+  "global_settings_changed": false
+}

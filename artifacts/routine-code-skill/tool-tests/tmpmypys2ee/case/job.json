@@ -1,0 +1,10 @@
+{
+  "format_version": "0.1.0",
+  "spec": "input/spec.json",
+  "spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+  "header": "include/AlarmQualification.h",
+  "source": "src/AlarmQualification.c",
+  "test": "tests/test_alarm_qualification.c",
+  "exported_object_symbol": "AlarmQualification_Update",
+  "generation_record": "records/pending.json"
+}
