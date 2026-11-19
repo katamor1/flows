@@ -1,0 +1,39 @@
+# BEGIN flows local outputs
+# Python caches and Word lock files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# IBM Bob local install backups
+/artifacts/bob-distribution-backups/
+
+# Scratch projects and extracted copies from the three-stage validation
+/artifacts/routine-code-skill/generic-tests/case-*/
+/artifacts/routine-generic-validation/code-distribution/
+/artifacts/routine-generic-validation/code-distribution-r2/
+/artifacts/routine-generic-validation/distribution-tests/
+/artifacts/routine-generic-validation/git-roundtrip/rt-*/
+/artifacts/routine-generic-validation/git-roundtrip-combined/repo/
+/artifacts/routine-generic-validation/git-roundtrip-combined/checkout/
+/artifacts/routine-generic-validation/git-roundtrip-combined/git-metadata/
+/artifacts/routine-generic-validation/program/zip-forward/
+/artifacts/routine-generic-validation/unit-tests/checks/
+# Keep intermediate Word renders locally alongside the final release evidence
+/artifacts/routine-generic-validation/program/range-clamp/
+/artifacts/routine-generic-validation/unit-tests/range-clamp-pipeline/
+/artifacts/routine-generic-validation/unit-tests/range-clamp-final/
+/artifacts/routine-generic-validation/unit-tests/sample-hold-final/
+/artifacts/routine-generic-validation/unit-tests/alarm-regression-final/
+/artifacts/routine-generic-validation/visual-qa/tmp/
+/artifacts/routine-generic-validation/visual-qa/program-pages/
+
+# Preserve validation reports and reviewable documents, omit host build products
+/artifacts/routine-generic-validation/**/*.exe
+/artifacts/routine-generic-validation/**/*.obj
+/artifacts/routine-generic-validation/**/*.pdb
+/artifacts/routine-generic-validation/**/*.ilk
+/artifacts/routine-generic-validation/**/*.d
+# END flows local outputs

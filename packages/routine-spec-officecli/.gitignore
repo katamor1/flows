@@ -1,3 +1,6 @@
-qa/
-dist/
+/qa/*
+!/qa/generic-test-output.txt
+/dist/*
+!/dist/ibm-bob-routine-spec-officecli-[0-9]*.zip
+!/dist/checksums-[0-9]*.json
 __pycache__/
