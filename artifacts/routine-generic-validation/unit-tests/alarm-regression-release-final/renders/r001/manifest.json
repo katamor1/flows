@@ -1,0 +1,59 @@
+{
+  "generator_backend": "officecli",
+  "generator_version": "0.2.0",
+  "source": "unit-test-spec.json",
+  "source_sha256": "6dbb74cc1b8e42466e0ed1d8e7276b46baee3b3b236b58241192402e1058b048",
+  "schema_sha256": "39edb87863c2e449406b40e6f49c32259bad9bf1b58c4e77f91cba3ddb71abca",
+  "template_sha256": "603532774fa43356eca389bdb2ce2f491471693ce73add0f6fbd87015091702e",
+  "output": "unit-test-spec.docx",
+  "output_sha256": "2af166188454339ce214b5da86eefec0dd2a79c010997ea4cc8b839c7dad1566",
+  "status": "draft_trial",
+  "semantic_sha256": "87585d0eb322189befe93576bc47fc3208cb0947f9c2ccec3a078c56cb043914",
+  "content_check": {
+    "status": "passed",
+    "template_content_and_formatting": "matched",
+    "unchanged_package_parts": 15,
+    "field_codes": {
+      "word/document.xml": [],
+      "word/footer1.xml": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "word/header1.xml": []
+    },
+    "commands": 1072,
+    "repeated_rows_cloned": 113,
+    "semantic_sha256": "87585d0eb322189befe93576bc47fc3208cb0947f9c2ccec3a078c56cb043914"
+  },
+  "visual_review": "not_performed_by_this_command",
+  "package": {
+    "name": "routine-unit-test-officecli",
+    "version": "0.2.0",
+    "profile_id": "generic-unit-test-v02",
+    "release_sha256": "f07b84dfff7d102d6f872eddb0a8ae85ac712a7779c97982aedd66a795703491",
+    "renderer": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    }
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "python": "3.12.14",
+  "canonical_source": "source/unit-test-spec.json",
+  "input_files": {
+    "inputs/program-spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "inputs/source/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "inputs/header/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "inputs/generation-record.json": "5fd7f84f7c4e05991e7724fa460408e10beac3953bc38a924f44156c0e679be6"
+  },
+  "input_provenance": "generation_record",
+  "input_lock_sha256": "b476f5e6c3ea6ae5ed97ac6095718f729ba1d0bc92c15997b642c76371ce1182",
+  "execution_record_sha256": "e413cf6a6eec1ca5b8a4b79b07238e41039249f299386c56fea71473f3b09b69",
+  "traceability_sha256": "489053ebef2df7e1df4798f674bb2bd1433982e37d00399309797e0fe3d32e82",
+  "schema": "assets/schema/unit-test-spec.schema.json",
+  "template": "assets/templates/unit-test-spec-v02.docx",
+  "template_id": "unit-test-spec-v02",
+  "template_revision": "0.2.0"
+}

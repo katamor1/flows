@@ -1,0 +1,23 @@
+{
+  "format_version": "0.2.0",
+  "unit_test_spec_id": "UTS-RTN-TEST-SAMPLE-001",
+  "specification_status": "fixture_only",
+  "results": [
+    {
+      "item_id": "read-success",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "read-failure",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "fixture-boundary",
+      "status": "not_executed",
+      "evidence": []
+    }
+  ],
+  "note": "No test or review has been executed by document generation. Existing logs are not pass evidence."
+}

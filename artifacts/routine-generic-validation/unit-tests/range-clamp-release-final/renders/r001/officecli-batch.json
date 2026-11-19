@@ -1,0 +1,1939 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "Copied to /body/tbl[1]/tr[3]"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "Copied to /body/tbl[3]/tr[3]"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "Copied to /body/tbl[3]/tr[4]"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[3]"
+      },
+      {
+        "index": 4,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[4]"
+      },
+      {
+        "index": 5,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[5]"
+      },
+      {
+        "index": 6,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[6]"
+      },
+      {
+        "index": 7,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[7]"
+      },
+      {
+        "index": 8,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[8]"
+      },
+      {
+        "index": 9,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[9]"
+      },
+      {
+        "index": 10,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[3]"
+      },
+      {
+        "index": 11,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[4]"
+      },
+      {
+        "index": 12,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[5]"
+      },
+      {
+        "index": 13,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[6]"
+      },
+      {
+        "index": 14,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[7]"
+      },
+      {
+        "index": 15,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[8]"
+      },
+      {
+        "index": 16,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[9]"
+      },
+      {
+        "index": 17,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[10]"
+      },
+      {
+        "index": 18,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[11]"
+      },
+      {
+        "index": 19,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[12]"
+      },
+      {
+        "index": 20,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[13]"
+      },
+      {
+        "index": 21,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[14]"
+      },
+      {
+        "index": 22,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[15]"
+      },
+      {
+        "index": 23,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[16]"
+      },
+      {
+        "index": 24,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[17]"
+      },
+      {
+        "index": 25,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[18]"
+      },
+      {
+        "index": 26,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[19]"
+      },
+      {
+        "index": 27,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[20]"
+      },
+      {
+        "index": 28,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[21]"
+      },
+      {
+        "index": 29,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[22]"
+      },
+      {
+        "index": 30,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[23]"
+      },
+      {
+        "index": 31,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[24]"
+      },
+      {
+        "index": 32,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[25]"
+      },
+      {
+        "index": 33,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[26]"
+      },
+      {
+        "index": 34,
+        "success": true,
+        "output": "Updated /body/tbl[1]/tr[2]: find={{text}}, replace=__UTS_a9e1884dfb254bc273a7d490_0__ (1 matched)"
+      },
+      {
+        "index": 35,
+        "success": true,
+        "output": "Updated /body/tbl[1]/tr[3]: find={{text}}, replace=__UTS_a9e1884dfb254bc273a7d490_1__ (1 matched)"
+      },
+      {
+        "index": 36,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_2__ (1 matched)"
+      },
+      {
+        "index": 37,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{text}}, replace=__UTS_a9e1884dfb254bc273a7d490_3__ (1 matched)"
+      },
+      {
+        "index": 38,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_4__ (1 matched)"
+      },
+      {
+        "index": 39,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{purpose}}, replace=__UTS_a9e1884dfb254bc273a7d490_5__ (1 matched)"
+      },
+      {
+        "index": 40,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_6__ (1 matched)"
+      },
+      {
+        "index": 41,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{status}}, replace=__UTS_a9e1884dfb254bc273a7d490_7__ (1 matched)"
+      },
+      {
+        "index": 42,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{title}}, replace=__UTS_a9e1884dfb254bc273a7d490_8__ (1 matched)"
+      },
+      {
+        "index": 43,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_9__ (1 matched)"
+      },
+      {
+        "index": 44,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{purpose}}, replace=__UTS_a9e1884dfb254bc273a7d490_10__ (1 matched)"
+      },
+      {
+        "index": 45,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_11__ (1 matched)"
+      },
+      {
+        "index": 46,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{status}}, replace=__UTS_a9e1884dfb254bc273a7d490_12__ (1 matched)"
+      },
+      {
+        "index": 47,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{title}}, replace=__UTS_a9e1884dfb254bc273a7d490_13__ (1 matched)"
+      },
+      {
+        "index": 48,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_14__ (1 matched)"
+      },
+      {
+        "index": 49,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{purpose}}, replace=__UTS_a9e1884dfb254bc273a7d490_15__ (1 matched)"
+      },
+      {
+        "index": 50,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_16__ (1 matched)"
+      },
+      {
+        "index": 51,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{status}}, replace=__UTS_a9e1884dfb254bc273a7d490_17__ (1 matched)"
+      },
+      {
+        "index": 52,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{title}}, replace=__UTS_a9e1884dfb254bc273a7d490_18__ (1 matched)"
+      },
+      {
+        "index": 53,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_19__ (1 matched)"
+      },
+      {
+        "index": 54,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_20__ (1 matched)"
+      },
+      {
+        "index": 55,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_21__ (1 matched)"
+      },
+      {
+        "index": 56,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_22__ (1 matched)"
+      },
+      {
+        "index": 57,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_23__ (1 matched)"
+      },
+      {
+        "index": 58,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_24__ (1 matched)"
+      },
+      {
+        "index": 59,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_25__ (1 matched)"
+      },
+      {
+        "index": 60,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_26__ (1 matched)"
+      },
+      {
+        "index": 61,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_27__ (1 matched)"
+      },
+      {
+        "index": 62,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_28__ (1 matched)"
+      },
+      {
+        "index": 63,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_29__ (1 matched)"
+      },
+      {
+        "index": 64,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_30__ (1 matched)"
+      },
+      {
+        "index": 65,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_31__ (1 matched)"
+      },
+      {
+        "index": 66,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_32__ (1 matched)"
+      },
+      {
+        "index": 67,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_33__ (1 matched)"
+      },
+      {
+        "index": 68,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_34__ (1 matched)"
+      },
+      {
+        "index": 69,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_35__ (1 matched)"
+      },
+      {
+        "index": 70,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_36__ (1 matched)"
+      },
+      {
+        "index": 71,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_37__ (1 matched)"
+      },
+      {
+        "index": 72,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_38__ (1 matched)"
+      },
+      {
+        "index": 73,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_39__ (1 matched)"
+      },
+      {
+        "index": 74,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_40__ (1 matched)"
+      },
+      {
+        "index": 75,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_41__ (1 matched)"
+      },
+      {
+        "index": 76,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_42__ (1 matched)"
+      },
+      {
+        "index": 77,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_43__ (1 matched)"
+      },
+      {
+        "index": 78,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_44__ (1 matched)"
+      },
+      {
+        "index": 79,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_45__ (1 matched)"
+      },
+      {
+        "index": 80,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_46__ (1 matched)"
+      },
+      {
+        "index": 81,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find={{case_step}}, replace=__UTS_a9e1884dfb254bc273a7d490_47__ (1 matched)"
+      },
+      {
+        "index": 82,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find={{expected}}, replace=__UTS_a9e1884dfb254bc273a7d490_48__ (1 matched)"
+      },
+      {
+        "index": 83,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find={{inputs}}, replace=__UTS_a9e1884dfb254bc273a7d490_49__ (1 matched)"
+      },
+      {
+        "index": 84,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_50__ (1 matched)"
+      },
+      {
+        "index": 85,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{definition}}, replace=__UTS_a9e1884dfb254bc273a7d490_51__ (1 matched)"
+      },
+      {
+        "index": 86,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_52__ (1 matched)"
+      },
+      {
+        "index": 87,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{oracle}}, replace=__UTS_a9e1884dfb254bc273a7d490_53__ (1 matched)"
+      },
+      {
+        "index": 88,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_54__ (1 matched)"
+      },
+      {
+        "index": 89,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{criterion}}, replace=__UTS_a9e1884dfb254bc273a7d490_55__ (1 matched)"
+      },
+      {
+        "index": 90,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_56__ (1 matched)"
+      },
+      {
+        "index": 91,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_57__ (1 matched)"
+      },
+      {
+        "index": 92,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{refs}}, replace=__UTS_a9e1884dfb254bc273a7d490_58__ (1 matched)"
+      },
+      {
+        "index": 93,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_59__ (1 matched)"
+      },
+      {
+        "index": 94,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_60__ (1 matched)"
+      },
+      {
+        "index": 95,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_61__ (1 matched)"
+      },
+      {
+        "index": 96,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_62__ (1 matched)"
+      },
+      {
+        "index": 97,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_63__ (1 matched)"
+      },
+      {
+        "index": 98,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_64__ (1 matched)"
+      },
+      {
+        "index": 99,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_65__ (1 matched)"
+      },
+      {
+        "index": 100,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_66__ (1 matched)"
+      },
+      {
+        "index": 101,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_67__ (1 matched)"
+      },
+      {
+        "index": 102,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_68__ (1 matched)"
+      },
+      {
+        "index": 103,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_69__ (1 matched)"
+      },
+      {
+        "index": 104,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_70__ (1 matched)"
+      },
+      {
+        "index": 105,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_71__ (1 matched)"
+      },
+      {
+        "index": 106,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_72__ (1 matched)"
+      },
+      {
+        "index": 107,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_73__ (1 matched)"
+      },
+      {
+        "index": 108,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_74__ (1 matched)"
+      },
+      {
+        "index": 109,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_75__ (1 matched)"
+      },
+      {
+        "index": 110,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_76__ (1 matched)"
+      },
+      {
+        "index": 111,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_77__ (1 matched)"
+      },
+      {
+        "index": 112,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_78__ (1 matched)"
+      },
+      {
+        "index": 113,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_79__ (1 matched)"
+      },
+      {
+        "index": 114,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_80__ (1 matched)"
+      },
+      {
+        "index": 115,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_81__ (1 matched)"
+      },
+      {
+        "index": 116,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_82__ (1 matched)"
+      },
+      {
+        "index": 117,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_83__ (1 matched)"
+      },
+      {
+        "index": 118,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_84__ (1 matched)"
+      },
+      {
+        "index": 119,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_85__ (1 matched)"
+      },
+      {
+        "index": 120,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_86__ (1 matched)"
+      },
+      {
+        "index": 121,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_87__ (1 matched)"
+      },
+      {
+        "index": 122,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_88__ (1 matched)"
+      },
+      {
+        "index": 123,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_89__ (1 matched)"
+      },
+      {
+        "index": 124,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_90__ (1 matched)"
+      },
+      {
+        "index": 125,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_91__ (1 matched)"
+      },
+      {
+        "index": 126,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_92__ (1 matched)"
+      },
+      {
+        "index": 127,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_93__ (1 matched)"
+      },
+      {
+        "index": 128,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_94__ (1 matched)"
+      },
+      {
+        "index": 129,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_95__ (1 matched)"
+      },
+      {
+        "index": 130,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_96__ (1 matched)"
+      },
+      {
+        "index": 131,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_97__ (1 matched)"
+      },
+      {
+        "index": 132,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_98__ (1 matched)"
+      },
+      {
+        "index": 133,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_99__ (1 matched)"
+      },
+      {
+        "index": 134,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_100__ (1 matched)"
+      },
+      {
+        "index": 135,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_101__ (1 matched)"
+      },
+      {
+        "index": 136,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_102__ (1 matched)"
+      },
+      {
+        "index": 137,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_103__ (1 matched)"
+      },
+      {
+        "index": 138,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_104__ (1 matched)"
+      },
+      {
+        "index": 139,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_105__ (1 matched)"
+      },
+      {
+        "index": 140,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_106__ (1 matched)"
+      },
+      {
+        "index": 141,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_107__ (1 matched)"
+      },
+      {
+        "index": 142,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_108__ (1 matched)"
+      },
+      {
+        "index": 143,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_109__ (1 matched)"
+      },
+      {
+        "index": 144,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_110__ (1 matched)"
+      },
+      {
+        "index": 145,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_111__ (1 matched)"
+      },
+      {
+        "index": 146,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_112__ (1 matched)"
+      },
+      {
+        "index": 147,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_113__ (1 matched)"
+      },
+      {
+        "index": 148,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_114__ (1 matched)"
+      },
+      {
+        "index": 149,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_115__ (1 matched)"
+      },
+      {
+        "index": 150,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_116__ (1 matched)"
+      },
+      {
+        "index": 151,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_117__ (1 matched)"
+      },
+      {
+        "index": 152,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_118__ (1 matched)"
+      },
+      {
+        "index": 153,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_119__ (1 matched)"
+      },
+      {
+        "index": 154,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_120__ (1 matched)"
+      },
+      {
+        "index": 155,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_121__ (1 matched)"
+      },
+      {
+        "index": 156,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_122__ (1 matched)"
+      },
+      {
+        "index": 157,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_123__ (1 matched)"
+      },
+      {
+        "index": 158,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_124__ (1 matched)"
+      },
+      {
+        "index": 159,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_125__ (1 matched)"
+      },
+      {
+        "index": 160,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_126__ (1 matched)"
+      },
+      {
+        "index": 161,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_127__ (1 matched)"
+      },
+      {
+        "index": 162,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_128__ (1 matched)"
+      },
+      {
+        "index": 163,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_129__ (1 matched)"
+      },
+      {
+        "index": 164,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_130__ (1 matched)"
+      },
+      {
+        "index": 165,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_131__ (1 matched)"
+      },
+      {
+        "index": 166,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_132__ (1 matched)"
+      },
+      {
+        "index": 167,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_133__ (1 matched)"
+      },
+      {
+        "index": 168,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_134__ (1 matched)"
+      },
+      {
+        "index": 169,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_135__ (1 matched)"
+      },
+      {
+        "index": 170,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_136__ (1 matched)"
+      },
+      {
+        "index": 171,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_137__ (1 matched)"
+      },
+      {
+        "index": 172,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_138__ (1 matched)"
+      },
+      {
+        "index": 173,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_139__ (1 matched)"
+      },
+      {
+        "index": 174,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_140__ (1 matched)"
+      },
+      {
+        "index": 175,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_141__ (1 matched)"
+      },
+      {
+        "index": 176,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_142__ (1 matched)"
+      },
+      {
+        "index": 177,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_143__ (1 matched)"
+      },
+      {
+        "index": 178,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_144__ (1 matched)"
+      },
+      {
+        "index": 179,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_145__ (1 matched)"
+      },
+      {
+        "index": 180,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_146__ (1 matched)"
+      },
+      {
+        "index": 181,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_147__ (1 matched)"
+      },
+      {
+        "index": 182,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_148__ (1 matched)"
+      },
+      {
+        "index": 183,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_149__ (1 matched)"
+      },
+      {
+        "index": 184,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_150__ (1 matched)"
+      },
+      {
+        "index": 185,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_151__ (1 matched)"
+      },
+      {
+        "index": 186,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_152__ (1 matched)"
+      },
+      {
+        "index": 187,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_153__ (1 matched)"
+      },
+      {
+        "index": 188,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_154__ (1 matched)"
+      },
+      {
+        "index": 189,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find={{items}}, replace=__UTS_a9e1884dfb254bc273a7d490_155__ (1 matched)"
+      },
+      {
+        "index": 190,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find={{method}}, replace=__UTS_a9e1884dfb254bc273a7d490_156__ (1 matched)"
+      },
+      {
+        "index": 191,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find={{reason}}, replace=__UTS_a9e1884dfb254bc273a7d490_157__ (1 matched)"
+      },
+      {
+        "index": 192,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find={{ref}}, replace=__UTS_a9e1884dfb254bc273a7d490_158__ (1 matched)"
+      },
+      {
+        "index": 193,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{decision}}, replace=__UTS_a9e1884dfb254bc273a7d490_159__ (1 matched)"
+      },
+      {
+        "index": 194,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{id}}, replace=__UTS_a9e1884dfb254bc273a7d490_160__ (1 matched)"
+      },
+      {
+        "index": 195,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{owner}}, replace=__UTS_a9e1884dfb254bc273a7d490_161__ (1 matched)"
+      },
+      {
+        "index": 196,
+        "success": true,
+        "output": "Updated /body: find={{document.author}}, replace=__UTS_a9e1884dfb254bc273a7d490_162__ (1 matched)"
+      },
+      {
+        "index": 197,
+        "success": true,
+        "output": "Updated /body: find={{document.date}}, replace=__UTS_a9e1884dfb254bc273a7d490_163__ (1 matched)"
+      },
+      {
+        "index": 198,
+        "success": true,
+        "output": "Updated /body: find={{document.id}}, replace=__UTS_a9e1884dfb254bc273a7d490_164__ (2 matched)"
+      },
+      {
+        "index": 199,
+        "success": true,
+        "output": "Updated /body: find={{document.revision}}, replace=__UTS_a9e1884dfb254bc273a7d490_165__ (2 matched)"
+      },
+      {
+        "index": 200,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_id}}, replace=__UTS_a9e1884dfb254bc273a7d490_166__ (1 matched)"
+      },
+      {
+        "index": 201,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_name}}, replace=__UTS_a9e1884dfb254bc273a7d490_167__ (2 matched)"
+      },
+      {
+        "index": 202,
+        "success": true,
+        "output": "Updated /body: find={{document.status}}, replace=__UTS_a9e1884dfb254bc273a7d490_168__ (1 matched)"
+      },
+      {
+        "index": 203,
+        "success": true,
+        "output": "Updated /body: find={{document.status_label}}, replace=__UTS_a9e1884dfb254bc273a7d490_169__ (2 matched)"
+      },
+      {
+        "index": 204,
+        "success": true,
+        "output": "Updated /body: find={{document.template_id}}, replace=__UTS_a9e1884dfb254bc273a7d490_170__ (1 matched)"
+      },
+      {
+        "index": 205,
+        "success": true,
+        "output": "Updated /body: find={{document.title}}, replace=__UTS_a9e1884dfb254bc273a7d490_171__ (1 matched)"
+      },
+      {
+        "index": 206,
+        "success": true,
+        "output": "Updated /body: find={{summary}}, replace=__UTS_a9e1884dfb254bc273a7d490_172__ (1 matched)"
+      },
+      {
+        "index": 207,
+        "success": true,
+        "output": "Updated /body: find={{view.not_executed}}, replace=__UTS_a9e1884dfb254bc273a7d490_173__ (1 matched)"
+      },
+      {
+        "index": 208,
+        "success": true,
+        "output": "Updated /body: find={{view.target_summary}}, replace=__UTS_a9e1884dfb254bc273a7d490_174__ (1 matched)"
+      },
+      {
+        "index": 209,
+        "success": true,
+        "output": "Updated /body/tbl[1]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_0__, replace=Python 3.12 standard library; OfficeCLI 1.0.144 generates and structurally validates this document. (1 matched)"
+      },
+      {
+        "index": 210,
+        "success": true,
+        "output": "Updated /body/tbl[1]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_1__, replace=The C fixture is not executed by this workflow; platform and compiler validation are separate evidence. (1 matched)"
+      },
+      {
+        "index": 211,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_2__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 212,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_3__, replace=— (1 matched)"
+      },
+      {
+        "index": 213,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_4__, replace=in-range-boundary (1 matched)"
+      },
+      {
+        "index": 214,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_5__, replace=目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int. (1 matched)"
+      },
+      {
+        "index": 215,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_6__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 216,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_7__, replace=未実施 (1 matched)"
+      },
+      {
+        "index": 217,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_8__, replace=Within range and inclusive endpoints (1 matched)"
+      },
+      {
+        "index": 218,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_9__, replace=outside (1 matched)"
+      },
+      {
+        "index": 219,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_10__, replace=目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int. (1 matched)"
+      },
+      {
+        "index": 220,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_11__, replace=CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER (1 matched)"
+      },
+      {
+        "index": 221,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_12__, replace=未実施 (1 matched)"
+      },
+      {
+        "index": 222,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_13__, replace=Outside either bound (1 matched)"
+      },
+      {
+        "index": 223,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_14__, replace=equal-bounds (1 matched)"
+      },
+      {
+        "index": 224,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_15__, replace=目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int. (1 matched)"
+      },
+      {
+        "index": 225,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_16__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 226,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_17__, replace=未実施 (1 matched)"
+      },
+      {
+        "index": 227,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_18__, replace=Equal lower and upper (1 matched)"
+      },
+      {
+        "index": 228,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_19__, replace=in-range-boundary/call-1 (1 matched)"
+      },
+      {
+        "index": 229,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_20__, replace=return [equals] 2\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 230,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_21__, replace=初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 2\u000blower = -3\u000bupper = 4\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 231,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_22__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 232,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_23__, replace=in-range-boundary/call-2 (1 matched)"
+      },
+      {
+        "index": 233,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_24__, replace=return [equals] -3\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 234,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_25__, replace=操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = -3\u000blower = -3\u000bupper = 4\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 235,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_26__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 236,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_27__, replace=in-range-boundary/call-3 (1 matched)"
+      },
+      {
+        "index": 237,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_28__, replace=return [equals] 4\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 238,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_29__, replace=操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 4\u000blower = -3\u000bupper = 4\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 239,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_30__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 240,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_31__, replace=outside/call-1 (1 matched)"
+      },
+      {
+        "index": 241,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_32__, replace=return [equals] -3\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 242,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_33__, replace=初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = -8\u000blower = -3\u000bupper = 4\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 243,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_34__, replace=CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER (1 matched)"
+      },
+      {
+        "index": 244,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_35__, replace=outside/call-2 (1 matched)"
+      },
+      {
+        "index": 245,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_36__, replace=return [equals] 4\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 246,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_37__, replace=操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 9\u000blower = -3\u000bupper = 4\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 247,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_38__, replace=CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER (1 matched)"
+      },
+      {
+        "index": 248,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_39__, replace=equal-bounds/call-1 (1 matched)"
+      },
+      {
+        "index": 249,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_40__, replace=return [equals] 7\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 250,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_41__, replace=初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 7\u000blower = 7\u000bupper = 7\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 251,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_42__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 252,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_43__, replace=equal-bounds/call-2 (1 matched)"
+      },
+      {
+        "index": 253,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_44__, replace=return [equals] 7\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 254,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_45__, replace=操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 6\u000blower = 7\u000bupper = 7\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 255,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_46__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 256,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_47__, replace=equal-bounds/call-3 (1 matched)"
+      },
+      {
+        "index": 257,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_48__, replace=return [equals] 7\u000b注記: Expected result comes from the input program specification. (1 matched)"
+      },
+      {
+        "index": 258,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_49__, replace=操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 8\u000blower = 7\u000bupper = 7\u000brepeat=1 (1 matched)"
+      },
+      {
+        "index": 259,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_50__, replace=CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 260,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_51__, replace=Fixed inclusive bounds and five values\u000bmode=product; sequence_length=0\u000bvalue = [-8, -3, 2, 4, 9]\u000bbounds = [{\"lower\": -3, \"upper\": 4}]\u000bcombination_count=5; calls_per_instance=2; call_count=10\u000b初期条件: No state. Each instance supplies the listed ordered bounds.\u000b列挙順・展開ID: Values in written order; each instance is called twice with identical arguments.\u000b方法: Compare both returns to the source rule independently; repeated calls also check absence of retained state.\u000b具体例:\u000bvalue=-8 => -3 twice\u000bvalue=2 => 2 twice\u000bvalue=9 => 4 twice\u000b実施状態: 未実施 (1 matched)"
+      },
+      {
+        "index": 261,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_52__, replace=small-domain (1 matched)"
+      },
+      {
+        "index": 262,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_53__, replace=For value < -3 expect -3; value > 4 expect 4; otherwise expect value. Both repeated calls must agree. (1 matched)"
+      },
+      {
+        "index": 263,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_54__, replace=CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-STEP-PRESERVE (1 matched)"
+      },
+      {
+        "index": 264,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_55__, replace=No subtraction, overflow-producing arithmetic, loops, recursion, allocation, external calls or mutable static state.\u000b対象範囲・限界: Only the locked C/H function. This review item is unexecuted; real RTOS timing and WCET are outside the document-generation task.\u000b実施状態: 未実施 (1 matched)"
+      },
+      {
+        "index": 265,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_56__, replace=source-structure (1 matched)"
+      },
+      {
+        "index": 266,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_57__, replace=Bounded C90 arithmetic and state scope\u000b方法: Read the exact locked source and header. Inspect comparisons, returns and declarations without deriving dynamic expected values from implementation. (1 matched)"
+      },
+      {
+        "index": 267,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_58__, replace=CLAMP-C90\u000bCLAMP-OVERFLOW\u000b/behavior/postconditions\u000b/behavior/timing_semantics (1 matched)"
+      },
+      {
+        "index": 268,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_59__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 269,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_60__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 270,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_61__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 271,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_62__, replace=/behavior/decision_rows/0 (1 matched)"
+      },
+      {
+        "index": 272,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_63__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 273,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_64__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 274,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_65__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 275,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__UTS_a9e1884dfb254bc273a7d490_66__, replace=/behavior/decision_rows/1 (1 matched)"
+      },
+      {
+        "index": 276,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_67__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 277,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_68__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 278,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_69__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 279,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__UTS_a9e1884dfb254bc273a7d490_70__, replace=/behavior/decision_rows/2 (1 matched)"
+      },
+      {
+        "index": 280,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_71__, replace=source-structure (1 matched)"
+      },
+      {
+        "index": 281,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_72__, replace=review (1 matched)"
+      },
+      {
+        "index": 282,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_73__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 283,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[5]: find=__UTS_a9e1884dfb254bc273a7d490_74__, replace=/behavior/postconditions (1 matched)"
+      },
+      {
+        "index": 284,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_75__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 285,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_76__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 286,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_77__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 287,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[6]: find=__UTS_a9e1884dfb254bc273a7d490_78__, replace=/behavior/result_fields/0 (1 matched)"
+      },
+      {
+        "index": 288,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_79__, replace=source-structure (1 matched)"
+      },
+      {
+        "index": 289,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_80__, replace=review (1 matched)"
+      },
+      {
+        "index": 290,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_81__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 291,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[7]: find=__UTS_a9e1884dfb254bc273a7d490_82__, replace=/behavior/timing_semantics (1 matched)"
+      },
+      {
+        "index": 292,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_83__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 293,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_84__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 294,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_85__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 295,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[8]: find=__UTS_a9e1884dfb254bc273a7d490_86__, replace=/interface/language (1 matched)"
+      },
+      {
+        "index": 296,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_87__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 297,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_88__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 298,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_89__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 299,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[9]: find=__UTS_a9e1884dfb254bc273a7d490_90__, replace=/interface/parameters/0 (1 matched)"
+      },
+      {
+        "index": 300,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find=__UTS_a9e1884dfb254bc273a7d490_91__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 301,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find=__UTS_a9e1884dfb254bc273a7d490_92__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 302,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find=__UTS_a9e1884dfb254bc273a7d490_93__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 303,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[10]: find=__UTS_a9e1884dfb254bc273a7d490_94__, replace=/interface/parameters/1 (1 matched)"
+      },
+      {
+        "index": 304,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find=__UTS_a9e1884dfb254bc273a7d490_95__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 305,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find=__UTS_a9e1884dfb254bc273a7d490_96__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 306,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find=__UTS_a9e1884dfb254bc273a7d490_97__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 307,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[11]: find=__UTS_a9e1884dfb254bc273a7d490_98__, replace=/interface/parameters/2 (1 matched)"
+      },
+      {
+        "index": 308,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find=__UTS_a9e1884dfb254bc273a7d490_99__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 309,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find=__UTS_a9e1884dfb254bc273a7d490_100__, replace=caller (1 matched)"
+      },
+      {
+        "index": 310,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find=__UTS_a9e1884dfb254bc273a7d490_101__, replace=Caller must satisfy ordered bounds. (1 matched)"
+      },
+      {
+        "index": 311,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[12]: find=__UTS_a9e1884dfb254bc273a7d490_102__, replace=/interface/preconditions (1 matched)"
+      },
+      {
+        "index": 312,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find=__UTS_a9e1884dfb254bc273a7d490_103__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 313,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find=__UTS_a9e1884dfb254bc273a7d490_104__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 314,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find=__UTS_a9e1884dfb254bc273a7d490_105__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 315,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[13]: find=__UTS_a9e1884dfb254bc273a7d490_106__, replace=/interface/prototype (1 matched)"
+      },
+      {
+        "index": 316,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find=__UTS_a9e1884dfb254bc273a7d490_107__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 317,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find=__UTS_a9e1884dfb254bc273a7d490_108__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 318,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find=__UTS_a9e1884dfb254bc273a7d490_109__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 319,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[14]: find=__UTS_a9e1884dfb254bc273a7d490_110__, replace=/interface/return_codes/0 (1 matched)"
+      },
+      {
+        "index": 320,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find=__UTS_a9e1884dfb254bc273a7d490_111__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 321,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find=__UTS_a9e1884dfb254bc273a7d490_112__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 322,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find=__UTS_a9e1884dfb254bc273a7d490_113__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 323,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[15]: find=__UTS_a9e1884dfb254bc273a7d490_114__, replace=/interface/visibility (1 matched)"
+      },
+      {
+        "index": 324,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find=__UTS_a9e1884dfb254bc273a7d490_115__, replace=source-structure (1 matched)"
+      },
+      {
+        "index": 325,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find=__UTS_a9e1884dfb254bc273a7d490_116__, replace=review (1 matched)"
+      },
+      {
+        "index": 326,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find=__UTS_a9e1884dfb254bc273a7d490_117__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 327,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[16]: find=__UTS_a9e1884dfb254bc273a7d490_118__, replace=CLAMP-C90 (1 matched)"
+      },
+      {
+        "index": 328,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find=__UTS_a9e1884dfb254bc273a7d490_119__, replace=equal-bounds (1 matched)"
+      },
+      {
+        "index": 329,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find=__UTS_a9e1884dfb254bc273a7d490_120__, replace=test (1 matched)"
+      },
+      {
+        "index": 330,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find=__UTS_a9e1884dfb254bc273a7d490_121__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 331,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[17]: find=__UTS_a9e1884dfb254bc273a7d490_122__, replace=CLAMP-EX-EQUAL (1 matched)"
+      },
+      {
+        "index": 332,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find=__UTS_a9e1884dfb254bc273a7d490_123__, replace=in-range-boundary (1 matched)"
+      },
+      {
+        "index": 333,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find=__UTS_a9e1884dfb254bc273a7d490_124__, replace=test (1 matched)"
+      },
+      {
+        "index": 334,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find=__UTS_a9e1884dfb254bc273a7d490_125__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 335,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[18]: find=__UTS_a9e1884dfb254bc273a7d490_126__, replace=CLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 336,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find=__UTS_a9e1884dfb254bc273a7d490_127__, replace=outside (1 matched)"
+      },
+      {
+        "index": 337,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find=__UTS_a9e1884dfb254bc273a7d490_128__, replace=test (1 matched)"
+      },
+      {
+        "index": 338,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find=__UTS_a9e1884dfb254bc273a7d490_129__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 339,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[19]: find=__UTS_a9e1884dfb254bc273a7d490_130__, replace=CLAMP-EX-LOWER (1 matched)"
+      },
+      {
+        "index": 340,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find=__UTS_a9e1884dfb254bc273a7d490_131__, replace=outside (1 matched)"
+      },
+      {
+        "index": 341,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find=__UTS_a9e1884dfb254bc273a7d490_132__, replace=test (1 matched)"
+      },
+      {
+        "index": 342,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find=__UTS_a9e1884dfb254bc273a7d490_133__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 343,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[20]: find=__UTS_a9e1884dfb254bc273a7d490_134__, replace=CLAMP-EX-UPPER (1 matched)"
+      },
+      {
+        "index": 344,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find=__UTS_a9e1884dfb254bc273a7d490_135__, replace=source-structure (1 matched)"
+      },
+      {
+        "index": 345,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find=__UTS_a9e1884dfb254bc273a7d490_136__, replace=review (1 matched)"
+      },
+      {
+        "index": 346,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find=__UTS_a9e1884dfb254bc273a7d490_137__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 347,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[21]: find=__UTS_a9e1884dfb254bc273a7d490_138__, replace=CLAMP-OVERFLOW (1 matched)"
+      },
+      {
+        "index": 348,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find=__UTS_a9e1884dfb254bc273a7d490_139__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 349,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find=__UTS_a9e1884dfb254bc273a7d490_140__, replace=caller (1 matched)"
+      },
+      {
+        "index": 350,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find=__UTS_a9e1884dfb254bc273a7d490_141__, replace=Caller must satisfy ordered bounds. (1 matched)"
+      },
+      {
+        "index": 351,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[22]: find=__UTS_a9e1884dfb254bc273a7d490_142__, replace=CLAMP-PRE-ORDER (1 matched)"
+      },
+      {
+        "index": 352,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find=__UTS_a9e1884dfb254bc273a7d490_143__, replace=outside\u000bequal-bounds\u000bsmall-domain (1 matched)"
+      },
+      {
+        "index": 353,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find=__UTS_a9e1884dfb254bc273a7d490_144__, replace=test (1 matched)"
+      },
+      {
+        "index": 354,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find=__UTS_a9e1884dfb254bc273a7d490_145__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 355,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[23]: find=__UTS_a9e1884dfb254bc273a7d490_146__, replace=CLAMP-STEP-LOWER (1 matched)"
+      },
+      {
+        "index": 356,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find=__UTS_a9e1884dfb254bc273a7d490_147__, replace=in-range-boundary\u000bequal-bounds\u000bsmall-domain (1 matched)"
+      },
+      {
+        "index": 357,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find=__UTS_a9e1884dfb254bc273a7d490_148__, replace=test (1 matched)"
+      },
+      {
+        "index": 358,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find=__UTS_a9e1884dfb254bc273a7d490_149__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 359,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[24]: find=__UTS_a9e1884dfb254bc273a7d490_150__, replace=CLAMP-STEP-PRESERVE (1 matched)"
+      },
+      {
+        "index": 360,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find=__UTS_a9e1884dfb254bc273a7d490_151__, replace=outside\u000bequal-bounds\u000bsmall-domain (1 matched)"
+      },
+      {
+        "index": 361,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find=__UTS_a9e1884dfb254bc273a7d490_152__, replace=test (1 matched)"
+      },
+      {
+        "index": 362,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find=__UTS_a9e1884dfb254bc273a7d490_153__, replace=The listed unexecuted specification items address this exact source declaration. (1 matched)"
+      },
+      {
+        "index": 363,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[25]: find=__UTS_a9e1884dfb254bc273a7d490_154__, replace=CLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 364,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find=__UTS_a9e1884dfb254bc273a7d490_155__, replace=対象ケースなし（別工程） (1 matched)"
+      },
+      {
+        "index": 365,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find=__UTS_a9e1884dfb254bc273a7d490_156__, replace=unverified (1 matched)"
+      },
+      {
+        "index": 366,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find=__UTS_a9e1884dfb254bc273a7d490_157__, replace=No executable or review evidence is claimed here. Further review of this source declaration is required. (1 matched)"
+      },
+      {
+        "index": 367,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[26]: find=__UTS_a9e1884dfb254bc273a7d490_158__, replace=REQ-CLAMP-INCLUSIVE (1 matched)"
+      },
+      {
+        "index": 368,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_159__, replace=— (1 matched)"
+      },
+      {
+        "index": 369,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_160__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 370,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__UTS_a9e1884dfb254bc273a7d490_161__, replace=— (1 matched)"
+      },
+      {
+        "index": 371,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_162__, replace=Codex; human review pending (1 matched)"
+      },
+      {
+        "index": 372,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_163__, replace=2026-11-17 (1 matched)"
+      },
+      {
+        "index": 373,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_164__, replace=UTS-RTN-CLAMP-001 (2 matched)"
+      },
+      {
+        "index": 374,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_165__, replace=0.1 (2 matched)"
+      },
+      {
+        "index": 375,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_166__, replace=RTN-CLAMP-001 (1 matched)"
+      },
+      {
+        "index": 376,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_167__, replace=RangeClamp (2 matched)"
+      },
+      {
+        "index": 377,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_168__, replace=draft_trial (1 matched)"
+      },
+      {
+        "index": 378,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_169__, replace=試作仕様 要件確認前 (2 matched)"
+      },
+      {
+        "index": 379,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_170__, replace=unit-test-spec-v02 (1 matched)"
+      },
+      {
+        "index": 380,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_171__, replace=RangeClamp 単体テスト仕様書 (1 matched)"
+      },
+      {
+        "index": 381,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_172__, replace=Expectations are derived from the supplied program specification. This document does not execute tests or import old pass results. (1 matched)"
+      },
+      {
+        "index": 382,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_173__, replace=全ケース・族・静的確認は未実施。期待値は原仕様から定める。比較名と値は記述データであり、実行しない。要求承認・表示確認・C実行・RTOS検証は別記録で管理する。 (1 matched)"
+      },
+      {
+        "index": 383,
+        "success": true,
+        "output": "Updated /body: find=__UTS_a9e1884dfb254bc273a7d490_174__, replace=schema_version=0.2.0\u000b文書: UTS-RTN-CLAMP-001 / RangeClamp 単体テスト仕様書\u000brevision=0.1; date=2026-11-17; author=Codex; human review pending\u000bstatus=draft_trial / 試作仕様 要件確認前; template_id=unit-test-spec-v02\u000b対象: RTN-CLAMP-001 / RangeClamp\u000bprogram_spec_sha256:\u000b403f5e9255c9bcb5205d1dfe44e1af39\u000b99f8bde5194bc8138214e83c0feadcf7\u000bsource_sha256:\u000b05585ec8830ff0e29a0ad90cb9e9f99a\u000bdd3779a37f45c303141b4709db695741\u000bheader_sha256:\u000bde05170e412699da6eb5037c0e9f6bb5\u000bcca5094da0f53e99cb5663552d034138\u000b代表ケース=3; 手順行=8; 族=1; 静的確認=1\u000b族内の組合せ/系列 合計=5; 族内の呼出し照合 合計=10 (1 matched)"
+      },
+      {
+        "index": 384,
+        "success": true,
+        "output": "Updated /document: title=RangeClamp 単体テスト仕様書, subject=RTN-CLAMP-001, creator=Codex; human review pending"
+      }
+    ],
+    "summary": {
+      "total": 385,
+      "executed": 385,
+      "succeeded": 385,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

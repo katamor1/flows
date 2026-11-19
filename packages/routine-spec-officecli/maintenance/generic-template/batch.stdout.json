@@ -1,0 +1,144 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "Updated /body/tbl[2]: caption=repeat:view.assumptions"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "Updated /body/tbl[3]: caption=repeat:view.parameters"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "Updated /body/tbl[4]: caption=repeat:view.state_fields"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "Updated /body/tbl[5]: caption=repeat:view.results"
+      },
+      {
+        "index": 4,
+        "success": true,
+        "output": "Updated /body/tbl[6]: caption=repeat:view.steps"
+      },
+      {
+        "index": 5,
+        "success": true,
+        "output": "Updated /body/tbl[7]: caption=repeat:view.decisions"
+      },
+      {
+        "index": 6,
+        "success": true,
+        "output": "Updated /body/tbl[8]: caption=repeat:view.returns"
+      },
+      {
+        "index": 7,
+        "success": true,
+        "output": "Updated /body/tbl[9]: caption=repeat:view.constraints"
+      },
+      {
+        "index": 8,
+        "success": true,
+        "output": "Updated /body/tbl[10]: caption=repeat:view.examples"
+      },
+      {
+        "index": 9,
+        "success": true,
+        "output": "Updated /body/tbl[11]: caption=repeat:view.traceability"
+      },
+      {
+        "index": 10,
+        "success": true,
+        "output": "Updated /body/tbl[12]: caption=repeat:view.issues"
+      },
+      {
+        "index": 11,
+        "success": true,
+        "output": "Removed /body/tbl[7]/col[5]"
+      },
+      {
+        "index": 12,
+        "success": true,
+        "output": "Removed /body/tbl[7]/col[4]"
+      },
+      {
+        "index": 13,
+        "success": true,
+        "output": "Removed /body/tbl[7]/col[3]"
+      },
+      {
+        "index": 14,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[1]/tc[2]/p[1]: text=項目と値"
+      },
+      {
+        "index": 15,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]/tc[2]/p[1]: text={{details}}"
+      },
+      {
+        "index": 16,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[1]/tc[1]: width=2700"
+      },
+      {
+        "index": 17,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[1]/tc[2]: width=6600"
+      },
+      {
+        "index": 18,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]/tc[1]: width=2700"
+      },
+      {
+        "index": 19,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]/tc[2]: width=6600"
+      },
+      {
+        "index": 20,
+        "success": true,
+        "output": "Updated /body/p[2]: text={{document.status_label}}  |  {{document.date}}\u000B状態 {{document.status}}  スキーマ {{schema_version}}  テンプレート {{document.template_id}}\u000B作成者 {{document.author}}"
+      },
+      {
+        "index": 21,
+        "success": true,
+        "output": "Updated /body/p[6]: text={{overview.scope}}\u000B担当範囲 {{overview.coverage}}"
+      },
+      {
+        "index": 22,
+        "success": true,
+        "output": "Updated /body/p[7]: text=2 前提"
+      },
+      {
+        "index": 23,
+        "success": true,
+        "output": "Updated /body/p[13]: text={{view.type_definitions}}"
+      },
+      {
+        "index": 24,
+        "success": true,
+        "output": "Updated /body/p[16]: text=5 処理手順と条件表"
+      },
+      {
+        "index": 25,
+        "success": true,
+        "output": "Updated /body/p[18]: text=設定\u000B{{view.configuration_text}}"
+      }
+    ],
+    "summary": {
+      "total": 26,
+      "executed": 26,
+      "succeeded": 26,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

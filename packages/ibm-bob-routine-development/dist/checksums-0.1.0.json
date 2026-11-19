@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "version": "0.1.0",
+  "sha256": "8b4cd22bef5072c8a4ac211a9d1a2a25191b2d643133ea0316a5e27bc843b5c7",
+  "size_bytes": 306940,
+  "entry_count": 73,
+  "skills": [
+    "routine-spec-doc",
+    "routine-code-c90",
+    "routine-unit-test-spec"
+  ],
+  "archive": "ibm-bob-routine-development-0.1.0.zip"
+}

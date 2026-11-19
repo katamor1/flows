@@ -1,0 +1,23 @@
+{
+  "format_version": "0.2.0",
+  "name": "alarm-regression-independent-acceptance",
+  "target": {
+    "routine_name": "AlarmQualification_Update",
+    "spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265"
+  },
+  "headers": [
+    {
+      "source": "AlarmQualification.h",
+      "target": "AlarmQualification.h"
+    }
+  ],
+  "test_sources": [
+    "test_alarm_qualification.c"
+  ],
+  "support_sources": [],
+  "defines": [],
+  "allowed_undefined_symbols": [],
+  "allowed_public_symbols": [
+    "AlarmQualification_Update"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "0.2.0",
+  "name": "range-clamp-independent-acceptance",
+  "target": {
+    "routine_name": "RangeClamp",
+    "spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7"
+  },
+  "headers": [],
+  "test_sources": [
+    "test_range_clamp.c"
+  ],
+  "support_sources": [],
+  "defines": [],
+  "allowed_undefined_symbols": [],
+  "allowed_public_symbols": [
+    "RangeClamp"
+  ]
+}

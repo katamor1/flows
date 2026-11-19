@@ -1,0 +1,21 @@
+{
+  "format_version": "0.2.0",
+  "spec": "input/spec.json",
+  "spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+  "header": "include/RangeClamp.h",
+  "source": "src/RangeClamp.c",
+  "routine_id": "RTN-CLAMP-001",
+  "routine_name": "RangeClamp",
+  "profile": "input/verification-profile.json",
+  "tests": [
+    "tests/profile-000-test_range_clamp.c"
+  ],
+  "support_sources": [],
+  "headers": [],
+  "defines": [],
+  "allowed_undefined_symbols": [],
+  "allowed_public_symbols": [
+    "RangeClamp"
+  ],
+  "generation_record": "records/g001.json"
+}

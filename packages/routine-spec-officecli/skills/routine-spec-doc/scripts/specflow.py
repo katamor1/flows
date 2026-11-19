@@ -30,7 +30,7 @@ def sha(path):
 
 
 def load(path):
-    return json.loads(path.read_text(encoding='utf-8'))
+    return json.loads(path.read_text(encoding='utf-8'), parse_constant=lambda v: (_ for _ in ()).throw(ValueError('Nonfinite JSON value: '+v)))
 
 
 def save(path, value):
@@ -53,6 +53,7 @@ def doctor(exe):
     release = load(ROOT/'release.json')
     actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file()}
     require(actual == set(release['files'])|{'release.json'}, 'Missing or unexpected package resources')
+    require('.gitattributes' in release['files'] and (ROOT/'.gitattributes').read_bytes() == b'* -text\n', 'Missing byte-preservation guard')
     for name, expected in release['files'].items():
         path = ROOT/name
         require(path.resolve().is_relative_to(ROOT) and not path.is_symlink(), 'Invalid package resource path')
@@ -120,9 +121,7 @@ def validated_source(content, release):
     import _contract
     import _renderer
     data = _contract.validate(json.loads(content.decode('utf-8')), load(ROOT/release['schema']))
-    require(data['document']['routine_id'] == release['routine_id'], 'Unsupported routine for this profile')
-    require(data['document']['template_id'] == release['template_id'], 'Unsupported template ID')
-    require(data['document']['status_label'] == '試作仕様 要件確認前', 'This release cannot create approved specifications')
+    require(data['document']['template_id'] in release['accepted_template_ids'], 'Unsupported template ID')
     require(SAFE_ID.fullmatch(data['document']['id']), 'Invalid document ID')
     _renderer.check_xml_characters(data)
     return data
@@ -140,12 +139,21 @@ def execute(args):
                 'limits': release['limits']}
     workspace, job = job_path(args)
     if args.command == 'new-job':
+        if args.spec:
+            require(not any((args.routine_name, args.routine_id, args.document_id)), 'Use --spec or skeleton identity options, not both')
+            content = args.spec.expanduser().resolve(strict=True).read_bytes()
+            validated_source(content, release)
+        else:
+            import _contract
+            content = (json.dumps(_contract.skeleton(args.routine_name, args.routine_id, args.document_id), ensure_ascii=False, indent=2)+'\n').encode('utf-8')
         with stage_directory(workspace, args.job) as (stage, _):
             (stage/'source').mkdir()
-            shutil.copyfile(ROOT/release['example'], stage/'source/spec.json')
+            (stage/'source/spec.json').write_bytes(content)
+            (stage/'.gitattributes').write_bytes(b'* -text\n')
             save(stage/'package-lock.json', package)
-        return {'status': 'created', 'source': str(job/'source/spec.json')}
+        return {'status': 'created', 'source': str(job/'source/spec.json'), 'authoring_state': 'imported_valid' if args.spec else 'incomplete_skeleton'}
     require(load(contained(job, 'package-lock.json')) == package, 'Job release or renderer lock mismatch')
+    require(contained(job, '.gitattributes').read_bytes() == b'* -text\n', 'Job byte-preservation guard mismatch')
     source = contained(job, 'source/spec.json')
     content = source.read_bytes()
     data = validated_source(content, release)
@@ -163,7 +171,7 @@ def execute(args):
                        'python': platform.python_version(), 'canonical_source': 'source/spec.json'})
         save(stage/'manifest.json', record)
     return {'status': 'rendered', 'document': str(destination/output.name),
-            'manifest': str(destination/'manifest.json'), 'document_status': 'draft_trial'}
+            'manifest': str(destination/'manifest.json'), 'document_status': data['document']['status']}
 
 
 def main():
@@ -177,6 +185,11 @@ def main():
             command.add_argument('--job', required=True)
         if name == 'render':
             command.add_argument('--run', required=True)
+        if name == 'new-job':
+            command.add_argument('--spec', type=Path)
+            command.add_argument('--routine-name', default='')
+            command.add_argument('--routine-id', default='')
+            command.add_argument('--document-id', default='')
     args = parser.parse_args()
     try:
         print(json.dumps(execute(args), ensure_ascii=False, indent=2))

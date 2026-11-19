@@ -61,27 +61,11 @@ def check_xml_characters(data):
 
 
 def context(data, source):
-    """Lossless, scalar-only document view; enumeration families stay compact.
-
-    All canonical fields are shown, including byte initialization, pointer
-    conditions, notes, judgments, family algorithms, and unexecuted status.
-    Values remain plain text and are never interpreted as code or templates.
-    """
-    def refs(item):
-        return '\n'.join(item['spec_refs'])
-
-    def wrapped(value):
-        return '\n'.join(value[i:i+32] for i in range(0, len(value), 32))
-
-    def initial_text(initial):
-        result = initial['result']
-        return (f"{initial['instance']}: state全バイトを{initial['state_fill_byte']}、"
-                f"result全バイトを{initial['result_fill_byte']}で充填してからフィールドを設定。\n"
-                f"state.on_count={initial['state_count']}; "
-                f"result.qualified={result['qualified']}; "
-                f"result.became_qualified={result['became_qualified']}; "
-                f"result.on_count={result['on_count']}")
-
+    """Generic scalar-only view. Empty sections get display rows, never canonical edits."""
+    def refs(item): return '\n'.join(item['spec_refs'])
+    def value(item): return json.dumps(item, ensure_ascii=False, sort_keys=True, allow_nan=False)
+    def named(items): return '\n'.join(x['name']+' = '+value(x['value']) for x in items) or '該当なし'
+    def rows(items, keys): return items or [{key: '該当なし' if n == 0 else '—' for n, key in enumerate(keys)}]
     case_index, case_steps = [], []
     for case in data['cases']:
         case_index.append({'id': case['id'], 'title': case['title'],
@@ -89,74 +73,42 @@ def context(data, source):
                            'refs': refs(case), 'status': '未実施'})
         for index, step in enumerate(case['steps']):
             inputs = []
-            if index == 0:
-                inputs.append('独立した初期条件（ケースごとに毎回再初期化）:')
-                inputs.extend(initial_text(initial) for initial in case['initial'])
-            inputs.append(f"instance={step['instance']}; state_pointer={step['state_pointer']}; "
-                          f"result_pointer={step['result_pointer']}\n"
-                          f"signal_on={step['signal_on']}; sample_valid={step['sample_valid']}; "
-                          f"repeat={step['repeat']}")
-            expected = step['expected']
-            case_steps.append({
-                'case_step': case['id']+'/'+step['id'],
-                'inputs': '\n'.join(inputs),
-                'expected': (f"return_code={expected['return_code']}; state_count={expected['state_count']}\n"
-                             f"out_count={expected['out_count']}; qualified={expected['qualified']}; "
-                             f"became_qualified={expected['became_qualified']}\n"
-                             f"preservation={expected['preservation']}\n注記: {step['note']}"),
-                'refs': refs(case),
-            })
+            if index == 0: inputs.append('初期条件:\n'+named(case['initial_conditions']))
+            inputs.append('操作: '+step['action']+'\n入力:\n'+named(step['inputs'])+'\nrepeat='+str(step['repeat']))
+            expected = '\n'.join(x['target']+' ['+x['comparison']+'] '+value(x['value']) for x in step['expected'])
+            case_steps.append({'case_step': case['id']+'/'+step['id'], 'inputs': '\n'.join(inputs),
+                               'expected': expected+'\n注記: '+(step['note'] or '該当なし'), 'refs': refs(case)})
     families = []
     for family in data['families']:
-        dimensions = '\n'.join(dimension['name']+' = {'+', '.join(dimension['values'])+'}'
-                               for dimension in family['dimensions'])
-        families.append({
-            'id': family['id'],
-            'definition': (family['title']+f"\nmode={family['mode']}; sequence_length={family['sequence_length']}\n"
-                           +dimensions+f"\ncombination_count={family['combination_count']}; call_count={family['call_count']}\n"
-                           +'初期条件: '+family['initial']+'\n列挙順・展開ID: '+family['enumeration']
-                           +'\n方法: '+family['method']+'\n具体例:\n'+'\n'.join(family['examples'])
-                           +'\n実施状態: 未実施'),
-            'oracle': family['expected_rule'], 'refs': refs(family),
-        })
+        dimensions = '\n'.join(d['name']+' = '+value(d['values']) for d in family['dimensions'])
+        families.append({'id': family['id'],
+                         'definition': family['title']+f"\nmode={family['mode']}; sequence_length={family['sequence_length']}\n"
+                         +dimensions+f"\ncombination_count={family['combination_count']}; calls_per_instance={family['calls_per_instance']}; call_count={family['call_count']}\n"
+                         +'初期条件: '+family['initial']+'\n列挙順・展開ID: '+family['enumeration']
+                         +'\n方法: '+family['method']+'\n具体例:\n'+('\n'.join(family['examples']) or '該当なし')+'\n実施状態: 未実施',
+                         'oracle': family['expected_rule'], 'refs': refs(family)})
     doc = data['document']
-    target = data['target']
-    target_summary = '\n'.join([
-        'schema_version='+data['schema_version'],
-        f"文書: {doc['id']} / {doc['title']}",
-        f"revision={doc['revision']}; date={doc['date']}; author={doc['author']}",
+    target_summary = '\n'.join(['schema_version='+data['schema_version'],
+        f"文書: {doc['id']} / {doc['title']}", f"revision={doc['revision']}; date={doc['date']}; author={doc['author']}",
         f"status={doc['status']} / {doc['status_label']}; template_id={doc['template_id']}",
-        f"対象: {doc['routine_id']} / {doc['routine_name']}",
-        'program_spec_sha256:\n'+wrapped(target['program_spec_sha256']),
-        'source_sha256 (AlarmQualification.c):\n'+wrapped(target['source_sha256']),
-        'header_sha256 (AlarmQualification.h):\n'+wrapped(target['header_sha256']),
-        f"代表ケース={len(data['cases'])}; 手順行={len(case_steps)}; 族={len(families)}; "
-        f"静的確認={len(data['static_checks'])}",
-        f"族内の組合せ/系列 合計={sum(f['combination_count'] for f in data['families'])}; "
-        f"族内の呼出し照合 合計={sum(f['call_count'] for f in data['families'])}",
-    ])
+        f"対象: {doc['routine_id']} / {doc['routine_name']}"]
+        +[key+':\n'+'\n'.join(v[i:i+32] for i in range(0, len(v), 32)) for key, v in data['target'].items()]
+        +[f"代表ケース={len(data['cases'])}; 手順行={len(case_steps)}; 族={len(families)}; 静的確認={len(data['static_checks'])}",
+          f"族内の組合せ/系列 合計={sum(f['combination_count'] for f in data['families'])}; 族内の呼出し照合 合計={sum(f['call_count'] for f in data['families'])}"])
     return {**data, 'build': {'source_short_hash': sha(source)[:12]}, 'view': {
         'target_summary': target_summary,
-        'not_executed': ('全ケース・族・静的確認は未実施。本文の期待値は試験仕様であり、合格結果ではない。'
-                         '要求承認・全ページ表示確認・C90実行・RTOS検証は別の記録で管理する。\n'
-                         '表記: object=有効なオブジェクト、null=NULL、iteration=各呼出しのk（1..repeat）、'
-                         'preserve=呼出し直前値保持、all_valid_bytes=有効な全領域の全バイト保持、'
-                         'none=全バイト保持の要求なし。INT_MIN/INT_MAX/UINT_MAXはC処理系の記号定数。'
-                         '最初の有効ONを1回目と数え、10回目の判定を扱う。10T経過を測定した結果ではない。'),
-        'environment': [{'text': text} for text in data['environment']],
-        'assumptions': [dict(item) for item in data['assumptions']],
-        'case_index': case_index,
-        'case_steps': case_steps,
-        'families': families,
-        'static_checks': [{'id': item['id'],
-                           'method': item['title']+'\n方法: '+item['method'],
-                           'criterion': item['criterion']+'\n対象範囲・限界: '+item['boundary']+'\n実施状態: 未実施',
-                           'refs': refs(item)} for item in data['static_checks']],
-        'coverage': [{'ref': item['spec_ref'], 'method': item['method'],
-                      'items': '\n'.join(item['item_ids']) or '対象ケースなし（別工程）',
-                      'reason': item['rationale']} for item in data['coverage']],
-        'open_issues': [dict(item) for item in data['open_issues']],
-    }}
+        'not_executed': '全ケース・族・静的確認は未実施。期待値は原仕様から定める。比較名と値は記述データであり、実行しない。要求承認・表示確認・C実行・RTOS検証は別記録で管理する。',
+        'environment': rows([{'text': text} for text in data['environment']], ['text']),
+        'assumptions': rows([dict(x) for x in data['assumptions']], ['id', 'text']),
+        'case_index': rows(case_index, ['id', 'title', 'purpose', 'refs', 'status']),
+        'case_steps': rows(case_steps, ['case_step', 'inputs', 'expected', 'refs']),
+        'families': rows(families, ['id', 'definition', 'oracle', 'refs']),
+        'static_checks': rows([{'id': x['id'], 'method': x['title']+'\n方法: '+x['method'],
+                           'criterion': x['criterion']+'\n対象範囲・限界: '+x['boundary']+'\n実施状態: 未実施',
+                           'refs': refs(x)} for x in data['static_checks']], ['id', 'method', 'criterion', 'refs']),
+        'coverage': rows([{'ref': x['spec_ref'], 'method': x['method'], 'items': '\n'.join(x['item_ids']) or '対象ケースなし（別工程）',
+                          'reason': x['rationale']} for x in data['coverage']], ['ref', 'method', 'items', 'reason']),
+        'open_issues': rows([dict(x) for x in data['open_issues']], ['id', 'owner', 'decision'])}}
 
 
 def scalar(value):
@@ -398,7 +350,7 @@ def _build(source, schema, template, output, manifest, exe, data):
              'commands': len(commands), 'repeated_rows_cloned': checks['clones'],
              'semantic_sha256': semantic_sha}
     write_json(stage/'content-check.json', check)
-    return {'generator_backend': 'officecli', 'generator_version': '0.1.0',
+    return {'generator_backend': 'officecli', 'generator_version': '0.2.0',
             'source': source.name, 'source_sha256': sha(source), 'schema_sha256': sha(schema),
             'template_sha256': sha(template), 'output': output.name, 'output_sha256': sha(output),
             'status': data['document']['status'], 'semantic_sha256': semantic_sha,

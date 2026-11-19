@@ -7,6 +7,8 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / 'skills/routine-code-c90'
+VERSION = '0.2.0'
+PAYLOAD_ROOTS = ('scripts/', 'references/', 'assets/templates/', 'assets/examples/')
 
 
 def sha(data):
@@ -14,12 +16,13 @@ def sha(data):
 
 
 def seal():
-    paths = sorted(p for p in SKILL.rglob('*') if p.is_file() and p.name != 'release.json')
+    paths = sorted(p for p in SKILL.rglob('*') if p.is_file() and
+                   (p.relative_to(SKILL).as_posix() in {'SKILL.md', '.gitattributes'} or
+                    p.relative_to(SKILL).as_posix().startswith(PAYLOAD_ROOTS)))
     if any('__pycache__' in p.parts for p in paths):
         raise ValueError('Unexpected bytecode in package')
-    record = {'name': 'routine-code-c90', 'version': '0.1.0',
-              'profile': 'alarm-qualification-v01',
-              'spec_sha256': sha((SKILL / 'assets/alarm-profile/input/spec.json').read_bytes()),
+    record = {'name': 'routine-code-c90', 'version': VERSION,
+              'verification': 'data-only optional profiles; generic C90 host O0/O2',
               'files': {p.relative_to(SKILL).as_posix(): sha(p.read_bytes()) for p in paths}}
     (SKILL / 'release.json').write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'status': 'sealed', 'release_sha256': sha((SKILL / 'release.json').read_bytes())}))
@@ -28,8 +31,10 @@ def seal():
 def bundle():
     release_bytes = (SKILL / 'release.json').read_bytes()
     release = json.loads(release_bytes)
-    actual = {p.relative_to(SKILL).as_posix() for p in SKILL.rglob('*') if p.is_file()}
-    if actual != set(release['files']) | {'release.json'}:
+    actual = {p.relative_to(SKILL).as_posix() for p in SKILL.rglob('*') if p.is_file() and
+              (p.relative_to(SKILL).as_posix() in {'SKILL.md', '.gitattributes'} or
+               p.relative_to(SKILL).as_posix().startswith(PAYLOAD_ROOTS))}
+    if actual != set(release['files']):
         raise ValueError('Package inventory differs from release')
     payload = {}
     for name, expected in release['files'].items():
@@ -40,10 +45,10 @@ def bundle():
     payload['.bob/skills/routine-code-c90/release.json'] = release_bytes
     payload['BOB-TEAM-README.md'] = (ROOT / 'README.md').read_bytes()
     payload['distribution.json'] = (json.dumps({
-        'name': 'routine-code-c90', 'version': '0.1.0', 'bob_ide_execution': 'not_tested',
+        'name': 'routine-code-c90', 'version': VERSION, 'bob_ide_execution': 'not_tested',
         'release_sha256': sha(release_bytes),
         'files': {name: sha(data) for name, data in sorted(payload.items())}}, indent=2) + '\n').encode('utf-8')
-    path = ROOT / 'dist/ibm-bob-routine-code-c90-0.1.0.zip'
+    path = ROOT / ('dist/ibm-bob-routine-code-c90-' + VERSION + '.zip')
     path.parent.mkdir(exist_ok=True)
     with ZipFile(path, 'w', compression=ZIP_DEFLATED) as archive:
         for name, data in sorted(payload.items()):
@@ -56,7 +61,7 @@ def bundle():
             raise ValueError('ZIP readback failed')
     receipt = {'archive': path.name, 'sha256': sha(path.read_bytes()),
                'size_bytes': path.stat().st_size, 'entry_count': len(payload), 'readback': 'passed'}
-    (path.parent / 'checksums.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
+    (path.parent / ('checksums-' + VERSION + '.json')).write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(receipt))
 
 

@@ -1,0 +1,20 @@
+test_arbitrary_ids_empty_lists_and_native_values (test_contract.ContractTests.test_arbitrary_ids_empty_lists_and_native_values) ... ok
+test_duplicate_unknown_and_unmapped_items_rejected (test_contract.ContractTests.test_duplicate_unknown_and_unmapped_items_rejected) ... ok
+test_empty_view_is_display_only (test_contract.ContractTests.test_empty_view_is_display_only) ... ok
+test_empty_work_and_legacy_pass_rejected (test_contract.ContractTests.test_empty_work_and_legacy_pass_rejected) ... ok
+test_families_compute_general_product_and_sequence (test_contract.ContractTests.test_families_compute_general_product_and_sequence) ... ok
+test_nonfinite_empty_expected_and_unknown_keywords_rejected (test_contract.ContractTests.test_nonfinite_empty_expected_and_unknown_keywords_rejected) ... ok
+test_source_hash_must_match_actual_inputs (test_contract.ContractTests.test_source_hash_must_match_actual_inputs) ... ok
+test_forward_execution_and_byte_attributes (test_distribution.DistributionTests.test_forward_execution_and_byte_attributes) ... ok
+test_package_change_rejected (test_distribution.DistributionTests.test_package_change_rejected) ... ok
+test_blank_skeleton_rejected (test_render.RenderTests.test_blank_skeleton_rejected) ... ok
+test_generation_hash_and_additional_asset_tamper_rejected (test_render.RenderTests.test_generation_hash_and_additional_asset_tamper_rejected) ... ok
+test_generic_and_legacy_code_jobs (test_render.RenderTests.test_generic_and_legacy_code_jobs) ... ok
+test_invalid_expected_and_legacy_pass_rejected (test_render.RenderTests.test_invalid_expected_and_legacy_pass_rejected) ... ok
+test_real_non_alarm_variable_documents_and_repeat (test_render.RenderTests.test_real_non_alarm_variable_documents_and_repeat) ... ok
+test_source_and_lock_tamper_rejected_without_publishing (test_render.RenderTests.test_source_and_lock_tamper_rejected_without_publishing) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 143.508s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "source": "routine-spec-v01.docx",
+  "source_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
+  "source_unchanged": true,
+  "target": "routine-spec-v02.docx",
+  "target_sha256": "72733df8f3d7b68160d6cbdd7bb26cd8146f7976e10a8598cdd62586cb2d6a8e",
+  "officecli_sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb",
+  "commands": 26,
+  "validation_success": true,
+  "docx_author": "OfficeCLI only",
+  "python_xml": "read-only inspection",
+  "visual_review": "not_performed"
+}

@@ -1,80 +1,166 @@
 {
-  "verified_date": "2026-11-14",
+  "verified_date": "2026-11-17",
   "name": "routine-spec-officecli",
-  "version": "0.2.0",
-  "release_sha256": "9c8c39f522c19cd8cfffb033068c435228a0d29614480b6631cf097cff513778",
+  "version": "0.3.0",
+  "executed_by": "Codex direct CLI",
+  "release_sha256": "99b31ceca8f0fd6dec4b79bd8345953f5d9e09ecafb5b8c98e9e616a7163241a",
   "archive": {
-    "file": "ibm-bob-routine-spec-officecli-0.2.0.zip",
-    "sha256": "6bfd66c49bbc7500ba38699d4c1e6832d4e401213329381f4cd4924337abf6f9",
-    "bytes": 64836,
-    "files": 13,
-    "release_sha256": "9c8c39f522c19cd8cfffb033068c435228a0d29614480b6631cf097cff513778"
+    "file": "ibm-bob-routine-spec-officecli-0.3.0.zip",
+    "sha256": "b8167dd146d67a91aca146c19251ef9e4dceb25411886674f1a9ba8c37b0c876",
+    "bytes": 110589,
+    "files": 17,
+    "release_sha256": "99b31ceca8f0fd6dec4b79bd8345953f5d9e09ecafb5b8c98e9e616a7163241a"
   },
   "runtime": {
-    "bob_ide_observed": "1.126.0+bob2.2.3",
+    "python": "3.12.14",
+    "python_mode": "-X utf8 -S -B; standard library only",
     "officecli": {
       "version": "1.0.144",
       "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
-    },
-    "python": "3.12.14",
-    "third_party_python_dependencies": []
+    }
   },
   "automated_tests": {
-    "tests": 13,
+    "tests": 21,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "elapsed_seconds": 200.172,
+    "elapsed_seconds": 387.681,
     "success": true,
-    "python_mode": "-S -B; standard library only"
+    "evidence": "qa/generic-test-output.txt",
+    "evidence_sha256": "78e139b5b51f0fb411e7842b20c58064be2f477e7cdee0ae77a9115b28b61aab"
   },
-  "main_generation": {
-    "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-spec-officecli\\alarm-officecli\\renders\\r001\\PS-RTN-ALM-001.docx",
-    "output_sha256": "2357e0439a87fd1432aeb299922800415fc3b48ca474d7bab6adf1df72c2e7a6",
-    "source_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
-    "semantic_sha256": "e2e510b95572e81a944fe52b0b45ca33f015995c85b07d7c410bdf9ae2f57dd4",
-    "officecli_commands": 307,
-    "ooxml_validation": "passed, 0 errors",
-    "content_and_formatting": "passed",
-    "immutable_template_and_schema": true
+  "acceptance_generations": [
+    {
+      "job": "range-clamp-final",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\program\\range-clamp-final\\renders\\r001\\PS-RTN-CLAMP-001.docx",
+      "source_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+      "output_sha256": "8c909a2158af17d7ecb2304beaab8028fdc29552a2ee5aeaf1b28cd8395d0729",
+      "semantic_sha256": "c85d38e9ef77cbcc7193d927f632e2a18e2faf00d2a30c848362d886f7843c1f",
+      "status": "draft_trial",
+      "commands": 178,
+      "table_rows": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        4,
+        4,
+        2,
+        4,
+        5,
+        2,
+        2
+      ],
+      "ooxml_validation": "passed",
+      "content_and_formatting": "passed",
+      "unchanged_parts": "matched",
+      "close": "passed",
+      "visual_review": "not_performed"
+    },
+    {
+      "job": "sample-hold-final",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\program\\sample-hold-final\\renders\\r001\\PS-TEST-SAMPLE-001.docx",
+      "source_sha256": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad",
+      "output_sha256": "0bd160e928d5bcab8d970dc50c7fe5e54eb8a2e5cfbbd2a4329aa1c2459f1328",
+      "semantic_sha256": "7bcd3e7cecb31edb48d2c9f2cb56959d8e8e391685bbce3fe0287f9894523904",
+      "status": "fixture_only",
+      "commands": 177,
+      "table_rows": [
+        4,
+        3,
+        3,
+        3,
+        2,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        2
+      ],
+      "ooxml_validation": "passed",
+      "content_and_formatting": "passed",
+      "unchanged_parts": "matched",
+      "close": "passed",
+      "visual_review": "not_performed"
+    },
+    {
+      "job": "alarm-regression",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\program\\alarm-regression\\renders\\r001\\PS-RTN-ALM-001.docx",
+      "source_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+      "output_sha256": "87041d95fd3e9de33571dc70702f256bc7fd5211eba2837ecad95cf78d9b0d19",
+      "semantic_sha256": "b1386d7a2c7b07c62407ef554287f729f3b4f8088c2ddad14995fdcfd6ad28cd",
+      "status": "draft_trial",
+      "commands": 289,
+      "table_rows": [
+        4,
+        4,
+        5,
+        2,
+        4,
+        6,
+        6,
+        5,
+        5,
+        7,
+        3,
+        5
+      ],
+      "ooxml_validation": "passed",
+      "content_and_formatting": "passed",
+      "unchanged_parts": "matched",
+      "close": "passed",
+      "visual_review": "not_performed"
+    }
+  ],
+  "archive_forward_check": {
+    "archive_sha256": "b8167dd146d67a91aca146c19251ef9e4dceb25411886674f1a9ba8c37b0c876",
+    "archive_files": 17,
+    "all_distribution_hashes_match": true,
+    "payload_guard": true,
+    "old_0_2_0_zip_sha256": "6bfd66c49bbc7500ba38699d4c1e6832d4e401213329381f4cd4924337abf6f9",
+    "fresh_zip_cli": {
+      "doctor": "passed",
+      "new_job_spec_import": "passed",
+      "validate": "passed",
+      "source_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7"
+    }
   },
-  "independent_forward_test": {
-    "status": "passed",
-    "checks": 17,
-    "checks_passed": 17,
-    "evidence": "qa/forward-evaluation.json",
-    "root_verified_revision_and_artifact_hashes": true
+  "template_build": {
+    "source": "routine-spec-v01.docx",
+    "source_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
+    "source_unchanged": true,
+    "target": "routine-spec-v02.docx",
+    "target_sha256": "72733df8f3d7b68160d6cbdd7bb26cd8146f7976e10a8598cdd62586cb2d6a8e",
+    "officecli_sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb",
+    "commands": 26,
+    "validation_success": true,
+    "docx_author": "OfficeCLI only",
+    "python_xml": "read-only inspection",
+    "visual_review": "not_performed"
   },
-  "independent_code_review": {
-    "important_findings_resolved": [
-      "Added sectPr, styles, relationships and unchanged package-part verification"
-    ],
-    "remaining_important_findings": 0
-  },
-  "template_repair": {
-    "legacy_validation_errors": 164,
-    "current_validation_errors": 0,
-    "evidence": "maintenance/template-repair/repair-evidence.json",
-    "commands": 120,
-    "template_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
-    "text_tokens_tables_fields_preserved": true
+  "fixtures": {
+    "range-clamp": {
+      "path": "skills/routine-spec-doc/assets/examples/range-clamp/spec.json",
+      "sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7"
+    },
+    "sample-hold": {
+      "path": "skills/routine-spec-doc/assets/examples/sample-hold/spec.json",
+      "sha256": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad"
+    }
   },
   "visual_review": {
-    "pages": 4,
-    "all_pages_inspected": true,
-    "renderer": "Microsoft Word UI PDF export, then bundled PDF.js page PNGs",
-    "qa_copy_matches_delivered_docx": true,
-    "pdf_sha256": "d44105167cc70b999244e6b26017071345d50d2cec5e69abb3f42a64aaea3add",
-    "page_numbers": "1/4 through 4/4",
-    "clipping_missing_glyphs_broken_tables": "none observed",
-    "officecli_pdf_export": "unavailable: exporter_not_found",
-    "officecli_native_screenshot": "unavailable: native_unavailable"
+    "performed": false,
+    "all_pages_inspected": false
   },
+  "bob_chat_skill_activation": "not_tested",
   "limits": [
-    "Only the 10-cycle alarm qualification draft profile",
-    "Limited fixed JSON Schema keywords",
-    "Bob chat skill discovery/activation not tested",
-    "No C90 code execution, RTOS integration or timing measurements",
-    "Visual review is separate from the automated generation/OOXML validation command"
+    "Only the explicitly supported JSON Schema keywords; unknown keywords fail closed.",
+    "No business semantic approval or automatic human approval.",
+    "No full-page visual inspection.",
+    "No C90 execution, actual RTOS integration or WCET measurements in this document kit.",
+    "SampleHold is a supplied synthetic fixture, not an approved RTOS interface."
   ]
 }

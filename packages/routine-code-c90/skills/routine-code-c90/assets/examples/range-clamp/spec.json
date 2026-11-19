@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "PS-RTN-CLAMP-001",
+    "routine_id": "RTN-CLAMP-001",
+    "routine_name": "RangeClamp",
+    "status": "draft_trial",
+    "title": "Stateless inclusive integer clamp"
+  },
+  "interface": {
+    "language": "C90",
+    "prototype": "int RangeClamp(int value, int lower, int upper);",
+    "type_definitions": "",
+    "preconditions": "lower <= upper. All arguments may be any representable int consistent with that ordering.",
+    "return_value": "Return lower when value < lower, upper when value > upper, otherwise value."
+  },
+  "behavior": {
+    "state": "None. No global, static, or caller-owned state.",
+    "steps": [
+      "Clamp to the inclusive lower bound.",
+      "Clamp to the inclusive upper bound.",
+      "Preserve an in-range value."
+    ]
+  },
+  "constraints": [
+    "Do not call external APIs, allocate memory, loop, or recurse.",
+    "Do not subtract the bounds or otherwise introduce overflow."
+  ],
+  "verification_examples": [
+    {"input": [-8, -3, 4], "expected": -3},
+    {"input": [2, -3, 4], "expected": 2},
+    {"input": [9, -3, 4], "expected": 4},
+    {"input": [7, 7, 7], "expected": 7}
+  ]
+}

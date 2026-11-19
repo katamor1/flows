@@ -1,0 +1,2912 @@
+[
+  {
+    "command": "add",
+    "parent": "/body/tbl[2]",
+    "from": "/body/tbl[2]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_0__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_1__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_2__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_3__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_4__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_5__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{purpose}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_6__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_7__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{status}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_8__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{title}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_9__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_10__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{purpose}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_11__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_12__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{status}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_13__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{title}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_14__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_15__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_16__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_17__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_18__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_19__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_20__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_21__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_22__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{definition}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_23__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_24__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{oracle}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_25__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_26__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{criterion}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_27__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_28__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_29__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_30__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_31__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_32__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_33__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_34__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_35__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_36__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_37__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_38__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_39__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_40__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_41__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_42__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_43__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_44__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_45__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_46__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_47__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_48__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_49__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_50__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_51__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_52__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_53__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_54__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_55__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_56__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_57__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_58__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_59__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_60__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_61__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_62__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_63__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_64__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_65__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_66__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_67__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_68__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_69__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_70__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_71__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_72__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_73__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_74__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_75__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_76__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_77__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_78__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_79__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_80__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_81__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_82__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_83__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_84__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_85__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_86__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_87__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_88__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_89__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_90__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_91__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_92__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_93__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_94__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_95__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_96__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_97__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_98__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_99__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_100__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_101__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_102__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_103__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_104__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_105__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_106__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_107__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_108__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_109__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_110__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_111__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_112__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_113__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_114__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_115__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_116__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_117__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_118__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_119__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_120__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_121__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_122__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_123__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_124__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_125__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_126__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_127__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_128__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_129__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_130__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_131__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_132__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_133__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_134__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_135__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_136__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_137__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_138__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_139__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_140__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_141__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_142__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_143__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_144__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_145__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_146__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_147__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_148__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_149__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_150__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_151__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_152__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_153__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_154__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_155__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_156__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_157__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.author}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_158__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.date}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_159__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_160__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.revision}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_161__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_162__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_name}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_163__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_164__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status_label}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_165__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.template_id}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_166__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.title}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_167__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{summary}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_168__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.not_executed}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_169__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.target_summary}}",
+      "replace": "__UTS_8cf7f64315c605dad65747ab_170__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_0__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_1__",
+      "replace": "SH-ASM-API"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_2__",
+      "replace": "FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_3__",
+      "replace": "SH-ASM-OWNERSHIP"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_4__",
+      "replace": "Independent states may be used by independent callers; external API synchronization is outside this fixture."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_5__",
+      "replace": "read-success"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_6__",
+      "replace": "目的: Check the supplied synthetic API success/failure contract.\u000b判定基準: All return, state, output, and call-count comparisons match the supplied API specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_7__",
+      "replace": "SH-STEP-READ\u000bSH-STEP-PRESERVE\u000bSH-STEP-COMMIT\u000bSH-EX-SUCCESS"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_8__",
+      "replace": "未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_9__",
+      "replace": "read-success"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_10__",
+      "replace": "read-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_11__",
+      "replace": "目的: Check the supplied synthetic API success/failure contract.\u000b判定基準: All return, state, output, and call-count comparisons match the supplied API specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_12__",
+      "replace": "SH-STEP-READ\u000bSH-STEP-PRESERVE\u000bSH-STEP-COMMIT\u000bSH-EX-FAILURE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_13__",
+      "replace": "未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_14__",
+      "replace": "read-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_15__",
+      "replace": "read-success/mock-call"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_16__",
+      "replace": "return [equals] 0\u000bstate [equals] {\"has_sample\": 1, \"last_sample\": 23}\u000bout_sample [equals] 23\u000bapi_call_count [equals] 1\u000b注記: Synthetic test fixture only; no real RTOS or device API is inferred."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_17__",
+      "replace": "初期条件:\u000bstate = {\"has_sample\": 1, \"last_sample\": 8}\u000bout_sample = 99\u000b操作: Arrange supplied Project_ReadSample mock and call SampleHold_Update with valid disjoint storage.\u000b入力:\u000bapi_status = 0\u000bapi_sample = 23\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_18__",
+      "replace": "SH-STEP-READ\u000bSH-STEP-PRESERVE\u000bSH-STEP-COMMIT\u000bSH-EX-SUCCESS"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_19__",
+      "replace": "read-failure/mock-call"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_20__",
+      "replace": "return [equals] -2\u000bstate [equals] {\"has_sample\": 1, \"last_sample\": 8}\u000bout_sample [equals] 99\u000bapi_call_count [equals] 1\u000b注記: Synthetic test fixture only; no real RTOS or device API is inferred."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_21__",
+      "replace": "初期条件:\u000bstate = {\"has_sample\": 1, \"last_sample\": 8}\u000bout_sample = 99\u000b操作: Arrange supplied Project_ReadSample mock and call SampleHold_Update with valid disjoint storage.\u000b入力:\u000bapi_status = 7\u000bapi_sample = -99\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_22__",
+      "replace": "SH-STEP-READ\u000bSH-STEP-PRESERVE\u000bSH-STEP-COMMIT\u000bSH-EX-FAILURE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_23__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_24__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_25__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_26__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_27__",
+      "replace": "No API call/write before pointer validation; only the supplied immediate API contract; no invented ABI, allocation, loops or shared mutable state.\u000b対象範囲・限界: Synthetic interface only. External API synchronization, real target timing and physical input behavior are not verified.\u000b実施状態: 未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_28__",
+      "replace": "fixture-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_29__",
+      "replace": "Fixture-only API boundary\u000b方法: Review exact locked source and supplied synthetic API contract; follow null checks before the API call."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_30__",
+      "replace": "SH-C-SUPPLIED\u000bSH-C-RESOURCES\u000bSH-STEP-POINTERS"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_31__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_32__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_33__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_34__",
+      "replace": "/behavior/configuration/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_35__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_36__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_37__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_38__",
+      "replace": "/behavior/configuration/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_39__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_40__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_41__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_42__",
+      "replace": "/behavior/decision_rows/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_43__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_44__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_45__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_46__",
+      "replace": "/behavior/decision_rows/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_47__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_48__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_49__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_50__",
+      "replace": "/behavior/decision_rows/2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_51__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_52__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_53__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_54__",
+      "replace": "/behavior/postconditions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_55__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_56__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_57__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_58__",
+      "replace": "/behavior/result_fields/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_59__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_60__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_61__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_62__",
+      "replace": "/behavior/state_fields/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_63__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_64__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_65__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_66__",
+      "replace": "/behavior/state_fields/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_67__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_68__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_69__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_70__",
+      "replace": "/behavior/timing_semantics"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_71__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_72__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_73__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_74__",
+      "replace": "/interface/language"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_75__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_76__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_77__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_78__",
+      "replace": "/interface/parameters/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_79__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_80__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_81__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_82__",
+      "replace": "/interface/parameters/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_83__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_84__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_85__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_86__",
+      "replace": "/interface/preconditions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_87__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_88__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_89__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_90__",
+      "replace": "/interface/prototype"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_91__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_92__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_93__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_94__",
+      "replace": "/interface/return_codes/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_95__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_96__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_97__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_98__",
+      "replace": "/interface/return_codes/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_99__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_100__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_101__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_102__",
+      "replace": "/interface/return_codes/2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_103__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_104__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_105__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_106__",
+      "replace": "/interface/type_definitions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_107__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_108__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_109__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_110__",
+      "replace": "/interface/visibility"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_111__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_112__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_113__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_114__",
+      "replace": "REQ-SH-FIXTURE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_115__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_116__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_117__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_118__",
+      "replace": "SH-ASM-API"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_119__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_120__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_121__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_122__",
+      "replace": "SH-ASM-OWNERSHIP"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_123__",
+      "replace": "fixture-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_124__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_125__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_126__",
+      "replace": "SH-C-RESOURCES"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_127__",
+      "replace": "fixture-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_128__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_129__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_130__",
+      "replace": "SH-C-SUPPLIED"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_131__",
+      "replace": "read-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_132__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_133__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[27]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_134__",
+      "replace": "SH-EX-FAILURE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_135__",
+      "replace": "read-success"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_136__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_137__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[28]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_138__",
+      "replace": "SH-EX-SUCCESS"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_139__",
+      "replace": "read-success\u000bread-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_140__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_141__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[29]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_142__",
+      "replace": "SH-STEP-COMMIT"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_143__",
+      "replace": "fixture-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_144__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_145__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[30]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_146__",
+      "replace": "SH-STEP-POINTERS"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_147__",
+      "replace": "read-success\u000bread-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_148__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_149__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[31]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_150__",
+      "replace": "SH-STEP-PRESERVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_151__",
+      "replace": "read-success\u000bread-failure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_152__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_153__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[32]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_154__",
+      "replace": "SH-STEP-READ"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_155__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_156__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_157__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_158__",
+      "replace": "Codex; human review pending"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_159__",
+      "replace": "2026-11-17"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_160__",
+      "replace": "UTS-RTN-TEST-SAMPLE-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_161__",
+      "replace": "0.1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_162__",
+      "replace": "RTN-TEST-SAMPLE-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_163__",
+      "replace": "SampleHold_Update"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_164__",
+      "replace": "fixture_only"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_165__",
+      "replace": "合成検証fixture 実RTOSインターフェース未承認"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_166__",
+      "replace": "unit-test-spec-v02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_167__",
+      "replace": "Synthetic SampleHold_Update 単体テスト仕様書"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_168__",
+      "replace": "Expectations are derived from the supplied program specification. This document does not execute tests or import old pass results."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_169__",
+      "replace": "全ケース・族・静的確認は未実施。期待値は原仕様から定める。比較名と値は記述データであり、実行しない。要求承認・表示確認・C実行・RTOS検証は別記録で管理する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_8cf7f64315c605dad65747ab_170__",
+      "replace": "schema_version=0.2.0\u000b文書: UTS-RTN-TEST-SAMPLE-001 / Synthetic SampleHold_Update 単体テスト仕様書\u000brevision=0.1; date=2026-11-17; author=Codex; human review pending\u000bstatus=fixture_only / 合成検証fixture 実RTOSインターフェース未承認; template_id=unit-test-spec-v02\u000b対象: RTN-TEST-SAMPLE-001 / SampleHold_Update\u000bprogram_spec_sha256:\u000b42df8ea431abd0b123ca78326b483a60\u000b061b4e07e21a05012128609525f1e8ad\u000bsource_sha256:\u000b809c9c55c41f56ff8d23cb59ce0dc865\u000baed243a33ff3c9988e7af916a5896787\u000bheader_sha256:\u000b6885fa0c9d3f2effc6049e3bc8a94afd\u000bba45497e0e09a50a7d49460e6f942a66\u000b代表ケース=2; 手順行=2; 族=0; 静的確認=1\u000b族内の組合せ/系列 合計=0; 族内の呼出し照合 合計=0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/document",
+    "props": {
+      "title": "Synthetic SampleHold_Update 単体テスト仕様書",
+      "subject": "RTN-TEST-SAMPLE-001",
+      "creator": "Codex; human review pending"
+    }
+  }
+]

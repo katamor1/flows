@@ -1,0 +1,18 @@
+{
+  "template_sha256": "603532774fa43356eca389bdb2ce2f491471693ce73add0f6fbd87015091702e",
+  "source_sha256": "fc1faab6615db0d90b77bf25d614a740c50cd0ee529026d8c219211764683138",
+  "source_unchanged": true,
+  "tables": 8,
+  "repeated_headers": true,
+  "variable_row_height": true,
+  "officecli_validation": {
+    "success": true,
+    "data": {
+      "count": 0,
+      "errors": []
+    }
+  },
+  "visual_review": "not_performed",
+  "bob_execution": "not_tested",
+  "python_ooxml_write": false
+}

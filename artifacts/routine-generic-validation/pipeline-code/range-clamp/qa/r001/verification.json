@@ -1,0 +1,354 @@
+{
+  "format_version": "0.2.0",
+  "time_utc": "2026-11-17T11:44:34.478784+00:00",
+  "kind": "host_verification",
+  "status": "passed",
+  "scope": "C90 host O0/O2 only; target RTOS, DLL ABI, WCET and Bob IDE execution are not verified",
+  "release_sha256": "7498620a9c4965dbeb620628d3388b91d5d23b43328b2de7cd34c1d2e2181a83",
+  "files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "include/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "input/spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+    "src/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+    "traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45",
+    "records/g001.json": "c3f554e989553807721d0c4ce74361ced279457ab438bc0f93fb390cee4b182f",
+    "job.json": "0b00d2efe159acfbf8bdc13469a619ac60542a5b9bbb185831c541a1be725d10",
+    "package-lock.json": "10b240a05406d5166ce4eaeb1ecd31d8177f80d71d2cf84c9140335c97f9a73a",
+    "verifier-used.py": "ef847ce38d2869fefc25ac2f42a77d47051af4245952295ff263e9e92691ce5d",
+    "verifier-interface-probe.c": "b227209aa6d191148722f93b8e5a3277057ee525037310f7d24df9d0dd8052a6"
+  },
+  "snapshot_files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "include/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "input/spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+    "src/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+    "traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45",
+    "records/g001.json": "c3f554e989553807721d0c4ce74361ced279457ab438bc0f93fb390cee4b182f",
+    "job.json": "0b00d2efe159acfbf8bdc13469a619ac60542a5b9bbb185831c541a1be725d10",
+    "package-lock.json": "10b240a05406d5166ce4eaeb1ecd31d8177f80d71d2cf84c9140335c97f9a73a",
+    "verifier-used.py": "ef847ce38d2869fefc25ac2f42a77d47051af4245952295ff263e9e92691ce5d",
+    "verifier-interface-probe.c": "b227209aa6d191148722f93b8e5a3277057ee525037310f7d24df9d0dd8052a6"
+  },
+  "tools": {
+    "compiler": {
+      "path": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+      "sha256": "688e766a64d4291c057bf96acea3b1feb86df767a95cd2e087882d71b8759680",
+      "version": "clang version 22.1.3 (https://github.com/llvm/llvm-project e9846648fd6183ee6d8cbdb4502213fcf902a211)\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Program Files\\LLVM\\bin"
+    },
+    "nm": {
+      "path": "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+      "sha256": "4668f1ff79ec72e48bdf338fafb3d53abd546fc71d1a4dd84615fdb5abf03f64",
+      "version": "llvm-nm, compatible with GNU nm\nLLVM (http://llvm.org/):\n  LLVM version 22.1.3\n  Optimized build."
+    }
+  },
+  "commands": [
+    {
+      "step": "compiler-version",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "nm-version",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "interface-probe",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-x",
+        "c",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include",
+        "-O0",
+        "-include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include\\RangeClamp.h",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\interface-probe.d",
+        "-MT",
+        "routine-object",
+        "-c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\verifier-interface-probe.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\interface-probe.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-compile-000",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-x",
+        "c",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include",
+        "-O0",
+        "-include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include\\RangeClamp.h",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-000.d",
+        "-MT",
+        "routine-object",
+        "-c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\src\\RangeClamp.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-compile-001",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-x",
+        "c",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include",
+        "-O0",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-001.d",
+        "-MT",
+        "routine-object",
+        "-c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\tests\\profile-000-test_range_clamp.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-001.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-undefined-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--undefined-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-public-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--defined-only",
+        "--extern-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-link-tests",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-000.obj",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\unit-001.obj",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\host-tests.exe"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o0-tests",
+      "argv": [
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O0\\host-tests.exe"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-compile-000",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-x",
+        "c",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include",
+        "-O2",
+        "-include",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include\\RangeClamp.h",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-000.d",
+        "-MT",
+        "routine-object",
+        "-c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\src\\RangeClamp.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-compile-001",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-x",
+        "c",
+        "-I",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\include",
+        "-O2",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-001.d",
+        "-MT",
+        "routine-object",
+        "-c",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot\\tests\\profile-000-test_range_clamp.c",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-001.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-undefined-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--undefined-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-public-symbols",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\llvm-nm.exe",
+        "--defined-only",
+        "--extern-only",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-000.obj"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-link-tests",
+      "argv": [
+        "C:\\Program Files\\LLVM\\bin\\clang.exe",
+        "-std=c90",
+        "-pedantic-errors",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-000.obj",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\unit-001.obj",
+        "-o",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\host-tests.exe"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    },
+    {
+      "step": "o2-tests",
+      "argv": [
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\O2\\host-tests.exe"
+      ],
+      "cwd": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\qa\\r001\\snapshot",
+      "returncode": 0
+    }
+  ],
+  "optimization_results": {
+    "O0": {
+      "status": "passed",
+      "tests": "passed",
+      "undefined_symbols": [],
+      "public_symbols": [
+        "RangeClamp"
+      ],
+      "object_sha256": "b93d4fd3b295b1542159e6c1d863d3bb6953084a567ca47de870c6ce0f3ce706",
+      "test_returncode": 0,
+      "test_output": "RangeClamp: 15 literal cases passed\n",
+      "executable_sha256": "c3b0572a0945ba4b09ceadba262c1d756c1de451117ee4080cf590c21d40fd1d"
+    },
+    "O2": {
+      "status": "passed",
+      "tests": "passed",
+      "undefined_symbols": [],
+      "public_symbols": [
+        "RangeClamp"
+      ],
+      "object_sha256": "388d3e83a5015e4cc62bdb6c0a3c2d74e620fc933a1d2c90ea02efa7833b2cc3",
+      "test_returncode": 0,
+      "test_output": "RangeClamp: 15 literal cases passed\n",
+      "executable_sha256": "0a0912cf6c87c15668a0c9ef44c07b4d95a31e62841b012cf102970f796f9a2c"
+    }
+  },
+  "test_execution": "passed",
+  "generation": {
+    "format_version": "0.2.0",
+    "time_utc": "2026-11-17T11:44:22.148668+00:00",
+    "agent": "OpenAI Codex",
+    "agent_version": "Codex based on GPT-6; exact runtime model identifier not exposed",
+    "bob_executed": false,
+    "status": "draft_trial",
+    "input_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "traceability_sha256": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45",
+    "file_hashes": {
+      ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "include/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+      "input/spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+      "input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+      "src/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+      "tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+      "traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45"
+    },
+    "release_sha256": "7498620a9c4965dbeb620628d3388b91d5d23b43328b2de7cd34c1d2e2181a83",
+    "note": "New C90 implementation authored from canonical JSON and frozen header without reading prior DUT, fixture implementations, baseline C or independent test source. Caller owns lower <= upper. Draft trial status preserved. Formal DLL ABI, RTOS integration and target WCET unverified.",
+    "test_authorship": "Profile-supplied tests; authorship and specification coverage require independent review."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "PS-RTN-CLAMP-001",
+    "title": "RangeClamp プログラム仕様書",
+    "revision": "0.1",
+    "date": "2026-11-17",
+    "status": "draft_trial",
+    "status_label": "試作仕様 要件確認前",
+    "routine_id": "RTN-CLAMP-001",
+    "routine_name": "RangeClamp",
+    "template_id": "routine-spec-v02",
+    "author": "Codex作成 人による承認前"
+  },
+  "overview": {
+    "purpose": "Return an integer clamped to inclusive lower and upper bounds.",
+    "scope": "One stateless C90 function with three int arguments and an int return value.",
+    "source_requirement": "Return lower when value < lower, upper when value > upper, otherwise value. The caller guarantees lower <= upper.",
+    "requirement_id": "REQ-CLAMP-INCLUSIVE",
+    "source_locator": "RangeClamp minimal code example in routine-code-c90 assets/examples/range-clamp/spec.json; supplied example, not a formal external requirement.",
+    "coverage": "Covers the inclusive clamp only. No errors, state or platform API are defined."
+  },
+  "trial_assumptions": [],
+  "interface": {
+    "language": "C90",
+    "visibility": "Ordinary C function declaration in a header.",
+    "prototype": "int RangeClamp(int value, int lower, int upper);",
+    "type_definitions": "",
+    "parameters": [
+      {
+        "name": "value",
+        "direction": "input",
+        "type": "int",
+        "contract": "Value to clamp; any representable int."
+      },
+      {
+        "name": "lower",
+        "direction": "input",
+        "type": "int",
+        "contract": "Inclusive lower bound; lower <= upper."
+      },
+      {
+        "name": "upper",
+        "direction": "input",
+        "type": "int",
+        "contract": "Inclusive upper bound; lower <= upper."
+      }
+    ],
+    "return_codes": [
+      {
+        "value": "int",
+        "meaning": "lower if value < lower; upper if value > upper; otherwise value. No error return codes are defined."
+      }
+    ],
+    "preconditions": "lower <= upper. All arguments may be any representable int consistent with that ordering."
+  },
+  "behavior": {
+    "state_fields": [],
+    "result_fields": [
+      {
+        "name": "return",
+        "meaning": "An int in [lower, upper]; equal to value when already in range."
+      }
+    ],
+    "steps": [
+      {
+        "id": "CLAMP-STEP-LOWER",
+        "text": "If value < lower, return lower."
+      },
+      {
+        "id": "CLAMP-STEP-UPPER",
+        "text": "Otherwise, if value > upper, return upper."
+      },
+      {
+        "id": "CLAMP-STEP-PRESERVE",
+        "text": "Otherwise return value."
+      }
+    ],
+    "decision_rows": [
+      {
+        "condition": "value < lower",
+        "return": "lower"
+      },
+      {
+        "condition": "value > upper",
+        "return": "upper"
+      },
+      {
+        "condition": "lower <= value <= upper",
+        "return": "value"
+      }
+    ],
+    "postconditions": "The return value is within the inclusive bounds. No state, memory or external resource is changed.",
+    "timing_semantics": "A single call evaluates a bounded number of comparisons. No loop, recursion or measured RTOS timing is specified."
+  },
+  "constraints": [
+    {
+      "id": "CLAMP-PRE-ORDER",
+      "category": "caller precondition",
+      "text": "The caller supplies lower <= upper. Behavior outside this precondition is not specified."
+    },
+    {
+      "id": "CLAMP-C90",
+      "category": "implementation",
+      "text": "Use C90. Do not call external APIs, allocate memory, loop or recurse."
+    },
+    {
+      "id": "CLAMP-OVERFLOW",
+      "category": "integer arithmetic",
+      "text": "Compare values directly. Do not subtract bounds or introduce arithmetic overflow."
+    }
+  ],
+  "verification_examples": [
+    {
+      "id": "CLAMP-EX-LOWER",
+      "input": "RangeClamp(-8, -3, 4)",
+      "expected": "-3"
+    },
+    {
+      "id": "CLAMP-EX-INSIDE",
+      "input": "RangeClamp(2, -3, 4)",
+      "expected": "2"
+    },
+    {
+      "id": "CLAMP-EX-UPPER",
+      "input": "RangeClamp(9, -3, 4)",
+      "expected": "4"
+    },
+    {
+      "id": "CLAMP-EX-EQUAL",
+      "input": "RangeClamp(7, 7, 7)",
+      "expected": "7"
+    }
+  ],
+  "traceability": [
+    {
+      "requirement": "REQ-CLAMP-INCLUSIVE",
+      "specification": "CLAMP-STEP-LOWER, CLAMP-STEP-UPPER, CLAMP-STEP-PRESERVE; /interface/preconditions; CLAMP-PRE-ORDER",
+      "verification": "CLAMP-EX-LOWER, CLAMP-EX-INSIDE, CLAMP-EX-UPPER, CLAMP-EX-EQUAL"
+    }
+  ],
+  "open_issues": []
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "0.2.0",
+  "name": "sample-hold-independent-acceptance",
+  "target": {
+    "routine_name": "SampleHold_Update",
+    "spec_sha256": "6de57ec16f73060d16f4030588bf763c34c0a716224f357caa9bef399be55ea6"
+  },
+  "headers": [
+    {
+      "source": "Project_Sample.h",
+      "target": "Project_Sample.h"
+    },
+    {
+      "source": "Project_TestMock.h",
+      "target": "Project_TestMock.h"
+    }
+  ],
+  "test_sources": [
+    "test_sample_hold.c"
+  ],
+  "support_sources": [
+    "mock_project_sample.c"
+  ],
+  "defines": [
+    "PROJECT_SAMPLE_FIXTURE=1"
+  ],
+  "allowed_undefined_symbols": [
+    "Project_ReadSample"
+  ],
+  "allowed_public_symbols": [
+    "SampleHold_Update"
+  ]
+}

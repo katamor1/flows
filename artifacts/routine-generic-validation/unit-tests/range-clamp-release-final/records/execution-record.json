@@ -1,0 +1,33 @@
+{
+  "format_version": "0.2.0",
+  "unit_test_spec_id": "UTS-RTN-CLAMP-001",
+  "specification_status": "draft_trial",
+  "results": [
+    {
+      "item_id": "in-range-boundary",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "outside",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "equal-bounds",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "small-domain",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "source-structure",
+      "status": "not_executed",
+      "evidence": []
+    }
+  ],
+  "note": "No test or review has been executed by document generation. Existing logs are not pass evidence."
+}

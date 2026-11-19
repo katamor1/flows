@@ -1,0 +1,80 @@
+{
+  "verified_date": "2026-11-14",
+  "name": "routine-spec-officecli",
+  "version": "0.2.0",
+  "release_sha256": "9c8c39f522c19cd8cfffb033068c435228a0d29614480b6631cf097cff513778",
+  "archive": {
+    "file": "ibm-bob-routine-spec-officecli-0.2.0.zip",
+    "sha256": "6bfd66c49bbc7500ba38699d4c1e6832d4e401213329381f4cd4924337abf6f9",
+    "bytes": 64836,
+    "files": 13,
+    "release_sha256": "9c8c39f522c19cd8cfffb033068c435228a0d29614480b6631cf097cff513778"
+  },
+  "runtime": {
+    "bob_ide_observed": "1.126.0+bob2.2.3",
+    "officecli": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    },
+    "python": "3.12.14",
+    "third_party_python_dependencies": []
+  },
+  "automated_tests": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "elapsed_seconds": 200.172,
+    "success": true,
+    "python_mode": "-S -B; standard library only"
+  },
+  "main_generation": {
+    "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-spec-officecli\\alarm-officecli\\renders\\r001\\PS-RTN-ALM-001.docx",
+    "output_sha256": "2357e0439a87fd1432aeb299922800415fc3b48ca474d7bab6adf1df72c2e7a6",
+    "source_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "semantic_sha256": "e2e510b95572e81a944fe52b0b45ca33f015995c85b07d7c410bdf9ae2f57dd4",
+    "officecli_commands": 307,
+    "ooxml_validation": "passed, 0 errors",
+    "content_and_formatting": "passed",
+    "immutable_template_and_schema": true
+  },
+  "independent_forward_test": {
+    "status": "passed",
+    "checks": 17,
+    "checks_passed": 17,
+    "evidence": "qa/forward-evaluation.json",
+    "root_verified_revision_and_artifact_hashes": true
+  },
+  "independent_code_review": {
+    "important_findings_resolved": [
+      "Added sectPr, styles, relationships and unchanged package-part verification"
+    ],
+    "remaining_important_findings": 0
+  },
+  "template_repair": {
+    "legacy_validation_errors": 164,
+    "current_validation_errors": 0,
+    "evidence": "maintenance/template-repair/repair-evidence.json",
+    "commands": 120,
+    "template_sha256": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
+    "text_tokens_tables_fields_preserved": true
+  },
+  "visual_review": {
+    "pages": 4,
+    "all_pages_inspected": true,
+    "renderer": "Microsoft Word UI PDF export, then bundled PDF.js page PNGs",
+    "qa_copy_matches_delivered_docx": true,
+    "pdf_sha256": "d44105167cc70b999244e6b26017071345d50d2cec5e69abb3f42a64aaea3add",
+    "page_numbers": "1/4 through 4/4",
+    "clipping_missing_glyphs_broken_tables": "none observed",
+    "officecli_pdf_export": "unavailable: exporter_not_found",
+    "officecli_native_screenshot": "unavailable: native_unavailable"
+  },
+  "limits": [
+    "Only the 10-cycle alarm qualification draft profile",
+    "Limited fixed JSON Schema keywords",
+    "Bob chat skill discovery/activation not tested",
+    "No C90 code execution, RTOS integration or timing measurements",
+    "Visual review is separate from the automated generation/OOXML validation command"
+  ]
+}

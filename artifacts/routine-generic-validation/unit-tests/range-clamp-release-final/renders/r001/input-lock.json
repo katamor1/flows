@@ -1,0 +1,30 @@
+{
+  "format_version": "0.2.0",
+  "copied_from": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp",
+  "provenance": "generation_record",
+  "bindings": {
+    "spec": "inputs/program-spec.json",
+    "source": "inputs/source/RangeClamp.c",
+    "header": "inputs/header/RangeClamp.h",
+    "generation_record": "inputs/generation-record.json"
+  },
+  "generation_file_map": {
+    ".gitattributes": "inputs/assets/.gitattributes",
+    "include/RangeClamp.h": "inputs/header/RangeClamp.h",
+    "input/spec.json": "inputs/program-spec.json",
+    "input/verification-profile.json": "inputs/assets/input/verification-profile.json",
+    "src/RangeClamp.c": "inputs/source/RangeClamp.c",
+    "tests/profile-000-test_range_clamp.c": "inputs/assets/tests/profile-000-test_range_clamp.c",
+    "traceability.md": "inputs/assets/traceability.md"
+  },
+  "files": {
+    "inputs/program-spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "inputs/source/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "inputs/header/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "inputs/generation-record.json": "c3f554e989553807721d0c4ce74361ced279457ab438bc0f93fb390cee4b182f",
+    "inputs/assets/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "inputs/assets/input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+    "inputs/assets/tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+    "inputs/assets/traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45"
+  }
+}

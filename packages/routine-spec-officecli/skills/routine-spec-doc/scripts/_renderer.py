@@ -43,7 +43,8 @@ def ptext(paragraph):
 
 def text_values(value):
     if isinstance(value, dict):
-        for item in value.values():
+        for key, item in value.items():
+            yield key
             yield from text_values(item)
     elif isinstance(value, list):
         for item in value:
@@ -61,10 +62,31 @@ def check_xml_characters(data):
 
 
 def context(data, source):
-    return {**data, 'build': {'source_short_hash': sha(source)[:12]}, 'view': {
+    # Presentation-only rows never enter or change the canonical specification.
+    def rows(items, columns):
+        return items or [dict.fromkeys(columns, '該当なし')]
+    def display(value):
+        return value if type(value) is str else json.dumps(value, ensure_ascii=False, allow_nan=False, separators=(',', ':'))
+    view = {
         'parameters': [{**p, 'type_contract': p['type']+'\n'+p['contract']} for p in data['interface']['parameters']],
-        'state_fields': [{**p, 'range_meaning': p['range']+' '+p['meaning']} for p in data['behavior']['state_fields']],
-    }}
+        'state_fields': [{**p, 'name': p['name']+'\n'+p['type'], 'range_meaning': p['range']+' '+p['meaning']} for p in data['behavior']['state_fields']],
+        'decisions': [{'condition': row['condition'], 'details': '\n'.join(key+' = '+display(value) for key, value in row.items() if key != 'condition') or '追加項目なし'} for row in data['behavior']['decision_rows']],
+        'type_definitions': data['interface']['type_definitions'] or '該当なし',
+        'configuration_text': '\n'.join(([f"threshold = {display(data['behavior']['threshold'])}"] if 'threshold' in data['behavior'] else []) + [row['name']+' = '+display(row['value'])+'\n'+row['meaning'] for row in data['behavior'].get('configuration', [])]) or '該当なし',
+    }
+    for name, columns in {'parameters': ('name', 'direction', 'type_contract'), 'state_fields': ('name', 'initial', 'range_meaning'), 'decisions': ('condition', 'details')}.items():
+        view[name] = rows(view[name], columns)
+    for name, columns, values in (
+        ('assumptions', ('id', 'text'), data['trial_assumptions']),
+        ('results', ('name', 'meaning'), data['behavior']['result_fields']),
+        ('steps', ('id', 'text'), data['behavior']['steps']),
+        ('returns', ('value', 'meaning'), data['interface']['return_codes']),
+        ('constraints', ('id', 'category', 'text'), data['constraints']),
+        ('examples', ('id', 'input', 'expected'), data['verification_examples']),
+        ('traceability', ('requirement', 'specification', 'verification'), data['traceability']),
+        ('issues', ('id', 'owner', 'decision'), data['open_issues'])):
+        view[name] = rows(values, columns)
+    return {**data, 'build': {'source_short_hash': sha(source)[:12]}, 'view': view}
 
 
 def scalar(value):
@@ -306,7 +328,7 @@ def _build(source, schema, template, output, manifest, exe, data):
              'commands': len(commands), 'repeated_rows_cloned': checks['clones'],
              'semantic_sha256': semantic_sha}
     write_json(stage/'content-check.json', check)
-    return {'generator_backend': 'officecli', 'generator_version': '0.2.0',
+    return {'generator_backend': 'officecli', 'generator_version': '0.3.0',
             'source': source.name, 'source_sha256': sha(source), 'schema_sha256': sha(schema),
             'template_sha256': sha(template), 'output': output.name, 'output_sha256': sha(output),
             'status': data['document']['status'], 'semantic_sha256': semantic_sha,

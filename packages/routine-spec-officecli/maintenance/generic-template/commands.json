@@ -1,0 +1,175 @@
+[
+  {
+    "command": "set",
+    "path": "/body/tbl[2]",
+    "props": {
+      "caption": "repeat:view.assumptions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]",
+    "props": {
+      "caption": "repeat:view.parameters"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]",
+    "props": {
+      "caption": "repeat:view.state_fields"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]",
+    "props": {
+      "caption": "repeat:view.results"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]",
+    "props": {
+      "caption": "repeat:view.steps"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]",
+    "props": {
+      "caption": "repeat:view.decisions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]",
+    "props": {
+      "caption": "repeat:view.returns"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]",
+    "props": {
+      "caption": "repeat:view.constraints"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]",
+    "props": {
+      "caption": "repeat:view.examples"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]",
+    "props": {
+      "caption": "repeat:view.traceability"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]",
+    "props": {
+      "caption": "repeat:view.issues"
+    }
+  },
+  {
+    "command": "remove",
+    "path": "/body/tbl[7]/col[5]"
+  },
+  {
+    "command": "remove",
+    "path": "/body/tbl[7]/col[4]"
+  },
+  {
+    "command": "remove",
+    "path": "/body/tbl[7]/col[3]"
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[1]/tc[2]/p[1]",
+    "props": {
+      "text": "項目と値"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]/tc[2]/p[1]",
+    "props": {
+      "text": "{{details}}"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[1]/tc[1]",
+    "props": {
+      "width": "2700"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[1]/tc[2]",
+    "props": {
+      "width": "6600"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]/tc[1]",
+    "props": {
+      "width": "2700"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]/tc[2]",
+    "props": {
+      "width": "6600"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[2]",
+    "props": {
+      "text": "{{document.status_label}}  |  {{document.date}}\u000b状態 {{document.status}}  スキーマ {{schema_version}}  テンプレート {{document.template_id}}\u000b作成者 {{document.author}}"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[6]",
+    "props": {
+      "text": "{{overview.scope}}\u000b担当範囲 {{overview.coverage}}"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[7]",
+    "props": {
+      "text": "2 前提"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[13]",
+    "props": {
+      "text": "{{view.type_definitions}}"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[16]",
+    "props": {
+      "text": "5 処理手順と条件表"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/p[18]",
+    "props": {
+      "text": "設定\u000b{{view.configuration_text}}"
+    }
+  }
+]

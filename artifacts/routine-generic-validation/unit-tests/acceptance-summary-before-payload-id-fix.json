@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "utc": "2026-11-17T11:56:22.058813+00:00",
+  "release_sha256": "21aa4a2a60133e87d497f8c28196749a81d3baa6366e3f9b7f6b705981cf318f",
+  "jobs": [
+    {
+      "job": "range-clamp-final",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\range-clamp-final\\renders\\r001\\unit-test-spec.docx",
+      "manifest": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\range-clamp-final\\renders\\r001\\manifest.json",
+      "canonical_sha256": "15cd995900222bb3b501ab033e6fda56941dd72c09f38620ed14970e65bef0a4",
+      "counts": {
+        "representative_cases": 3,
+        "parameter_families": 1,
+        "static_review_items": 1,
+        "representative_call_checks": 8,
+        "family_instances": 5,
+        "family_call_checks": 10
+      },
+      "target": {
+        "program_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+        "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+        "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138"
+      },
+      "input_provenance": "generation_record",
+      "content_and_formatting": "matched",
+      "structural_validation": "OfficeCLI success",
+      "execution": "not_executed"
+    },
+    {
+      "job": "sample-hold-final",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\sample-hold-final\\renders\\r001\\unit-test-spec.docx",
+      "manifest": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\sample-hold-final\\renders\\r001\\manifest.json",
+      "canonical_sha256": "54a2f6cdf5e0fed24b013583df2a20e27a891860fc9d37048e41808ffa5f8cdc",
+      "counts": {
+        "representative_cases": 2,
+        "parameter_families": 0,
+        "static_review_items": 1,
+        "representative_call_checks": 2,
+        "family_instances": 0,
+        "family_call_checks": 0
+      },
+      "target": {
+        "program_spec_sha256": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad",
+        "source_sha256": "809c9c55c41f56ff8d23cb59ce0dc865aed243a33ff3c9988e7af916a5896787",
+        "header_sha256": "6885fa0c9d3f2effc6049e3bc8a94afdba45497e0e09a50a7d49460e6f942a66"
+      },
+      "input_provenance": "external/not_provided",
+      "content_and_formatting": "matched",
+      "structural_validation": "OfficeCLI success",
+      "execution": "not_executed"
+    },
+    {
+      "job": "alarm-regression-final",
+      "document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\alarm-regression-final\\renders\\r001\\unit-test-spec.docx",
+      "manifest": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\alarm-regression-final\\renders\\r001\\manifest.json",
+      "canonical_sha256": "6dbb74cc1b8e42466e0ed1d8e7276b46baee3b3b236b58241192402e1058b048",
+      "counts": {
+        "representative_cases": 16,
+        "parameter_families": 4,
+        "static_review_items": 6,
+        "representative_call_checks": 173,
+        "family_instances": 177265,
+        "family_call_checks": 1948735
+      },
+      "target": {
+        "program_spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+        "source_sha256": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+        "header_sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00"
+      },
+      "input_provenance": "generation_record",
+      "content_and_formatting": "matched",
+      "structural_validation": "OfficeCLI success",
+      "execution": "not_executed"
+    }
+  ],
+  "legacy_zip_sha256": "cd63ff3c50c33690aa2a6483b9eac9729c0b7c3ce81ceb310d2baa8e55130c8c",
+  "legacy_resources_git_unchanged": true,
+  "old_logs_imported_as_pass": false,
+  "bob_execution": "not_tested",
+  "all_page_visual_review": "not_performed",
+  "real_rtos_wcet": "not_verified",
+  "note": "OfficeCLI/contract acceptance checks passed; specified C test/review items remain unexecuted."
+}

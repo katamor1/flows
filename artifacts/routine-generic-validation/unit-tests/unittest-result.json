@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "-X",
+    "utf8",
+    "-S",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "packages/routine-unit-test-officecli/tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 146.016,
+  "utc": "2026-11-17T11:54:00.590813+00:00",
+  "stdout": "unittest.stdout.txt",
+  "stderr": "unittest.stderr.txt",
+  "bob_executed": false,
+  "all_page_visual_review": "not_performed"
+}

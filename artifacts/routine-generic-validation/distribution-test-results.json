@@ -1,0 +1,13 @@
+{
+  "tests": 7,
+  "status": "passed",
+  "cases": [
+    "sealed inventory",
+    "tamper rejection",
+    "unsafe and duplicate ZIP entries",
+    "reversible upgrade and unrelated preservation",
+    "target containment",
+    "bounded transient rename recovery",
+    "archive replacement uses verified snapshot"
+  ]
+}

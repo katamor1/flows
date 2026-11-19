@@ -1,0 +1,904 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "Copied to /body/tbl[3]/tr[3]"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "Copied to /body/tbl[3]/tr[4]"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "Copied to /body/tbl[6]/tr[3]"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "Copied to /body/tbl[6]/tr[4]"
+      },
+      {
+        "index": 4,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[3]"
+      },
+      {
+        "index": 5,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[4]"
+      },
+      {
+        "index": 6,
+        "success": true,
+        "output": "Copied to /body/tbl[9]/tr[3]"
+      },
+      {
+        "index": 7,
+        "success": true,
+        "output": "Copied to /body/tbl[9]/tr[4]"
+      },
+      {
+        "index": 8,
+        "success": true,
+        "output": "Copied to /body/tbl[10]/tr[3]"
+      },
+      {
+        "index": 9,
+        "success": true,
+        "output": "Copied to /body/tbl[10]/tr[4]"
+      },
+      {
+        "index": 10,
+        "success": true,
+        "output": "Copied to /body/tbl[10]/tr[5]"
+      },
+      {
+        "index": 11,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_0__ (1 matched)"
+      },
+      {
+        "index": 12,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_1__ (1 matched)"
+      },
+      {
+        "index": 13,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{direction}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_2__ (1 matched)"
+      },
+      {
+        "index": 14,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_3__ (1 matched)"
+      },
+      {
+        "index": 15,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{type_contract}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_4__ (1 matched)"
+      },
+      {
+        "index": 16,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{direction}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_5__ (1 matched)"
+      },
+      {
+        "index": 17,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_6__ (1 matched)"
+      },
+      {
+        "index": 18,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{type_contract}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_7__ (1 matched)"
+      },
+      {
+        "index": 19,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{direction}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_8__ (1 matched)"
+      },
+      {
+        "index": 20,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_9__ (1 matched)"
+      },
+      {
+        "index": 21,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find={{type_contract}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_10__ (1 matched)"
+      },
+      {
+        "index": 22,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{initial}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_11__ (1 matched)"
+      },
+      {
+        "index": 23,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_12__ (1 matched)"
+      },
+      {
+        "index": 24,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{range_meaning}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_13__ (1 matched)"
+      },
+      {
+        "index": 25,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{meaning}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_14__ (1 matched)"
+      },
+      {
+        "index": 26,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_15__ (1 matched)"
+      },
+      {
+        "index": 27,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_16__ (1 matched)"
+      },
+      {
+        "index": 28,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_17__ (1 matched)"
+      },
+      {
+        "index": 29,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_18__ (1 matched)"
+      },
+      {
+        "index": 30,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_19__ (1 matched)"
+      },
+      {
+        "index": 31,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_20__ (1 matched)"
+      },
+      {
+        "index": 32,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_21__ (1 matched)"
+      },
+      {
+        "index": 33,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{condition}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_22__ (1 matched)"
+      },
+      {
+        "index": 34,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{details}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_23__ (1 matched)"
+      },
+      {
+        "index": 35,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{condition}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_24__ (1 matched)"
+      },
+      {
+        "index": 36,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{details}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_25__ (1 matched)"
+      },
+      {
+        "index": 37,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{condition}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_26__ (1 matched)"
+      },
+      {
+        "index": 38,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{details}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_27__ (1 matched)"
+      },
+      {
+        "index": 39,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{meaning}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_28__ (1 matched)"
+      },
+      {
+        "index": 40,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{value}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_29__ (1 matched)"
+      },
+      {
+        "index": 41,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{category}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_30__ (1 matched)"
+      },
+      {
+        "index": 42,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_31__ (1 matched)"
+      },
+      {
+        "index": 43,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_32__ (1 matched)"
+      },
+      {
+        "index": 44,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{category}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_33__ (1 matched)"
+      },
+      {
+        "index": 45,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_34__ (1 matched)"
+      },
+      {
+        "index": 46,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_35__ (1 matched)"
+      },
+      {
+        "index": 47,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find={{category}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_36__ (1 matched)"
+      },
+      {
+        "index": 48,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_37__ (1 matched)"
+      },
+      {
+        "index": 49,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find={{text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_38__ (1 matched)"
+      },
+      {
+        "index": 50,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{expected}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_39__ (1 matched)"
+      },
+      {
+        "index": 51,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_40__ (1 matched)"
+      },
+      {
+        "index": 52,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{input}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_41__ (1 matched)"
+      },
+      {
+        "index": 53,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{expected}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_42__ (1 matched)"
+      },
+      {
+        "index": 54,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_43__ (1 matched)"
+      },
+      {
+        "index": 55,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{input}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_44__ (1 matched)"
+      },
+      {
+        "index": 56,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find={{expected}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_45__ (1 matched)"
+      },
+      {
+        "index": 57,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_46__ (1 matched)"
+      },
+      {
+        "index": 58,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find={{input}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_47__ (1 matched)"
+      },
+      {
+        "index": 59,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find={{expected}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_48__ (1 matched)"
+      },
+      {
+        "index": 60,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_49__ (1 matched)"
+      },
+      {
+        "index": 61,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find={{input}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_50__ (1 matched)"
+      },
+      {
+        "index": 62,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{requirement}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_51__ (1 matched)"
+      },
+      {
+        "index": 63,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{specification}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_52__ (1 matched)"
+      },
+      {
+        "index": 64,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{verification}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_53__ (1 matched)"
+      },
+      {
+        "index": 65,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{decision}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_54__ (1 matched)"
+      },
+      {
+        "index": 66,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_55__ (1 matched)"
+      },
+      {
+        "index": 67,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{owner}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_56__ (1 matched)"
+      },
+      {
+        "index": 68,
+        "success": true,
+        "output": "Updated /body: find={{behavior.postconditions}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_57__ (1 matched)"
+      },
+      {
+        "index": 69,
+        "success": true,
+        "output": "Updated /body: find={{behavior.timing_semantics}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_58__ (1 matched)"
+      },
+      {
+        "index": 70,
+        "success": true,
+        "output": "Updated /body: find={{build.source_short_hash}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_59__ (1 matched)"
+      },
+      {
+        "index": 71,
+        "success": true,
+        "output": "Updated /body: find={{document.author}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_60__ (1 matched)"
+      },
+      {
+        "index": 72,
+        "success": true,
+        "output": "Updated /body: find={{document.date}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_61__ (1 matched)"
+      },
+      {
+        "index": 73,
+        "success": true,
+        "output": "Updated /body: find={{document.id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_62__ (2 matched)"
+      },
+      {
+        "index": 74,
+        "success": true,
+        "output": "Updated /body: find={{document.revision}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_63__ (2 matched)"
+      },
+      {
+        "index": 75,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_64__ (2 matched)"
+      },
+      {
+        "index": 76,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_name}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_65__ (1 matched)"
+      },
+      {
+        "index": 77,
+        "success": true,
+        "output": "Updated /body: find={{document.status}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_66__ (1 matched)"
+      },
+      {
+        "index": 78,
+        "success": true,
+        "output": "Updated /body: find={{document.status_label}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_67__ (2 matched)"
+      },
+      {
+        "index": 79,
+        "success": true,
+        "output": "Updated /body: find={{document.template_id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_68__ (1 matched)"
+      },
+      {
+        "index": 80,
+        "success": true,
+        "output": "Updated /body: find={{document.title}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_69__ (1 matched)"
+      },
+      {
+        "index": 81,
+        "success": true,
+        "output": "Updated /body: find={{interface.language}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_70__ (1 matched)"
+      },
+      {
+        "index": 82,
+        "success": true,
+        "output": "Updated /body: find={{interface.preconditions}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_71__ (1 matched)"
+      },
+      {
+        "index": 83,
+        "success": true,
+        "output": "Updated /body: find={{interface.prototype}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_72__ (1 matched)"
+      },
+      {
+        "index": 84,
+        "success": true,
+        "output": "Updated /body: find={{interface.visibility}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_73__ (1 matched)"
+      },
+      {
+        "index": 85,
+        "success": true,
+        "output": "Updated /body: find={{overview.coverage}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_74__ (1 matched)"
+      },
+      {
+        "index": 86,
+        "success": true,
+        "output": "Updated /body: find={{overview.purpose}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_75__ (1 matched)"
+      },
+      {
+        "index": 87,
+        "success": true,
+        "output": "Updated /body: find={{overview.requirement_id}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_76__ (1 matched)"
+      },
+      {
+        "index": 88,
+        "success": true,
+        "output": "Updated /body: find={{overview.scope}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_77__ (1 matched)"
+      },
+      {
+        "index": 89,
+        "success": true,
+        "output": "Updated /body: find={{overview.source_locator}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_78__ (1 matched)"
+      },
+      {
+        "index": 90,
+        "success": true,
+        "output": "Updated /body: find={{overview.source_requirement}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_79__ (1 matched)"
+      },
+      {
+        "index": 91,
+        "success": true,
+        "output": "Updated /body: find={{schema_version}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_80__ (1 matched)"
+      },
+      {
+        "index": 92,
+        "success": true,
+        "output": "Updated /body: find={{view.configuration_text}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_81__ (1 matched)"
+      },
+      {
+        "index": 93,
+        "success": true,
+        "output": "Updated /body: find={{view.type_definitions}}, replace=__RSF_c3fcbf80bd67edd9c34529d6_82__ (1 matched)"
+      },
+      {
+        "index": 94,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_0__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 95,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_1__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 96,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_2__, replace=input (1 matched)"
+      },
+      {
+        "index": 97,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_3__, replace=value (1 matched)"
+      },
+      {
+        "index": 98,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_4__, replace=int\u000bValue to clamp; any representable int. (1 matched)"
+      },
+      {
+        "index": 99,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_5__, replace=input (1 matched)"
+      },
+      {
+        "index": 100,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_6__, replace=lower (1 matched)"
+      },
+      {
+        "index": 101,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_7__, replace=int\u000bInclusive lower bound; lower <= upper. (1 matched)"
+      },
+      {
+        "index": 102,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_8__, replace=input (1 matched)"
+      },
+      {
+        "index": 103,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_9__, replace=upper (1 matched)"
+      },
+      {
+        "index": 104,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_10__, replace=int\u000bInclusive upper bound; lower <= upper. (1 matched)"
+      },
+      {
+        "index": 105,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_11__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 106,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_12__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 107,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_13__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 108,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_14__, replace=An int in [lower, upper]; equal to value when already in range. (1 matched)"
+      },
+      {
+        "index": 109,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_15__, replace=return (1 matched)"
+      },
+      {
+        "index": 110,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_16__, replace=CLAMP-STEP-LOWER (1 matched)"
+      },
+      {
+        "index": 111,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_17__, replace=If value < lower, return lower. (1 matched)"
+      },
+      {
+        "index": 112,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_18__, replace=CLAMP-STEP-UPPER (1 matched)"
+      },
+      {
+        "index": 113,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_19__, replace=Otherwise, if value > upper, return upper. (1 matched)"
+      },
+      {
+        "index": 114,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_20__, replace=CLAMP-STEP-PRESERVE (1 matched)"
+      },
+      {
+        "index": 115,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_21__, replace=Otherwise return value. (1 matched)"
+      },
+      {
+        "index": 116,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_22__, replace=value < lower (1 matched)"
+      },
+      {
+        "index": 117,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_23__, replace=return = lower (1 matched)"
+      },
+      {
+        "index": 118,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_24__, replace=value > upper (1 matched)"
+      },
+      {
+        "index": 119,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_25__, replace=return = upper (1 matched)"
+      },
+      {
+        "index": 120,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_26__, replace=lower <= value <= upper (1 matched)"
+      },
+      {
+        "index": 121,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_27__, replace=return = value (1 matched)"
+      },
+      {
+        "index": 122,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_28__, replace=lower if value < lower; upper if value > upper; otherwise value. No error return codes are defined. (1 matched)"
+      },
+      {
+        "index": 123,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_29__, replace=int (1 matched)"
+      },
+      {
+        "index": 124,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_30__, replace=caller precondition (1 matched)"
+      },
+      {
+        "index": 125,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_31__, replace=CLAMP-PRE-ORDER (1 matched)"
+      },
+      {
+        "index": 126,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_32__, replace=The caller supplies lower <= upper. Behavior outside this precondition is not specified. (1 matched)"
+      },
+      {
+        "index": 127,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_33__, replace=implementation (1 matched)"
+      },
+      {
+        "index": 128,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_34__, replace=CLAMP-C90 (1 matched)"
+      },
+      {
+        "index": 129,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_35__, replace=Use C90. Do not call external APIs, allocate memory, loop or recurse. (1 matched)"
+      },
+      {
+        "index": 130,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_36__, replace=integer arithmetic (1 matched)"
+      },
+      {
+        "index": 131,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_37__, replace=CLAMP-OVERFLOW (1 matched)"
+      },
+      {
+        "index": 132,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_38__, replace=Compare values directly. Do not subtract bounds or introduce arithmetic overflow. (1 matched)"
+      },
+      {
+        "index": 133,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_39__, replace=-3 (1 matched)"
+      },
+      {
+        "index": 134,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_40__, replace=CLAMP-EX-LOWER (1 matched)"
+      },
+      {
+        "index": 135,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_41__, replace=RangeClamp(-8, -3, 4) (1 matched)"
+      },
+      {
+        "index": 136,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_42__, replace=2 (1 matched)"
+      },
+      {
+        "index": 137,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_43__, replace=CLAMP-EX-INSIDE (1 matched)"
+      },
+      {
+        "index": 138,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_c3fcbf80bd67edd9c34529d6_44__, replace=RangeClamp(2, -3, 4) (1 matched)"
+      },
+      {
+        "index": 139,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_45__, replace=4 (1 matched)"
+      },
+      {
+        "index": 140,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_46__, replace=CLAMP-EX-UPPER (1 matched)"
+      },
+      {
+        "index": 141,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[4]: find=__RSF_c3fcbf80bd67edd9c34529d6_47__, replace=RangeClamp(9, -3, 4) (1 matched)"
+      },
+      {
+        "index": 142,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find=__RSF_c3fcbf80bd67edd9c34529d6_48__, replace=7 (1 matched)"
+      },
+      {
+        "index": 143,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find=__RSF_c3fcbf80bd67edd9c34529d6_49__, replace=CLAMP-EX-EQUAL (1 matched)"
+      },
+      {
+        "index": 144,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[5]: find=__RSF_c3fcbf80bd67edd9c34529d6_50__, replace=RangeClamp(7, 7, 7) (1 matched)"
+      },
+      {
+        "index": 145,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_51__, replace=REQ-CLAMP-INCLUSIVE (1 matched)"
+      },
+      {
+        "index": 146,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_52__, replace=CLAMP-STEP-LOWER, CLAMP-STEP-UPPER, CLAMP-STEP-PRESERVE; /interface/preconditions; CLAMP-PRE-ORDER (1 matched)"
+      },
+      {
+        "index": 147,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_53__, replace=CLAMP-EX-LOWER, CLAMP-EX-INSIDE, CLAMP-EX-UPPER, CLAMP-EX-EQUAL (1 matched)"
+      },
+      {
+        "index": 148,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_54__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 149,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_55__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 150,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_c3fcbf80bd67edd9c34529d6_56__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 151,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_57__, replace=The return value is within the inclusive bounds. No state, memory or external resource is changed. (1 matched)"
+      },
+      {
+        "index": 152,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_58__, replace=A single call evaluates a bounded number of comparisons. No loop, recursion or measured RTOS timing is specified. (1 matched)"
+      },
+      {
+        "index": 153,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_59__, replace=403f5e9255c9 (1 matched)"
+      },
+      {
+        "index": 154,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_60__, replace=Codex作成 人による承認前 (1 matched)"
+      },
+      {
+        "index": 155,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_61__, replace=2026-11-17 (1 matched)"
+      },
+      {
+        "index": 156,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_62__, replace=PS-RTN-CLAMP-001 (2 matched)"
+      },
+      {
+        "index": 157,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_63__, replace=0.1 (2 matched)"
+      },
+      {
+        "index": 158,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_64__, replace=RTN-CLAMP-001 (2 matched)"
+      },
+      {
+        "index": 159,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_65__, replace=RangeClamp (1 matched)"
+      },
+      {
+        "index": 160,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_66__, replace=draft_trial (1 matched)"
+      },
+      {
+        "index": 161,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_67__, replace=試作仕様 要件確認前 (2 matched)"
+      },
+      {
+        "index": 162,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_68__, replace=routine-spec-v02 (1 matched)"
+      },
+      {
+        "index": 163,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_69__, replace=RangeClamp プログラム仕様書 (1 matched)"
+      },
+      {
+        "index": 164,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_70__, replace=C90 (1 matched)"
+      },
+      {
+        "index": 165,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_71__, replace=lower <= upper. All arguments may be any representable int consistent with that ordering. (1 matched)"
+      },
+      {
+        "index": 166,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_72__, replace=int RangeClamp(int value, int lower, int upper); (1 matched)"
+      },
+      {
+        "index": 167,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_73__, replace=Ordinary C function declaration in a header. (1 matched)"
+      },
+      {
+        "index": 168,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_74__, replace=Covers the inclusive clamp only. No errors, state or platform API are defined. (1 matched)"
+      },
+      {
+        "index": 169,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_75__, replace=Return an integer clamped to inclusive lower and upper bounds. (1 matched)"
+      },
+      {
+        "index": 170,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_76__, replace=REQ-CLAMP-INCLUSIVE (1 matched)"
+      },
+      {
+        "index": 171,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_77__, replace=One stateless C90 function with three int arguments and an int return value. (1 matched)"
+      },
+      {
+        "index": 172,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_78__, replace=RangeClamp minimal code example in routine-code-c90 assets/examples/range-clamp/spec.json; supplied example, not a formal external requirement. (1 matched)"
+      },
+      {
+        "index": 173,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_79__, replace=Return lower when value < lower, upper when value > upper, otherwise value. The caller guarantees lower <= upper. (1 matched)"
+      },
+      {
+        "index": 174,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_80__, replace=0.2.0 (1 matched)"
+      },
+      {
+        "index": 175,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_81__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 176,
+        "success": true,
+        "output": "Updated /body: find=__RSF_c3fcbf80bd67edd9c34529d6_82__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 177,
+        "success": true,
+        "output": "Updated /document: title=RangeClamp プログラム仕様書, subject=RTN-CLAMP-001, creator=Codex作成 人による承認前"
+      }
+    ],
+    "summary": {
+      "total": 178,
+      "executed": 178,
+      "succeeded": 178,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

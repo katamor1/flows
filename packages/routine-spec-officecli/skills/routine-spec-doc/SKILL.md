@@ -1,31 +1,27 @@
 ---
 name: routine-spec-doc
-description: Use when drafting or revising C90 RTOS routine specifications and generating Word deliverables from JSON with the fixed routine-spec-officecli profile in IBM Bob.
+description: Use when drafting or revising full routine specification JSON and generating Word through a fixed OfficeCLI template in IBM Bob.
 ---
 
-# JSON正本からOfficeCLIでWordを生成する
+# JSON正本からOfficeCLIでプログラム仕様書を生成する
 
-案件ごとに編集するのは、パッケージ外のJSON正本と確認記録である。配布済の固定アダプターが編集命令を作り、OfficeCLIがWordの行複製・差込み・文書属性設定・OOXML検査を行う。
-
-環境票にあるPython 3.12と、承認されたBob同梱OfficeCLI実体の絶対パスを使う。追加のPythonライブラリは不要。以下の `<skill>` はこのスキルディレクトリの絶対パス。
+環境票のPython 3.12と承認済Bob同梱OfficeCLI実体の絶対パスを使う。Pythonの追加ライブラリは不要。まず`doctor`と`describe`を実行し、固定資材と実体の一致を確認する。正本の記述は[references/authoring.md](references/authoring.md)に従う。
 
 ```powershell
-& '<python>' -S -B '<skill>/scripts/specflow.py' doctor --officecli '<officecli.exe>'
-& '<python>' -S -B '<skill>/scripts/specflow.py' describe --officecli '<officecli.exe>'
-& '<python>' -S -B '<skill>/scripts/specflow.py' new-job --officecli '<officecli.exe>' --workspace '<案件ルート>' --job alarm-01
+& '<python>' -X utf8 -S -B '<skill>/scripts/specflow.py' doctor --officecli '<officecli.exe>'
+& '<python>' -X utf8 -S -B '<skill>/scripts/specflow.py' describe --officecli '<officecli.exe>'
+& '<python>' -X utf8 -S -B '<skill>/scripts/specflow.py' new-job --officecli '<officecli.exe>' --workspace '<案件ルート>' --job routine-01 --spec '<フルJSON正本>'
 ```
 
-返された `source/spec.json` を管理正本として編集する。既存案件ではnew-jobを使わず、正本とpackage-lockを維持する。記述方法と対象範囲は [references/authoring.md](references/authoring.md) を参照する。
+`--spec`がない場合は`--routine-name/--routine-id/--document-id`で識別情報を指定できる。未記入スケルトンは業務規則を含まず、validate/renderは内容が埋まるまで拒否する。新規案件でAlarmの規則を注入しない。案件はスキル外へ作り、正本と`.gitattributes`、package-lockを保持する。
 
 ```powershell
-& '<python>' -S -B '<skill>/scripts/specflow.py' validate --officecli '<officecli.exe>' --workspace '<案件ルート>' --job alarm-01
-& '<python>' -S -B '<skill>/scripts/specflow.py' render --officecli '<officecli.exe>' --workspace '<案件ルート>' --job alarm-01 --run r001
+& '<python>' -X utf8 -S -B '<skill>/scripts/specflow.py' validate --officecli '<officecli.exe>' --workspace '<案件ルート>' --job routine-01
+& '<python>' -X utf8 -S -B '<skill>/scripts/specflow.py' render --officecli '<officecli.exe>' --workspace '<案件ルート>' --job routine-01 --run r001
 ```
 
-次回の展開は新しいrun IDを指定する。出力にはWord、入力控え、OfficeCLI命令列・実行結果・構造検査結果、内容と書式の照合結果、manifestが含まれる。Wordへの仕様変更はJSON正本へ戻して再展開する。
+フルJSON0.1.0/0.2.0、任意の関数名・ID・件数に対応する。型定義の空文字、空配列、閾値なし、状態なしを受け付ける。任意の設定はbehavior.configurationに書く。条件表はconditionと任意項目を持つ。状態・承認ラベルは正本から転記し、人の承認を作らない。
 
-OfficeCLIの実体・版・ハッシュや固定資材が不一致なら、その理由と必要な配布版を示して停止する。別版の自動取得、python-docx等への切替、スクリプト・スキーマ・テンプレートの再生成による自己修復は行わない。保守担当が互換性を検証して版を改訂する。
+OfficeCLIが全てのDOCX編集と構造検査を担当する。固定資材を通常実行で再生成しない。資材や実体・版・ハッシュ不一致、構造/内容/書式検査失敗は停止し、別版や別生成器への切替で回避しない。案件ごとの正本改訂は再検証・新runへ展開する。既存job/runを上書きしない。
 
-この版は10周期連続ON判定ルーチン、`draft_trial` に限定する。ガウスフィルタや閾値変更は対応外として不足項目を整理し、別のプロファイル改訂へ分ける。RTOS API・ABI・時間予算は正式資料に従い、不明点を推測で確定しない。
-
-OOXML検査の成功と、業務内容・表示・制御コードの試験合格は別に扱う。文量や行数を変更した場合は全ページの表示を確認し、実施できなければ未確認として報告する。
+Wordの全ページ表示確認と業務意味の承認は別途必要である。未実施なら未確認と報告する。生成成功をC90/RTOS/WCET試験合格やBobチャット実起動確認と扱わない。

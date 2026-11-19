@@ -1,8 +1,8 @@
-"""Fixed frozen program/C90 inputs -> unit-test JSON -> OfficeCLI -> DOCX workflow."""
+"""Locked project inputs -> generic unit-test JSON -> OfficeCLI -> DOCX."""
 from __future__ import annotations
-
 import argparse
 from contextlib import contextmanager
+from datetime import date
 import hashlib
 import json
 import os
@@ -14,56 +14,28 @@ import subprocess
 import sys
 import tempfile
 import time
-
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
 BUNDLE = ROOT.parents[1] if ROOT.parent.name == 'skills' else ROOT
 SAFE_ID = re.compile(r'[A-Za-z0-9][A-Za-z0-9_-]{0,79}\Z')
-FROZEN_INPUTS = {
-    'inputs/program-spec.json': '097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265',
-    'inputs/AlarmQualification.c': 'e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee',
-    'inputs/AlarmQualification.h': '3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00',
-}
-INPUT_ORIGINS = {
-    'inputs/program-spec.json': 'input/spec.json',
-    'inputs/AlarmQualification.c': 'src/AlarmQualification.c',
-    'inputs/AlarmQualification.h': 'include/AlarmQualification.h',
-    'inputs/generation-record.json': 'generation-record.json',
-}
-
 
 def require(condition, message):
-    if not condition:
-        raise ValueError(message)
-
-
-def digest(content):
-    return hashlib.sha256(content).hexdigest()
-
-
-def sha(path):
-    return digest(path.read_bytes())
-
-
-def load(path):
-    return json.loads(path.read_text(encoding='utf-8'))
-
-
-def save(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-
+    if not condition: raise ValueError(message)
+def digest(content): return hashlib.sha256(content).hexdigest()
+def sha(path): return digest(path.read_bytes())
+def load(path): return json.loads(path.read_text(encoding='utf-8'))
+def save(path, value): path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+'\n', encoding='utf-8')
 
 def contained(base, relative):
+    require(isinstance(relative, str) and bool(relative) and not Path(relative).is_absolute(), 'Expected a job-relative path')
     candidate = base/relative
     final = candidate.resolve()
     require(final.is_relative_to(base), 'Path escapes the allowed root')
-    require(not final.is_relative_to(BUNDLE), 'Jobs must be outside the package')
     current = candidate
     while current != base:
         require(not current.is_symlink() and not current.is_junction(), 'Links and junctions are not supported inside jobs')
         current = current.parent
     return candidate
-
 
 def doctor(exe):
     release = load(ROOT/'release.json')
@@ -73,7 +45,6 @@ def doctor(exe):
         path = ROOT/name
         require(path.resolve().is_relative_to(ROOT) and not path.is_symlink(), 'Invalid package resource path')
         require(sha(path) == expected, 'Package hash mismatch: '+name)
-    require(release['input_files'] == FROZEN_INPUTS, 'Release frozen input profile mismatch')
     require(platform.python_version_tuple()[:2] == ('3', '12'), 'This release uses Python 3.12')
     require(exe.is_absolute() and exe.is_file() and exe.suffix.lower() == '.exe', 'Specify an existing absolute OfficeCLI .exe path')
     exe = exe.resolve()
@@ -84,19 +55,14 @@ def doctor(exe):
     require(proc.returncode == 0 and proc.stdout.strip() == release['officecli']['version'], 'Unsupported OfficeCLI version')
     return release, {'version': proc.stdout.strip(), 'sha256': binary_hash}, exe
 
-
 def identity(release, renderer):
     return {'name': release['name'], 'version': release['version'], 'profile_id': release['profile_id'],
             'release_sha256': sha(ROOT/'release.json'), 'renderer': renderer}
-
-
 def job_path(args):
     require(SAFE_ID.fullmatch(args.job), 'Invalid job ID')
     workspace = args.workspace.expanduser().resolve()
     require(not workspace.is_relative_to(BUNDLE), 'Jobs must be outside the package')
     return workspace, contained(workspace, args.job)
-
-
 def publish_stage(stage, destination):
     for attempt in range(20):
         require(not destination.exists(), 'Output appeared during generation')
@@ -104,11 +70,8 @@ def publish_stage(stage, destination):
             stage.rename(destination)
             return
         except PermissionError as exc:
-            if getattr(exc, 'winerror', None) not in (5, 32) or attempt == 19:
-                raise
+            if getattr(exc, 'winerror', None) not in (5, 32) or attempt == 19: raise
             time.sleep(0.1)
-
-
 @contextmanager
 def stage_directory(parent, name):
     parent.mkdir(parents=True, exist_ok=True)
@@ -128,104 +91,136 @@ def stage_directory(parent, name):
                 if stage is not None and stage.exists():
                     require(stage.parent == parent.resolve() and stage.name.startswith('.'+name+'-'), 'Invalid staging cleanup path')
                     shutil.rmtree(stage)
-    finally:
-        lock.unlink()
+    finally: lock.unlink()
 
-
-def check_generation_record(content):
-    record = json.loads(content.decode('utf-8'))
-    for key, filename in (('input_spec_sha256', 'inputs/program-spec.json'),
-                          ('source_sha256', 'inputs/AlarmQualification.c'),
-                          ('header_sha256', 'inputs/AlarmQualification.h')):
-        require(record.get(key) == FROZEN_INPUTS[filename], 'Code generation record mismatch: '+key)
-    require(record.get('status') == 'draft_trial', 'Code generation record is not the frozen draft trial')
-    return record
-
+def check_generation_record(record, contents, bindings, file_map):
+    for key, role in (('input_spec_sha256', 'spec'), ('source_sha256', 'source'), ('header_sha256', 'header')):
+        require(record.get(key) == digest(contents[bindings[role]]), 'Code generation record mismatch: '+key)
+    hashes = record.get('file_hashes', {})
+    require(type(hashes) is dict and set(hashes) == set(file_map), 'Generation asset inventory mismatch')
+    for origin, expected in hashes.items():
+        require(digest(contents[file_map[origin]]) == expected, 'Generation asset hash mismatch: '+origin)
 
 def read_code_job(path):
     code_job = path.expanduser().resolve()
     require(code_job.is_dir(), 'Code job directory does not exist')
-    require(not code_job.is_relative_to(BUNDLE), 'Code job must be outside the package')
-    contents = {name: contained(code_job, origin).read_bytes() for name, origin in INPUT_ORIGINS.items()}
-    for name, expected in FROZEN_INPUTS.items():
-        require(digest(contents[name]) == expected, 'Code job input hash mismatch: '+name)
-    check_generation_record(contents['inputs/generation-record.json'])
-    return code_job, contents
+    config = load(contained(code_job, 'job.json'))
+    require(config.get('format_version') in ('0.1.0', '0.2.0'), 'Unsupported code job version')
+    origins = {role: config[role] for role in ('spec', 'source', 'header', 'generation_record')}
+    source_paths = {role: contained(code_job, origin) for role, origin in origins.items()}
+    contents, bindings = {}, {}
+    for role, path in source_paths.items():
+        name = 'inputs/program-spec.json' if role == 'spec' else 'inputs/generation-record.json' if role == 'generation_record' else 'inputs/'+role+'/'+path.name
+        contents[name] = path.read_bytes()
+        bindings[role] = name
+    record = json.loads(contents[bindings['generation_record']].decode('utf-8'))
+    file_map = {}
+    for origin in record.get('file_hashes', {}):
+        path = contained(code_job, origin)
+        roles = [role for role, original in origins.items() if original == origin]
+        if roles: name = bindings[roles[0]]
+        else:
+            name = 'inputs/assets/'+Path(origin).as_posix()
+            contents[name] = path.read_bytes()
+        file_map[origin] = name
+    check_generation_record(record, contents, bindings, file_map)
+    if 'spec_sha256' in config: require(config['spec_sha256'] == digest(contents[bindings['spec']]), 'Code job specification hash mismatch')
+    return contents, {'format_version': '0.2.0', 'copied_from': str(code_job), 'provenance': 'generation_record',
+                      'bindings': bindings, 'generation_file_map': file_map,
+                      'files': {name: digest(content) for name, content in contents.items()}}
 
+def read_external(args):
+    require(all((args.program_spec, args.source, args.header)), 'Supply --code-job or all of --program-spec --source --header')
+    contents, bindings = {}, {}
+    for role, raw in (('spec', args.program_spec), ('source', args.source), ('header', args.header)):
+        path = raw.expanduser().resolve()
+        name = 'inputs/program-spec.json' if role == 'spec' else 'inputs/'+role+'/'+path.name
+        contents[name] = path.read_bytes()
+        bindings[role] = name
+    return contents, {'format_version': '0.2.0', 'copied_from': 'explicit_project_inputs',
+                      'origins': {role: str(path.expanduser().resolve()) for role, path in (('spec', args.program_spec), ('source', args.source), ('header', args.header))},
+                      'provenance': 'external/not_provided', 'bindings': bindings, 'generation_file_map': {},
+                      'files': {name: digest(content) for name, content in contents.items()}}
+
+def target_hashes(lock):
+    return {key: lock['files'][lock['bindings'][role]] for key, role in
+            (('program_spec_sha256', 'spec'), ('source_sha256', 'source'), ('header_sha256', 'header'))}
 
 def read_inputs(job):
     lock_path = contained(job, 'input-lock.json')
     lock_bytes = lock_path.read_bytes()
     lock = json.loads(lock_bytes.decode('utf-8'))
-    require(lock.get('format_version') == '0.1.0' and lock.get('routine_id') == 'RTN-ALM-001', 'Unsupported input lock')
-    files = lock.get('files', {})
-    require(set(files) == set(INPUT_ORIGINS), 'Input lock inventory mismatch')
-    for name, expected in FROZEN_INPUTS.items():
-        require(files[name] == expected, 'Frozen input lock mismatch: '+name)
-    contents = {name: contained(job, name).read_bytes() for name in files}
-    for name, expected in files.items():
-        require(digest(contents[name]) == expected, 'Frozen input hash mismatch: '+name)
-    check_generation_record(contents['inputs/generation-record.json'])
+    require(lock.get('format_version') == '0.2.0', 'Unsupported input lock')
+    require(set(lock['bindings']) in ({'spec', 'source', 'header'}, {'spec', 'source', 'header', 'generation_record'}), 'Input bindings mismatch')
+    contents = {name: contained(job, name).read_bytes() for name in lock['files']}
+    for name, expected in lock['files'].items(): require(digest(contents[name]) == expected, 'Locked input hash mismatch: '+name)
+    require(set(lock['bindings'].values()) <= set(contents), 'Input lock inventory mismatch')
+    if lock['provenance'] == 'generation_record':
+        record = json.loads(contents[lock['bindings']['generation_record']].decode('utf-8'))
+        check_generation_record(record, contents, lock['bindings'], lock['generation_file_map'])
+    else: require(lock['provenance'] == 'external/not_provided' and 'generation_record' not in lock['bindings'], 'Invalid external provenance')
     require(lock_path.read_bytes() == lock_bytes, 'Input lock changed while reading inputs')
-    return json.loads(contents['inputs/program-spec.json'].decode('utf-8')), lock, lock_bytes
+    return json.loads(contents[lock['bindings']['spec']].decode('utf-8')), lock, lock_bytes
 
-
-def validated_source(content, release, program_spec):
+def validated_source(content, release, program_spec, target):
     import _contract
     import _renderer
-    data = _contract.validate(json.loads(content.decode('utf-8')), load(ROOT/release['schema']), program_spec)
-    require(data['target'] == release['target'], 'Source target hashes differ from the release profile')
-    require(data['document']['routine_id'] == release['routine_id'], 'Unsupported routine for this profile')
+    data = _contract.validate(json.loads(content.decode('utf-8')), load(ROOT/release['schema']), program_spec, target)
     require(data['document']['template_id'] == release['template_id'], 'Unsupported template ID')
-    require(data['document']['status_label'] == '試作仕様 要件確認前', 'This release cannot create approved specifications')
-    require(SAFE_ID.fullmatch(data['document']['id']), 'Invalid document ID')
     _renderer.check_xml_characters(data)
     return data
 
+def skeleton(program, target, args):
+    doc = program['document']
+    return {'schema_version': '0.2.0', 'document': {'id': args.document_id or 'UTS-'+args.job,
+            'title': doc['routine_name']+' 単体テスト仕様書', 'revision': '0.1', 'date': date.today().isoformat(),
+            'status': doc.get('status', 'draft'), 'status_label': doc.get('status_label', doc.get('status', 'draft')),
+            'routine_id': doc['routine_id'], 'routine_name': doc['routine_name'], 'template_id': 'unit-test-spec-v02',
+            'author': '未記入'}, 'target': target, 'summary': '', 'environment': [],
+            'assumptions': program.get('trial_assumptions', []), 'cases': [], 'families': [], 'static_checks': [],
+            'coverage': [], 'open_issues': program.get('open_issues', [])}
 
 def execute(args):
     release, renderer, exe = doctor(args.officecli)
     package = identity(release, renderer)
-    if args.command == 'doctor':
-        return {'status': 'ok', 'package': package, 'renderer': renderer,
-                'python': platform.python_version(), 'third_party_python_dependencies': []}
-    if args.command == 'describe':
-        return {**package, 'schema': str(ROOT/release['schema']), 'example': str(ROOT/release['example']),
-                'template_id': release['template_id'], 'template_revision': release['template_revision'],
-                'input_files': FROZEN_INPUTS, 'limits': release['limits']}
+    if args.command == 'doctor': return {'status': 'ok', 'package': package, 'renderer': renderer, 'python': platform.python_version(), 'third_party_python_dependencies': []}
+    if args.command == 'describe': return {**package, 'schema': str(ROOT/release['schema']), 'example': str(ROOT/release['example']),
+                'template_id': release['template_id'], 'template_revision': release['template_revision'], 'limits': release['limits']}
     workspace, job = job_path(args)
     import _contract
     if args.command == 'new-job':
-        code_job, inputs = read_code_job(args.code_job)
+        require(not args.code_job or not any((args.program_spec, args.source, args.header)), 'Choose --code-job or explicit project inputs')
+        inputs, lock = read_code_job(args.code_job) if args.code_job else read_external(args)
         with stage_directory(workspace, args.job) as (stage, _):
-            (stage/'inputs').mkdir()
-            (stage/'source').mkdir()
-            (stage/'records').mkdir()
+            for folder in ('inputs', 'source', 'records'): (stage/folder).mkdir()
             for name, content in inputs.items():
-                (stage/name).write_bytes(content)
-            save(stage/'input-lock.json', {'format_version': '0.1.0', 'routine_id': release['routine_id'],
-                                          'copied_from': str(code_job),
-                                          'files': {name: digest(content) for name, content in inputs.items()}})
-            save(stage/'package-lock.json', package)
-            source_bytes = (ROOT/release['example']).read_bytes()
-            program_spec, _, _ = read_inputs(stage)
-            data = validated_source(source_bytes, release, program_spec)
-            (stage/'source/unit-test-spec.json').write_bytes(source_bytes)
+                destination = contained(stage, name)
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                destination.write_bytes(content)
+            save(stage/'input-lock.json', lock)
+            program_spec, _, lock_bytes = read_inputs(stage)
+            save(stage/'package-lock.json', {'package': package, 'input_lock_sha256': digest(lock_bytes)})
+            if args.unit_test_spec:
+                source_bytes = args.unit_test_spec.expanduser().resolve().read_bytes()
+                data = validated_source(source_bytes, release, program_spec, target_hashes(lock))
+                (stage/'source/unit-test-spec.json').write_bytes(source_bytes)
+            else:
+                data = skeleton(program_spec, target_hashes(lock), args)
+                save(stage/'source/unit-test-spec.json', data)
             record = _contract.execution_record(data)
             _contract.validate_execution(record, data)
             save(stage/'records/execution-record.json', record)
-        return {'status': 'created', 'source': str(job/'source/unit-test-spec.json'),
-                'execution_record': str(job/'records/execution-record.json')}
-    require(load(contained(job, 'package-lock.json')) == package, 'Job release or renderer lock mismatch')
+            (stage/'.gitattributes').write_bytes(b'* -text\n')
+        return {'status': 'created', 'authoring_required': not bool(args.unit_test_spec), 'source': str(job/'source/unit-test-spec.json'), 'execution_record': str(job/'records/execution-record.json')}
     program_spec, input_lock, input_lock_bytes = read_inputs(job)
+    expected_lock = {'package': package, 'input_lock_sha256': digest(input_lock_bytes)}
+    require(load(contained(job, 'package-lock.json')) == expected_lock, 'Job release, renderer, or input lock mismatch')
     source = contained(job, 'source/unit-test-spec.json')
     content = source.read_bytes()
-    data = validated_source(content, release, program_spec)
+    data = validated_source(content, release, program_spec, target_hashes(input_lock))
     execution_bytes = contained(job, 'records/execution-record.json').read_bytes()
     _contract.validate_execution(json.loads(execution_bytes.decode('utf-8')), data)
-    if args.command == 'validate':
-        return {'status': 'valid', 'source_sha256': digest(content), 'input_lock_sha256': digest(input_lock_bytes),
-                'execution_record_sha256': digest(execution_bytes), 'document_status': data['document']['status']}
+    if args.command == 'validate': return {'status': 'valid', 'source_sha256': digest(content), 'input_lock_sha256': digest(input_lock_bytes), 'execution_record_sha256': digest(execution_bytes), 'document_status': data['document']['status']}
     require(SAFE_ID.fullmatch(args.run), 'Invalid render ID')
     import _renderer
     with stage_directory(contained(job, 'renders'), args.run) as (stage, destination):
@@ -234,25 +229,19 @@ def execute(args):
         (stage/'input-lock.json').write_bytes(input_lock_bytes)
         (stage/'execution-record.json').write_bytes(execution_bytes)
         save(stage/'traceability.json', _contract.traceability(data))
-        output = stage/(data['document']['id']+'.docx')
-        record = _renderer.build(snapshot, ROOT/release['schema'], ROOT/release['template'],
-                                 output, stage/'manifest.json', exe, data)
-        # Detect changes to the frozen lock or bytes during an OfficeCLI operation.
-        _, current_lock, current_lock_bytes = read_inputs(job)
-        require(current_lock == input_lock and current_lock_bytes == input_lock_bytes, 'Input lock changed during rendering')
-        require(load(contained(job, 'package-lock.json')) == package, 'Package lock changed during rendering')
-        record.update({'package': package, 'officecli': renderer, 'python': platform.python_version(),
-                       'canonical_source': 'source/unit-test-spec.json', 'input_files': input_lock['files'],
-                       'input_lock_sha256': digest(input_lock_bytes),
-                       'execution_record_sha256': digest(execution_bytes),
-                       'traceability_sha256': sha(stage/'traceability.json'),
-                       'schema': release['schema'], 'template': release['template'],
-                       'template_id': release['template_id'], 'template_revision': release['template_revision']})
+        output = stage/'unit-test-spec.docx'
+        record = _renderer.build(snapshot, ROOT/release['schema'], ROOT/release['template'], output, stage/'manifest.json', exe, data)
+        _, current_lock, current_bytes = read_inputs(job)
+        require(current_lock == input_lock and current_bytes == input_lock_bytes, 'Input lock changed during rendering')
+        require(source.read_bytes() == content and contained(job, 'records/execution-record.json').read_bytes() == execution_bytes, 'Canonical source or execution record changed during rendering')
+        require(load(contained(job, 'package-lock.json')) == expected_lock, 'Package lock changed during rendering')
+        record.update({'package': package, 'officecli': renderer, 'python': platform.python_version(), 'canonical_source': 'source/unit-test-spec.json',
+                       'input_files': input_lock['files'], 'input_provenance': input_lock['provenance'], 'input_lock_sha256': digest(input_lock_bytes),
+                       'execution_record_sha256': digest(execution_bytes), 'traceability_sha256': sha(stage/'traceability.json'),
+                       'schema': release['schema'], 'template': release['template'], 'template_id': release['template_id'], 'template_revision': release['template_revision']})
         save(stage/'manifest.json', record)
-    return {'status': 'rendered', 'document': str(destination/output.name),
-            'manifest': str(destination/'manifest.json'), 'document_status': 'draft_trial',
-            'test_execution': 'not_executed'}
-
+    return {'status': 'rendered', 'document': str(destination/output.name), 'manifest': str(destination/'manifest.json'),
+            'document_status': data['document']['status'], 'test_execution': 'not_executed'}
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -264,17 +253,13 @@ def main():
             command.add_argument('--workspace', required=True, type=Path)
             command.add_argument('--job', required=True)
         if name == 'new-job':
-            command.add_argument('--code-job', required=True, type=Path)
-        if name == 'render':
-            command.add_argument('--run', required=True)
+            for flag in ('code-job', 'program-spec', 'source', 'header', 'unit-test-spec'): command.add_argument('--'+flag, type=Path)
+            command.add_argument('--document-id')
+        if name == 'render': command.add_argument('--run', required=True)
     args = parser.parse_args()
-    try:
-        print(json.dumps(execute(args), ensure_ascii=False, indent=2))
+    try: print(json.dumps(execute(args), ensure_ascii=False, indent=2))
     except Exception as exc:
         print(json.dumps({'status': 'error', 'message': str(exc)}, ensure_ascii=False), file=sys.stderr)
         return 1
     return 0
-
-
-if __name__ == '__main__':
-    sys.exit(main())
+if __name__ == '__main__': sys.exit(main())

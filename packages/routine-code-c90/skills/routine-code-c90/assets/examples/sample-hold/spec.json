@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "PS-TEST-SAMPLE-001",
+    "routine_id": "RTN-TEST-SAMPLE-001",
+    "routine_name": "SampleHold_Update",
+    "status": "fixture_only",
+    "title": "Synthetic API/state fixture, not an approved RTOS interface"
+  },
+  "interface": {
+    "language": "C90",
+    "prototype": "int SampleHold_Update(SampleHoldState *state, int *out_sample);",
+    "type_definitions": "typedef struct {\n    int last_sample;\n    int has_sample;\n} SampleHoldState;",
+    "parameters": [
+      {"name": "state", "ownership": "Caller-owned, valid writable nonoverlapping storage. Initial last_sample=0 and has_sample=0."},
+      {"name": "out_sample", "ownership": "Caller-owned writable int, disjoint from state."}
+    ],
+    "return_codes": {"0": "Read succeeded and both outputs updated.", "-1": "A pointer was null; no API call or writes.", "-2": "Synthetic API failed; preserve state and output."}
+  },
+  "external_api": {
+    "name": "Project_ReadSample",
+    "header": "Project_Sample.h",
+    "prototype": "int Project_ReadSample(int *out_sample);",
+    "contract": "FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled."
+  },
+  "behavior": {
+    "steps": [
+      "If either pointer is null, return -1 without API calls or writes.",
+      "Call the supplied API once using a local temporary sample.",
+      "On nonzero API status, return -2 without writing state or out_sample.",
+      "On API success, set state.last_sample to the sample, state.has_sample to 1, and out_sample to the sample; return 0."
+    ],
+    "ownership": "Independent states may be used by independent callers; external API synchronization is outside this fixture."
+  },
+  "constraints": [
+    "Include only supplied contracts; do not invent a real RTOS API or DLL ABI.",
+    "Use no shared static state, loops, recursion, dynamic memory, or direct operating-system APIs."
+  ],
+  "verification_examples": [
+    {"api_status": 0, "api_sample": 23, "expected_status": 0, "expected_state": [23, 1], "expected_output": 23},
+    {"api_status": 7, "api_sample": -99, "expected_status": -2, "expected": "state and output unchanged"}
+  ]
+}

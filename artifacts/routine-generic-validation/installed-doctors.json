@@ -1,0 +1,32 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "90119f",
+      "wall_time_seconds": 2.7830439,
+      "exit_code": 0,
+      "original_token_count": 146,
+      "output": "{\r\n  \"status\": \"ok\",\r\n  \"package\": {\r\n    \"name\": \"routine-spec-officecli\",\r\n    \"version\": \"0.3.0\",\r\n    \"profile_id\": \"generic-full-spec-v02\",\r\n    \"release_sha256\": \"99b31ceca8f0fd6dec4b79bd8345953f5d9e09ecafb5b8c98e9e616a7163241a\",\r\n    \"renderer\": {\r\n      \"version\": \"1.0.144\",\r\n      \"sha256\": \"eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb\"\r\n    }\r\n  },\r\n  \"renderer\": {\r\n    \"version\": \"1.0.144\",\r\n    \"sha256\": \"eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb\"\r\n  },\r\n  \"python\": \"3.12.14\",\r\n  \"third_party_python_dependencies\": []\r\n}\r\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "923fa1",
+      "wall_time_seconds": 2.1447302,
+      "exit_code": 0,
+      "original_token_count": 34,
+      "output": "{\r\n  \"status\": \"ok\",\r\n  \"version\": \"0.2.0\",\r\n  \"release_sha256\": \"7498620a9c4965dbeb620628d3388b91d5d23b43328b2de7cd34c1d2e2181a83\"\r\n}\r\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "ffef81",
+      "wall_time_seconds": 2.8452599,
+      "exit_code": 0,
+      "original_token_count": 147,
+      "output": "{\r\n  \"status\": \"ok\",\r\n  \"package\": {\r\n    \"name\": \"routine-unit-test-officecli\",\r\n    \"version\": \"0.2.0\",\r\n    \"profile_id\": \"generic-unit-test-v02\",\r\n    \"release_sha256\": \"f07b84dfff7d102d6f872eddb0a8ae85ac712a7779c97982aedd66a795703491\",\r\n    \"renderer\": {\r\n      \"version\": \"1.0.144\",\r\n      \"sha256\": \"eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb\"\r\n    }\r\n  },\r\n  \"renderer\": {\r\n    \"version\": \"1.0.144\",\r\n    \"sha256\": \"eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb\"\r\n  },\r\n  \"python\": \"3.12.14\",\r\n  \"third_party_python_dependencies\": []\r\n}\r\n"
+    }
+  }
+]

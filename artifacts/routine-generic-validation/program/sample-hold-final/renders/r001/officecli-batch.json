@@ -1,0 +1,899 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "Copied to /body/tbl[2]/tr[3]"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "Copied to /body/tbl[3]/tr[3]"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "Copied to /body/tbl[4]/tr[3]"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "Copied to /body/tbl[6]/tr[3]"
+      },
+      {
+        "index": 4,
+        "success": true,
+        "output": "Copied to /body/tbl[6]/tr[4]"
+      },
+      {
+        "index": 5,
+        "success": true,
+        "output": "Copied to /body/tbl[6]/tr[5]"
+      },
+      {
+        "index": 6,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[3]"
+      },
+      {
+        "index": 7,
+        "success": true,
+        "output": "Copied to /body/tbl[7]/tr[4]"
+      },
+      {
+        "index": 8,
+        "success": true,
+        "output": "Copied to /body/tbl[8]/tr[3]"
+      },
+      {
+        "index": 9,
+        "success": true,
+        "output": "Copied to /body/tbl[8]/tr[4]"
+      },
+      {
+        "index": 10,
+        "success": true,
+        "output": "Copied to /body/tbl[9]/tr[3]"
+      },
+      {
+        "index": 11,
+        "success": true,
+        "output": "Copied to /body/tbl[10]/tr[3]"
+      },
+      {
+        "index": 12,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{id}}, replace=__RSF_12c848e93918511daf878037_0__ (1 matched)"
+      },
+      {
+        "index": 13,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find={{text}}, replace=__RSF_12c848e93918511daf878037_1__ (1 matched)"
+      },
+      {
+        "index": 14,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[3]: find={{id}}, replace=__RSF_12c848e93918511daf878037_2__ (1 matched)"
+      },
+      {
+        "index": 15,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[3]: find={{text}}, replace=__RSF_12c848e93918511daf878037_3__ (1 matched)"
+      },
+      {
+        "index": 16,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{direction}}, replace=__RSF_12c848e93918511daf878037_4__ (1 matched)"
+      },
+      {
+        "index": 17,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{name}}, replace=__RSF_12c848e93918511daf878037_5__ (1 matched)"
+      },
+      {
+        "index": 18,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find={{type_contract}}, replace=__RSF_12c848e93918511daf878037_6__ (1 matched)"
+      },
+      {
+        "index": 19,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{direction}}, replace=__RSF_12c848e93918511daf878037_7__ (1 matched)"
+      },
+      {
+        "index": 20,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{name}}, replace=__RSF_12c848e93918511daf878037_8__ (1 matched)"
+      },
+      {
+        "index": 21,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find={{type_contract}}, replace=__RSF_12c848e93918511daf878037_9__ (1 matched)"
+      },
+      {
+        "index": 22,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{initial}}, replace=__RSF_12c848e93918511daf878037_10__ (1 matched)"
+      },
+      {
+        "index": 23,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{name}}, replace=__RSF_12c848e93918511daf878037_11__ (1 matched)"
+      },
+      {
+        "index": 24,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find={{range_meaning}}, replace=__RSF_12c848e93918511daf878037_12__ (1 matched)"
+      },
+      {
+        "index": 25,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{initial}}, replace=__RSF_12c848e93918511daf878037_13__ (1 matched)"
+      },
+      {
+        "index": 26,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{name}}, replace=__RSF_12c848e93918511daf878037_14__ (1 matched)"
+      },
+      {
+        "index": 27,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find={{range_meaning}}, replace=__RSF_12c848e93918511daf878037_15__ (1 matched)"
+      },
+      {
+        "index": 28,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{meaning}}, replace=__RSF_12c848e93918511daf878037_16__ (1 matched)"
+      },
+      {
+        "index": 29,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find={{name}}, replace=__RSF_12c848e93918511daf878037_17__ (1 matched)"
+      },
+      {
+        "index": 30,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{id}}, replace=__RSF_12c848e93918511daf878037_18__ (1 matched)"
+      },
+      {
+        "index": 31,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find={{text}}, replace=__RSF_12c848e93918511daf878037_19__ (1 matched)"
+      },
+      {
+        "index": 32,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find={{id}}, replace=__RSF_12c848e93918511daf878037_20__ (1 matched)"
+      },
+      {
+        "index": 33,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find={{text}}, replace=__RSF_12c848e93918511daf878037_21__ (1 matched)"
+      },
+      {
+        "index": 34,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find={{id}}, replace=__RSF_12c848e93918511daf878037_22__ (1 matched)"
+      },
+      {
+        "index": 35,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find={{text}}, replace=__RSF_12c848e93918511daf878037_23__ (1 matched)"
+      },
+      {
+        "index": 36,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[5]: find={{id}}, replace=__RSF_12c848e93918511daf878037_24__ (1 matched)"
+      },
+      {
+        "index": 37,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[5]: find={{text}}, replace=__RSF_12c848e93918511daf878037_25__ (1 matched)"
+      },
+      {
+        "index": 38,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{condition}}, replace=__RSF_12c848e93918511daf878037_26__ (1 matched)"
+      },
+      {
+        "index": 39,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find={{details}}, replace=__RSF_12c848e93918511daf878037_27__ (1 matched)"
+      },
+      {
+        "index": 40,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{condition}}, replace=__RSF_12c848e93918511daf878037_28__ (1 matched)"
+      },
+      {
+        "index": 41,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find={{details}}, replace=__RSF_12c848e93918511daf878037_29__ (1 matched)"
+      },
+      {
+        "index": 42,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{condition}}, replace=__RSF_12c848e93918511daf878037_30__ (1 matched)"
+      },
+      {
+        "index": 43,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find={{details}}, replace=__RSF_12c848e93918511daf878037_31__ (1 matched)"
+      },
+      {
+        "index": 44,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{meaning}}, replace=__RSF_12c848e93918511daf878037_32__ (1 matched)"
+      },
+      {
+        "index": 45,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find={{value}}, replace=__RSF_12c848e93918511daf878037_33__ (1 matched)"
+      },
+      {
+        "index": 46,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[3]: find={{meaning}}, replace=__RSF_12c848e93918511daf878037_34__ (1 matched)"
+      },
+      {
+        "index": 47,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[3]: find={{value}}, replace=__RSF_12c848e93918511daf878037_35__ (1 matched)"
+      },
+      {
+        "index": 48,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[4]: find={{meaning}}, replace=__RSF_12c848e93918511daf878037_36__ (1 matched)"
+      },
+      {
+        "index": 49,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[4]: find={{value}}, replace=__RSF_12c848e93918511daf878037_37__ (1 matched)"
+      },
+      {
+        "index": 50,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{category}}, replace=__RSF_12c848e93918511daf878037_38__ (1 matched)"
+      },
+      {
+        "index": 51,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{id}}, replace=__RSF_12c848e93918511daf878037_39__ (1 matched)"
+      },
+      {
+        "index": 52,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find={{text}}, replace=__RSF_12c848e93918511daf878037_40__ (1 matched)"
+      },
+      {
+        "index": 53,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{category}}, replace=__RSF_12c848e93918511daf878037_41__ (1 matched)"
+      },
+      {
+        "index": 54,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{id}}, replace=__RSF_12c848e93918511daf878037_42__ (1 matched)"
+      },
+      {
+        "index": 55,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find={{text}}, replace=__RSF_12c848e93918511daf878037_43__ (1 matched)"
+      },
+      {
+        "index": 56,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{expected}}, replace=__RSF_12c848e93918511daf878037_44__ (1 matched)"
+      },
+      {
+        "index": 57,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{id}}, replace=__RSF_12c848e93918511daf878037_45__ (1 matched)"
+      },
+      {
+        "index": 58,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find={{input}}, replace=__RSF_12c848e93918511daf878037_46__ (1 matched)"
+      },
+      {
+        "index": 59,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{expected}}, replace=__RSF_12c848e93918511daf878037_47__ (1 matched)"
+      },
+      {
+        "index": 60,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{id}}, replace=__RSF_12c848e93918511daf878037_48__ (1 matched)"
+      },
+      {
+        "index": 61,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find={{input}}, replace=__RSF_12c848e93918511daf878037_49__ (1 matched)"
+      },
+      {
+        "index": 62,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{requirement}}, replace=__RSF_12c848e93918511daf878037_50__ (1 matched)"
+      },
+      {
+        "index": 63,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{specification}}, replace=__RSF_12c848e93918511daf878037_51__ (1 matched)"
+      },
+      {
+        "index": 64,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find={{verification}}, replace=__RSF_12c848e93918511daf878037_52__ (1 matched)"
+      },
+      {
+        "index": 65,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{decision}}, replace=__RSF_12c848e93918511daf878037_53__ (1 matched)"
+      },
+      {
+        "index": 66,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{id}}, replace=__RSF_12c848e93918511daf878037_54__ (1 matched)"
+      },
+      {
+        "index": 67,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find={{owner}}, replace=__RSF_12c848e93918511daf878037_55__ (1 matched)"
+      },
+      {
+        "index": 68,
+        "success": true,
+        "output": "Updated /body: find={{behavior.postconditions}}, replace=__RSF_12c848e93918511daf878037_56__ (1 matched)"
+      },
+      {
+        "index": 69,
+        "success": true,
+        "output": "Updated /body: find={{behavior.timing_semantics}}, replace=__RSF_12c848e93918511daf878037_57__ (1 matched)"
+      },
+      {
+        "index": 70,
+        "success": true,
+        "output": "Updated /body: find={{build.source_short_hash}}, replace=__RSF_12c848e93918511daf878037_58__ (1 matched)"
+      },
+      {
+        "index": 71,
+        "success": true,
+        "output": "Updated /body: find={{document.author}}, replace=__RSF_12c848e93918511daf878037_59__ (1 matched)"
+      },
+      {
+        "index": 72,
+        "success": true,
+        "output": "Updated /body: find={{document.date}}, replace=__RSF_12c848e93918511daf878037_60__ (1 matched)"
+      },
+      {
+        "index": 73,
+        "success": true,
+        "output": "Updated /body: find={{document.id}}, replace=__RSF_12c848e93918511daf878037_61__ (2 matched)"
+      },
+      {
+        "index": 74,
+        "success": true,
+        "output": "Updated /body: find={{document.revision}}, replace=__RSF_12c848e93918511daf878037_62__ (2 matched)"
+      },
+      {
+        "index": 75,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_id}}, replace=__RSF_12c848e93918511daf878037_63__ (2 matched)"
+      },
+      {
+        "index": 76,
+        "success": true,
+        "output": "Updated /body: find={{document.routine_name}}, replace=__RSF_12c848e93918511daf878037_64__ (1 matched)"
+      },
+      {
+        "index": 77,
+        "success": true,
+        "output": "Updated /body: find={{document.status}}, replace=__RSF_12c848e93918511daf878037_65__ (1 matched)"
+      },
+      {
+        "index": 78,
+        "success": true,
+        "output": "Updated /body: find={{document.status_label}}, replace=__RSF_12c848e93918511daf878037_66__ (2 matched)"
+      },
+      {
+        "index": 79,
+        "success": true,
+        "output": "Updated /body: find={{document.template_id}}, replace=__RSF_12c848e93918511daf878037_67__ (1 matched)"
+      },
+      {
+        "index": 80,
+        "success": true,
+        "output": "Updated /body: find={{document.title}}, replace=__RSF_12c848e93918511daf878037_68__ (1 matched)"
+      },
+      {
+        "index": 81,
+        "success": true,
+        "output": "Updated /body: find={{interface.language}}, replace=__RSF_12c848e93918511daf878037_69__ (1 matched)"
+      },
+      {
+        "index": 82,
+        "success": true,
+        "output": "Updated /body: find={{interface.preconditions}}, replace=__RSF_12c848e93918511daf878037_70__ (1 matched)"
+      },
+      {
+        "index": 83,
+        "success": true,
+        "output": "Updated /body: find={{interface.prototype}}, replace=__RSF_12c848e93918511daf878037_71__ (1 matched)"
+      },
+      {
+        "index": 84,
+        "success": true,
+        "output": "Updated /body: find={{interface.visibility}}, replace=__RSF_12c848e93918511daf878037_72__ (1 matched)"
+      },
+      {
+        "index": 85,
+        "success": true,
+        "output": "Updated /body: find={{overview.coverage}}, replace=__RSF_12c848e93918511daf878037_73__ (1 matched)"
+      },
+      {
+        "index": 86,
+        "success": true,
+        "output": "Updated /body: find={{overview.purpose}}, replace=__RSF_12c848e93918511daf878037_74__ (1 matched)"
+      },
+      {
+        "index": 87,
+        "success": true,
+        "output": "Updated /body: find={{overview.requirement_id}}, replace=__RSF_12c848e93918511daf878037_75__ (1 matched)"
+      },
+      {
+        "index": 88,
+        "success": true,
+        "output": "Updated /body: find={{overview.scope}}, replace=__RSF_12c848e93918511daf878037_76__ (1 matched)"
+      },
+      {
+        "index": 89,
+        "success": true,
+        "output": "Updated /body: find={{overview.source_locator}}, replace=__RSF_12c848e93918511daf878037_77__ (1 matched)"
+      },
+      {
+        "index": 90,
+        "success": true,
+        "output": "Updated /body: find={{overview.source_requirement}}, replace=__RSF_12c848e93918511daf878037_78__ (1 matched)"
+      },
+      {
+        "index": 91,
+        "success": true,
+        "output": "Updated /body: find={{schema_version}}, replace=__RSF_12c848e93918511daf878037_79__ (1 matched)"
+      },
+      {
+        "index": 92,
+        "success": true,
+        "output": "Updated /body: find={{view.configuration_text}}, replace=__RSF_12c848e93918511daf878037_80__ (1 matched)"
+      },
+      {
+        "index": 93,
+        "success": true,
+        "output": "Updated /body: find={{view.type_definitions}}, replace=__RSF_12c848e93918511daf878037_81__ (1 matched)"
+      },
+      {
+        "index": 94,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__RSF_12c848e93918511daf878037_0__, replace=SH-ASM-API (1 matched)"
+      },
+      {
+        "index": 95,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[2]: find=__RSF_12c848e93918511daf878037_1__, replace=FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled. (1 matched)"
+      },
+      {
+        "index": 96,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[3]: find=__RSF_12c848e93918511daf878037_2__, replace=SH-ASM-OWNERSHIP (1 matched)"
+      },
+      {
+        "index": 97,
+        "success": true,
+        "output": "Updated /body/tbl[2]/tr[3]: find=__RSF_12c848e93918511daf878037_3__, replace=Independent states may be used by independent callers; external API synchronization is outside this fixture. (1 matched)"
+      },
+      {
+        "index": 98,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_12c848e93918511daf878037_4__, replace=input/output (1 matched)"
+      },
+      {
+        "index": 99,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_12c848e93918511daf878037_5__, replace=state (1 matched)"
+      },
+      {
+        "index": 100,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[2]: find=__RSF_12c848e93918511daf878037_6__, replace=SampleHoldState *\u000bCaller-owned, valid writable nonoverlapping storage. Initial last_sample=0 and has_sample=0. (1 matched)"
+      },
+      {
+        "index": 101,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_12c848e93918511daf878037_7__, replace=output (1 matched)"
+      },
+      {
+        "index": 102,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_12c848e93918511daf878037_8__, replace=out_sample (1 matched)"
+      },
+      {
+        "index": 103,
+        "success": true,
+        "output": "Updated /body/tbl[3]/tr[3]: find=__RSF_12c848e93918511daf878037_9__, replace=int *\u000bCaller-owned writable int, disjoint from state. (1 matched)"
+      },
+      {
+        "index": 104,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_12c848e93918511daf878037_10__, replace=0 (1 matched)"
+      },
+      {
+        "index": 105,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_12c848e93918511daf878037_11__, replace=state.last_sample\u000bint (1 matched)"
+      },
+      {
+        "index": 106,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[2]: find=__RSF_12c848e93918511daf878037_12__, replace=Representable int Sample from the latest successful call. Preserve on pointer/API failure. (1 matched)"
+      },
+      {
+        "index": 107,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__RSF_12c848e93918511daf878037_13__, replace=0 (1 matched)"
+      },
+      {
+        "index": 108,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__RSF_12c848e93918511daf878037_14__, replace=state.has_sample\u000bint (1 matched)"
+      },
+      {
+        "index": 109,
+        "success": true,
+        "output": "Updated /body/tbl[4]/tr[3]: find=__RSF_12c848e93918511daf878037_15__, replace=Initial 0; success sets 1. No validation of prior values is specified. Indicates that a successful sample was committed. Preserve on pointer/API failure. (1 matched)"
+      },
+      {
+        "index": 110,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__RSF_12c848e93918511daf878037_16__, replace=Read sample on success; unchanged on pointer/API failure. (1 matched)"
+      },
+      {
+        "index": 111,
+        "success": true,
+        "output": "Updated /body/tbl[5]/tr[2]: find=__RSF_12c848e93918511daf878037_17__, replace=*out_sample (1 matched)"
+      },
+      {
+        "index": 112,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__RSF_12c848e93918511daf878037_18__, replace=SH-STEP-POINTERS (1 matched)"
+      },
+      {
+        "index": 113,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[2]: find=__RSF_12c848e93918511daf878037_19__, replace=If either pointer is null, return -1 without API calls or writes. (1 matched)"
+      },
+      {
+        "index": 114,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find=__RSF_12c848e93918511daf878037_20__, replace=SH-STEP-READ (1 matched)"
+      },
+      {
+        "index": 115,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[3]: find=__RSF_12c848e93918511daf878037_21__, replace=Call the supplied API once using a local temporary sample. (1 matched)"
+      },
+      {
+        "index": 116,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find=__RSF_12c848e93918511daf878037_22__, replace=SH-STEP-PRESERVE (1 matched)"
+      },
+      {
+        "index": 117,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[4]: find=__RSF_12c848e93918511daf878037_23__, replace=On nonzero API status, return -2 without writing state or out_sample. (1 matched)"
+      },
+      {
+        "index": 118,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[5]: find=__RSF_12c848e93918511daf878037_24__, replace=SH-STEP-COMMIT (1 matched)"
+      },
+      {
+        "index": 119,
+        "success": true,
+        "output": "Updated /body/tbl[6]/tr[5]: find=__RSF_12c848e93918511daf878037_25__, replace=On API success, set state.last_sample to the sample, state.has_sample to 1, and out_sample to the sample; return 0. (1 matched)"
+      },
+      {
+        "index": 120,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__RSF_12c848e93918511daf878037_26__, replace=state == NULL or out_sample == NULL (1 matched)"
+      },
+      {
+        "index": 121,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[2]: find=__RSF_12c848e93918511daf878037_27__, replace=API calls = 0\u000breturn = -1\u000bstate = unchanged\u000bout_sample = unchanged (1 matched)"
+      },
+      {
+        "index": 122,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__RSF_12c848e93918511daf878037_28__, replace=Pointers valid; API status != 0 (1 matched)"
+      },
+      {
+        "index": 123,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[3]: find=__RSF_12c848e93918511daf878037_29__, replace=API calls = 1\u000breturn = -2\u000bstate = unchanged\u000bout_sample = unchanged (1 matched)"
+      },
+      {
+        "index": 124,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__RSF_12c848e93918511daf878037_30__, replace=Pointers valid; API status == 0 (1 matched)"
+      },
+      {
+        "index": 125,
+        "success": true,
+        "output": "Updated /body/tbl[7]/tr[4]: find=__RSF_12c848e93918511daf878037_31__, replace=API calls = 1\u000breturn = 0\u000bstate.last_sample = API sample\u000bstate.has_sample = 1\u000bout_sample = API sample (1 matched)"
+      },
+      {
+        "index": 126,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__RSF_12c848e93918511daf878037_32__, replace=Read succeeded and both outputs updated. (1 matched)"
+      },
+      {
+        "index": 127,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[2]: find=__RSF_12c848e93918511daf878037_33__, replace=0 (1 matched)"
+      },
+      {
+        "index": 128,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[3]: find=__RSF_12c848e93918511daf878037_34__, replace=A pointer was null; no API call or writes. (1 matched)"
+      },
+      {
+        "index": 129,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[3]: find=__RSF_12c848e93918511daf878037_35__, replace=-1 (1 matched)"
+      },
+      {
+        "index": 130,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[4]: find=__RSF_12c848e93918511daf878037_36__, replace=Synthetic API failed; preserve state and output. (1 matched)"
+      },
+      {
+        "index": 131,
+        "success": true,
+        "output": "Updated /body/tbl[8]/tr[4]: find=__RSF_12c848e93918511daf878037_37__, replace=-2 (1 matched)"
+      },
+      {
+        "index": 132,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_12c848e93918511daf878037_38__, replace=fixture boundary (1 matched)"
+      },
+      {
+        "index": 133,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_12c848e93918511daf878037_39__, replace=SH-C-SUPPLIED (1 matched)"
+      },
+      {
+        "index": 134,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[2]: find=__RSF_12c848e93918511daf878037_40__, replace=Include only supplied contracts; do not invent a real RTOS API or DLL ABI. (1 matched)"
+      },
+      {
+        "index": 135,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_12c848e93918511daf878037_41__, replace=implementation (1 matched)"
+      },
+      {
+        "index": 136,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_12c848e93918511daf878037_42__, replace=SH-C-RESOURCES (1 matched)"
+      },
+      {
+        "index": 137,
+        "success": true,
+        "output": "Updated /body/tbl[9]/tr[3]: find=__RSF_12c848e93918511daf878037_43__, replace=Use no shared static state, loops, recursion, dynamic memory, or direct operating-system APIs. (1 matched)"
+      },
+      {
+        "index": 138,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_12c848e93918511daf878037_44__, replace=return=0; state.last_sample=23; state.has_sample=1; *out_sample=23; exactly one API call. (1 matched)"
+      },
+      {
+        "index": 139,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_12c848e93918511daf878037_45__, replace=SH-EX-SUCCESS (1 matched)"
+      },
+      {
+        "index": 140,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[2]: find=__RSF_12c848e93918511daf878037_46__, replace=Supplied mock: api_status=0, api_sample=23; valid disjoint pointers. (1 matched)"
+      },
+      {
+        "index": 141,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_12c848e93918511daf878037_47__, replace=return=-2; state and *out_sample unchanged; exactly one API call even though the mock writes its local result. (1 matched)"
+      },
+      {
+        "index": 142,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_12c848e93918511daf878037_48__, replace=SH-EX-FAILURE (1 matched)"
+      },
+      {
+        "index": 143,
+        "success": true,
+        "output": "Updated /body/tbl[10]/tr[3]: find=__RSF_12c848e93918511daf878037_49__, replace=Supplied mock: api_status=7, api_sample=-99; valid disjoint pointers. (1 matched)"
+      },
+      {
+        "index": 144,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_12c848e93918511daf878037_50__, replace=REQ-SH-FIXTURE (1 matched)"
+      },
+      {
+        "index": 145,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_12c848e93918511daf878037_51__, replace=SH-STEP-POINTERS, SH-STEP-READ, SH-STEP-PRESERVE, SH-STEP-COMMIT; SH-ASM-API; SH-C-SUPPLIED; SH-C-RESOURCES (1 matched)"
+      },
+      {
+        "index": 146,
+        "success": true,
+        "output": "Updated /body/tbl[11]/tr[2]: find=__RSF_12c848e93918511daf878037_52__, replace=SH-EX-SUCCESS, SH-EX-FAILURE; pointer rejection requires separate checking. (1 matched)"
+      },
+      {
+        "index": 147,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_12c848e93918511daf878037_53__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 148,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_12c848e93918511daf878037_54__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 149,
+        "success": true,
+        "output": "Updated /body/tbl[12]/tr[2]: find=__RSF_12c848e93918511daf878037_55__, replace=該当なし (1 matched)"
+      },
+      {
+        "index": 150,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_56__, replace=API success commits all three values. Pointer/API failure preserves state and output. No shared static function state is used. (1 matched)"
+      },
+      {
+        "index": 151,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_57__, replace=The supplied API models a bounded immediate fixture call. No measured WCET, blocking/locking behavior or real RTOS/device access is certified. (1 matched)"
+      },
+      {
+        "index": 152,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_58__, replace=42df8ea431ab (1 matched)"
+      },
+      {
+        "index": 153,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_59__, replace=Codex作成 合成検証用 (1 matched)"
+      },
+      {
+        "index": 154,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_60__, replace=2026-11-17 (1 matched)"
+      },
+      {
+        "index": 155,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_61__, replace=PS-TEST-SAMPLE-001 (2 matched)"
+      },
+      {
+        "index": 156,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_62__, replace=0.1 (2 matched)"
+      },
+      {
+        "index": 157,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_63__, replace=RTN-TEST-SAMPLE-001 (2 matched)"
+      },
+      {
+        "index": 158,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_64__, replace=SampleHold_Update (1 matched)"
+      },
+      {
+        "index": 159,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_65__, replace=fixture_only (1 matched)"
+      },
+      {
+        "index": 160,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_66__, replace=合成検証fixture 実RTOSインターフェース未承認 (2 matched)"
+      },
+      {
+        "index": 161,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_67__, replace=routine-spec-v02 (1 matched)"
+      },
+      {
+        "index": 162,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_68__, replace=SampleHold_Update 合成API状態仕様書 (1 matched)"
+      },
+      {
+        "index": 163,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_69__, replace=C90 (1 matched)"
+      },
+      {
+        "index": 164,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_70__, replace=Each nonnull pointer refers to caller-owned valid writable storage, with state and out_sample disjoint. Initial state is last_sample=0 and has_sample=0. Null pointers are rejected before the API call. No validity check for nonnull addresses is specified. (1 matched)"
+      },
+      {
+        "index": 165,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_71__, replace=int SampleHold_Update(SampleHoldState *state, int *out_sample); (1 matched)"
+      },
+      {
+        "index": 166,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_72__, replace=Synthetic ordinary C function; no real DLL ABI is defined. (1 matched)"
+      },
+      {
+        "index": 167,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_73__, replace=Covers the supplied synthetic function, state and supplied immediate API contract. External API synchronization and real device/RTOS behavior are outside the fixture. (1 matched)"
+      },
+      {
+        "index": 168,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_74__, replace=Document the supplied SampleHold_Update synthetic API/state fixture. (1 matched)"
+      },
+      {
+        "index": 169,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_75__, replace=REQ-SH-FIXTURE (1 matched)"
+      },
+      {
+        "index": 170,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_76__, replace=Fixture only. This is not a business API, approved RTOS interface or DLL ABI. (1 matched)"
+      },
+      {
+        "index": 171,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_77__, replace=Supplied routine-code-c90 assets/examples/sample-hold/spec.json, Project_Sample.h, Project_TestMock.h and mock_project_sample.c. (1 matched)"
+      },
+      {
+        "index": 172,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_78__, replace=Validate pointers, read one sample through Project_ReadSample, commit state/output on API success and preserve them on failure. (1 matched)"
+      },
+      {
+        "index": 173,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_79__, replace=0.2.0 (1 matched)"
+      },
+      {
+        "index": 174,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_80__, replace=external_api = {\"name\":\"Project_ReadSample\",\"header\":\"Project_Sample.h\",\"prototype\":\"int Project_ReadSample(int *out_sample);\",\"contract\":\"FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled.\"}\u000bSupplied synthetic API. Include Project_Sample.h; call once after pointer validation with a local temporary.\u000btest_mock_controls = {\"header\":\"Project_TestMock.h\",\"reset\":\"void ProjectMock_Reset(int status, int sample);\",\"read_count\":\"int ProjectMock_ReadCount(void);\",\"compile_guard\":\"PROJECT_SAMPLE_FIXTURE == 1\"}\u000bSupplied fixture harness controls only; never include this test header in the implementation. The supplied mock writes the temporary result even on API failure. (1 matched)"
+      },
+      {
+        "index": 175,
+        "success": true,
+        "output": "Updated /body: find=__RSF_12c848e93918511daf878037_81__, replace=typedef struct {\u000b    int last_sample;\u000b    int has_sample;\u000b} SampleHoldState; (1 matched)"
+      },
+      {
+        "index": 176,
+        "success": true,
+        "output": "Updated /document: title=SampleHold_Update 合成API状態仕様書, subject=RTN-TEST-SAMPLE-001, creator=Codex作成 合成検証用"
+      }
+    ],
+    "summary": {
+      "total": 177,
+      "executed": 177,
+      "succeeded": 177,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

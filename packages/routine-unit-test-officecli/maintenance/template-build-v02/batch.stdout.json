@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "results": [
+      {
+        "index": 0,
+        "success": true,
+        "output": "Updated /body: find=JSON契約 0.1.0, replace=JSON契約 0.2.0 (1 matched)"
+      },
+      {
+        "index": 1,
+        "success": true,
+        "output": "Updated /body: find=repeatは同じ入力を繰り返す回数を示す。iterationはk=1..repeatの各呼出しで照合する。preserveは呼出し前の値を保持する。all_valid_bytesは有効な全オブジェクト領域の全バイトを保持する。, replace=repeatは同じ操作の呼出し回数を示す。初期条件、操作、入力、比較名、期待値と注記は原仕様に基づく記述データである。実際の結果は別の実施記録に残す。 (1 matched)"
+      },
+      {
+        "index": 2,
+        "success": true,
+        "output": "Updated /body: find=固定された仕様IDまたはJSON Pointerを基準に、動的試験、レビュー、呼出し側責務と対象外の理由を示す。, replace=対象となる原仕様の宣言IDまたはJSON Pointerを基準に、試験、レビュー、未検証、呼出し側責務と範囲外の理由を示す。 (1 matched)"
+      },
+      {
+        "index": 3,
+        "success": true,
+        "output": "Updated /document: title=汎用単体テスト仕様書テンプレート 0.2.0, subject=Generic finite JSON unit-test contract, creator=Codex template maintenance"
+      }
+    ],
+    "summary": {
+      "total": 4,
+      "executed": 4,
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

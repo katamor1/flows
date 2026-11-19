@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "core.autocrlf": true,
+  "checked_files": 26,
+  "crlf_input_bytes_preserved": true,
+  "commands": [
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "-C",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip\\rt-f4izrfdj\\repo",
+        "init"
+      ],
+      "returncode": 0,
+      "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+    },
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "-C",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip\\rt-f4izrfdj\\repo",
+        "add",
+        "--all"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "-C",
+        "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip\\rt-f4izrfdj\\repo",
+        "checkout-index",
+        "--all",
+        "--prefix=C:/Users/stell/OneDrive/ドキュメント/ChatGPT/flows/artifacts/routine-generic-validation/git-roundtrip/rt-f4izrfdj/checkout/"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "release_sha256": "e7b58bfb53b44df9ff858df533489de81bb81f83ce64074476a5db8f61f2a15e"
+}

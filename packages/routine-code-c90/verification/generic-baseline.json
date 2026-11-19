@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-17",
+  "skill": "routine-code-c90",
+  "baseline_version": "0.1.0",
+  "installed_path": ".bob/skills/routine-code-c90",
+  "release_sha256": "82a472863d3852d3de8f29d9e64da902921462e00ebb548dd66e1696ff9ab3fe",
+  "unknown_spec": "skills/routine-code-c90/assets/examples/range-clamp/spec.json",
+  "spec_sha256": "8d2cedc3cb313f5227f7388d07664b523d2e7158c82db19081fcfe08300471d5",
+  "expected": "The sample-fixed runtime rejects a valid unrelated stateless C90 routine.",
+  "actual": {
+    "argv": [
+      "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-S",
+      "-B",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\.bob\\skills\\routine-code-c90\\scripts\\codegen.py",
+      "prepare",
+      "--spec",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-code-c90\\skills\\routine-code-c90\\assets\\examples\\range-clamp\\spec.json",
+      "--workspace",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-code-skill\\generic-baseline",
+      "--job",
+      "range-clamp-red"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"status\": \"error\", \"message\": \"No registered automatic verification profile for this specification. Use the generic skill workflow and approved project build/tests; do not change fixed assets.\"}\n",
+    "job_created": false
+  },
+  "result": "confirmed_red",
+  "scope": "Actual installed 0.1.0 runtime only; not a model-quality comparison."
+}

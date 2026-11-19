@@ -1,0 +1,1394 @@
+[
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[6]",
+    "from": "/body/tbl[6]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[9]",
+    "from": "/body/tbl[9]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[9]",
+    "from": "/body/tbl[9]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[10]",
+    "from": "/body/tbl[10]/tr[2]"
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_0__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_1__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_2__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_3__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_4__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_5__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_6__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_7__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{direction}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_8__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_9__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{type_contract}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_10__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{initial}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_11__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_12__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{range_meaning}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_13__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_14__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_15__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_16__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_17__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_18__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_19__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_20__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_21__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_22__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{details}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_23__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_24__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{details}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_25__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{condition}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_26__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{details}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_27__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{meaning}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_28__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{value}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_29__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_30__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_31__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_32__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_33__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_34__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_35__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{category}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_36__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_37__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_38__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_39__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_40__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_41__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_42__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_43__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_44__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_45__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_46__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_47__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_48__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_49__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "{{input}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_50__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{requirement}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_51__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{specification}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_52__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "{{verification}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_53__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_54__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_55__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_56__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{behavior.postconditions}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_57__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{behavior.timing_semantics}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_58__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{build.source_short_hash}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_59__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.author}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_60__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.date}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_61__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_62__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.revision}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_63__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_64__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_name}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_65__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_66__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status_label}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_67__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.template_id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_68__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.title}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_69__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.language}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_70__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.preconditions}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_71__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.prototype}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_72__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{interface.visibility}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_73__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.coverage}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_74__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.purpose}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_75__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.requirement_id}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_76__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.scope}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_77__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.source_locator}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_78__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{overview.source_requirement}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_79__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{schema_version}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_80__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.configuration_text}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_81__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.type_definitions}}",
+      "replace": "__RSF_c3fcbf80bd67edd9c34529d6_82__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_0__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_1__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_2__",
+      "replace": "input"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_3__",
+      "replace": "value"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_4__",
+      "replace": "int\u000bValue to clamp; any representable int."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_5__",
+      "replace": "input"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_6__",
+      "replace": "lower"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_7__",
+      "replace": "int\u000bInclusive lower bound; lower <= upper."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_8__",
+      "replace": "input"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_9__",
+      "replace": "upper"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_10__",
+      "replace": "int\u000bInclusive upper bound; lower <= upper."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_11__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_12__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_13__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_14__",
+      "replace": "An int in [lower, upper]; equal to value when already in range."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_15__",
+      "replace": "return"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_16__",
+      "replace": "CLAMP-STEP-LOWER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_17__",
+      "replace": "If value < lower, return lower."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_18__",
+      "replace": "CLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_19__",
+      "replace": "Otherwise, if value > upper, return upper."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_20__",
+      "replace": "CLAMP-STEP-PRESERVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_21__",
+      "replace": "Otherwise return value."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_22__",
+      "replace": "value < lower"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_23__",
+      "replace": "return = lower"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_24__",
+      "replace": "value > upper"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_25__",
+      "replace": "return = upper"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_26__",
+      "replace": "lower <= value <= upper"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_27__",
+      "replace": "return = value"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_28__",
+      "replace": "lower if value < lower; upper if value > upper; otherwise value. No error return codes are defined."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_29__",
+      "replace": "int"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_30__",
+      "replace": "caller precondition"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_31__",
+      "replace": "CLAMP-PRE-ORDER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_32__",
+      "replace": "The caller supplies lower <= upper. Behavior outside this precondition is not specified."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_33__",
+      "replace": "implementation"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_34__",
+      "replace": "CLAMP-C90"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_35__",
+      "replace": "Use C90. Do not call external APIs, allocate memory, loop or recurse."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_36__",
+      "replace": "integer arithmetic"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_37__",
+      "replace": "CLAMP-OVERFLOW"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[9]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_38__",
+      "replace": "Compare values directly. Do not subtract bounds or introduce arithmetic overflow."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_39__",
+      "replace": "-3"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_40__",
+      "replace": "CLAMP-EX-LOWER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_41__",
+      "replace": "RangeClamp(-8, -3, 4)"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_42__",
+      "replace": "2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_43__",
+      "replace": "CLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[3]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_44__",
+      "replace": "RangeClamp(2, -3, 4)"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_45__",
+      "replace": "4"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_46__",
+      "replace": "CLAMP-EX-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[4]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_47__",
+      "replace": "RangeClamp(9, -3, 4)"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_48__",
+      "replace": "7"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_49__",
+      "replace": "CLAMP-EX-EQUAL"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[10]/tr[5]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_50__",
+      "replace": "RangeClamp(7, 7, 7)"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_51__",
+      "replace": "REQ-CLAMP-INCLUSIVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_52__",
+      "replace": "CLAMP-STEP-LOWER, CLAMP-STEP-UPPER, CLAMP-STEP-PRESERVE; /interface/preconditions; CLAMP-PRE-ORDER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[11]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_53__",
+      "replace": "CLAMP-EX-LOWER, CLAMP-EX-INSIDE, CLAMP-EX-UPPER, CLAMP-EX-EQUAL"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_54__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_55__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[12]/tr[2]",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_56__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_57__",
+      "replace": "The return value is within the inclusive bounds. No state, memory or external resource is changed."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_58__",
+      "replace": "A single call evaluates a bounded number of comparisons. No loop, recursion or measured RTOS timing is specified."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_59__",
+      "replace": "403f5e9255c9"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_60__",
+      "replace": "Codex作成 人による承認前"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_61__",
+      "replace": "2026-11-17"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_62__",
+      "replace": "PS-RTN-CLAMP-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_63__",
+      "replace": "0.1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_64__",
+      "replace": "RTN-CLAMP-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_65__",
+      "replace": "RangeClamp"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_66__",
+      "replace": "draft_trial"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_67__",
+      "replace": "試作仕様 要件確認前"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_68__",
+      "replace": "routine-spec-v02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_69__",
+      "replace": "RangeClamp プログラム仕様書"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_70__",
+      "replace": "C90"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_71__",
+      "replace": "lower <= upper. All arguments may be any representable int consistent with that ordering."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_72__",
+      "replace": "int RangeClamp(int value, int lower, int upper);"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_73__",
+      "replace": "Ordinary C function declaration in a header."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_74__",
+      "replace": "Covers the inclusive clamp only. No errors, state or platform API are defined."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_75__",
+      "replace": "Return an integer clamped to inclusive lower and upper bounds."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_76__",
+      "replace": "REQ-CLAMP-INCLUSIVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_77__",
+      "replace": "One stateless C90 function with three int arguments and an int return value."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_78__",
+      "replace": "RangeClamp minimal code example in routine-code-c90 assets/examples/range-clamp/spec.json; supplied example, not a formal external requirement."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_79__",
+      "replace": "Return lower when value < lower, upper when value > upper, otherwise value. The caller guarantees lower <= upper."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_80__",
+      "replace": "0.2.0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_81__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__RSF_c3fcbf80bd67edd9c34529d6_82__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/document",
+    "props": {
+      "title": "RangeClamp プログラム仕様書",
+      "subject": "RTN-CLAMP-001",
+      "creator": "Codex作成 人による承認前"
+    }
+  }
+]

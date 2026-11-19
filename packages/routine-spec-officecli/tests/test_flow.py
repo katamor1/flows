@@ -62,8 +62,8 @@ class OfficeCliFlowTests(unittest.TestCase):
     def args(self):
         return ['--workspace', self.workspace, '--job', 'alarm-01']
 
-    def new(self):
-        self.cli('new-job', *self.args())
+    def new(self, fixture='assets/examples/alarm_qualification.json'):
+        self.cli('new-job', *self.args(), '--spec', self.skill/fixture)
         return self.workspace / 'alarm-01/source/spec.json'
 
     def change(self, source, mutate):
@@ -76,13 +76,18 @@ class OfficeCliFlowTests(unittest.TestCase):
         path = Path(result['document'])
         return path, json.loads((path.parent/'manifest.json').read_text(encoding='utf-8'))
 
-    def test_end_to_end_without_site_packages_and_reference_content(self):
+    def test_legacy_alarm_end_to_end_without_site_packages(self):
         doctor = self.cli('doctor')
         self.assertEqual(doctor['renderer']['version'], '1.0.144')
         source = self.new()
         self.cli('validate', *self.args())
         path, manifest = self.render()
-        self.assertEqual(contents(path), contents(REFERENCE))
+        text='\n'.join(contents(path)['word/document.xml'])
+        self.assertIn('old_count = 0から10',text)
+        self.assertIn('threshold = 10',text)
+        data=json.loads(source.read_text(encoding='utf-8'))
+        for step in data['behavior']['steps']:
+            self.assertIn(step['text'],text)
         self.assertEqual(manifest['generator_backend'], 'officecli')
         self.assertEqual(manifest['source_sha256'], hashlib.sha256(source.read_bytes()).hexdigest())
         self.assertTrue(json.loads((path.parent/'officecli-validation.json').read_text(encoding='utf-8'))['success'])
@@ -120,7 +125,7 @@ class OfficeCliFlowTests(unittest.TestCase):
     def test_unsupported_input_and_control_characters_do_not_publish(self):
         source = self.new()
         original = source.read_bytes()
-        self.change(source, lambda d: d['behavior'].update(threshold=12))
+        self.change(source, lambda d: d['behavior']['decision_rows'][0].pop('condition'))
         self.cli('render', *self.args(), '--run', 'r001', ok=False)
         self.assertFalse((source.parents[1]/'renders/r001').exists())
         source.write_bytes(original)
@@ -132,7 +137,7 @@ class OfficeCliFlowTests(unittest.TestCase):
         self.cli('doctor', exe=self.base/'missing.exe', ok=False)
         self.cli('new-job', '--workspace', self.workspace, '--job', '../escape', ok=False)
         self.cli('new-job', '--workspace', self.skill/'jobs', '--job', 'alarm', ok=False)
-        template = self.skill/'assets/templates/routine-spec-v01.docx'
+        template = self.skill/'assets/templates/routine-spec-v02.docx'
         template.write_bytes(template.read_bytes()+b'changed')
         self.cli('doctor', ok=False)
         self.assertFalse(self.workspace.exists())
@@ -243,6 +248,116 @@ class OfficeCliFlowTests(unittest.TestCase):
             module.publish_stage(stage, destination)
         self.assertEqual((destination/'data.txt').read_text(encoding='utf-8'), 'kept')
         self.assertEqual(len(calls), 2)
+
+    def test_range_clamp_empty_collections_no_threshold_and_byte_identity(self):
+        fixture='assets/examples/range-clamp/spec.json'
+        source=self.new(fixture)
+        self.assertEqual(source.read_bytes(),(self.skill/fixture).read_bytes())
+        before=source.read_bytes()
+        self.cli('validate',*self.args())
+        path,manifest=self.render()
+        text='\n'.join(contents(path)['word/document.xml'])
+        self.assertIn('int RangeClamp(int value, int lower, int upper);',text)
+        self.assertIn('return = lower',text)
+        self.assertIn('該当なし',text)
+        self.assertNotIn('old_count',text)
+        self.assertNotIn('threshold =',text)
+        self.assertEqual(source.read_bytes(),before)
+        self.assertEqual((source.parents[1]/'.gitattributes').read_bytes(),b'* -text\n')
+        self.assertEqual(manifest['status'],'draft_trial')
+
+    def test_generic_configuration_decision_json_and_no_fixed_counts(self):
+        source=self.new('assets/examples/range-clamp/spec.json')
+        def mutate(d):
+            d['document'].update(id='PS-SYNTHETIC-X9',routine_id='LIB-Z',routine_name='ReadLatest',status='review_pending',status_label='Review pending')
+            d['interface']['prototype']='void ReadLatest(void);'
+            d['interface']['parameters']=[]
+            d['interface']['return_codes']=[]
+            d['behavior']['threshold']=-2.75
+            d['behavior']['configuration']=[{'name':'mode','value':{'channels':['east',3,None,True]},'meaning':'Select channels without evaluation.'},{'name':'literal','value':'{{document.id}}','meaning':'Literal input tag.'}]
+            d['behavior']['decision_rows']=[{'condition':'available','next.sample':{'value':4,'valid':True},'return':None,'flags':[1,2]}]
+            d['trial_assumptions']=[{'id':'AX.3','text':'An arbitrary assumption ID.'}]
+            d['behavior']['state_fields']=[{'name':'cache.sample','type':'long','initial':'-4','range':'any long','meaning':'The current stored sample.'}]
+            d['verification_examples']=[]
+            d['traceability']=[]
+            d['constraints']=[]
+        self.change(source,mutate)
+        snapshot=source.read_bytes()
+        path,manifest=self.render()
+        self.assertEqual(path.name,'PS-SYNTHETIC-X9.docx')
+        self.assertEqual(manifest['status'],'review_pending')
+        text='\n'.join(contents(path)['word/document.xml'])
+        for expected in ('void ReadLatest(void);','threshold = -2.75','mode = {"channels":["east",3,null,true]}','literal = {{document.id}}','cache.sample\nlong','next.sample = {"value":4,"valid":true}','return = null','flags = [1,2]','AX.3'):
+            self.assertIn(expected,text)
+        self.assertEqual(source.read_bytes(),snapshot)
+
+    def test_blank_skeleton_minimum_and_identity_options_do_not_inject_rules(self):
+        self.cli('new-job',*self.args(),'--routine-name','ReadValue','--routine-id','COMP-42','--document-id','PS-COMP-42')
+        source=self.workspace/'alarm-01/source/spec.json'
+        data=json.loads(source.read_text(encoding='utf-8'))
+        self.assertEqual(data['document']['routine_name'],'ReadValue')
+        self.assertEqual(data['behavior']['decision_rows'],[])
+        self.assertNotIn('threshold',data['behavior'])
+        self.assertNotIn('Alarm',source.read_text(encoding='utf-8'))
+        self.cli('validate',*self.args(),ok=False)
+        self.cli('render',*self.args(),'--run','never',ok=False)
+        self.assertFalse((source.parents[1]/'renders/never').exists())
+        self.cli('new-job','--workspace',self.workspace,'--job','minimum')
+        self.cli('validate','--workspace',self.workspace,'--job','minimum',ok=False)
+
+    def test_bad_json_unknown_fields_duplicates_nonfinite_and_missing_condition(self):
+        source=self.new('assets/examples/range-clamp/spec.json')
+        original=source.read_bytes()
+        def duplicate(d): d['behavior']['steps'].append(d['behavior']['steps'][0].copy())
+        mutations=[lambda d:d.update(unexpected=True),duplicate,
+                   lambda d:d['behavior']['decision_rows'][0].pop('condition'),
+                   lambda d:d['behavior'].update(configuration=[{'name':'bad','value':float('nan'),'meaning':'bad'}]),
+                   lambda d:d['behavior']['decision_rows'][0].update({'bad\x01key':1})]
+        for mutate in mutations:
+            source.write_bytes(original)
+            self.change(source,mutate)
+            self.cli('render',*self.args(),'--run','bad',ok=False)
+            self.assertFalse((source.parents[1]/'renders/bad').exists())
+
+    def test_job_guard_and_payload_guard_are_required(self):
+        source=self.new()
+        (source.parents[1]/'.gitattributes').write_bytes(b'* text\n')
+        self.cli('validate',*self.args(),ok=False)
+        (self.skill/'.gitattributes').unlink()
+        self.cli('doctor',ok=False)
+
+    def test_unknown_schema_keywords_rejected_even_without_rows(self):
+        sys.path.insert(0,str(self.skill/'scripts'))
+        try:
+            spec=importlib.util.spec_from_file_location('test_generic_contract',self.skill/'scripts/_contract.py')
+            contract=importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(contract)
+            with self.assertRaisesRegex(ValueError,'unsupported schema keywords'):
+                contract.validate_value([],{'type':'array','items':{'type':'object','oneOf':[]}})
+        finally:
+            sys.path.pop(0)
+
+    def test_no_argument_function_with_all_collections_empty(self):
+        source=self.new('assets/examples/range-clamp/spec.json')
+        def mutate(d):
+            d['document'].update(id='PS-NOARGS-9',routine_id='NOARGS',routine_name='Pulse')
+            d['overview'].update(purpose='Synthetic no-argument presentation fixture.',scope='Document renderer acceptance only.',coverage='No business behavior is asserted.')
+            d['interface'].update(prototype='void Pulse(void);',parameters=[],return_codes=[],type_definitions='',preconditions='No arguments or caller-owned storage.')
+            d['behavior'].update(state_fields=[],result_fields=[],steps=[],decision_rows=[],configuration=[],postconditions='Presentation fixture only.',timing_semantics='No runtime timing is asserted.')
+            for name in ('trial_assumptions','constraints','verification_examples','traceability','open_issues'): d[name]=[]
+        self.change(source,mutate)
+        path,_=self.render()
+        text='\n'.join(contents(path)['word/document.xml'])
+        self.assertIn('void Pulse(void);',text)
+        self.assertGreaterEqual(text.count('該当なし'),12)
+
+    def test_supplied_sample_hold_state_configuration_and_status(self):
+        self.new('assets/examples/sample-hold/spec.json')
+        path,manifest=self.render()
+        text='\n'.join(contents(path)['word/document.xml'])
+        for expected in ('SampleHold_Update','Project_ReadSample','ProjectMock_Reset','state.last_sample\nint','state.has_sample\nint','API calls = 0','return = -2','SH-STEP-COMMIT'):
+            self.assertIn(expected,text)
+        self.assertEqual(manifest['status'],'fixture_only')
 
 
 if __name__ == '__main__':

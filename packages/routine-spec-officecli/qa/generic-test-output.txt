@@ -1,0 +1,26 @@
+test_bad_json_unknown_fields_duplicates_nonfinite_and_missing_condition (__main__.OfficeCliFlowTests.test_bad_json_unknown_fields_duplicates_nonfinite_and_missing_condition) ... ok
+test_blank_skeleton_minimum_and_identity_options_do_not_inject_rules (__main__.OfficeCliFlowTests.test_blank_skeleton_minimum_and_identity_options_do_not_inject_rules) ... ok
+test_dynamic_rows_and_repeatable_content (__main__.OfficeCliFlowTests.test_dynamic_rows_and_repeatable_content) ... ok
+test_every_docx_mutation_is_an_officecli_command (__main__.OfficeCliFlowTests.test_every_docx_mutation_is_an_officecli_command) ... ok
+test_existing_job_and_run_are_not_overwritten (__main__.OfficeCliFlowTests.test_existing_job_and_run_are_not_overwritten) ... ok
+test_generic_configuration_decision_json_and_no_fixed_counts (__main__.OfficeCliFlowTests.test_generic_configuration_decision_json_and_no_fixed_counts) ... ok
+test_job_guard_and_payload_guard_are_required (__main__.OfficeCliFlowTests.test_job_guard_and_payload_guard_are_required) ... ok
+test_job_renderer_lock_mismatch_refused (__main__.OfficeCliFlowTests.test_job_renderer_lock_mismatch_refused) ... ok
+test_legacy_alarm_end_to_end_without_site_packages (__main__.OfficeCliFlowTests.test_legacy_alarm_end_to_end_without_site_packages) ... ok
+test_literal_token_text_xml_symbols_newlines_and_backslashes (__main__.OfficeCliFlowTests.test_literal_token_text_xml_symbols_newlines_and_backslashes) ... ok
+test_missing_renderer_modified_asset_and_path_escape_refused (__main__.OfficeCliFlowTests.test_missing_renderer_modified_asset_and_path_escape_refused) ... ok
+test_no_argument_function_with_all_collections_empty (__main__.OfficeCliFlowTests.test_no_argument_function_with_all_collections_empty) ... ok
+test_page_fields_are_reported_and_preserved (__main__.OfficeCliFlowTests.test_page_fields_are_reported_and_preserved) ... ok
+test_page_geometry_and_header_links_are_part_of_content_contract (__main__.OfficeCliFlowTests.test_page_geometry_and_header_links_are_part_of_content_contract) ... ok
+test_range_clamp_empty_collections_no_threshold_and_byte_identity (__main__.OfficeCliFlowTests.test_range_clamp_empty_collections_no_threshold_and_byte_identity) ... ok
+test_styles_changed_by_officecli_are_detected (__main__.OfficeCliFlowTests.test_styles_changed_by_officecli_are_detected) ... ok
+test_supplied_sample_hold_state_configuration_and_status (__main__.OfficeCliFlowTests.test_supplied_sample_hold_state_configuration_and_status) ... ok
+test_transient_windows_publish_denial_can_retry_without_overwrite (__main__.OfficeCliFlowTests.test_transient_windows_publish_denial_can_retry_without_overwrite) ... ok
+test_unknown_schema_keywords_rejected_even_without_rows (__main__.OfficeCliFlowTests.test_unknown_schema_keywords_rejected_even_without_rows) ... ok
+test_unsupported_input_and_control_characters_do_not_publish (__main__.OfficeCliFlowTests.test_unsupported_input_and_control_characters_do_not_publish) ... ok
+test_zero_match_successful_officecli_command_is_rejected (__main__.OfficeCliFlowTests.test_zero_match_successful_officecli_command_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 387.681s
+
+OK

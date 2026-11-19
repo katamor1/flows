@@ -1,0 +1,473 @@
+{
+  "unit_test_spec_id": "UTS-RTN-ALM-001",
+  "target": {
+    "program_spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "source_sha256": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "header_sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00"
+  },
+  "status": "draft_trial",
+  "execution_status": "not_executed",
+  "counts": {
+    "representative_cases": 16,
+    "parameter_families": 4,
+    "static_review_items": 6,
+    "representative_call_checks": 173,
+    "family_instances": 177265,
+    "family_call_checks": 1948735
+  },
+  "families": [
+    {
+      "id": "FAM-ALM-001",
+      "instances": 88,
+      "call_checks": 88
+    },
+    {
+      "id": "FAM-ALM-002",
+      "instances": 24,
+      "call_checks": 24
+    },
+    {
+      "id": "FAM-ALM-003",
+      "instances": 6,
+      "call_checks": 6
+    },
+    {
+      "id": "FAM-ALM-004",
+      "instances": 177147,
+      "call_checks": 1948617
+    }
+  ],
+  "coverage": [
+    {
+      "spec_ref": "/behavior/decision_rows",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "無効、OFF、ON旧0..8、9、10の全5行を境界例と全有効旧countへ割り当てる。"
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/4",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/postconditions",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "FAM-ALM-001",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "FAM-ALM-004",
+        "SR-ALM-001"
+      ],
+      "rationale": "正常時の両count一致・範囲、エラー時の全有効領域バイト保持、優先順を確認。"
+    },
+    {
+      "spec_ref": "/behavior/result_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/state_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/threshold",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/timing_semantics",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "回数境界を照合し、9T解釈と非計測をレビュー。10T経過、周期精度、物理連続ONは主張しない。"
+    },
+    {
+      "spec_ref": "/interface/language",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/1",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-002"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/interface/parameters/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/preconditions",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-016",
+        "SR-ALM-005"
+      ],
+      "rationale": "有効な非重複領域、排他的所有、他呼出しとの非重複、同一周期スナップショットは呼出し側。本試験は前提を満たし不正アドレス・重複・競合は注入しない。"
+    },
+    {
+      "spec_ref": "/interface/prototype",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "UT-ALM-015",
+        "FAM-ALM-002",
+        "FAM-ALM-003"
+      ],
+      "rationale": "0/-1/-2/-3と複合エラーの優先順位を確認。"
+    },
+    {
+      "spec_ref": "/interface/return_codes/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/type_definitions",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/visibility",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "ASM-01",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "最初のONを1として9回目未成立・10回目成立を確認する。要求承認はQ-01。"
+    },
+    {
+      "spec_ref": "ASM-02",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "OFF/無効で0へ戻し次のONを1とする。欠落の実検出は呼出し側。"
+    },
+    {
+      "spec_ref": "ASM-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "初回・継続・再成立のイベントを区別する。表示解除条件はQ-04。"
+    },
+    {
+      "spec_ref": "CHK-01",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-02",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-03",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-04",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-05",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-06",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CON-01",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-003"
+      ],
+      "rationale": "外部API不使用を固定ソースで確認。基盤接続は後続結合仕様へ。"
+    },
+    {
+      "spec_ref": "CON-02",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-004"
+      ],
+      "rationale": "禁止構造と処理量の固定上限を確認。実時間予算・WCETはQ-02/Q-03へ。"
+    },
+    {
+      "spec_ref": "CON-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-016",
+        "SR-ALM-005"
+      ],
+      "rationale": "交互更新と静的共有状態不使用を確認。競合回避・領域非重複・他タスク同時参照防止は呼出し側。"
+    },
+    {
+      "spec_ref": "CON-04",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "後続結合試験で戻り値0だけ消費し、エラーで保持された旧event=1を再利用しないことを確認。表示灯・画面・ログの失敗処理・排他はQ-04。"
+    },
+    {
+      "spec_ref": "P-01",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "SR-ALM-001"
+      ],
+      "rationale": "NULL組合せと-1優先を試験し、他ポインタの非参照は静的確認。"
+    },
+    {
+      "spec_ref": "P-02",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-006",
+        "UT-ALM-008",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "UT-ALM-015",
+        "FAM-ALM-001",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "SR-ALM-001",
+        "SR-ALM-002"
+      ],
+      "rationale": "不正論理値、-2優先、無効時signal_on無視を組み合わせる。"
+    },
+    {
+      "spec_ref": "P-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "SR-ALM-001"
+      ],
+      "rationale": "11/UINT_MAXの超過、OFF/無効でも-3、入力異常の-2優先、全バイト保持。"
+    },
+    {
+      "spec_ref": "P-04",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-002"
+      ],
+      "rationale": "リセット・増加・飽和と2インスタンス独立性を確認する。"
+    },
+    {
+      "spec_ref": "P-05",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "正常時の戻り値・出力3フィールドを毎回照合し、旧event=1も更新。"
+    },
+    {
+      "spec_ref": "REQ-ALARM-001",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  ],
+  "open_issues": [
+    {
+      "id": "Q-01",
+      "owner": "要求所有者",
+      "decision": "ASM-01から03のサンプル解釈・無効入力・再成立規則を承認する。"
+    },
+    {
+      "id": "Q-02",
+      "owner": "RTOS基盤担当",
+      "decision": "周期T、当該ルーチンの時間予算、周期欠落・PLC入力無効の検出方法を確定する。"
+    },
+    {
+      "id": "Q-03",
+      "owner": "C設計担当",
+      "decision": "型名・関数名・戻り値を既存規約へ合わせ、正式コンパイラ設定で確認する。"
+    },
+    {
+      "id": "Q-04",
+      "owner": "制御設計担当",
+      "decision": "呼出し側の表示灯・画面・ログ処理とアラーム解除条件を別途仕様化する。"
+    }
+  ]
+}

@@ -1,32 +1,39 @@
 {
   "name": "routine-spec-officecli",
-  "version": "0.2.0",
-  "profile_id": "alarm-qualification-v01",
-  "routine_id": "RTN-ALM-001",
-  "template_id": "routine-spec-v01",
-  "template_revision": "0.2.0",
+  "version": "0.3.0",
+  "profile_id": "generic-full-spec-v02",
+  "template_id": "routine-spec-v02",
+  "template_revision": "0.3.0",
+  "accepted_template_ids": [
+    "routine-spec-v01",
+    "routine-spec-v02"
+  ],
   "schema": "assets/schema/routine-spec.schema.json",
-  "example": "assets/examples/alarm_qualification.json",
-  "template": "assets/templates/routine-spec-v01.docx",
+  "example": "assets/examples/range-clamp/spec.json",
+  "template": "assets/templates/routine-spec-v02.docx",
   "officecli": {
     "version": "1.0.144",
     "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
   },
   "limits": [
-    "10-cycle alarm qualification draft profile only",
+    "Full specification JSON 0.1.0 / 0.2.0",
     "Python 3.12 standard library",
     "Approved Windows OfficeCLI binary required",
     "No automatic visual approval or RTOS testing"
   ],
   "files": {
-    "SKILL.md": "fcee834e65de09b5dc706bb32e0f32818a9040f7b6e21d7dda38107352df15da",
-    "scripts/specflow.py": "63520b47dc534a40478616a3f083a633bf29296c8264af123192f47d231d62e3",
-    "scripts/_renderer.py": "52837a71eeb7028d2a9e9d4111f32c45b37e802feec44abd6717f0c3dbc970c0",
-    "scripts/_contract.py": "2497bd11f6335b172778f9bec9346c08de3e50be3a923a0f2c2c826531e1da71",
-    "assets/schema/routine-spec.schema.json": "afc0d2fcf0a205b47f3983d6f5d3c84dc524ee181065253c83f093b1574f02b4",
+    "SKILL.md": "d4f3fadf607d5546978d0256d9028852e1718bc328c8830849631e8f06141494",
+    "scripts/specflow.py": "2df70701bf708b696f99521342ae9307f85b3bfc75989b0088904b7758562933",
+    "scripts/_renderer.py": "88ce522f5eb9ee710e60d879ac2c8cb7a1df59cd3417d24762d877ffcaf6c3b6",
+    "scripts/_contract.py": "410f294b17bb98d0652ec3812101989934bc3ce664c8d229d98a2149563efd68",
+    "assets/schema/routine-spec.schema.json": "ed9c6c09d1b9e6e9c51e4d2ace972b53da6e6f0926af2a7ccf891f362dcfa8fa",
     "assets/examples/alarm_qualification.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "assets/examples/range-clamp/spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "assets/examples/sample-hold/spec.json": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
     "assets/templates/routine-spec-v01.docx": "5f7e53c3aeba3d989022c690c6fd45585e35b2c69d9f885bf79e1d9903110e2a",
-    "references/authoring.md": "f44a587909ca3a277b8a8714badcd71ce1b498e27c1b53a63bd288c4835ea893",
+    "assets/templates/routine-spec-v02.docx": "72733df8f3d7b68160d6cbdd7bb26cd8146f7976e10a8598cdd62586cb2d6a8e",
+    "references/authoring.md": "5d874edf4b9de4dc6e91256a0b3f83f932dedb9be64bca3e1056cf63048aca8c",
     "requirements.txt": "2ec166e537f14905effe33d51d4c3fd78a3de8020472dc357883e6331dab1b25"
   }
 }

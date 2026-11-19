@@ -1,0 +1,7 @@
+{
+  "status": "valid",
+  "source_sha256": "54a2f6cdf5e0fed24b013583df2a20e27a891860fc9d37048e41808ffa5f8cdc",
+  "input_lock_sha256": "39bdb1e36f5097c09ab2c25601b207c69cc8948de41b4366794c0fb5f7b7e865",
+  "execution_record_sha256": "cfee75596ce97c4db9212f902db95dbe6183df6969915bbe650a11bd84db27c5",
+  "document_status": "fixture_only"
+}

@@ -1,0 +1,137 @@
+{
+  "status": "passed_with_explicit_unverified_scopes",
+  "verified_utc": "2026-11-17T12:06:59.968451+00:00",
+  "executed_by": "Codex direct CLI; not IBM Bob chat",
+  "combined_archive": {
+    "status": "passed",
+    "version": "0.1.0",
+    "sha256": "8b4cd22bef5072c8a4ac211a9d1a2a25191b2d643133ea0316a5e27bc843b5c7",
+    "size_bytes": 306940,
+    "entry_count": 73,
+    "skills": [
+      "routine-spec-doc",
+      "routine-code-c90",
+      "routine-unit-test-spec"
+    ],
+    "archive": "ibm-bob-routine-development-0.1.0.zip",
+    "path": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\ibm-bob-routine-development\\dist\\ibm-bob-routine-development-0.1.0.zip"
+  },
+  "kits": [
+    {
+      "name": "routine-spec-officecli",
+      "skill": "routine-spec-doc",
+      "version": "0.3.0",
+      "archive": "ibm-bob-routine-spec-officecli-0.3.0.zip",
+      "archive_sha256": "b8167dd146d67a91aca146c19251ef9e4dceb25411886674f1a9ba8c37b0c876",
+      "release_sha256": "99b31ceca8f0fd6dec4b79bd8345953f5d9e09ecafb5b8c98e9e616a7163241a"
+    },
+    {
+      "name": "routine-code-c90",
+      "skill": "routine-code-c90",
+      "version": "0.2.0",
+      "archive": "ibm-bob-routine-code-c90-0.2.0.zip",
+      "archive_sha256": "9b734cd98de3d5a74386e67b7d7ea4131ef4f1e51330e8edaa9f24b9fd11126e",
+      "release_sha256": "7498620a9c4965dbeb620628d3388b91d5d23b43328b2de7cd34c1d2e2181a83"
+    },
+    {
+      "name": "routine-unit-test-officecli",
+      "skill": "routine-unit-test-spec",
+      "version": "0.2.0",
+      "archive": "ibm-bob-routine-unit-test-officecli-0.2.0.zip",
+      "archive_sha256": "e863d034bfc0f027d03e11a6230ac39dd0a5b703dcc57fa9ebe92a09059264c6",
+      "release_sha256": "f07b84dfff7d102d6f872eddb0a8ae85ac712a7779c97982aedd66a795703491"
+    }
+  ],
+  "tests": {
+    "program_spec": {
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 387.681,
+      "success": true,
+      "evidence": "qa/generic-test-output.txt",
+      "evidence_sha256": "78e139b5b51f0fb411e7842b20c58064be2f477e7cdee0ae77a9115b28b61aab"
+    },
+    "c90_code": {
+      "tests": 29,
+      "returncode": 0,
+      "evidence": "packages/routine-code-c90/verification/generic-final-tests-r2.json"
+    },
+    "unit_test_spec": {
+      "before_review_fix_full_acceptance_tests": 15,
+      "final_contract_tests": 9,
+      "final_distribution_tests": 2,
+      "final_officecli_documents": 3,
+      "evidence": "artifacts/routine-generic-validation/unit-tests/acceptance-summary.json"
+    },
+    "combined_distribution": {
+      "tests": 7,
+      "status": "passed",
+      "cases": [
+        "sealed inventory",
+        "tamper rejection",
+        "unsafe and duplicate ZIP entries",
+        "reversible upgrade and unrelated preservation",
+        "target containment",
+        "bounded transient rename recovery",
+        "archive replacement uses verified snapshot"
+      ]
+    },
+    "installed_doctors": {
+      "skills": 3,
+      "status": "passed",
+      "evidence": "installed-doctors.json"
+    },
+    "git_autocrlf_roundtrip": {
+      "files": 67,
+      "status": "passed",
+      "evidence": "git-roundtrip-combined/verification.json"
+    }
+  },
+  "pipeline": {
+    "routine": "RangeClamp",
+    "program_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "generation_record_sha256": "c3f554e989553807721d0c4ce74361ced279457ab438bc0f93fb390cee4b182f",
+    "program_document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\program\\range-clamp-final\\renders\\r001\\PS-RTN-CLAMP-001.docx",
+    "source": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\pipeline-code\\range-clamp\\src\\RangeClamp.c",
+    "unit_test_document": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\unit-tests\\range-clamp-release-final\\renders\\r001\\unit-test-spec.docx",
+    "host_tests": {
+      "O0": "15 literal cases passed",
+      "O2": "15 literal cases passed"
+    },
+    "unit_test_document_execution": "all items not_executed",
+    "hash_chain": "matched"
+  },
+  "project_install": {
+    "managed_file_count": 64,
+    "all_bytes_match_archive": true,
+    "backup": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\bob-distribution-backups\\generic-20261117",
+    "unrelated_configuration": "preserved"
+  },
+  "review": {
+    "findings_fixed": [
+      "UT arbitrary JSON payload id mistaken for declaration id",
+      "combined installer reopened ZIP after verification"
+    ],
+    "regressions": "passed"
+  },
+  "old_archives_preserved": {
+    "packages/routine-code-c90/dist/ibm-bob-routine-code-c90-0.1.0.zip": "56daa2ec959a79f1f8738baa7b2a8dc3889b8db99b692afa5ee5a0632a70645c",
+    "packages/routine-spec-officecli/dist/ibm-bob-routine-spec-officecli-0.2.0.zip": "6bfd66c49bbc7500ba38699d4c1e6832d4e401213329381f4cd4924337abf6f9",
+    "packages/routine-unit-test-officecli/dist/ibm-bob-routine-unit-test-officecli-0.1.0.zip": "cd63ff3c50c33690aa2a6483b9eac9729c0b7c3ce81ceb310d2baa8e55130c8c"
+  },
+  "unverified": {
+    "bob_chat_skill_activation": "not_tested",
+    "word_all_page_visual_review": "not_performed",
+    "visual_renderer": "LibreOffice soffice.exe absent on PATH; see visual-qa/renderer-attempt.json",
+    "formal_rtos_dll_abi_wcet": "not_verified",
+    "human_specification_approval": "not_performed"
+  },
+  "checks": {
+    "git_diff_whitespace": "passed with cr-at-eol; no persistent configuration changes",
+    "root_git_mutations": "none"
+  }
+}

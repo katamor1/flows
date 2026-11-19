@@ -1,0 +1,2981 @@
+[
+  {
+    "command": "add",
+    "parent": "/body/tbl[1]",
+    "from": "/body/tbl[1]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[3]",
+    "from": "/body/tbl[3]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[4]",
+    "from": "/body/tbl[4]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "add",
+    "parent": "/body/tbl[7]",
+    "from": "/body/tbl[7]/tr[2]"
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_0__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[3]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_1__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_2__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "{{text}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_3__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_4__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{purpose}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_5__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_6__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{status}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_7__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "{{title}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_8__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_9__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{purpose}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_10__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_11__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{status}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_12__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "{{title}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_13__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_14__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{purpose}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_15__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_16__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{status}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_17__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "{{title}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_18__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_19__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_20__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_21__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_22__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_23__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_24__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_25__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_26__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_27__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_28__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_29__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_30__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_31__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_32__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_33__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_34__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_35__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_36__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_37__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_38__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_39__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_40__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_41__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_42__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_43__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_44__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_45__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_46__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "{{case_step}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_47__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "{{expected}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_48__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "{{inputs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_49__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_50__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{definition}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_51__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_52__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{oracle}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_53__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_54__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{criterion}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_55__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_56__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_57__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "{{refs}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_58__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_59__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_60__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_61__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_62__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_63__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_64__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_65__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_66__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_67__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_68__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_69__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_70__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_71__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_72__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_73__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_74__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_75__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_76__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_77__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_78__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_79__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_80__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_81__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_82__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_83__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_84__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_85__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_86__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_87__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_88__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_89__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_90__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_91__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_92__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_93__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_94__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_95__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_96__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_97__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_98__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_99__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_100__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_101__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_102__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_103__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_104__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_105__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_106__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_107__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_108__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_109__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_110__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_111__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_112__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_113__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_114__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_115__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_116__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_117__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_118__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_119__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_120__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_121__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_122__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_123__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_124__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_125__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_126__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_127__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_128__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_129__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_130__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_131__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_132__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_133__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_134__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_135__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_136__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_137__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_138__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_139__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_140__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_141__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_142__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_143__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_144__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_145__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_146__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_147__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_148__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_149__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_150__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_151__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_152__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_153__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_154__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{items}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_155__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{method}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_156__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{reason}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_157__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "{{ref}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_158__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{decision}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_159__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_160__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "{{owner}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_161__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.author}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_162__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.date}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_163__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_164__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.revision}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_165__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_166__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.routine_name}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_167__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_168__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.status_label}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_169__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.template_id}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_170__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{document.title}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_171__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{summary}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_172__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.not_executed}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_173__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "{{view.target_summary}}",
+      "replace": "__UTS_a9e1884dfb254bc273a7d490_174__"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_0__",
+      "replace": "Python 3.12 standard library; OfficeCLI 1.0.144 generates and structurally validates this document."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[1]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_1__",
+      "replace": "The C fixture is not executed by this workflow; platform and compiler validation are separate evidence."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_2__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[2]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_3__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_4__",
+      "replace": "in-range-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_5__",
+      "replace": "目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_6__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_7__",
+      "replace": "未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_8__",
+      "replace": "Within range and inclusive endpoints"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_9__",
+      "replace": "outside"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_10__",
+      "replace": "目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_11__",
+      "replace": "CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_12__",
+      "replace": "未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_13__",
+      "replace": "Outside either bound"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_14__",
+      "replace": "equal-bounds"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_15__",
+      "replace": "目的: Check the source inclusive clamp rule independently of observed implementation output.\u000b判定基準: Every return equals the specification-derived expected int."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_16__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_17__",
+      "replace": "未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[3]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_18__",
+      "replace": "Equal lower and upper"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_19__",
+      "replace": "in-range-boundary/call-1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_20__",
+      "replace": "return [equals] 2\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_21__",
+      "replace": "初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 2\u000blower = -3\u000bupper = 4\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_22__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_23__",
+      "replace": "in-range-boundary/call-2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_24__",
+      "replace": "return [equals] -3\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_25__",
+      "replace": "操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = -3\u000blower = -3\u000bupper = 4\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_26__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_27__",
+      "replace": "in-range-boundary/call-3"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_28__",
+      "replace": "return [equals] 4\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_29__",
+      "replace": "操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 4\u000blower = -3\u000bupper = 4\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_30__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_31__",
+      "replace": "outside/call-1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_32__",
+      "replace": "return [equals] -3\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_33__",
+      "replace": "初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = -8\u000blower = -3\u000bupper = 4\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_34__",
+      "replace": "CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_35__",
+      "replace": "outside/call-2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_36__",
+      "replace": "return [equals] 4\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_37__",
+      "replace": "操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 9\u000blower = -3\u000bupper = 4\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_38__",
+      "replace": "CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-EX-LOWER\u000bCLAMP-EX-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_39__",
+      "replace": "equal-bounds/call-1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_40__",
+      "replace": "return [equals] 7\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_41__",
+      "replace": "初期条件:\u000b該当なし\u000b操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 7\u000blower = 7\u000bupper = 7\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_42__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_43__",
+      "replace": "equal-bounds/call-2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_44__",
+      "replace": "return [equals] 7\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_45__",
+      "replace": "操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 6\u000blower = 7\u000bupper = 7\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_46__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_47__",
+      "replace": "equal-bounds/call-3"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_48__",
+      "replace": "return [equals] 7\u000b注記: Expected result comes from the input program specification."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_49__",
+      "replace": "操作: Call RangeClamp(value, lower, upper)\u000b入力:\u000bvalue = 8\u000blower = 7\u000bupper = 7\u000brepeat=1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[4]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_50__",
+      "replace": "CLAMP-STEP-PRESERVE\u000bCLAMP-EX-EQUAL\u000bCLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_51__",
+      "replace": "Fixed inclusive bounds and five values\u000bmode=product; sequence_length=0\u000bvalue = [-8, -3, 2, 4, 9]\u000bbounds = [{\"lower\": -3, \"upper\": 4}]\u000bcombination_count=5; calls_per_instance=2; call_count=10\u000b初期条件: No state. Each instance supplies the listed ordered bounds.\u000b列挙順・展開ID: Values in written order; each instance is called twice with identical arguments.\u000b方法: Compare both returns to the source rule independently; repeated calls also check absence of retained state.\u000b具体例:\u000bvalue=-8 => -3 twice\u000bvalue=2 => 2 twice\u000bvalue=9 => 4 twice\u000b実施状態: 未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_52__",
+      "replace": "small-domain"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_53__",
+      "replace": "For value < -3 expect -3; value > 4 expect 4; otherwise expect value. Both repeated calls must agree."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[5]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_54__",
+      "replace": "CLAMP-STEP-LOWER\u000bCLAMP-STEP-UPPER\u000bCLAMP-STEP-PRESERVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_55__",
+      "replace": "No subtraction, overflow-producing arithmetic, loops, recursion, allocation, external calls or mutable static state.\u000b対象範囲・限界: Only the locked C/H function. This review item is unexecuted; real RTOS timing and WCET are outside the document-generation task.\u000b実施状態: 未実施"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_56__",
+      "replace": "source-structure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_57__",
+      "replace": "Bounded C90 arithmetic and state scope\u000b方法: Read the exact locked source and header. Inspect comparisons, returns and declarations without deriving dynamic expected values from implementation."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[6]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_58__",
+      "replace": "CLAMP-C90\u000bCLAMP-OVERFLOW\u000b/behavior/postconditions\u000b/behavior/timing_semantics"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_59__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_60__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_61__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_62__",
+      "replace": "/behavior/decision_rows/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_63__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_64__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_65__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[3]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_66__",
+      "replace": "/behavior/decision_rows/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_67__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_68__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_69__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[4]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_70__",
+      "replace": "/behavior/decision_rows/2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_71__",
+      "replace": "source-structure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_72__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_73__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[5]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_74__",
+      "replace": "/behavior/postconditions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_75__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_76__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_77__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[6]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_78__",
+      "replace": "/behavior/result_fields/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_79__",
+      "replace": "source-structure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_80__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_81__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[7]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_82__",
+      "replace": "/behavior/timing_semantics"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_83__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_84__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_85__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[8]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_86__",
+      "replace": "/interface/language"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_87__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_88__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_89__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[9]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_90__",
+      "replace": "/interface/parameters/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_91__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_92__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_93__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[10]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_94__",
+      "replace": "/interface/parameters/1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_95__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_96__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_97__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[11]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_98__",
+      "replace": "/interface/parameters/2"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_99__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_100__",
+      "replace": "caller"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_101__",
+      "replace": "Caller must satisfy ordered bounds."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[12]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_102__",
+      "replace": "/interface/preconditions"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_103__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_104__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_105__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[13]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_106__",
+      "replace": "/interface/prototype"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_107__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_108__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_109__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[14]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_110__",
+      "replace": "/interface/return_codes/0"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_111__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_112__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_113__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[15]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_114__",
+      "replace": "/interface/visibility"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_115__",
+      "replace": "source-structure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_116__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_117__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[16]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_118__",
+      "replace": "CLAMP-C90"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_119__",
+      "replace": "equal-bounds"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_120__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_121__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[17]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_122__",
+      "replace": "CLAMP-EX-EQUAL"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_123__",
+      "replace": "in-range-boundary"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_124__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_125__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[18]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_126__",
+      "replace": "CLAMP-EX-INSIDE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_127__",
+      "replace": "outside"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_128__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_129__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[19]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_130__",
+      "replace": "CLAMP-EX-LOWER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_131__",
+      "replace": "outside"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_132__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_133__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[20]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_134__",
+      "replace": "CLAMP-EX-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_135__",
+      "replace": "source-structure"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_136__",
+      "replace": "review"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_137__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[21]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_138__",
+      "replace": "CLAMP-OVERFLOW"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_139__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_140__",
+      "replace": "caller"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_141__",
+      "replace": "Caller must satisfy ordered bounds."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[22]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_142__",
+      "replace": "CLAMP-PRE-ORDER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_143__",
+      "replace": "outside\u000bequal-bounds\u000bsmall-domain"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_144__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_145__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[23]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_146__",
+      "replace": "CLAMP-STEP-LOWER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_147__",
+      "replace": "in-range-boundary\u000bequal-bounds\u000bsmall-domain"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_148__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_149__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[24]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_150__",
+      "replace": "CLAMP-STEP-PRESERVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_151__",
+      "replace": "outside\u000bequal-bounds\u000bsmall-domain"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_152__",
+      "replace": "test"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_153__",
+      "replace": "The listed unexecuted specification items address this exact source declaration."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[25]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_154__",
+      "replace": "CLAMP-STEP-UPPER"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_155__",
+      "replace": "対象ケースなし（別工程）"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_156__",
+      "replace": "unverified"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_157__",
+      "replace": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[7]/tr[26]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_158__",
+      "replace": "REQ-CLAMP-INCLUSIVE"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_159__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_160__",
+      "replace": "該当なし"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body/tbl[8]/tr[2]",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_161__",
+      "replace": "—"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_162__",
+      "replace": "Codex; human review pending"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_163__",
+      "replace": "2026-11-17"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_164__",
+      "replace": "UTS-RTN-CLAMP-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_165__",
+      "replace": "0.1"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_166__",
+      "replace": "RTN-CLAMP-001"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_167__",
+      "replace": "RangeClamp"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_168__",
+      "replace": "draft_trial"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_169__",
+      "replace": "試作仕様 要件確認前"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_170__",
+      "replace": "unit-test-spec-v02"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_171__",
+      "replace": "RangeClamp 単体テスト仕様書"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_172__",
+      "replace": "Expectations are derived from the supplied program specification. This document does not execute tests or import old pass results."
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_173__",
+      "replace": "全ケース・族・静的確認は未実施。期待値は原仕様から定める。比較名と値は記述データであり、実行しない。要求承認・表示確認・C実行・RTOS検証は別記録で管理する。"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/body",
+    "props": {
+      "find": "__UTS_a9e1884dfb254bc273a7d490_174__",
+      "replace": "schema_version=0.2.0\u000b文書: UTS-RTN-CLAMP-001 / RangeClamp 単体テスト仕様書\u000brevision=0.1; date=2026-11-17; author=Codex; human review pending\u000bstatus=draft_trial / 試作仕様 要件確認前; template_id=unit-test-spec-v02\u000b対象: RTN-CLAMP-001 / RangeClamp\u000bprogram_spec_sha256:\u000b403f5e9255c9bcb5205d1dfe44e1af39\u000b99f8bde5194bc8138214e83c0feadcf7\u000bsource_sha256:\u000b05585ec8830ff0e29a0ad90cb9e9f99a\u000bdd3779a37f45c303141b4709db695741\u000bheader_sha256:\u000bde05170e412699da6eb5037c0e9f6bb5\u000bcca5094da0f53e99cb5663552d034138\u000b代表ケース=3; 手順行=8; 族=1; 静的確認=1\u000b族内の組合せ/系列 合計=5; 族内の呼出し照合 合計=10"
+    }
+  },
+  {
+    "command": "set",
+    "path": "/document",
+    "props": {
+      "title": "RangeClamp 単体テスト仕様書",
+      "subject": "RTN-CLAMP-001",
+      "creator": "Codex; human review pending"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "format_version": "0.2.0",
+  "time_utc": "2026-11-17T11:44:22.148668+00:00",
+  "agent": "OpenAI Codex",
+  "agent_version": "Codex based on GPT-6; exact runtime model identifier not exposed",
+  "bob_executed": false,
+  "status": "draft_trial",
+  "input_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+  "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+  "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+  "traceability_sha256": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45",
+  "file_hashes": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "include/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "input/spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+    "src/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+    "traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45"
+  },
+  "release_sha256": "7498620a9c4965dbeb620628d3388b91d5d23b43328b2de7cd34c1d2e2181a83",
+  "note": "New C90 implementation authored from canonical JSON and frozen header without reading prior DUT, fixture implementations, baseline C or independent test source. Caller owns lower <= upper. Draft trial status preserved. Formal DLL ABI, RTOS integration and target WCET unverified.",
+  "test_authorship": "Profile-supplied tests; authorship and specification coverage require independent review."
+}

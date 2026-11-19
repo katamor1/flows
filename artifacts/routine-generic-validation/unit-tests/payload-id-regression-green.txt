@@ -1,0 +1,14 @@
+test_arbitrary_ids_empty_lists_and_native_values (test_contract.ContractTests.test_arbitrary_ids_empty_lists_and_native_values) ... ok
+test_duplicate_unknown_and_unmapped_items_rejected (test_contract.ContractTests.test_duplicate_unknown_and_unmapped_items_rejected) ... ok
+test_empty_step_inputs_and_arbitrary_comparison (test_contract.ContractTests.test_empty_step_inputs_and_arbitrary_comparison) ... ok
+test_empty_view_is_display_only (test_contract.ContractTests.test_empty_view_is_display_only) ... ok
+test_empty_work_and_legacy_pass_rejected (test_contract.ContractTests.test_empty_work_and_legacy_pass_rejected) ... ok
+test_families_compute_general_product_and_sequence (test_contract.ContractTests.test_families_compute_general_product_and_sequence) ... ok
+test_nonfinite_empty_expected_and_unknown_keywords_rejected (test_contract.ContractTests.test_nonfinite_empty_expected_and_unknown_keywords_rejected) ... ok
+test_payload_id_keys_are_not_source_declarations (test_contract.ContractTests.test_payload_id_keys_are_not_source_declarations) ... ok
+test_source_hash_must_match_actual_inputs (test_contract.ContractTests.test_source_hash_must_match_actual_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.283s
+
+OK

@@ -1,0 +1,3274 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "UTS-RTN-ALM-001",
+    "title": "連続ON判定ルーチン 単体テスト仕様書",
+    "revision": "0.1",
+    "date": "2026-11-15",
+    "status": "draft_trial",
+    "status_label": "試作仕様 要件確認前",
+    "routine_id": "RTN-ALM-001",
+    "routine_name": "AlarmQualification_Update",
+    "template_id": "unit-test-spec-v02",
+    "author": "OpenAI Codex AI作成・独立レビュー前・人による承認待ち（Bob実施ではない）"
+  },
+  "target": {
+    "program_spec_sha256": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "source_sha256": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "header_sha256": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00"
+  },
+  "summary": "PS-RTN-ALM-001 revision 0.1を根拠に代表16ケース、列挙4族、静的確認6項目を設計する。族の組合せ/系列数は88・24・6・177147、呼出し照合数は88・24・6・1948617。期待値は仕様から導きC/Hは追加レビュー観点に用いる。全ケース・全族・全静的確認は未実施であり、試作仕様の要求承認、表示確認、試験実施結果は別記録で管理する。",
+  "environment": [
+    "対象はC90のDLL内部関数AlarmQualification_Updateの状態遷移と入出力契約。ホスト上の呼出し照合を想定するが本書作成時にC試験は実行しない。正式コンパイラ、DLL ABI、RTOS実機はQ-02/Q-03の後続確認。",
+    "INT_MIN/INT_MAX/UINT_MAXは対象C処理系のlimits.hの記号定数であり32bit固定ではない。十進文字列は記載値。iterationは当該step内のk=1..repeatの期待countで、各反復を照合する。",
+    "各ケースはinitialを独立に構築し他ケースの結果を再利用しない。全バイトを指定値で埋めてから各フィールドを正しい型で代入する。state=0xA5/result=0x5Aはパディングを含む初期化手順でありフィールド値ではない。",
+    "エラー呼出し直前に有効なstate/result全体をunsigned char配列へ複写し、全sizeof領域のバイト一致を比較する。旧resultは(qualified,became_qualified,on_count)=(1,1,7)。all_valid_bytesは渡された全有効領域、preserveは直前の保存値保持を意味する。NULL先へアクセスしない。",
+    "正常時はstate countとresultの3フィールドを照合しパディング値は要求しない。A/Bを含む全state/resultは互いに非重複かつ有効な書込み領域であり排他的に所有する。",
+    "時系列はstep順に実施する。repeat>1は同じ入力の反復で期待値を毎回照合する。UT-ALM-016は各callで非対象インスタンス全バイトを保存・比較しnoteの非対象フィールド値も確認する。",
+    "RTOS関数、PLC取得、欠落検出、周期精度、WCET、G.YYYY、画面公開、ZZZZ予約、呼出し側の消費・排他は動的試験範囲外。一定間隔Tなら最初のONから10回目まで9Tだが、時間や周期間の物理連続ONは測定・証明しない。",
+    "ASM-01..03とQ-01..04は未承認のまま保持する。既存C試験、qa/test-design.md、旧実行ログは期待値設計に参照せず設計ハッシュ固定後の独立比較資料とする。"
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "1周期1回の有効サンプル確認を採用する。最初のONを1回目とし、10回目で条件成立とする。"
+    },
+    {
+      "id": "ASM-02",
+      "text": "OFFまたは入力無効で連続カウントを0へ戻す。周期欠落を検出した呼出し側は、次の判定前に入力無効を通知する。"
+    },
+    {
+      "id": "ASM-03",
+      "text": "ON継続中の新規成立は1回だけ返す。OFFまたは入力無効後は再度10回のONで新規成立する。これは判定の再成立規則であり、アラーム表示の解除規則ではない。"
+    }
+  ],
+  "cases": [
+    {
+      "id": "UT-ALM-001",
+      "title": "初期0から有効OFF",
+      "purpose": "有効OFFによる0への更新を確認する。",
+      "spec_refs": [
+        "ASM-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値0、両count=0、qualified=became_qualified=0。旧出力(1,1,7)もすべて置き換える。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "0",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "0"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "各呼出し直後に記載した全フィールドを照合する。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-002",
+      "title": "初期0から有効ONを9回",
+      "purpose": "成立直前まで各呼出しのカウントと未成立を確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/timing_semantics"
+      ],
+      "judgment": "9回すべて照合する。9回目終了時count=9。経過時間は判定しない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "0",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 9,
+          "note": "k=1..9の各回で両count=k、qualified=became_qualified=0。iterationはこのstep内の反復番号kである。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-003",
+      "title": "旧count=9から10回目に成立",
+      "purpose": "閾値へ初めて到達した呼出しで新規成立を返すことを確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/timing_semantics"
+      ],
+      "judgment": "戻り値0、両count=10、qualified=became_qualified=1。最初のONから10回目は一定間隔Tなら9T後であるが、本試験は時間を計測しない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "過去9回の有効ONに相当する状態9を独立にセットアップする。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-004",
+      "title": "成立後の有効ONを100回継続",
+      "purpose": "飽和と新規成立イベントの再通知抑止を確認する。",
+      "spec_refs": [
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "judgment": "全100呼出しで戻り値0、両count=10、qualified=1、became_qualified=0。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "10",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 100,
+          "note": "100回すべてでcount=10、qualified=1、became_qualified=0を照合する。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-005",
+      "title": "ON9回の後にOFFを挟む",
+      "purpose": "有効OFFで成立直前の履歴が途切れることを確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "judgment": "全段階の戻り値0と各期待値を照合し、OFF前の9を持ち越さない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "0",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 9,
+          "note": "各回k=1..9で両count=k、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "0"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "有効OFFで両count=0、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S03",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "次のONは新たな1回目。両count=1、qualified=became_qualified=0。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-006",
+      "title": "ON9回の後に入力無効を挟む",
+      "purpose": "入力無効で履歴をリセットし任意signal_onを無視することを確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "judgment": "全段階を照合する。無効通知で-2を返さず、次回を1回目として数える。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "0",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 9,
+          "note": "各回k=1..9で両count=k、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "INT_MIN"
+            },
+            {
+              "name": "sample_valid",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "無効sampleのsignal_on=INT_MINは範囲検査せず、戻り値0、両count=0、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S03",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "次の有効ONは両count=1、qualified=became_qualified=0。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-007",
+      "title": "成立後にOFFとして再成立",
+      "purpose": "有効OFF後の10回目に再度イベントを返すことを確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "judgment": "各回の戻り値0と全フィールドを照合し、S03だけ新規成立=1であることを判定する。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "10",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "0"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "有効OFFで両count=0、qualified=became_qualified=0。表示灯の解除規則は対象外。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 9,
+          "note": "リセット後k=1..9で両count=k、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S03",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "リセット後10回目で両count=10、qualified=became_qualified=1。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-008",
+      "title": "成立後に入力無効として再成立",
+      "purpose": "無効通知後も連続ON10回で再成立することを確認する。",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows"
+      ],
+      "judgment": "各回の戻り値0と全フィールドを照合し、S03だけ新規成立=1であることを判定する。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "10",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "INT_MAX"
+            },
+            {
+              "name": "sample_valid",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "無効sampleのsignal_on=INT_MAXを無視し、両count=0、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "iteration"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 9,
+          "note": "リセット後k=1..9で両count=k、qualified=became_qualified=0。"
+        },
+        {
+          "id": "S03",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "リセット後10回目で両count=10、qualified=became_qualified=1。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-009",
+      "title": "stateのみNULL",
+      "purpose": "NULL時に有効な出力領域へ書き込まないことを確認する。",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値-1と有効なout_result全バイト一致を照合する。NULL先は読まない。他ポインタの非参照はSR-ALM-001へ割り当てる。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "null"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -1
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "state=NULL、out_resultはAの有効領域。出力全バイトを呼出し直前に保存し比較する。ローカルstateは渡さない。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-010",
+      "title": "out_resultのみNULL",
+      "purpose": "NULL時に有効な状態領域へ書き込まないことを確認する。",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値-1と有効なstate全バイト一致を照合する。NULL先は読まない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "null"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -1
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "stateはAの有効領域、out_result=NULL。状態全バイトを保存・比較する。ローカルresultは渡さない。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-011",
+      "title": "両ポインタがNULL",
+      "purpose": "両NULLで最優先のエラーを返すことを確認する。",
+      "spec_refs": [
+        "P-01",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値-1を照合する。NULL判定以前の逆参照がないことはSR-ALM-001へ割り当てる。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "null"
+            },
+            {
+              "name": "result_pointer",
+              "value": "null"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -1
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "Aの両オブジェクトは渡さない。渡された有効領域はなくall_valid_bytesの比較対象は空。NULL先を参照・比較しない。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-012",
+      "title": "NULLと不正入力・不正状態の複合",
+      "purpose": "-1が不正論理値-2と状態超過-3より優先することを確認する。",
+      "spec_refs": [
+        "P-01",
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "各手順で-1を返す。S01では出力、S02では状態の全バイトが不変であることを照合する。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "11",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "null"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "2"
+            },
+            {
+              "name": "sample_valid",
+              "value": "2"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -1
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "sample_valid=2、signal_on=2が不正。out_resultだけ有効であり全バイトを比較する。state=11のオブジェクトは渡さない。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "null"
+            },
+            {
+              "name": "signal_on",
+              "value": "2"
+            },
+            {
+              "name": "sample_valid",
+              "value": "2"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -1
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "state=11、sample_valid=2、signal_on=2が不正。stateだけ有効であり本呼出し直前の全バイトと比較する。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-013",
+      "title": "不正sample_validを状態11より優先",
+      "purpose": "入力範囲違反-2が状態範囲違反より優先することを確認する。",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値-2とstate/out双方の全バイト不変を照合する。旧became_qualified=1を新イベントとして消費しない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "11",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "2"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -2
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "両ポインタが有効。sample_valid=2、signal_on=1、state.on_count=11を同時に与え、両領域の全バイトを保存・比較する。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-014",
+      "title": "不正signal_onをUINT_MAX状態より優先",
+      "purpose": "有効sampleのsignal_on範囲違反を極大状態異常より優先することを確認する。",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "judgment": "戻り値-2とstate/out双方の全バイト不変を照合する。-3へ進まない。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "UINT_MAX",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "2"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": -2
+            },
+            {
+              "target": "state_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "out_count",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "unchanged",
+              "value": "preserve"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "all_valid_bytes"
+            }
+          ],
+          "repeat": 1,
+          "note": "sample_valid=1、signal_on=2、state.on_count=UINT_MAX。両領域の全バイトを保存する。UINT_MAXを32bit値へ置換しない。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-015",
+      "title": "無効sampleではsignal_on=2を無視",
+      "purpose": "不正な論理信号値でも無効sampleなら正常リセットすることを確認する。",
+      "spec_refs": [
+        "ASM-02",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/interface/return_codes"
+      ],
+      "judgment": "戻り値0、両count=0、qualified=became_qualified=0。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "2"
+            },
+            {
+              "name": "sample_valid",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "state=9は正常。signal_on=2を検査せず、旧event=1を0へ更新する。"
+        }
+      ]
+    },
+    {
+      "id": "UT-ALM-016",
+      "title": "独立した2インスタンスを交互更新",
+      "purpose": "別々の状態・出力の成立とリセットが相互に干渉しないことを確認する。",
+      "spec_refs": [
+        "ASM-02",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "CON-03",
+        "/interface/preconditions"
+      ],
+      "judgment": "各手順の対象フィールド期待値と、非対象インスタンスの全バイト不変を照合する。4領域は非重複で排他的所有。順次交互呼出しの確認であり実競合の保証は呼出し側へ残す。",
+      "initial_conditions": [
+        {
+          "name": "A",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        },
+        {
+          "name": "B",
+          "value": {
+            "state_count": "9",
+            "state_fill_byte": "0xA5",
+            "result_fill_byte": "0x5A",
+            "result": {
+              "qualified": "1",
+              "became_qualified": "1",
+              "on_count": "7"
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "S01",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Aが成立。Bはcount=9、出力(qualified,event,count)=(1,1,7)のまま。"
+        },
+        {
+          "id": "S02",
+          "action": "Call AlarmQualification_Update for instance B",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "B"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Bも成立。Aはcount=10、出力(1,1,10)のまま。"
+        },
+        {
+          "id": "S03",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "0"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "AをOFFでリセット。Bはcount=10、出力(1,1,10)のまま。"
+        },
+        {
+          "id": "S04",
+          "action": "Call AlarmQualification_Update for instance B",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "B"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "10"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Bの成立維持・event=0。Aはcount=0、出力(0,0,0)のまま。"
+        },
+        {
+          "id": "S05",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Aの新たな1回目。Bはcount=10、出力(1,0,10)のまま。"
+        },
+        {
+          "id": "S06",
+          "action": "Call AlarmQualification_Update for instance B",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "B"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "INT_MAX"
+            },
+            {
+              "name": "sample_valid",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Bを無効でリセット。Aはcount=1、出力(0,0,1)のまま。"
+        },
+        {
+          "id": "S07",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "2"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "2"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Aの2回目。Bはcount=0、出力(0,0,0)のまま。"
+        },
+        {
+          "id": "S08",
+          "action": "Call AlarmQualification_Update for instance B",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "B"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "1"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Bの新たな1回目。Aはcount=2、出力(0,0,2)のまま。"
+        },
+        {
+          "id": "S09",
+          "action": "Call AlarmQualification_Update for instance A",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "A"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "0"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Aだけ再度OFF。Bはcount=1、出力(0,0,1)のまま。"
+        },
+        {
+          "id": "S10",
+          "action": "Call AlarmQualification_Update for instance B",
+          "inputs": [
+            {
+              "name": "instance",
+              "value": "B"
+            },
+            {
+              "name": "state_pointer",
+              "value": "object"
+            },
+            {
+              "name": "result_pointer",
+              "value": "object"
+            },
+            {
+              "name": "signal_on",
+              "value": "1"
+            },
+            {
+              "name": "sample_valid",
+              "value": "1"
+            }
+          ],
+          "expected": [
+            {
+              "target": "return_code",
+              "comparison": "equals",
+              "value": 0
+            },
+            {
+              "target": "state_count",
+              "comparison": "equals",
+              "value": "2"
+            },
+            {
+              "target": "out_count",
+              "comparison": "equals",
+              "value": "2"
+            },
+            {
+              "target": "qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "became_qualified",
+              "comparison": "equals",
+              "value": "0"
+            },
+            {
+              "target": "preservation",
+              "comparison": "equals",
+              "value": "none"
+            }
+          ],
+          "repeat": 1,
+          "note": "Bの2回目。Aはcount=0、出力(0,0,0)のまま。"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "FAM-ALM-001",
+      "title": "全有効状態とON/OFF/無効信号値の直積",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-02",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/postconditions"
+      ],
+      "mode": "product",
+      "dimensions": [
+        {
+          "name": "旧state.on_count",
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "name": "入力(signal_on,sample_valid)",
+          "values": [
+            "有効ON(1,1)",
+            "有効OFF(0,1)",
+            "無効(INT_MIN,0)",
+            "無効(-1,0)",
+            "無効(0,0)",
+            "無効(1,0)",
+            "無効(2,0)",
+            "無効(INT_MAX,0)"
+          ]
+        }
+      ],
+      "sequence_length": 0,
+      "combination_count": 88,
+      "call_count": 88,
+      "initial": "各組で独立にstate全バイト=0xA5後に当該旧count、out全バイト=0x5A後に(qualified,event,count)=(1,1,7)を設定する。両ポインタは有効かつ非重複。",
+      "enumeration": "旧countの0..10を外側、記載順の入力8値を内側とする。ゼロ起点c,iに対して連番=1+8*c+i、展開ID=FAM-ALM-001-001..088。各組1呼出し。",
+      "method": "戻り値とstate count、outの3フィールドを各組で照合する。正常時のパディング値は判定しない。INT_MIN/INT_MAXは対象C処理系のlimits.hの定数。",
+      "expected_rule": "全組戻り値0。有効ONの旧値→新count/qualified/eventは、0→1/0/0、1→2/0/0、2→3/0/0、3→4/0/0、4→5/0/0、5→6/0/0、6→7/0/0、7→8/0/0、8→9/0/0、9→10/1/1、10→10/1/0。有効OFFと無効6信号値はすべて0/0/0。stateとoutのcountは同じ新count。",
+      "examples": [
+        "FAM-ALM-001-001: 旧0、有効ON→0、両count=1、qualified=0、event=0。",
+        "FAM-ALM-001-073: 旧9、有効ON→0、両count=10、qualified=event=1。",
+        "FAM-ALM-001-081: 旧10、有効ON→0、両count=10、qualified=1、event=0。",
+        "FAM-ALM-001-088: 旧10、無効(INT_MAX,0)→0、両count=0、qualified=event=0。"
+      ],
+      "calls_per_instance": 1
+    },
+    {
+      "id": "FAM-ALM-002",
+      "title": "不正論理値と状態境界の直積",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "mode": "product",
+      "dimensions": [
+        {
+          "name": "不正対象",
+          "values": [
+            "sample_valid",
+            "有効時signal_on"
+          ]
+        },
+        {
+          "name": "不正値",
+          "values": [
+            "INT_MIN",
+            "-1",
+            "2",
+            "INT_MAX"
+          ]
+        },
+        {
+          "name": "旧state.on_count",
+          "values": [
+            "0",
+            "9",
+            "UINT_MAX"
+          ]
+        }
+      ],
+      "sequence_length": 0,
+      "combination_count": 24,
+      "call_count": 24,
+      "initial": "各組で独立にstate全バイト=0xA5後に当該旧count、out全バイト=0x5A後に(1,1,7)。両ポインタは有効・非重複。設定後の両オブジェクト全バイトをunsigned char配列へ保存する。",
+      "enumeration": "対象、不正値、旧countを記載順に外から内へ列挙する。ゼロ起点t,v,cから連番=1+12*t+3*v+c、展開ID=FAM-ALM-002-001..024。sample_valid対象ではsignal_on=1、signal_on対象ではsample_valid=1。各組1呼出し。",
+      "method": "戻り値-2とstate/out双方の全バイト一致を保存値と比較する。不正アドレス・重複・競合を投入しない。",
+      "expected_rule": "24組すべて-2、全有効領域不変。旧count=UINT_MAXでもP-02がP-03より先なので-3を返さない。旧event=1は保持するが、戻り値0ではないため新イベントとして消費しない。",
+      "examples": [
+        "FAM-ALM-002-001: sample_valid=INT_MIN、signal_on=1、旧0→-2、全有効領域不変。",
+        "FAM-ALM-002-012: sample_valid=INT_MAX、signal_on=1、旧UINT_MAX→-2、全有効領域不変。",
+        "FAM-ALM-002-013: sample_valid=1、signal_on=INT_MIN、旧0→-2、全有効領域不変。",
+        "FAM-ALM-002-024: sample_valid=1、signal_on=INT_MAX、旧UINT_MAX→-2、全有効領域不変。"
+      ],
+      "calls_per_instance": 1
+    },
+    {
+      "id": "FAM-ALM-003",
+      "title": "状態上限超過と正常論理入力の直積",
+      "spec_refs": [
+        "P-02",
+        "P-03",
+        "/interface/return_codes",
+        "/behavior/postconditions"
+      ],
+      "mode": "product",
+      "dimensions": [
+        {
+          "name": "旧state.on_count",
+          "values": [
+            "11",
+            "UINT_MAX"
+          ]
+        },
+        {
+          "name": "入力(signal_on,sample_valid)",
+          "values": [
+            "有効ON(1,1)",
+            "有効OFF(0,1)",
+            "無効(2,0)"
+          ]
+        }
+      ],
+      "sequence_length": 0,
+      "combination_count": 6,
+      "call_count": 6,
+      "initial": "各組で独立にstate全バイト=0xA5後に旧count=11またはUINT_MAX、out全バイト=0x5A後に(1,1,7)。両領域を有効・非重複とし設定後の全バイトをunsigned char配列へ保存する。",
+      "enumeration": "旧countを外側、入力を内側として記載順に列挙。ゼロ起点c,iから連番=1+3*c+i、展開ID=FAM-ALM-003-001..006。各組1呼出し。",
+      "method": "戻り値と両領域の全バイトを照合する。OFF/無効が不正状態を正常リセットしてしまう実装を検出する。",
+      "expected_rule": "6組すべて-3、両領域全バイト不変。無効(2,0)ではsignal_on=2を検査せずP-02を通過するが、不正stateのP-03で-3。OFF/無効でも状態検査より前に0を書き込まない。",
+      "examples": [
+        "FAM-ALM-003-001: 旧11、有効ON→-3、全有効領域不変。",
+        "FAM-ALM-003-003: 旧11、無効(2,0)→-3、全有効領域不変。",
+        "FAM-ALM-003-006: 旧UINT_MAX、無効(2,0)→-3、全有効領域不変。"
+      ],
+      "calls_per_instance": 1
+    },
+    {
+      "id": "FAM-ALM-004",
+      "title": "3入力記号からなる長さ11の全系列",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-02",
+        "ASM-03",
+        "P-04",
+        "P-05",
+        "/behavior/decision_rows",
+        "/behavior/postconditions",
+        "/behavior/timing_semantics"
+      ],
+      "mode": "sequence",
+      "dimensions": [
+        {
+          "name": "各位置の入力記号",
+          "values": [
+            "A:有効ON(signal_on=1,sample_valid=1)",
+            "B:有効OFF(signal_on=0,sample_valid=1)",
+            "C:無効(signal_on=2,sample_valid=0)"
+          ]
+        }
+      ],
+      "sequence_length": 11,
+      "combination_count": 177147,
+      "call_count": 1948617,
+      "initial": "系列ごとに独立にstate全バイト=0xA5後にcount=0、out全バイト=0x5A後に(1,1,7)を設定。両ポインタは有効・非重複。系列間で状態・出力を引き継がない。",
+      "enumeration": "A<B<Cの辞書順。A/B/Cを0/1/2とする11桁3進数0..177146を列挙し右端が最速で変わる。連番は値+1、展開ID=FAM-ALM-004-000001..177147、呼出し=S01..S11。3^11=177147系列、11*177147=1948617呼出し照合。",
+      "method": "各系列の11呼出しすべての戻り値と状態・出力を照合する。オラクルは入力履歴だけから末尾の連続A長を数え、被試験関数の状態・出力・実装分岐を用いない。任意コードのevalも行わない。",
+      "expected_rule": "j=1..11について先頭j記号の末尾に連なるA数をL(j)、H(j)=min(10,L(j))、H(0)=0とする。常に戻り値0、state/out count=H(j)。qualifiedはH(j)=10なら1、他は0。eventはH(j)=10かつH(j-1)<10なら1、他は0。B/C直後は0、連続A10回目のみevent=1、11回目は飽和しevent=0。経過時間・物理連続ONは判定しない。",
+      "examples": [
+        "FAM-ALM-004-000001=A11個: 両count=[1,2,3,4,5,6,7,8,9,10,10]、qualified=[0,0,0,0,0,0,0,0,0,1,1]、event=[0,0,0,0,0,0,0,0,0,1,0]、全戻り値0。",
+        "FAM-ALM-004-000003=A10個の後C: 両count=[1,2,3,4,5,6,7,8,9,10,0]、qualified/eventはいずれも10回目のみ1、全戻り値0。",
+        "FAM-ALM-004-000004=A9個の後B,A: 両count=[1,2,3,4,5,6,7,8,9,0,1]、qualified/eventは全回0、全戻り値0。",
+        "FAM-ALM-004-177147=C11個: 全回で戻り値0、両count=0、qualified=event=0。"
+      ],
+      "calls_per_instance": 11
+    }
+  ],
+  "static_checks": [
+    {
+      "id": "SR-ALM-001",
+      "title": "検査優先順位とエラー前の非参照・非書込み",
+      "spec_refs": [
+        "P-01",
+        "P-02",
+        "P-03",
+        "/behavior/postconditions"
+      ],
+      "method": "target.source_sha256で固定したAlarmQualification.cのAlarmQualification_Updateを入口から全エラーreturnまで制御経路・逆参照・storeの順に読む。型はtarget.header_sha256のHで確認する。",
+      "criterion": "どちらかNULLなら他ポインタの逆参照より先に-1。不正論理値ならstate読取りより先に-2。その後状態10超過で-3。全エラーreturn以前にstate/outへの書込みがなく、優先順が-1,-2,-3。",
+      "boundary": "対象はtargetのC/Hハッシュとdocument.routine_nameで固定した1関数。全バイト保持試験だけでは他ポインタの非参照を証明しない。不正アドレスは注入しない。"
+    },
+    {
+      "id": "SR-ALM-002",
+      "title": "無効sampleでsignal_onを無視",
+      "spec_refs": [
+        "P-02",
+        "P-04",
+        "/interface/parameters/1"
+      ],
+      "method": "固定CのAlarmQualification_Updateでsample_valid=0の経路を追い、C90の短絡評価を含めsignal_onの範囲条件と更新条件を確認する。",
+      "criterion": "sample_valid=0ではsignal_on値による範囲エラーを発生させず、正常stateなら信号値によらず新count=0。sample_valid=1だけ信号の0/1範囲を要求する。",
+      "boundary": "引数の値を呼出し元で取得する際の副作用は範囲外。C/HはtargetのSHA-256、関数名はdocument.routine_nameで固定する。"
+    },
+    {
+      "id": "SR-ALM-003",
+      "title": "禁止された外部依存の不使用",
+      "spec_refs": [
+        "CON-01"
+      ],
+      "method": "固定Cの対象関数の呼出し式、マクロ元、参照シンボルと固定H宣言を読み、RTOS・Win32・ファイル・時刻・レジスタ・CPUロックAPIへの依存を確認する。",
+      "criterion": "本ルーチンから列挙した外部APIを呼ばず、ハードウェア読書き・時刻取得・ログ出力を行わない。呼出しがある場合は到達先も追跡して未確認依存を残さない。",
+      "boundary": "targetのC/Hハッシュで固定したAlarmQualification_Update内。PLC取得、G.YYYY、画面公開、ログ予約は呼出し側・後続結合仕様へ割り当てる。"
+    },
+    {
+      "id": "SR-ALM-004",
+      "title": "処理量を増大させる構造の不使用",
+      "spec_refs": [
+        "CON-02"
+      ],
+      "method": "固定CのAlarmQualification_Updateでループ、待機、動的確保、再帰、文字列整形および入力依存回数の処理を列挙確認する。",
+      "criterion": "禁止構造を使用せず、どの入力でも有限個の判定・演算・書込みで終了する。構造上の固定上限と実機時間計測を分ける。",
+      "boundary": "targetのC/Hの単一関数。WCET・正式コンパイラ生成命令・RTOS時間予算はQ-02/Q-03の後続確認であり本項では測定しない。"
+    },
+    {
+      "id": "SR-ALM-005",
+      "title": "共有状態の不使用と所有権境界",
+      "spec_refs": [
+        "CON-03",
+        "/interface/preconditions"
+      ],
+      "method": "固定C/Hのファイルスコープ宣言、関数内static、参照先を読み、更新対象が引数state/out_resultと自動変数だけか確認し、UT-ALM-016と対比する。",
+      "criterion": "可変な静的共有状態や隠れた状態を持たない。別の非重複オブジェクトの値へ依存せず、指定された2領域だけを正常時に更新する。",
+      "boundary": "targetのハッシュで固定したAlarmQualification_Update。並行実行時の非重複、同一周期スナップショット、排他的所有は呼出し側が保証する。"
+    },
+    {
+      "id": "SR-ALM-006",
+      "title": "サンプル回数と時間解釈の区別",
+      "spec_refs": [
+        "ASM-01",
+        "ASM-03",
+        "/behavior/timing_semantics"
+      ],
+      "method": "固定仕様のASM-01・判定表・時間解釈と、固定CのAlarmQualification_Updateの閾値・成立条件を突合し、試験文中の回数表現を読む。",
+      "criterion": "成立は最初のONを1回目とした10回目。一定間隔Tなら最初から9T後だが関数は時間を計測せず物理信号の周期間連続性を証明しない。ON継続eventは1回。",
+      "boundary": "仕様・文書表現とtargetのC/Hの静的確認。RTOS周期精度・欠落検出・物理連続性の実機測定は対象外。"
+    }
+  ],
+  "coverage": [
+    {
+      "spec_ref": "/behavior/decision_rows",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "無効、OFF、ON旧0..8、9、10の全5行を境界例と全有効旧countへ割り当てる。"
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/4",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/postconditions",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "FAM-ALM-001",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "FAM-ALM-004",
+        "SR-ALM-001"
+      ],
+      "rationale": "正常時の両count一致・範囲、エラー時の全有効領域バイト保持、優先順を確認。"
+    },
+    {
+      "spec_ref": "/behavior/result_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/state_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/threshold",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/timing_semantics",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "回数境界を照合し、9T解釈と非計測をレビュー。10T経過、周期精度、物理連続ONは主張しない。"
+    },
+    {
+      "spec_ref": "/interface/language",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/1",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-002"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/interface/parameters/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/preconditions",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-016",
+        "SR-ALM-005"
+      ],
+      "rationale": "有効な非重複領域、排他的所有、他呼出しとの非重複、同一周期スナップショットは呼出し側。本試験は前提を満たし不正アドレス・重複・競合は注入しない。"
+    },
+    {
+      "spec_ref": "/interface/prototype",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "UT-ALM-015",
+        "FAM-ALM-002",
+        "FAM-ALM-003"
+      ],
+      "rationale": "0/-1/-2/-3と複合エラーの優先順位を確認。"
+    },
+    {
+      "spec_ref": "/interface/return_codes/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/3",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/type_definitions",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/visibility",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "ASM-01",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "最初のONを1として9回目未成立・10回目成立を確認する。要求承認はQ-01。"
+    },
+    {
+      "spec_ref": "ASM-02",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "OFF/無効で0へ戻し次のONを1とする。欠落の実検出は呼出し側。"
+    },
+    {
+      "spec_ref": "ASM-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-006"
+      ],
+      "rationale": "初回・継続・再成立のイベントを区別する。表示解除条件はQ-04。"
+    },
+    {
+      "spec_ref": "CHK-01",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-02",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-03",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-04",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-05",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CHK-06",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CON-01",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-003"
+      ],
+      "rationale": "外部API不使用を固定ソースで確認。基盤接続は後続結合仕様へ。"
+    },
+    {
+      "spec_ref": "CON-02",
+      "method": "review",
+      "item_ids": [
+        "SR-ALM-004"
+      ],
+      "rationale": "禁止構造と処理量の固定上限を確認。実時間予算・WCETはQ-02/Q-03へ。"
+    },
+    {
+      "spec_ref": "CON-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-016",
+        "SR-ALM-005"
+      ],
+      "rationale": "交互更新と静的共有状態不使用を確認。競合回避・領域非重複・他タスク同時参照防止は呼出し側。"
+    },
+    {
+      "spec_ref": "CON-04",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "後続結合試験で戻り値0だけ消費し、エラーで保持された旧event=1を再利用しないことを確認。表示灯・画面・ログの失敗処理・排他はQ-04。"
+    },
+    {
+      "spec_ref": "P-01",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-009",
+        "UT-ALM-010",
+        "UT-ALM-011",
+        "UT-ALM-012",
+        "SR-ALM-001"
+      ],
+      "rationale": "NULL組合せと-1優先を試験し、他ポインタの非参照は静的確認。"
+    },
+    {
+      "spec_ref": "P-02",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-006",
+        "UT-ALM-008",
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "UT-ALM-015",
+        "FAM-ALM-001",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "SR-ALM-001",
+        "SR-ALM-002"
+      ],
+      "rationale": "不正論理値、-2優先、無効時signal_on無視を組み合わせる。"
+    },
+    {
+      "spec_ref": "P-03",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-012",
+        "UT-ALM-013",
+        "UT-ALM-014",
+        "FAM-ALM-002",
+        "FAM-ALM-003",
+        "SR-ALM-001"
+      ],
+      "rationale": "11/UINT_MAXの超過、OFF/無効でも-3、入力異常の-2優先、全バイト保持。"
+    },
+    {
+      "spec_ref": "P-04",
+      "method": "test_and_review",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004",
+        "SR-ALM-002"
+      ],
+      "rationale": "リセット・増加・飽和と2インスタンス独立性を確認する。"
+    },
+    {
+      "spec_ref": "P-05",
+      "method": "test",
+      "item_ids": [
+        "UT-ALM-001",
+        "UT-ALM-002",
+        "UT-ALM-003",
+        "UT-ALM-004",
+        "UT-ALM-005",
+        "UT-ALM-006",
+        "UT-ALM-007",
+        "UT-ALM-008",
+        "UT-ALM-015",
+        "UT-ALM-016",
+        "FAM-ALM-001",
+        "FAM-ALM-004"
+      ],
+      "rationale": "正常時の戻り値・出力3フィールドを毎回照合し、旧event=1も更新。"
+    },
+    {
+      "spec_ref": "REQ-ALARM-001",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  ],
+  "open_issues": [
+    {
+      "id": "Q-01",
+      "owner": "要求所有者",
+      "decision": "ASM-01から03のサンプル解釈・無効入力・再成立規則を承認する。"
+    },
+    {
+      "id": "Q-02",
+      "owner": "RTOS基盤担当",
+      "decision": "周期T、当該ルーチンの時間予算、周期欠落・PLC入力無効の検出方法を確定する。"
+    },
+    {
+      "id": "Q-03",
+      "owner": "C設計担当",
+      "decision": "型名・関数名・戻り値を既存規約へ合わせ、正式コンパイラ設定で確認する。"
+    },
+    {
+      "id": "Q-04",
+      "owner": "制御設計担当",
+      "decision": "呼出し側の表示灯・画面・ログ処理とアラーム解除条件を別途仕様化する。"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "unit_test_spec_id": "UTS-RTN-CLAMP-001",
+  "target": {
+    "program_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138"
+  },
+  "status": "draft_trial",
+  "execution_status": "not_executed",
+  "counts": {
+    "representative_cases": 3,
+    "parameter_families": 1,
+    "static_review_items": 1,
+    "representative_call_checks": 8,
+    "family_instances": 5,
+    "family_call_checks": 10
+  },
+  "families": [
+    {
+      "id": "small-domain",
+      "instances": 5,
+      "call_checks": 10
+    }
+  ],
+  "coverage": [
+    {
+      "spec_ref": "/behavior/decision_rows/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/postconditions",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/timing_semantics",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/interface/language",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/preconditions",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "Caller must satisfy ordered bounds."
+    },
+    {
+      "spec_ref": "/interface/prototype",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/visibility",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CLAMP-C90",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-EQUAL",
+      "method": "test",
+      "item_ids": [
+        "equal-bounds"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-INSIDE",
+      "method": "test",
+      "item_ids": [
+        "in-range-boundary"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-LOWER",
+      "method": "test",
+      "item_ids": [
+        "outside"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-UPPER",
+      "method": "test",
+      "item_ids": [
+        "outside"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-OVERFLOW",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-PRE-ORDER",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "Caller must satisfy ordered bounds."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-LOWER",
+      "method": "test",
+      "item_ids": [
+        "outside",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-PRESERVE",
+      "method": "test",
+      "item_ids": [
+        "in-range-boundary",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-UPPER",
+      "method": "test",
+      "item_ids": [
+        "outside",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "REQ-CLAMP-INCLUSIVE",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  ],
+  "open_issues": []
+}

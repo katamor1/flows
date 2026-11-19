@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "template_content_and_formatting": "matched",
+  "unchanged_package_parts": 15,
+  "field_codes": {
+    "word/document.xml": [],
+    "word/footer1.xml": [
+      "PAGE",
+      "NUMPAGES"
+    ],
+    "word/header1.xml": []
+  },
+  "commands": 177,
+  "repeated_rows_cloned": 12,
+  "semantic_sha256": "7bcd3e7cecb31edb48d2c9f2cb56959d8e8e391685bbce3fe0287f9894523904"
+}

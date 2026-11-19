@@ -1,0 +1,227 @@
+{
+  "unit_test_spec_id": "UTS-RTN-TEST-SAMPLE-001",
+  "target": {
+    "program_spec_sha256": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad",
+    "source_sha256": "809c9c55c41f56ff8d23cb59ce0dc865aed243a33ff3c9988e7af916a5896787",
+    "header_sha256": "6885fa0c9d3f2effc6049e3bc8a94afdba45497e0e09a50a7d49460e6f942a66"
+  },
+  "status": "fixture_only",
+  "execution_status": "not_executed",
+  "counts": {
+    "representative_cases": 2,
+    "parameter_families": 0,
+    "static_review_items": 1,
+    "representative_call_checks": 2,
+    "family_instances": 0,
+    "family_call_checks": 0
+  },
+  "families": [],
+  "coverage": [
+    {
+      "spec_ref": "/behavior/configuration/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/configuration/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/postconditions",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/state_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/state_fields/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/timing_semantics",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/language",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/preconditions",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/prototype",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/type_definitions",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/visibility",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "REQ-SH-FIXTURE",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "SH-ASM-API",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "SH-ASM-OWNERSHIP",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "SH-C-RESOURCES",
+      "method": "review",
+      "item_ids": [
+        "fixture-boundary"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-C-SUPPLIED",
+      "method": "review",
+      "item_ids": [
+        "fixture-boundary"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-EX-FAILURE",
+      "method": "test",
+      "item_ids": [
+        "read-failure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-EX-SUCCESS",
+      "method": "test",
+      "item_ids": [
+        "read-success"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-STEP-COMMIT",
+      "method": "test",
+      "item_ids": [
+        "read-success",
+        "read-failure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-STEP-POINTERS",
+      "method": "review",
+      "item_ids": [
+        "fixture-boundary"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-STEP-PRESERVE",
+      "method": "test",
+      "item_ids": [
+        "read-success",
+        "read-failure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "SH-STEP-READ",
+      "method": "test",
+      "item_ids": [
+        "read-success",
+        "read-failure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    }
+  ],
+  "open_issues": []
+}

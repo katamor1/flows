@@ -1,92 +1,74 @@
+import copy
+import hashlib
+import shutil
 import unittest
-from _support import SKILL, OFFICE, CODE_JOB, new_test_root, cli, load, save
+from pathlib import Path
+from _support import SKILL, OFFICE, CODE_JOB, WORKSPACE, new_test_root, cli, load, save, explicit
 
-
-@unittest.skipUnless(OFFICE, 'Set UT_OFFICECLI to the approved executable')
+@unittest.skipUnless(OFFICE,'Set UT_OFFICECLI to the approved executable')
 class RenderTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        cls.root = new_test_root('render-')
-        created = cli(SKILL, 'new-job', '--code-job', CODE_JOB,
-                      '--workspace', cls.root, '--job', 'sample')
-        if created.returncode:
-            raise RuntimeError(created.stderr)
-        cls.job = cls.root / 'sample'
+ @classmethod
+ def setUpClass(cls):
+  cls.root=new_test_root('render-v02-')
+  for name in ('range-clamp','sample-hold'):
+   result=cli(SKILL,'new-job',*explicit(SKILL,name),'--workspace',cls.root,'--job',name)
+   if result.returncode: raise RuntimeError(result.stderr)
+ def command(self,name,*args): return cli(SKILL,*args,'--workspace',self.root,'--job',name)
+ def test_real_non_alarm_variable_documents_and_repeat(self):
+  semantics=[]
+  for name,expected_cases,expected_families in [('range-clamp',3,1),('sample-hold',2,0)]:
+   for run in ('r001','r002') if name=='range-clamp' else ('r001',):
+    result=self.command(name,'render','--run',run)
+    self.assertEqual(result.returncode,0,result.stderr)
+    folder=self.root/name/'renders'/run
+    check=load(folder/'content-check.json');self.assertEqual(check['status'],'passed')
+    self.assertEqual(check['template_content_and_formatting'],'matched')
+    trace=load(folder/'traceability.json')
+    self.assertEqual(trace['counts']['representative_cases'],expected_cases)
+    self.assertEqual(trace['counts']['parameter_families'],expected_families)
+    self.assertTrue(all(x['status']=='not_executed' and x['evidence']==[] for x in load(folder/'execution-record.json')['results']))
+    if name=='range-clamp': semantics.append(check['semantic_sha256'])
+  self.assertEqual(*semantics)
+  result=self.command('range-clamp','render','--run','r001');self.assertNotEqual(result.returncode,0)
+ def test_source_and_lock_tamper_rejected_without_publishing(self):
+  job=self.root/'range-clamp';lock=load(job/'input-lock.json')
+  for path in (job/lock['bindings']['source'],job/'input-lock.json'):
+   original=path.read_bytes();path.write_bytes(original+b'\n')
+   try:
+    result=self.command('range-clamp','render','--run','tampered')
+    self.assertNotEqual(result.returncode,0);self.assertFalse((job/'renders/tampered').exists())
+   finally: path.write_bytes(original)
+ def test_invalid_expected_and_legacy_pass_rejected(self):
+  job=self.root/'range-clamp'
+  for relative,mutator in [('source/unit-test-spec.json',lambda d:d['cases'][0]['steps'][0].update(expected=[])),
+                           ('records/execution-record.json',lambda d:d['results'][0].update(status='passed',evidence=['old aggregate log']))]:
+   path=job/relative;original=path.read_bytes();data=load(path);mutator(data);save(path,data)
+   try:
+    result=self.command('range-clamp','render','--run','invalid');self.assertNotEqual(result.returncode,0)
+    self.assertFalse((job/'renders/invalid').exists())
+   finally: path.write_bytes(original)
+ def test_blank_skeleton_rejected(self):
+  args=explicit(SKILL,'range-clamp')[:-2]
+  result=cli(SKILL,'new-job',*args,'--workspace',self.root,'--job','blank')
+  self.assertEqual(result.returncode,0,result.stderr)
+  self.assertTrue(load(self.root/'blank/source/unit-test-spec.json')['cases']==[])
+  result=self.command('blank','validate');self.assertNotEqual(result.returncode,0)
+ def test_generic_and_legacy_code_jobs(self):
+  sample=SKILL/'assets/examples/range-clamp/unit-test-spec.json'
+  result=cli(SKILL,'new-job','--code-job',CODE_JOB,'--unit-test-spec',sample,'--workspace',self.root,'--job','generic-code')
+  self.assertEqual(result.returncode,0,result.stderr)
+  result=self.command('generic-code','validate');self.assertEqual(result.returncode,0,result.stderr)
+  result=cli(SKILL,'new-job','--code-job',WORKSPACE/'prototypes/routine-code-poc','--unit-test-spec',SKILL/'assets/examples/alarm-regression/unit-test-spec.json','--workspace',self.root,'--job','legacy-code')
+  self.assertEqual(result.returncode,0,result.stderr)
+  result=self.command('legacy-code','validate');self.assertEqual(result.returncode,0,result.stderr)
+ def test_generation_hash_and_additional_asset_tamper_rejected(self):
+  origin=self.root/'codecopy';shutil.copytree(CODE_JOB,origin)
+  config=load(origin/'job.json');record=load(origin/config['generation_record'])
+  candidates=[name for name in record['file_hashes'] if name not in (config['spec'],config['source'],config['header'])]
+  self.assertTrue(candidates)
+  (origin/candidates[0]).write_bytes((origin/candidates[0]).read_bytes()+b'\n')
+  result=cli(SKILL,'new-job','--code-job',origin,'--unit-test-spec',SKILL/'assets/examples/range-clamp/unit-test-spec.json','--workspace',self.root,'--job','bad-assets')
+  self.assertNotEqual(result.returncode,0);self.assertIn('hash mismatch',result.stderr)
+  self.assertFalse((self.root/'bad-assets').exists())
 
-    def run_cli(self, *args):
-        return cli(SKILL, *args, '--workspace', self.root, '--job', 'sample')
-
-    def test_render_roundtrip_and_same_input_reproduction(self):
-        source = self.job / 'source/unit-test-spec.json'
-        data = load(source)
-        data['summary'] += '\n差込文字の検査: {{literal}}\n改行の保持と日本語表示を確認する。' + '長文の折返し確認。' * 20
-        save(source, data)
-        try:
-            for run in ('same-a', 'same-b'):
-                result = self.run_cli('render', '--run', run)
-                self.assertEqual(result.returncode, 0, result.stderr)
-                check = load(self.job / 'renders' / run / 'content-check.json')
-                self.assertEqual(check['status'], 'passed')
-                manifest = load(self.job / 'renders' / run / 'manifest.json')
-                self.assertEqual(manifest['status'], 'draft_trial')
-                trace = load(self.job / 'renders' / run / 'traceability.json')
-                self.assertEqual(trace['counts']['representative_cases'], 16)
-                self.assertEqual(trace['families'][-1]['call_checks'], 1948617)
-                record = load(self.job / 'renders' / run / 'execution-record.json')
-                self.assertTrue(all(x['status'] == 'not_executed' for x in record['results']))
-            first = load(self.job / 'renders/same-a/content-check.json')
-            second = load(self.job / 'renders/same-b/content-check.json')
-            self.assertEqual(first['semantic_sha256'], second['semantic_sha256'])
-            again = self.run_cli('render', '--run', 'same-a')
-            self.assertNotEqual(again.returncode, 0)
-        finally:
-            original = load(SKILL / 'assets/examples/alarm_unit_test.json')
-            save(source, original)
-
-    def test_invalid_spec_not_published(self):
-        source = self.job / 'source/unit-test-spec.json'
-        data = load(source)
-        del data['cases'][0]['steps'][0]['expected']['return_code']
-        save(source, data)
-        try:
-            result = self.run_cli('render', '--run', 'invalid')
-            self.assertNotEqual(result.returncode, 0)
-            self.assertFalse((self.job / 'renders/invalid').exists())
-            self.assertIn('required', result.stderr)
-        finally:
-            save(source, load(SKILL / 'assets/examples/alarm_unit_test.json'))
-
-    def test_input_change_rejected(self):
-        source = self.job / 'inputs/AlarmQualification.c'
-        original = source.read_bytes()
-        source.write_bytes(original + b'\n')
-        try:
-            result = self.run_cli('validate')
-            self.assertNotEqual(result.returncode, 0)
-            self.assertIn('hash mismatch', result.stderr)
-        finally:
-            source.write_bytes(original)
-
-    def test_legacy_pass_rejected(self):
-        path = self.job / 'records/execution-record.json'
-        original = path.read_bytes()
-        data = load(path)
-        data['results'][0]['status'] = 'passed'
-        data['results'][0]['evidence'] = ['old aggregate log']
-        save(path, data)
-        try:
-            result = self.run_cli('validate')
-            self.assertNotEqual(result.returncode, 0)
-            self.assertIn('cannot import pass', result.stderr)
-        finally:
-            path.write_bytes(original)
-
-    def test_existing_job_rejected(self):
-        result = cli(SKILL, 'new-job', '--code-job', CODE_JOB,
-                     '--workspace', self.root, '--job', 'sample')
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn('already exists', result.stderr)
-
-
-if __name__ == '__main__':
-    unittest.main()
+if __name__=='__main__':unittest.main()

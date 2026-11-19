@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "core.autocrlf": true,
+  "checked_files": 67,
+  "combined_archive_sha256": "8b4cd22bef5072c8a4ac211a9d1a2a25191b2d643133ea0316a5e27bc843b5c7",
+  "all_bytes_preserved": true,
+  "explicit_crlf_inputs_preserved": true,
+  "commands": [
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "--git-dir=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\git-metadata",
+        "--work-tree=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\repo",
+        "init",
+        "--initial-branch=qa"
+      ],
+      "returncode": 0,
+      "stdout": "Initialized empty Git repository in C:/Users/stell/OneDrive/ドキュメント/ChatGPT/flows/artifacts/routine-generic-validation/git-roundtrip-combined/git-metadata/\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "--git-dir=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\git-metadata",
+        "--work-tree=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\repo",
+        "add",
+        "--all"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "core.autocrlf=true",
+        "-c",
+        "core.longpaths=true",
+        "--git-dir=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\git-metadata",
+        "--work-tree=C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\artifacts\\routine-generic-validation\\git-roundtrip-combined\\repo",
+        "checkout-index",
+        "--all",
+        "--prefix=C:/Users/stell/OneDrive/ドキュメント/ChatGPT/flows/artifacts/routine-generic-validation/git-roundtrip-combined/checkout/"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "root_git_modified": false,
+  "note": "Git metadata is isolated under this validation directory; no global Git configuration changed."
+}

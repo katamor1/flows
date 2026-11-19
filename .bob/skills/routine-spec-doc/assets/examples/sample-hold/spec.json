@@ -1,0 +1,190 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "PS-TEST-SAMPLE-001",
+    "routine_id": "RTN-TEST-SAMPLE-001",
+    "routine_name": "SampleHold_Update",
+    "status": "fixture_only",
+    "title": "SampleHold_Update 合成API状態仕様書",
+    "revision": "0.1",
+    "date": "2026-11-17",
+    "status_label": "合成検証fixture 実RTOSインターフェース未承認",
+    "template_id": "routine-spec-v02",
+    "author": "Codex作成 合成検証用"
+  },
+  "overview": {
+    "purpose": "Document the supplied SampleHold_Update synthetic API/state fixture.",
+    "scope": "Fixture only. This is not a business API, approved RTOS interface or DLL ABI.",
+    "source_requirement": "Validate pointers, read one sample through Project_ReadSample, commit state/output on API success and preserve them on failure.",
+    "requirement_id": "REQ-SH-FIXTURE",
+    "source_locator": "Supplied routine-code-c90 assets/examples/sample-hold/spec.json, Project_Sample.h, Project_TestMock.h and mock_project_sample.c.",
+    "coverage": "Covers the supplied synthetic function, state and supplied immediate API contract. External API synchronization and real device/RTOS behavior are outside the fixture."
+  },
+  "trial_assumptions": [
+    {
+      "id": "SH-ASM-API",
+      "text": "FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled."
+    },
+    {
+      "id": "SH-ASM-OWNERSHIP",
+      "text": "Independent states may be used by independent callers; external API synchronization is outside this fixture."
+    }
+  ],
+  "interface": {
+    "language": "C90",
+    "visibility": "Synthetic ordinary C function; no real DLL ABI is defined.",
+    "prototype": "int SampleHold_Update(SampleHoldState *state, int *out_sample);",
+    "type_definitions": "typedef struct {\n    int last_sample;\n    int has_sample;\n} SampleHoldState;",
+    "parameters": [
+      {
+        "name": "state",
+        "direction": "input/output",
+        "type": "SampleHoldState *",
+        "contract": "Caller-owned, valid writable nonoverlapping storage. Initial last_sample=0 and has_sample=0."
+      },
+      {
+        "name": "out_sample",
+        "direction": "output",
+        "type": "int *",
+        "contract": "Caller-owned writable int, disjoint from state."
+      }
+    ],
+    "return_codes": [
+      {
+        "value": "0",
+        "meaning": "Read succeeded and both outputs updated."
+      },
+      {
+        "value": "-1",
+        "meaning": "A pointer was null; no API call or writes."
+      },
+      {
+        "value": "-2",
+        "meaning": "Synthetic API failed; preserve state and output."
+      }
+    ],
+    "preconditions": "Each nonnull pointer refers to caller-owned valid writable storage, with state and out_sample disjoint. Initial state is last_sample=0 and has_sample=0. Null pointers are rejected before the API call. No validity check for nonnull addresses is specified."
+  },
+  "behavior": {
+    "configuration": [
+      {
+        "name": "external_api",
+        "value": {
+          "name": "Project_ReadSample",
+          "header": "Project_Sample.h",
+          "prototype": "int Project_ReadSample(int *out_sample);",
+          "contract": "FIXTURE ONLY. Supplied header/mock model a bounded immediate call: returns 0 and writes an arbitrary representable int on success; nonzero on failure, with output unspecified. Call exactly once after pointer validation. No allocation, blocking, lock, or real device access is modeled."
+        },
+        "meaning": "Supplied synthetic API. Include Project_Sample.h; call once after pointer validation with a local temporary."
+      },
+      {
+        "name": "test_mock_controls",
+        "value": {
+          "header": "Project_TestMock.h",
+          "reset": "void ProjectMock_Reset(int status, int sample);",
+          "read_count": "int ProjectMock_ReadCount(void);",
+          "compile_guard": "PROJECT_SAMPLE_FIXTURE == 1"
+        },
+        "meaning": "Supplied fixture harness controls only; never include this test header in the implementation. The supplied mock writes the temporary result even on API failure."
+      }
+    ],
+    "state_fields": [
+      {
+        "name": "state.last_sample",
+        "type": "int",
+        "initial": "0",
+        "range": "Representable int",
+        "meaning": "Sample from the latest successful call. Preserve on pointer/API failure."
+      },
+      {
+        "name": "state.has_sample",
+        "type": "int",
+        "initial": "0",
+        "range": "Initial 0; success sets 1. No validation of prior values is specified.",
+        "meaning": "Indicates that a successful sample was committed. Preserve on pointer/API failure."
+      }
+    ],
+    "result_fields": [
+      {
+        "name": "*out_sample",
+        "meaning": "Read sample on success; unchanged on pointer/API failure."
+      }
+    ],
+    "steps": [
+      {
+        "id": "SH-STEP-POINTERS",
+        "text": "If either pointer is null, return -1 without API calls or writes."
+      },
+      {
+        "id": "SH-STEP-READ",
+        "text": "Call the supplied API once using a local temporary sample."
+      },
+      {
+        "id": "SH-STEP-PRESERVE",
+        "text": "On nonzero API status, return -2 without writing state or out_sample."
+      },
+      {
+        "id": "SH-STEP-COMMIT",
+        "text": "On API success, set state.last_sample to the sample, state.has_sample to 1, and out_sample to the sample; return 0."
+      }
+    ],
+    "decision_rows": [
+      {
+        "condition": "state == NULL or out_sample == NULL",
+        "API calls": 0,
+        "return": -1,
+        "state": "unchanged",
+        "out_sample": "unchanged"
+      },
+      {
+        "condition": "Pointers valid; API status != 0",
+        "API calls": 1,
+        "return": -2,
+        "state": "unchanged",
+        "out_sample": "unchanged"
+      },
+      {
+        "condition": "Pointers valid; API status == 0",
+        "API calls": 1,
+        "return": 0,
+        "state.last_sample": "API sample",
+        "state.has_sample": 1,
+        "out_sample": "API sample"
+      }
+    ],
+    "postconditions": "API success commits all three values. Pointer/API failure preserves state and output. No shared static function state is used.",
+    "timing_semantics": "The supplied API models a bounded immediate fixture call. No measured WCET, blocking/locking behavior or real RTOS/device access is certified."
+  },
+  "constraints": [
+    {
+      "id": "SH-C-SUPPLIED",
+      "category": "fixture boundary",
+      "text": "Include only supplied contracts; do not invent a real RTOS API or DLL ABI."
+    },
+    {
+      "id": "SH-C-RESOURCES",
+      "category": "implementation",
+      "text": "Use no shared static state, loops, recursion, dynamic memory, or direct operating-system APIs."
+    }
+  ],
+  "verification_examples": [
+    {
+      "id": "SH-EX-SUCCESS",
+      "input": "Supplied mock: api_status=0, api_sample=23; valid disjoint pointers.",
+      "expected": "return=0; state.last_sample=23; state.has_sample=1; *out_sample=23; exactly one API call."
+    },
+    {
+      "id": "SH-EX-FAILURE",
+      "input": "Supplied mock: api_status=7, api_sample=-99; valid disjoint pointers.",
+      "expected": "return=-2; state and *out_sample unchanged; exactly one API call even though the mock writes its local result."
+    }
+  ],
+  "traceability": [
+    {
+      "requirement": "REQ-SH-FIXTURE",
+      "specification": "SH-STEP-POINTERS, SH-STEP-READ, SH-STEP-PRESERVE, SH-STEP-COMMIT; SH-ASM-API; SH-C-SUPPLIED; SH-C-RESOURCES",
+      "verification": "SH-EX-SUCCESS, SH-EX-FAILURE; pointer rejection requires separate checking."
+    }
+  ],
+  "open_issues": []
+}

@@ -1,0 +1,58 @@
+{
+  "generator_backend": "officecli",
+  "generator_version": "0.2.0",
+  "source": "unit-test-spec.json",
+  "source_sha256": "54a2f6cdf5e0fed24b013583df2a20e27a891860fc9d37048e41808ffa5f8cdc",
+  "schema_sha256": "39edb87863c2e449406b40e6f49c32259bad9bf1b58c4e77f91cba3ddb71abca",
+  "template_sha256": "603532774fa43356eca389bdb2ce2f491471693ce73add0f6fbd87015091702e",
+  "output": "unit-test-spec.docx",
+  "output_sha256": "27e71b47982d07d5ea4f65775f87ed378e8a4b0e8eae95493f5309b7e849b300",
+  "status": "fixture_only",
+  "semantic_sha256": "f3e17ab4027e4e6d249288020f7f008333ee936afc4a0f376445888f6d715f71",
+  "content_check": {
+    "status": "passed",
+    "template_content_and_formatting": "matched",
+    "unchanged_package_parts": 15,
+    "field_codes": {
+      "word/document.xml": [],
+      "word/footer1.xml": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "word/header1.xml": []
+    },
+    "commands": 376,
+    "repeated_rows_cloned": 33,
+    "semantic_sha256": "f3e17ab4027e4e6d249288020f7f008333ee936afc4a0f376445888f6d715f71"
+  },
+  "visual_review": "not_performed_by_this_command",
+  "package": {
+    "name": "routine-unit-test-officecli",
+    "version": "0.2.0",
+    "profile_id": "generic-unit-test-v02",
+    "release_sha256": "f07b84dfff7d102d6f872eddb0a8ae85ac712a7779c97982aedd66a795703491",
+    "renderer": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    }
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "python": "3.12.14",
+  "canonical_source": "source/unit-test-spec.json",
+  "input_files": {
+    "inputs/program-spec.json": "42df8ea431abd0b123ca78326b483a60061b4e07e21a05012128609525f1e8ad",
+    "inputs/source/SampleHold_Update.c": "809c9c55c41f56ff8d23cb59ce0dc865aed243a33ff3c9988e7af916a5896787",
+    "inputs/header/SampleHold_Update.h": "6885fa0c9d3f2effc6049e3bc8a94afdba45497e0e09a50a7d49460e6f942a66"
+  },
+  "input_provenance": "external/not_provided",
+  "input_lock_sha256": "39bdb1e36f5097c09ab2c25601b207c69cc8948de41b4366794c0fb5f7b7e865",
+  "execution_record_sha256": "cfee75596ce97c4db9212f902db95dbe6183df6969915bbe650a11bd84db27c5",
+  "traceability_sha256": "f14003174bf2c7d88f6a5ef56b0f62af7739679a212a15b27345c14798c439b1",
+  "schema": "assets/schema/unit-test-spec.schema.json",
+  "template": "assets/templates/unit-test-spec-v02.docx",
+  "template_id": "unit-test-spec-v02",
+  "template_revision": "0.2.0"
+}

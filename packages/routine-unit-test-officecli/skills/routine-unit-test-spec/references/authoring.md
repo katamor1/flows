@@ -1,39 +1,13 @@
-# 単体テスト仕様JSONの記述規約
+# 0.2.0 記述規約
 
-## 対象と入力
+`assets/schema/unit-test-spec.schema.json`が形式の正本である。固定スクリプトやテンプレートを案件の都合で変更しない。`assets/examples/range-clamp`と`sample-hold`に、状態なし/合成API・状態ありの独立した入力例がある。合成APIは正式なRTOSインターフェースではない。
 
-この版は `RTN-ALM-001 / AlarmQualification_Update` の固定プログラム仕様書とC90ソース・ヘッダーを扱う。`describe` が示すスキーマ・例・入力ハッシュを使う。別ルーチンや変更後のコードには別の保守版が必要である。案件から固定スクリプト・スキーマ・テンプレートを変更しない。
+期待値は原仕様に基づいて決め、観測した実装値や旧ログを正解にしない。対象C/Hを読む追加観点はstatic_checksへ分け、対象範囲と限界をboundaryに書く。初期条件/入力の{name,value}と期待値の{target,comparison,value}は有限JSON値を持てる。null/boolean/number/string/object/arrayを使用でき、文字列はそのままの記述データである。式やコードを実行しない。各stepには少なくとも1期待値を持たせ、action、repeat、noteを明記する。
 
-`new-job` が作る `inputs/`、`input-lock.json`、`package-lock.json` は以後変更しない。正本は `source/unit-test-spec.json`。Wordは納品用の展開結果である。文書状態は `draft_trial / 試作仕様 要件確認前` を保持する。
+familyのproductは全dimensions.valuesの要素数の積、sequenceは1 alphabet要素数のsequence_length乗とする。sequence_lengthはproductで0、sequenceで正。`calls_per_instance`は作者が定める正整数で、系列長と同値を強制しない。call_count=combination_count*calls_per_instance。列挙順、初期条件、期待値規則、方法はそれぞれ記述する。examplesは空可。
 
-## 期待値を設計する
+coverageは原仕様に存在するIDか有効なJSON Pointerを使う。必要な宣言集合は`_contract.required_refs`が入力から抽出する。IDなしの配列レコードは要素のPointerを使う。空のセクションは宣言を持たない。試験(test)、レビュー(review)、両方(test_and_review)は実在する確認IDへ対応付ける。未検証(unverified)、呼出し側(caller)、範囲外(out_of_scope)はitem_ids=[]と具体的な理由を持つ。各項目のspec_refsとcoverageの対応は双方向で一致させる。重複ID、重複参照、未知参照、coverageから浮いた確認項目を拒否する。
 
-期待値はプログラム仕様書の判定表・戻り値・事後条件・時間解釈から導く。ソースは分岐、異常処理、状態更新箇所の確認と追加観点に使う。コードや実行結果に合わせて期待値を変更しない。矛盾は未決事項とレビュー記録に残す。
+assumptions/open_issuesは原仕様の値をそのまま引き継ぐ。cases/families/static_checksは個別には0件可、全て0件は不可。environmentや初期条件・入力は空可。表示viewの該当なし行は正本へ書き戻さない。
 
-既存のC試験・試験設計・合格ログは期待値設計をハッシュ付きで固定した後に比較する。作者が参照した入力、AI実行者、固定時点を `records/authoring.json`、独立レビューを `records/review.json` に記録する。旧ログは群単位の参考証跡であり、新規ケース別の実施結果ではない。
-
-| 正本項目 | 記述内容 |
-|---|---|
-| `document` / `target` | 文書ID・版・日付・作者・試作状態、対象関数、3入力の固定ハッシュ |
-| `summary` / `environment` / `assumptions` | 試験の目的、C90ホスト検証と実機確認の区分、未承認ASMの引継ぎ |
-| `cases` | 独立した初期条件、手順ごとの入力・ポインタ・繰返し、戻り値・状態・出力・全バイト保持、根拠と判定基準 |
-| `families` | 有限の値集合、列挙順・展開ID、組合せ/系列数・呼出し照合数、初期条件、独立した期待値規則、具体例 |
-| `static_checks` | 確認方法、合格基準、対象範囲と動的試験では証明できない限界 |
-| `coverage` | 仕様IDまたは固定仕様書へのJSON Pointerと、試験・レビュー・呼出し側等の割当て理由 |
-| `open_issues` | 元仕様のQと判断担当・未決事項 |
-
-各ケースは他ケースの終了状態に依存させない。初期状態は全オブジェクトを既知のバイトで充填した後に指定フィールドを設定する。エラー時は有効な各領域の全バイトを呼出し直前の保存値と比較する。NULL以外の不正アドレス、重複領域、競合の注入はこの版の範囲外である。
-
-整数入力は符号付き10進文字列か `INT_MIN` / `INT_MAX` / `UINT_MAX` を使う。32bit値に決め打ちしない。期待countの `iteration` は各呼出しのk（1..repeat）、`preserve` は呼出し直前値保持を表す。`all_valid_bytes` は有効領域の全バイト保持。任意式のevalや被試験関数による期待値計算は使わない。
-
-最初の有効ONを1回目と数え、10回目で成立する。10T経過時間の測定とは扱わない。族は88 / 24 / 6 / 177147組・系列と、88 / 24 / 6 / 1948617呼出し照合を分けて記録する。大量系列をWordの全行へ展開しない。系列族の期待値は履歴の末尾にある連続有効ONから導く。
-
-## 検証・表示・実施記録
-
-スキーマ検査はこの固定契約で使うキーワードに限定する。意味検査は重複ID、固定ハッシュ、仕様参照、族件数、初期条件、期待値、網羅、未実施の実施記録等を確認する。一般のJSON Schema完全実装や要求承認として扱わない。
-
-`render` は固定テンプレートの1見出し行＋1ひな型行を複製する。JSONから作る表示モデルと生成DOCXの本文、表、書式、PAGE/NUMPAGES、固定部品を照合する。入力の `{{...}}` は文字列として保持し、二重に差し込まない。改行・日本語・長文を確認する。
-
-構造と内容照合後、実際の納品確認環境で全ページを表示確認する。表示確認記録を当該runへ紐付け、未確認を合格にしない。同一入力の比較にはmanifestの `semantic_sha256` を使う。OfficeCLIの監査時刻等によりDOCXのバイトハッシュは変わり得る。
-
-この配布版は実行結果の取込を行わない。`records/execution-record.json` はケース・族・静的確認の全IDについて `not_executed` と空の証跡を維持する。文書生成、表示確認、単体テスト実施、要求承認、Bobでの実施はそれぞれ別に記録する。
+records/execution-record.jsonは全確認IDにstatus=not_executed、evidence=[]を持つ。作者が項目を追加した際はこの未実施記録も更新する。試験実行や人の承認は別工程で管理する。

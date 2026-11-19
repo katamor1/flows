@@ -1,0 +1,138 @@
+{
+  "format_version": "0.2.0",
+  "unit_test_spec_id": "UTS-RTN-ALM-001",
+  "specification_status": "draft_trial",
+  "results": [
+    {
+      "item_id": "UT-ALM-001",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-002",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-003",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-004",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-005",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-006",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-007",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-008",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-009",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-010",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-011",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-012",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-013",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-014",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-015",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "UT-ALM-016",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "FAM-ALM-001",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "FAM-ALM-002",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "FAM-ALM-003",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "FAM-ALM-004",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-001",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-002",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-003",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-004",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-005",
+      "status": "not_executed",
+      "evidence": []
+    },
+    {
+      "item_id": "SR-ALM-006",
+      "status": "not_executed",
+      "evidence": []
+    }
+  ],
+  "note": "No test or review has been executed by document generation. Existing logs are not pass evidence."
+}

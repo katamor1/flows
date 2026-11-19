@@ -1,0 +1,529 @@
+{
+  "schema_version": "0.2.0",
+  "document": {
+    "id": "UTS-RTN-CLAMP-001",
+    "title": "RangeClamp 単体テスト仕様書",
+    "revision": "0.1",
+    "date": "2026-11-17",
+    "status": "draft_trial",
+    "status_label": "試作仕様 要件確認前",
+    "routine_id": "RTN-CLAMP-001",
+    "routine_name": "RangeClamp",
+    "template_id": "unit-test-spec-v02",
+    "author": "Codex; human review pending"
+  },
+  "target": {
+    "program_spec_sha256": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "source_sha256": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "header_sha256": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138"
+  },
+  "summary": "Expectations are derived from the supplied program specification. This document does not execute tests or import old pass results.",
+  "environment": [
+    "Python 3.12 standard library; OfficeCLI 1.0.144 generates and structurally validates this document.",
+    "The C fixture is not executed by this workflow; platform and compiler validation are separate evidence."
+  ],
+  "assumptions": [],
+  "cases": [
+    {
+      "id": "in-range-boundary",
+      "title": "Within range and inclusive endpoints",
+      "purpose": "Check the source inclusive clamp rule independently of observed implementation output.",
+      "spec_refs": [
+        "CLAMP-STEP-PRESERVE",
+        "CLAMP-EX-INSIDE"
+      ],
+      "initial_conditions": [],
+      "steps": [
+        {
+          "id": "call-1",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 2
+            },
+            {
+              "name": "lower",
+              "value": -3
+            },
+            {
+              "name": "upper",
+              "value": 4
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 2
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        },
+        {
+          "id": "call-2",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": -3
+            },
+            {
+              "name": "lower",
+              "value": -3
+            },
+            {
+              "name": "upper",
+              "value": 4
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": -3
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        },
+        {
+          "id": "call-3",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 4
+            },
+            {
+              "name": "lower",
+              "value": -3
+            },
+            {
+              "name": "upper",
+              "value": 4
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 4
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        }
+      ],
+      "judgment": "Every return equals the specification-derived expected int."
+    },
+    {
+      "id": "outside",
+      "title": "Outside either bound",
+      "purpose": "Check the source inclusive clamp rule independently of observed implementation output.",
+      "spec_refs": [
+        "CLAMP-STEP-LOWER",
+        "CLAMP-STEP-UPPER",
+        "CLAMP-EX-LOWER",
+        "CLAMP-EX-UPPER"
+      ],
+      "initial_conditions": [],
+      "steps": [
+        {
+          "id": "call-1",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": -8
+            },
+            {
+              "name": "lower",
+              "value": -3
+            },
+            {
+              "name": "upper",
+              "value": 4
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": -3
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        },
+        {
+          "id": "call-2",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 9
+            },
+            {
+              "name": "lower",
+              "value": -3
+            },
+            {
+              "name": "upper",
+              "value": 4
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 4
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        }
+      ],
+      "judgment": "Every return equals the specification-derived expected int."
+    },
+    {
+      "id": "equal-bounds",
+      "title": "Equal lower and upper",
+      "purpose": "Check the source inclusive clamp rule independently of observed implementation output.",
+      "spec_refs": [
+        "CLAMP-STEP-PRESERVE",
+        "CLAMP-EX-EQUAL",
+        "CLAMP-STEP-LOWER",
+        "CLAMP-STEP-UPPER"
+      ],
+      "initial_conditions": [],
+      "steps": [
+        {
+          "id": "call-1",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 7
+            },
+            {
+              "name": "lower",
+              "value": 7
+            },
+            {
+              "name": "upper",
+              "value": 7
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 7
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        },
+        {
+          "id": "call-2",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 6
+            },
+            {
+              "name": "lower",
+              "value": 7
+            },
+            {
+              "name": "upper",
+              "value": 7
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 7
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        },
+        {
+          "id": "call-3",
+          "action": "Call RangeClamp(value, lower, upper)",
+          "inputs": [
+            {
+              "name": "value",
+              "value": 8
+            },
+            {
+              "name": "lower",
+              "value": 7
+            },
+            {
+              "name": "upper",
+              "value": 7
+            }
+          ],
+          "expected": [
+            {
+              "target": "return",
+              "comparison": "equals",
+              "value": 7
+            }
+          ],
+          "repeat": 1,
+          "note": "Expected result comes from the input program specification."
+        }
+      ],
+      "judgment": "Every return equals the specification-derived expected int."
+    }
+  ],
+  "families": [
+    {
+      "id": "small-domain",
+      "title": "Fixed inclusive bounds and five values",
+      "spec_refs": [
+        "CLAMP-STEP-LOWER",
+        "CLAMP-STEP-UPPER",
+        "CLAMP-STEP-PRESERVE"
+      ],
+      "mode": "product",
+      "dimensions": [
+        {
+          "name": "value",
+          "values": [
+            -8,
+            -3,
+            2,
+            4,
+            9
+          ]
+        },
+        {
+          "name": "bounds",
+          "values": [
+            {
+              "lower": -3,
+              "upper": 4
+            }
+          ]
+        }
+      ],
+      "sequence_length": 0,
+      "combination_count": 5,
+      "calls_per_instance": 2,
+      "call_count": 10,
+      "initial": "No state. Each instance supplies the listed ordered bounds.",
+      "enumeration": "Values in written order; each instance is called twice with identical arguments.",
+      "method": "Compare both returns to the source rule independently; repeated calls also check absence of retained state.",
+      "expected_rule": "For value < -3 expect -3; value > 4 expect 4; otherwise expect value. Both repeated calls must agree.",
+      "examples": [
+        "value=-8 => -3 twice",
+        "value=2 => 2 twice",
+        "value=9 => 4 twice"
+      ]
+    }
+  ],
+  "static_checks": [
+    {
+      "id": "source-structure",
+      "title": "Bounded C90 arithmetic and state scope",
+      "spec_refs": [
+        "CLAMP-C90",
+        "CLAMP-OVERFLOW",
+        "/behavior/postconditions",
+        "/behavior/timing_semantics"
+      ],
+      "method": "Read the exact locked source and header. Inspect comparisons, returns and declarations without deriving dynamic expected values from implementation.",
+      "criterion": "No subtraction, overflow-producing arithmetic, loops, recursion, allocation, external calls or mutable static state.",
+      "boundary": "Only the locked C/H function. This review item is unexecuted; real RTOS timing and WCET are outside the document-generation task."
+    }
+  ],
+  "coverage": [
+    {
+      "spec_ref": "/behavior/decision_rows/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/decision_rows/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/postconditions",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/behavior/result_fields/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/behavior/timing_semantics",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "/interface/language",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/1",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/parameters/2",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/preconditions",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "Caller must satisfy ordered bounds."
+    },
+    {
+      "spec_ref": "/interface/prototype",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/return_codes/0",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "/interface/visibility",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    },
+    {
+      "spec_ref": "CLAMP-C90",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-EQUAL",
+      "method": "test",
+      "item_ids": [
+        "equal-bounds"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-INSIDE",
+      "method": "test",
+      "item_ids": [
+        "in-range-boundary"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-LOWER",
+      "method": "test",
+      "item_ids": [
+        "outside"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-EX-UPPER",
+      "method": "test",
+      "item_ids": [
+        "outside"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-OVERFLOW",
+      "method": "review",
+      "item_ids": [
+        "source-structure"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-PRE-ORDER",
+      "method": "caller",
+      "item_ids": [],
+      "rationale": "Caller must satisfy ordered bounds."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-LOWER",
+      "method": "test",
+      "item_ids": [
+        "outside",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-PRESERVE",
+      "method": "test",
+      "item_ids": [
+        "in-range-boundary",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "CLAMP-STEP-UPPER",
+      "method": "test",
+      "item_ids": [
+        "outside",
+        "equal-bounds",
+        "small-domain"
+      ],
+      "rationale": "The listed unexecuted specification items address this exact source declaration."
+    },
+    {
+      "spec_ref": "REQ-CLAMP-INCLUSIVE",
+      "method": "unverified",
+      "item_ids": [],
+      "rationale": "No executable or review evidence is claimed here. Further review of this source declaration is required."
+    }
+  ],
+  "open_issues": []
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "0.2.0",
+  "copied_from": "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\prototypes\\routine-code-poc",
+  "provenance": "generation_record",
+  "bindings": {
+    "spec": "inputs/program-spec.json",
+    "source": "inputs/source/AlarmQualification.c",
+    "header": "inputs/header/AlarmQualification.h",
+    "generation_record": "inputs/generation-record.json"
+  },
+  "generation_file_map": {},
+  "files": {
+    "inputs/program-spec.json": "097b1185e284c17805b51c92dd821d1bec64f55d0ce1781c2c1fb369239b4265",
+    "inputs/source/AlarmQualification.c": "e2b910d6aaf0932a19c3f287cb6513a5193a9e365435c5876a29cd7684683bee",
+    "inputs/header/AlarmQualification.h": "3f8799a676201b23a2fa96e7eddfaf4fe99a67429edb2e460571197a238bcf00",
+    "inputs/generation-record.json": "5fd7f84f7c4e05991e7724fa460408e10beac3953bc38a924f44156c0e679be6"
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "label": "batch",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "batch",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-unit-test-officecli\\skills\\routine-unit-test-spec\\assets\\templates\\unit-test-spec-v02.docx",
+      "--input",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-unit-test-officecli\\maintenance\\template-build-v02\\commands.json",
+      "--stop-on-error",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "validate",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "validate",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-unit-test-officecli\\skills\\routine-unit-test-spec\\assets\\templates\\unit-test-spec-v02.docx",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "close",
+    "argv": [
+      "C:\\Users\\stell\\AppData\\Local\\Programs\\IBM Bob\\resources\\app\\extensions\\bob-code\\dist\\officecli.exe",
+      "close",
+      "C:\\Users\\stell\\OneDrive\\ドキュメント\\ChatGPT\\flows\\packages\\routine-unit-test-officecli\\skills\\routine-unit-test-spec\\assets\\templates\\unit-test-spec-v02.docx",
+      "--json"
+    ],
+    "exit_code": 0
+  }
+]

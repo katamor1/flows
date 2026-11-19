@@ -1,0 +1,63 @@
+{
+  "generator_backend": "officecli",
+  "generator_version": "0.2.0",
+  "source": "unit-test-spec.json",
+  "source_sha256": "15cd995900222bb3b501ab033e6fda56941dd72c09f38620ed14970e65bef0a4",
+  "schema_sha256": "39edb87863c2e449406b40e6f49c32259bad9bf1b58c4e77f91cba3ddb71abca",
+  "template_sha256": "603532774fa43356eca389bdb2ce2f491471693ce73add0f6fbd87015091702e",
+  "output": "unit-test-spec.docx",
+  "output_sha256": "fbf75d9bdf5ff00c39d5fb6996001203bbf48c6b9ae412dff312b435f6ee5b80",
+  "status": "draft_trial",
+  "semantic_sha256": "70d5e68e5c9423482e1fffbe652fecccdd13655a3b7fda6eb68a84de3c394a5a",
+  "content_check": {
+    "status": "passed",
+    "template_content_and_formatting": "matched",
+    "unchanged_package_parts": 15,
+    "field_codes": {
+      "word/document.xml": [],
+      "word/footer1.xml": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "word/header1.xml": []
+    },
+    "commands": 385,
+    "repeated_rows_cloned": 34,
+    "semantic_sha256": "70d5e68e5c9423482e1fffbe652fecccdd13655a3b7fda6eb68a84de3c394a5a"
+  },
+  "visual_review": "not_performed_by_this_command",
+  "package": {
+    "name": "routine-unit-test-officecli",
+    "version": "0.2.0",
+    "profile_id": "generic-unit-test-v02",
+    "release_sha256": "f07b84dfff7d102d6f872eddb0a8ae85ac712a7779c97982aedd66a795703491",
+    "renderer": {
+      "version": "1.0.144",
+      "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+    }
+  },
+  "officecli": {
+    "version": "1.0.144",
+    "sha256": "eec03daa7978a1e8f28a4ee0ce910ef9e3cb355d26a7fa4afcecadfe34693fbb"
+  },
+  "python": "3.12.14",
+  "canonical_source": "source/unit-test-spec.json",
+  "input_files": {
+    "inputs/program-spec.json": "403f5e9255c9bcb5205d1dfe44e1af3999f8bde5194bc8138214e83c0feadcf7",
+    "inputs/source/RangeClamp.c": "05585ec8830ff0e29a0ad90cb9e9f99add3779a37f45c303141b4709db695741",
+    "inputs/header/RangeClamp.h": "de05170e412699da6eb5037c0e9f6bb5cca5094da0f53e99cb5663552d034138",
+    "inputs/generation-record.json": "c3f554e989553807721d0c4ce74361ced279457ab438bc0f93fb390cee4b182f",
+    "inputs/assets/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "inputs/assets/input/verification-profile.json": "d41b5aa81608828a60173a3b1018ab9899f8e42b27649e855247e909ef7aedbe",
+    "inputs/assets/tests/profile-000-test_range_clamp.c": "2e1fb257ef58ed4b67f001451537593b022a5e02f0cd17211af3dcc7a81596a5",
+    "inputs/assets/traceability.md": "6e6162c1dc02bd6aade1fb13bf5c750fd9102555c26d0cbd9dba3c21d42f9b45"
+  },
+  "input_provenance": "generation_record",
+  "input_lock_sha256": "59355e2da079fecbb89302ffb5933821cf8503ffecbddacd927ee13b29a11bcc",
+  "execution_record_sha256": "75cabcfab468408c49d0f5876400b529ac8944800d8f89d25b4dfd56498274f9",
+  "traceability_sha256": "fee189bca730ae117c719a915d60b579dc14ac3f87bab55e4d1124fe94e79beb",
+  "schema": "assets/schema/unit-test-spec.schema.json",
+  "template": "assets/templates/unit-test-spec-v02.docx",
+  "template_id": "unit-test-spec-v02",
+  "template_revision": "0.2.0"
+}
